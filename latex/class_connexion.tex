@@ -1,0 +1,363 @@
+\doxysection{Référence de la classe Connexion}
+\label{class_connexion}\index{Connexion@{Connexion}}
+
+
+Classe pour la vue \doxyref{Connexion}{p.}{class_connexion}.  
+
+
+
+
+{\ttfamily \#include $<$Connexion.\+h$>$}
+
+
+
+Graphe d\textquotesingle{}héritage de Connexion\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{class_connexion__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de Connexion\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{class_connexion__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Connexion} (Q\+Widget $\ast$parent=Q\+\_\+\+N\+U\+L\+L\+P\+TR)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+Connexion} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ key\+Press\+Event} (Q\+Key\+Event $\ast$)
+\begin{DoxyCompactList}\small\item\em Surcharge de la methode pour l\textquotesingle{}evevement d\textquotesingle{}une touche pressee. \end{DoxyCompactList}\item 
+void \textbf{ resize\+Event} (Q\+Resize\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em Methode appelee quand la fentre change de taille. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Connecteurs privés}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ p\+Slot\+\_\+connection\+Gateway} ()
+\begin{DoxyCompactList}\small\item\em Methode pour se connecter a la gateway. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ p\+\_\+init} ()
+\begin{DoxyCompactList}\small\item\em Methode d\textquotesingle{}initialisation des variables des objets. \end{DoxyCompactList}\item 
+void \textbf{ close\+Event} (Q\+Close\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em Methode appelee a la fermeture. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Push\+Button $\ast$ \textbf{ p\+\_\+leave}
+\begin{DoxyCompactList}\small\item\em Variable pour le bouton pour quiter l\textquotesingle{}application. \end{DoxyCompactList}\item 
+Q\+Label $\ast$ \textbf{ p\+\_\+password\+Label}
+\begin{DoxyCompactList}\small\item\em Variable pour le texte du mot de passe. \end{DoxyCompactList}\item 
+Q\+Line\+Edit $\ast$ \textbf{ p\+\_\+password\+Text}
+\begin{DoxyCompactList}\small\item\em Variable pour entrer le mot de passe. \end{DoxyCompactList}\item 
+Q\+Label $\ast$ \textbf{ p\+\_\+user\+Label}
+\begin{DoxyCompactList}\small\item\em Variable pour le texte de l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+Q\+Line\+Edit $\ast$ \textbf{ p\+\_\+user\+Text}
+\begin{DoxyCompactList}\small\item\em Variable pour entrer l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+Q\+Push\+Button $\ast$ \textbf{ p\+\_\+validation}
+\begin{DoxyCompactList}\small\item\em Variable pour le bouton pour valider les informations. \end{DoxyCompactList}\item 
+\textbf{ Manager\+Logiciel} $\ast$ \textbf{ p\+\_\+man\+Log}
+\begin{DoxyCompactList}\small\item\em Variable pour la partie ssh. \end{DoxyCompactList}\item 
+Q\+Label $\ast$ \textbf{ p\+\_\+link\+Manual}
+\begin{DoxyCompactList}\small\item\em Variable pour le manuel utilisateur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Classe pour la vue \doxyref{Connexion}{p.}{class_connexion}. 
+
+Vue ou sont rentrees les informations pour la connexion aux differents serveurs 
+
+Définition à la ligne 21 du fichier Connexion.\+h.
+
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\label{class_connexion_a1319be49faefc279272e43c9c112c71d}} 
+\index{Connexion@{Connexion}!Connexion@{Connexion}}
+\index{Connexion@{Connexion}!Connexion@{Connexion}}
+\doxysubsubsection{Connexion()}
+{\footnotesize\ttfamily Connexion\+::\+Connexion (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily Q\+\_\+NULLPTR} }\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & (Q\+Wdiget$\ast$) \+: Parent de la fenetre \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 7 du fichier Connexion.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_connexion_a1319be49faefc279272e43c9c112c71d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_connexion_a6afee761c33e160c2be5e9e2713968e3}} 
+\index{Connexion@{Connexion}!````~Connexion@{$\sim$Connexion}}
+\index{````~Connexion@{$\sim$Connexion}!Connexion@{Connexion}}
+\doxysubsubsection{$\sim$Connexion()}
+{\footnotesize\ttfamily Connexion\+::$\sim$\+Connexion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur. 
+
+
+
+Définition à la ligne 26 du fichier Connexion.\+cpp.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\label{class_connexion_a02e3f4beab59484a34e01b40f335c1a1}} 
+\index{Connexion@{Connexion}!closeEvent@{closeEvent}}
+\index{closeEvent@{closeEvent}!Connexion@{Connexion}}
+\doxysubsubsection{closeEvent()}
+{\footnotesize\ttfamily void Connexion\+::close\+Event (\begin{DoxyParamCaption}\item[{Q\+Close\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Methode appelee a la fermeture. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em event} & (Q\+Close\+Event$\ast$) \+: Evenement \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 36 du fichier Connexion.\+cpp.
+
+\mbox{\label{class_connexion_a85a43f9267572cc96153d8022eac85aa}} 
+\index{Connexion@{Connexion}!keyPressEvent@{keyPressEvent}}
+\index{keyPressEvent@{keyPressEvent}!Connexion@{Connexion}}
+\doxysubsubsection{keyPressEvent()}
+{\footnotesize\ttfamily void Connexion\+::key\+Press\+Event (\begin{DoxyParamCaption}\item[{Q\+Key\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Surcharge de la methode pour l\textquotesingle{}evevement d\textquotesingle{}une touche pressee. 
+
+Pour savoir quand la touche \char`\"{}\+Entree\char`\"{} est pressee 
+\begin{DoxyParams}{Paramètres}
+{\em event} & (Q\+Key\+Event$\ast$) \+: Touche appuyee \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 127 du fichier Connexion.\+cpp.
+
+\mbox{\label{class_connexion_ad7d04e5ecc5aa8f7d4456ab90c02a0af}} 
+\index{Connexion@{Connexion}!p\_init@{p\_init}}
+\index{p\_init@{p\_init}!Connexion@{Connexion}}
+\doxysubsubsection{p\_init()}
+{\footnotesize\ttfamily void Connexion\+::p\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Methode d\textquotesingle{}initialisation des variables des objets. 
+
+Met en place les parametres des objets de la vue 
+
+Définition à la ligne 45 du fichier Connexion.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_connexion_ad7d04e5ecc5aa8f7d4456ab90c02a0af_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{class_connexion_ad7d04e5ecc5aa8f7d4456ab90c02a0af_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_connexion_a5800f4662c3c036688392fb490d7f07e}} 
+\index{Connexion@{Connexion}!pSlot\_connectionGateway@{pSlot\_connectionGateway}}
+\index{pSlot\_connectionGateway@{pSlot\_connectionGateway}!Connexion@{Connexion}}
+\doxysubsubsection{pSlot\_connectionGateway}
+{\footnotesize\ttfamily void Connexion\+::p\+Slot\+\_\+connection\+Gateway (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Methode pour se connecter a la gateway. 
+
+Permet d\textquotesingle{}acceder a l\textquotesingle{}accueil si les informations sont bonnes ou retourne un message 
+
+Définition à la ligne 88 du fichier Connexion.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_connexion_a5800f4662c3c036688392fb490d7f07e_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_connexion_a5800f4662c3c036688392fb490d7f07e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_connexion_ac9cf36155070d2c1dde7d8b6431110e7}} 
+\index{Connexion@{Connexion}!resizeEvent@{resizeEvent}}
+\index{resizeEvent@{resizeEvent}!Connexion@{Connexion}}
+\doxysubsubsection{resizeEvent()}
+{\footnotesize\ttfamily void Connexion\+::resize\+Event (\begin{DoxyParamCaption}\item[{Q\+Resize\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Methode appelee quand la fentre change de taille. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em event} & (Q\+Resize\+Event$\ast$) \+: Evement de changement de taille \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 137 du fichier Connexion.\+cpp.
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\label{class_connexion_a3afc476987ae3f2b95a760e19a735c8f}} 
+\index{Connexion@{Connexion}!p\_leave@{p\_leave}}
+\index{p\_leave@{p\_leave}!Connexion@{Connexion}}
+\doxysubsubsection{p\_leave}
+{\footnotesize\ttfamily Q\+Push\+Button$\ast$ Connexion\+::p\+\_\+leave\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour le bouton pour quiter l\textquotesingle{}application. 
+
+
+
+Définition à la ligne 30 du fichier Connexion.\+h.
+
+\mbox{\label{class_connexion_abced9517d3d0335e6a0e51390d4358da}} 
+\index{Connexion@{Connexion}!p\_linkManual@{p\_linkManual}}
+\index{p\_linkManual@{p\_linkManual}!Connexion@{Connexion}}
+\doxysubsubsection{p\_linkManual}
+{\footnotesize\ttfamily Q\+Label$\ast$ Connexion\+::p\+\_\+link\+Manual\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour le manuel utilisateur. 
+
+
+
+Définition à la ligne 51 du fichier Connexion.\+h.
+
+\mbox{\label{class_connexion_a2de6e4d294f1f91b7249c38e1475b8c5}} 
+\index{Connexion@{Connexion}!p\_manLog@{p\_manLog}}
+\index{p\_manLog@{p\_manLog}!Connexion@{Connexion}}
+\doxysubsubsection{p\_manLog}
+{\footnotesize\ttfamily \textbf{ Manager\+Logiciel}$\ast$ Connexion\+::p\+\_\+man\+Log\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour la partie ssh. 
+
+
+
+Définition à la ligne 48 du fichier Connexion.\+h.
+
+\mbox{\label{class_connexion_aa8c106175292daacf21734df941fcd1d}} 
+\index{Connexion@{Connexion}!p\_passwordLabel@{p\_passwordLabel}}
+\index{p\_passwordLabel@{p\_passwordLabel}!Connexion@{Connexion}}
+\doxysubsubsection{p\_passwordLabel}
+{\footnotesize\ttfamily Q\+Label$\ast$ Connexion\+::p\+\_\+password\+Label\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour le texte du mot de passe. 
+
+
+
+Définition à la ligne 33 du fichier Connexion.\+h.
+
+\mbox{\label{class_connexion_aa6f5d13cfe1fc3097391155193368bca}} 
+\index{Connexion@{Connexion}!p\_passwordText@{p\_passwordText}}
+\index{p\_passwordText@{p\_passwordText}!Connexion@{Connexion}}
+\doxysubsubsection{p\_passwordText}
+{\footnotesize\ttfamily Q\+Line\+Edit$\ast$ Connexion\+::p\+\_\+password\+Text\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour entrer le mot de passe. 
+
+
+
+Définition à la ligne 36 du fichier Connexion.\+h.
+
+\mbox{\label{class_connexion_ae26c49204b1fe228c6873703894ee40f}} 
+\index{Connexion@{Connexion}!p\_userLabel@{p\_userLabel}}
+\index{p\_userLabel@{p\_userLabel}!Connexion@{Connexion}}
+\doxysubsubsection{p\_userLabel}
+{\footnotesize\ttfamily Q\+Label$\ast$ Connexion\+::p\+\_\+user\+Label\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour le texte de l\textquotesingle{}utilisateur. 
+
+
+
+Définition à la ligne 39 du fichier Connexion.\+h.
+
+\mbox{\label{class_connexion_acf69da416456a7394c8c513ea9dc24de}} 
+\index{Connexion@{Connexion}!p\_userText@{p\_userText}}
+\index{p\_userText@{p\_userText}!Connexion@{Connexion}}
+\doxysubsubsection{p\_userText}
+{\footnotesize\ttfamily Q\+Line\+Edit$\ast$ Connexion\+::p\+\_\+user\+Text\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour entrer l\textquotesingle{}utilisateur. 
+
+
+
+Définition à la ligne 42 du fichier Connexion.\+h.
+
+\mbox{\label{class_connexion_a002daad1da01f5494a5b5740dbcece91}} 
+\index{Connexion@{Connexion}!p\_validation@{p\_validation}}
+\index{p\_validation@{p\_validation}!Connexion@{Connexion}}
+\doxysubsubsection{p\_validation}
+{\footnotesize\ttfamily Q\+Push\+Button$\ast$ Connexion\+::p\+\_\+validation\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour le bouton pour valider les informations. 
+
+
+
+Définition à la ligne 45 du fichier Connexion.\+h.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Vues/\textbf{ Connexion.\+h}\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Vues/\textbf{ Connexion.\+cpp}\end{DoxyCompactItemize}

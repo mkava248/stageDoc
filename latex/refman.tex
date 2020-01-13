@@ -1,0 +1,251 @@
+\let\mypdfximage\pdfximage\def\pdfximage{\immediate\mypdfximage}\documentclass[twoside]{book}
+
+%% moved from doxygen.sty due to workaround for LaTex 2019 version and unmaintained tabu package
+\usepackage{ifthen}
+\ifx\requestedLaTeXdate\undefined
+\usepackage{array}
+\else
+\usepackage{array}[=2016-10-06]
+\fi
+%%
+% Packages required by doxygen
+\usepackage{fixltx2e}
+\usepackage{calc}
+\usepackage{doxygen}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{makeidx}
+\usepackage{multicol}
+\usepackage{multirow}
+\PassOptionsToPackage{warn}{textcomp}
+\usepackage{textcomp}
+\usepackage[nointegrals]{wasysym}
+\usepackage[table]{xcolor}
+\usepackage{ifpdf,ifxetex}
+
+% NLS support packages
+\usepackage[french]{babel}
+\NoAutoSpaceBeforeFDP
+
+% Font selection
+\usepackage[T1]{fontenc}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{amssymb}
+\usepackage{sectsty}
+\renewcommand{\familydefault}{\sfdefault}
+\allsectionsfont{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\renewcommand{\DoxyLabelFont}{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\newcommand{\+}{\discretionary{\mbox{\scriptsize$\hookleftarrow$}}{}{}}
+
+% Arguments of doxygenemoji:
+% 1) ':<text>:' form of the emoji, already "LaTeX"-escaped
+% 2) file with the name of the emoji without the .png extension
+% in case image exist use this otherwise use the ':<text>:' form
+\newcommand{\doxygenemoji}[2]{%
+  \IfFileExists{./#2.png}{\raisebox{-0.1em}{\includegraphics[height=0.9em]{./#2.png}}}{#1}%
+}
+% Page & text layout
+\usepackage{geometry}
+\geometry{%
+  a4paper,%
+  top=2.5cm,%
+  bottom=2.5cm,%
+  left=2.5cm,%
+  right=2.5cm%
+}
+\tolerance=750
+\hfuzz=15pt
+\hbadness=750
+\setlength{\emergencystretch}{15pt}
+\setlength{\parindent}{0cm}
+\newcommand{\doxynormalparskip}{\setlength{\parskip}{3ex plus 2ex minus 2ex}}
+\newcommand{\doxytocparskip}{\setlength{\parskip}{1ex plus 0ex minus 0ex}}
+\doxynormalparskip
+\makeatletter
+\renewcommand{\paragraph}{%
+  \@startsection{paragraph}{4}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@parafont%
+  }%
+}
+\renewcommand{\subparagraph}{%
+  \@startsection{subparagraph}{5}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@subparafont%
+  }%
+}
+\makeatother
+
+% Headers & footers
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead[LE]{\fancyplain{}{\bfseries\thepage}}
+\fancyhead[CE]{\fancyplain{}{}}
+\fancyhead[RE]{\fancyplain{}{\bfseries\leftmark}}
+\fancyhead[LO]{\fancyplain{}{\bfseries\rightmark}}
+\fancyhead[CO]{\fancyplain{}{}}
+\fancyhead[RO]{\fancyplain{}{\bfseries\thepage}}
+\fancyfoot[LE]{\fancyplain{}{}}
+\fancyfoot[CE]{\fancyplain{}{}}
+\fancyfoot[RE]{\fancyplain{}{\bfseries\scriptsize Généré par Doxygen }}
+\fancyfoot[LO]{\fancyplain{}{\bfseries\scriptsize Généré par Doxygen }}
+\fancyfoot[CO]{\fancyplain{}{}}
+\fancyfoot[RO]{\fancyplain{}{}}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\chaptermark}[1]{%
+  \markboth{#1}{}%
+}
+\renewcommand{\sectionmark}[1]{%
+  \markright{\thesection\ #1}%
+}
+
+% Indices & bibliography
+\usepackage{natbib}
+\usepackage[titles]{tocloft}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{5}
+\makeindex
+
+\usepackage{newunicodechar}
+  \newunicodechar{⁻}{${}^{-}$}% Superscript minus
+  \newunicodechar{²}{${}^{2}$}% Superscript two
+  \newunicodechar{³}{${}^{3}$}% Superscript three
+
+% Custom commands
+\newcommand{\clearemptydoublepage}{%
+  \newpage{\pagestyle{empty}\cleardoublepage}%
+}
+
+\usepackage{caption}
+\captionsetup{labelsep=space,justification=centering,font={bf},singlelinecheck=off,skip=4pt,position=top}
+
+\usepackage{etoc}
+\etocsettocstyle{\doxytocparskip}{\doxynormalparskip}
+\renewcommand{\numberline}[1]{#1~}
+%===== C O N T E N T S =====
+
+\begin{document}
+
+% Titlepage & ToC
+\pagenumbering{alph}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}%
+{\Large My Project }\\
+\vspace*{1cm}
+{\large Généré par Doxygen 1.8.16}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+
+%--- Begin generated contents ---
+\chapter{Index hiérarchique}
+\input{hierarchy}
+\chapter{Index des classes}
+\input{annotated}
+\chapter{Index des fichiers}
+\input{files}
+\chapter{Documentation des classes}
+\input{class_accueil}
+\input{class_advanced_view}
+\input{class_carte_vue}
+\input{class_certificat}
+\input{class_chain_informations}
+\input{class_chains_view}
+\input{class_connexion}
+\input{class_manager_certificat}
+\input{class_manager_logiciel}
+\input{class_manager_monitor}
+\input{class_manager_service}
+\input{class_monitor}
+\input{class_monitor_informations}
+\input{class_monitors_view}
+\input{class_my_exception}
+\input{class_my_layout}
+\input{class_my_message_box}
+\input{class_my_result}
+\input{class_my_window}
+\input{class_onglet_view}
+\input{class_parser}
+\input{class_plateforme_informations}
+\input{class_plateforme_view}
+\input{class_service}
+\input{class_service_informations}
+\input{class_services_view}
+\input{class_ssh}
+\chapter{Documentation des fichiers}
+\input{_manager_certificat_8cpp}
+\input{_manager_certificat_8h}
+\input{_manager_logiciel_8cpp}
+\input{_manager_logiciel_8h}
+\input{_manager_monitor_8cpp}
+\input{_manager_monitor_8h}
+\input{_manager_service_8cpp}
+\input{_manager_service_8h}
+\input{main_8cpp}
+\input{_certificat_8cpp}
+\input{_certificat_8h}
+\input{_monitor_8cpp}
+\input{_monitor_8h}
+\input{_service_8cpp}
+\input{_service_8h}
+\input{_ssh_8cpp}
+\input{_ssh_8h}
+\input{_my_exception_8cpp}
+\input{_my_exception_8h}
+\input{_my_layout_8cpp}
+\input{_my_layout_8h}
+\input{_my_message_box_8cpp}
+\input{_my_message_box_8h}
+\input{_my_result_8h}
+\input{_my_window_8cpp}
+\input{_my_window_8h}
+\input{_onglet_view_8cpp}
+\input{_onglet_view_8h}
+\input{_parser_8cpp}
+\input{_parser_8h}
+\input{resource_8h}
+\input{_accueil_8cpp}
+\input{_accueil_8h}
+\input{_advanced_view_8cpp}
+\input{_advanced_view_8h}
+\input{_carte_vue_8cpp}
+\input{_carte_vue_8h}
+\input{_chain_informations_8cpp}
+\input{_chain_informations_8h}
+\input{_chains_view_8cpp}
+\input{_chains_view_8h}
+\input{_connexion_8cpp}
+\input{_connexion_8h}
+\input{_monitor_informations_8cpp}
+\input{_monitor_informations_8h}
+\input{_monitors_view_8cpp}
+\input{_monitors_view_8h}
+\input{_plateforme_informations_8cpp}
+\input{_plateforme_informations_8h}
+\input{_plateforme_view_8cpp}
+\input{_plateforme_view_8h}
+\input{_service_informations_8cpp}
+\input{_service_informations_8h}
+\input{_services_view_8cpp}
+\input{_services_view_8h}
+%--- End generated contents ---
+
+% Index
+\backmatter
+\newpage
+\phantomsection
+\clearemptydoublepage
+\addcontentsline{toc}{chapter}{\indexname}
+\printindex
+
+\end{document}

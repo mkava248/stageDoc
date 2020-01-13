@@ -1,0 +1,548 @@
+\doxysection{Référence de la classe Monitor}
+\label{class_monitor}\index{Monitor@{Monitor}}
+
+
+Classe representant un moniteur.  
+
+
+
+
+{\ttfamily \#include $<$Monitor.\+h$>$}
+
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Monitor} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\textbf{ Monitor} (const \textbf{ Monitor} \&)
+\begin{DoxyCompactList}\small\item\em Constrcuteur de recopie. \end{DoxyCompactList}\item 
+\textbf{ Monitor} (std\+::string name, std\+::string functionnal\+Chain, std\+::string machine, std\+::string version, std\+::string last\+Version)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+Monitor} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+std\+::string \textbf{ get\+Name} () const
+\begin{DoxyCompactList}\small\item\em Methode pour avoir le nom. \end{DoxyCompactList}\item 
+void \textbf{ set\+Name} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Methode pour changer le nom. \end{DoxyCompactList}\item 
+std\+::string \textbf{ get\+Functionnal\+Chain} () const
+\begin{DoxyCompactList}\small\item\em Methode pour avoir la chaine fonctionnelle. \end{DoxyCompactList}\item 
+void \textbf{ set\+Functionnal\+Chain} (std\+::string functionnal\+Chain)
+\begin{DoxyCompactList}\small\item\em Methode pour changer la chaine fonctionnelle. \end{DoxyCompactList}\item 
+std\+::string \textbf{ get\+Machine} () const
+\begin{DoxyCompactList}\small\item\em Methode pour avoir la machine. \end{DoxyCompactList}\item 
+void \textbf{ set\+Machine} (std\+::string machine)
+\begin{DoxyCompactList}\small\item\em Methode pour changer la machine. \end{DoxyCompactList}\item 
+std\+::string \textbf{ get\+Version} () const
+\begin{DoxyCompactList}\small\item\em Methode pour obtenir la version actuelle. \end{DoxyCompactList}\item 
+void \textbf{ set\+Version} (std\+::string version)
+\begin{DoxyCompactList}\small\item\em Methode pour changer la version du moniteur. \end{DoxyCompactList}\item 
+std\+::string \textbf{ get\+Last\+Version} () const
+\begin{DoxyCompactList}\small\item\em Methode pour obtenir la derniere version mise sur le reseau. \end{DoxyCompactList}\item 
+void \textbf{ set\+Last\+Version} (std\+::string last\+Version)
+\begin{DoxyCompactList}\small\item\em Methode pour changer la derniere version mise en place sur le reseau. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \textbf{ get\+Commands} () const
+\begin{DoxyCompactList}\small\item\em Methode pour avoir les commandes du moniteurs. \end{DoxyCompactList}\item 
+void \textbf{ set\+Commands} (std\+::vector$<$ std\+::string $>$ commands)
+\begin{DoxyCompactList}\small\item\em Methode pour changer le vecteur des commandes. \end{DoxyCompactList}\item 
+\textbf{ Monitor} \& \textbf{ operator=} (const \textbf{ Monitor} \&monitor)
+\begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}operateur \textquotesingle{}=\textquotesingle{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \textbf{ p\+\_\+name}
+\begin{DoxyCompactList}\small\item\em Variable du nom du moniteur. \end{DoxyCompactList}\item 
+std\+::string \textbf{ p\+\_\+functionnal\+Chain}
+\begin{DoxyCompactList}\small\item\em Variable de la chaine fonctionnelle. \end{DoxyCompactList}\item 
+std\+::string \textbf{ p\+\_\+machine}
+\begin{DoxyCompactList}\small\item\em Variable du nom de la machine. \end{DoxyCompactList}\item 
+std\+::string \textbf{ p\+\_\+version}
+\begin{DoxyCompactList}\small\item\em Variable pour la version actuelle du moniteur. \end{DoxyCompactList}\item 
+std\+::string \textbf{ p\+\_\+last\+Version}
+\item 
+std\+::vector$<$ std\+::string $>$ \textbf{ p\+\_\+vector\+Commands}
+\begin{DoxyCompactList}\small\item\em Variable de vecteur des commandes du moniteurs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Classe representant un moniteur. 
+
+Classe represant un moniteur Possede un nom, une cha�ne fonctionnelle, une machine, et une version. 
+
+Définition à la ligne 11 du fichier Monitor.\+h.
+
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\label{class_monitor_a639d27b16055d8681c2015d00ea083d8}} 
+\index{Monitor@{Monitor}!Monitor@{Monitor}}
+\index{Monitor@{Monitor}!Monitor@{Monitor}}
+\doxysubsubsection{Monitor()\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Monitor\+::\+Monitor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+
+
+Définition à la ligne 6 du fichier Monitor.\+cpp.
+
+\mbox{\label{class_monitor_ad8a012fdae77bc15001ca4f3b777355c}} 
+\index{Monitor@{Monitor}!Monitor@{Monitor}}
+\index{Monitor@{Monitor}!Monitor@{Monitor}}
+\doxysubsubsection{Monitor()\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Monitor\+::\+Monitor (\begin{DoxyParamCaption}\item[{const \textbf{ Monitor} \&}]{monitor }\end{DoxyParamCaption})}
+
+
+
+Constrcuteur de recopie. 
+
+Constructeur de recopie.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em monitor} & (const \doxyref{Monitor}{p.}{class_monitor}\&) \+: Moniteur a recopier \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 19 du fichier Monitor.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_monitor_ad8a012fdae77bc15001ca4f3b777355c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_monitor_a23e61f5960078cfea3709b087cf5ed58}} 
+\index{Monitor@{Monitor}!Monitor@{Monitor}}
+\index{Monitor@{Monitor}!Monitor@{Monitor}}
+\doxysubsubsection{Monitor()\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Monitor\+::\+Monitor (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{functionnal\+Chain,  }\item[{std\+::string}]{machine,  }\item[{std\+::string}]{version,  }\item[{std\+::string}]{last\+Version }\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em name} & (std\+::string) \+: Nom du moniteur \\
+\hline
+{\em functionnal\+Chain} & (std\+::string) \+: Chaine fonctionnelle du moniteur \\
+\hline
+{\em machine} & (std\+::string) \+: Machine ou est le moniteur \\
+\hline
+{\em version} & (std\+::string) \+: Version du moniteur \\
+\hline
+{\em last\+Version} & (std\+::string) \+: Derniere version du moniteur \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 37 du fichier Monitor.\+cpp.
+
+\mbox{\label{class_monitor_a64aba8195effc068092ddea5a71e8176}} 
+\index{Monitor@{Monitor}!````~Monitor@{$\sim$Monitor}}
+\index{````~Monitor@{$\sim$Monitor}!Monitor@{Monitor}}
+\doxysubsubsection{$\sim$Monitor()}
+{\footnotesize\ttfamily Monitor\+::$\sim$\+Monitor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur. 
+
+
+
+Définition à la ligne 48 du fichier Monitor.\+cpp.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\label{class_monitor_a916e72905c7bd8035dfcc620299dcbc0}} 
+\index{Monitor@{Monitor}!getCommands@{getCommands}}
+\index{getCommands@{getCommands}!Monitor@{Monitor}}
+\doxysubsubsection{getCommands()}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Monitor\+::get\+Commands (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Methode pour avoir les commandes du moniteurs. 
+
+\begin{DoxyReturn}{Renvoie}
+(std\+::vector$<$std\+::string$>$) \+: Vecteur des commandes du moniteur 
+\end{DoxyReturn}
+
+
+Définition à la ligne 145 du fichier Monitor.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_monitor_a916e72905c7bd8035dfcc620299dcbc0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_monitor_aff98d1684b4f3c8819fb80c75db29f75}} 
+\index{Monitor@{Monitor}!getFunctionnalChain@{getFunctionnalChain}}
+\index{getFunctionnalChain@{getFunctionnalChain}!Monitor@{Monitor}}
+\doxysubsubsection{getFunctionnalChain()}
+{\footnotesize\ttfamily std\+::string Monitor\+::get\+Functionnal\+Chain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Methode pour avoir la chaine fonctionnelle. 
+
+\begin{DoxyReturn}{Renvoie}
+(std\+::string) \+: Chaine Fonctionnelle 
+\end{DoxyReturn}
+
+
+Définition à la ligne 74 du fichier Monitor.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_monitor_aff98d1684b4f3c8819fb80c75db29f75_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_monitor_ae99af775245e21e7452b6d1a1c92e157}} 
+\index{Monitor@{Monitor}!getLastVersion@{getLastVersion}}
+\index{getLastVersion@{getLastVersion}!Monitor@{Monitor}}
+\doxysubsubsection{getLastVersion()}
+{\footnotesize\ttfamily std\+::string Monitor\+::get\+Last\+Version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Methode pour obtenir la derniere version mise sur le reseau. 
+
+
+
+Définition à la ligne 127 du fichier Monitor.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_monitor_ae99af775245e21e7452b6d1a1c92e157_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_monitor_a9a1b488ed85218ad7805b58ffb146a13}} 
+\index{Monitor@{Monitor}!getMachine@{getMachine}}
+\index{getMachine@{getMachine}!Monitor@{Monitor}}
+\doxysubsubsection{getMachine()}
+{\footnotesize\ttfamily std\+::string Monitor\+::get\+Machine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Methode pour avoir la machine. 
+
+\begin{DoxyReturn}{Renvoie}
+(std\+::string) \+: Machine ou est le moniteur 
+\end{DoxyReturn}
+
+
+Définition à la ligne 92 du fichier Monitor.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_monitor_a9a1b488ed85218ad7805b58ffb146a13_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_monitor_a90e7ad6225fe8056e4089b21d58a6d19}} 
+\index{Monitor@{Monitor}!getName@{getName}}
+\index{getName@{getName}!Monitor@{Monitor}}
+\doxysubsubsection{getName()}
+{\footnotesize\ttfamily std\+::string Monitor\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Methode pour avoir le nom. 
+
+\begin{DoxyReturn}{Renvoie}
+(std\+::string) \+: Nom du moniteur 
+\end{DoxyReturn}
+
+
+Définition à la ligne 56 du fichier Monitor.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_monitor_a90e7ad6225fe8056e4089b21d58a6d19_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_monitor_ad182a9cf2ada7cffa660c5bba6e06258}} 
+\index{Monitor@{Monitor}!getVersion@{getVersion}}
+\index{getVersion@{getVersion}!Monitor@{Monitor}}
+\doxysubsubsection{getVersion()}
+{\footnotesize\ttfamily std\+::string Monitor\+::get\+Version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Methode pour obtenir la version actuelle. 
+
+\begin{DoxyReturn}{Renvoie}
+(std\+::string) \+: Version actuelle 
+\end{DoxyReturn}
+
+
+Définition à la ligne 110 du fichier Monitor.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_monitor_ad182a9cf2ada7cffa660c5bba6e06258_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_monitor_a9a50cfe60c1fe615fb711c2c6e35463c}} 
+\index{Monitor@{Monitor}!operator=@{operator=}}
+\index{operator=@{operator=}!Monitor@{Monitor}}
+\doxysubsubsection{operator=()}
+{\footnotesize\ttfamily \textbf{ Monitor} \& Monitor\+::operator= (\begin{DoxyParamCaption}\item[{const \textbf{ Monitor} \&}]{monitor }\end{DoxyParamCaption})}
+
+
+
+Surcharge de l\textquotesingle{}operateur \textquotesingle{}=\textquotesingle{}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em monitor} & (const \doxyref{Monitor}{p.}{class_monitor}\&) \+: Moniteur a recopier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+(\doxyref{Monitor}{p.}{class_monitor}\&) = Nouveau moniteur 
+\end{DoxyReturn}
+
+
+Définition à la ligne 164 du fichier Monitor.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_monitor_a9a50cfe60c1fe615fb711c2c6e35463c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_monitor_a8264ef7cff5f94ee4e5600a755a88d6d}} 
+\index{Monitor@{Monitor}!setCommands@{setCommands}}
+\index{setCommands@{setCommands}!Monitor@{Monitor}}
+\doxysubsubsection{setCommands()}
+{\footnotesize\ttfamily void Monitor\+::set\+Commands (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{commands }\end{DoxyParamCaption})}
+
+
+
+Methode pour changer le vecteur des commandes. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em commands} & (std\+::vector$<$std\+::string$>$) \+: Vecteur des commandes \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 154 du fichier Monitor.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_monitor_a8264ef7cff5f94ee4e5600a755a88d6d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_monitor_a2ba211ac5691a24ec4a5f0d1e2e71722}} 
+\index{Monitor@{Monitor}!setFunctionnalChain@{setFunctionnalChain}}
+\index{setFunctionnalChain@{setFunctionnalChain}!Monitor@{Monitor}}
+\doxysubsubsection{setFunctionnalChain()}
+{\footnotesize\ttfamily void Monitor\+::set\+Functionnal\+Chain (\begin{DoxyParamCaption}\item[{std\+::string}]{functionnal\+Chain }\end{DoxyParamCaption})}
+
+
+
+Methode pour changer la chaine fonctionnelle. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em functionnal\+Chain} & (std\+::string) \+: Chaine fonctionnelle \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 83 du fichier Monitor.\+cpp.
+
+\mbox{\label{class_monitor_a8aea20b5f269dbd947d75b5299d1942c}} 
+\index{Monitor@{Monitor}!setLastVersion@{setLastVersion}}
+\index{setLastVersion@{setLastVersion}!Monitor@{Monitor}}
+\doxysubsubsection{setLastVersion()}
+{\footnotesize\ttfamily void Monitor\+::set\+Last\+Version (\begin{DoxyParamCaption}\item[{std\+::string}]{last\+Version }\end{DoxyParamCaption})}
+
+
+
+Methode pour changer la derniere version mise en place sur le reseau. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em last\+Version} & (std\+::string) \+: Derniere version sortie \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 136 du fichier Monitor.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_monitor_a8aea20b5f269dbd947d75b5299d1942c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_monitor_acfbb0abe4ec9e0105405b48e0ce047ac}} 
+\index{Monitor@{Monitor}!setMachine@{setMachine}}
+\index{setMachine@{setMachine}!Monitor@{Monitor}}
+\doxysubsubsection{setMachine()}
+{\footnotesize\ttfamily void Monitor\+::set\+Machine (\begin{DoxyParamCaption}\item[{std\+::string}]{machine }\end{DoxyParamCaption})}
+
+
+
+Methode pour changer la machine. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em machine} & (std\+::string) \+: Machine ou est le moniteur \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 101 du fichier Monitor.\+cpp.
+
+\mbox{\label{class_monitor_a18f004269ab372cc1533d257f6097ec4}} 
+\index{Monitor@{Monitor}!setName@{setName}}
+\index{setName@{setName}!Monitor@{Monitor}}
+\doxysubsubsection{setName()}
+{\footnotesize\ttfamily void Monitor\+::set\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Methode pour changer le nom. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em name} & (std\+::string) \+: Nom du moniteur \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 65 du fichier Monitor.\+cpp.
+
+\mbox{\label{class_monitor_a8c2adcbf24523b7f9779564e5bcbe6b0}} 
+\index{Monitor@{Monitor}!setVersion@{setVersion}}
+\index{setVersion@{setVersion}!Monitor@{Monitor}}
+\doxysubsubsection{setVersion()}
+{\footnotesize\ttfamily void Monitor\+::set\+Version (\begin{DoxyParamCaption}\item[{std\+::string}]{version }\end{DoxyParamCaption})}
+
+
+
+Methode pour changer la version du moniteur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em version} & (std\+::string) \+: Version du moniteur \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 119 du fichier Monitor.\+cpp.
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\label{class_monitor_ae797223d830127caeaf48fead7645712}} 
+\index{Monitor@{Monitor}!p\_functionnalChain@{p\_functionnalChain}}
+\index{p\_functionnalChain@{p\_functionnalChain}!Monitor@{Monitor}}
+\doxysubsubsection{p\_functionnalChain}
+{\footnotesize\ttfamily std\+::string Monitor\+::p\+\_\+functionnal\+Chain\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable de la chaine fonctionnelle. 
+
+
+
+Définition à la ligne 18 du fichier Monitor.\+h.
+
+\mbox{\label{class_monitor_a80da18243c19866e6e942d1f77b0fa8f}} 
+\index{Monitor@{Monitor}!p\_lastVersion@{p\_lastVersion}}
+\index{p\_lastVersion@{p\_lastVersion}!Monitor@{Monitor}}
+\doxysubsubsection{p\_lastVersion}
+{\footnotesize\ttfamily std\+::string Monitor\+::p\+\_\+last\+Version\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Définition à la ligne 26 du fichier Monitor.\+h.
+
+\mbox{\label{class_monitor_a11ef8e567c4d7cad4b20f1fff6b51b80}} 
+\index{Monitor@{Monitor}!p\_machine@{p\_machine}}
+\index{p\_machine@{p\_machine}!Monitor@{Monitor}}
+\doxysubsubsection{p\_machine}
+{\footnotesize\ttfamily std\+::string Monitor\+::p\+\_\+machine\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable du nom de la machine. 
+
+
+
+Définition à la ligne 21 du fichier Monitor.\+h.
+
+\mbox{\label{class_monitor_aed1642beac5cc90b06b69331a8b50578}} 
+\index{Monitor@{Monitor}!p\_name@{p\_name}}
+\index{p\_name@{p\_name}!Monitor@{Monitor}}
+\doxysubsubsection{p\_name}
+{\footnotesize\ttfamily std\+::string Monitor\+::p\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable du nom du moniteur. 
+
+
+
+Définition à la ligne 15 du fichier Monitor.\+h.
+
+\mbox{\label{class_monitor_a1d93c1617579d34203dbfa89544d4c47}} 
+\index{Monitor@{Monitor}!p\_vectorCommands@{p\_vectorCommands}}
+\index{p\_vectorCommands@{p\_vectorCommands}!Monitor@{Monitor}}
+\doxysubsubsection{p\_vectorCommands}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Monitor\+::p\+\_\+vector\+Commands\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable de vecteur des commandes du moniteurs. 
+
+
+
+Définition à la ligne 29 du fichier Monitor.\+h.
+
+\mbox{\label{class_monitor_a242fd0788174c4178f8d3cc93a337e08}} 
+\index{Monitor@{Monitor}!p\_version@{p\_version}}
+\index{p\_version@{p\_version}!Monitor@{Monitor}}
+\doxysubsubsection{p\_version}
+{\footnotesize\ttfamily std\+::string Monitor\+::p\+\_\+version\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour la version actuelle du moniteur. 
+
+
+
+Définition à la ligne 24 du fichier Monitor.\+h.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Modeles/\textbf{ Monitor.\+h}\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Modeles/\textbf{ Monitor.\+cpp}\end{DoxyCompactItemize}

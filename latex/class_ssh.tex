@@ -1,0 +1,232 @@
+\doxysection{Référence de la classe Ssh}
+\label{class_ssh}\index{Ssh@{Ssh}}
+
+
+Classe pour faire les operations ssh.  
+
+
+
+
+{\ttfamily \#include $<$Ssh.\+h$>$}
+
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Ssh} (std\+::string host)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+Ssh} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+void \textbf{ connect} (std\+::string user, std\+::string password)
+\begin{DoxyCompactList}\small\item\em Methode de connexion. \end{DoxyCompactList}\item 
+\textbf{ My\+Result}$<$ std\+::string $>$ \textbf{ execute\+Command} (std\+::string command)
+\begin{DoxyCompactList}\small\item\em Methode d\textquotesingle{}execution des commandes. \end{DoxyCompactList}\item 
+bool \textbf{ is\+Connect} ()
+\begin{DoxyCompactList}\small\item\em Methode pour savoir si la connexion est etablie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ p\+\_\+port}
+\begin{DoxyCompactList}\small\item\em Variable pour le port de connexion. \end{DoxyCompactList}\item 
+int \textbf{ p\+\_\+verbosity}
+\begin{DoxyCompactList}\small\item\em Option necessaire a la connexion. \end{DoxyCompactList}\item 
+ssh\+::\+Session \textbf{ p\+\_\+session}
+\begin{DoxyCompactList}\small\item\em Variable session pour faire la connexion. \end{DoxyCompactList}\item 
+bool \textbf{ p\+\_\+connect}
+\begin{DoxyCompactList}\small\item\em Variable pour savoir si on est connecte. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Classe pour faire les operations ssh. 
+
+Classe faisant les operations ssh. Elle permet de se connecter et d\textquotesingle{}executer des commandes. Elle utilise la bibliotheque externe libssh. 
+
+Définition à la ligne 15 du fichier Ssh.\+h.
+
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\label{class_ssh_a75e7de87df63072bee33a43158ff8309}} 
+\index{Ssh@{Ssh}!Ssh@{Ssh}}
+\index{Ssh@{Ssh}!Ssh@{Ssh}}
+\doxysubsubsection{Ssh()}
+{\footnotesize\ttfamily Ssh\+::\+Ssh (\begin{DoxyParamCaption}\item[{std\+::string}]{host }\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+Initialise les options de la session ssh (V\+E\+R\+B\+O\+S\+I\+TY, P\+O\+RT, H\+O\+ST) 
+\begin{DoxyParams}{Paramètres}
+{\em host} & (std\+::string) \+: Host de connexion \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 8 du fichier Ssh.\+cpp.
+
+\mbox{\label{class_ssh_a225ee517b0f059d66bb6df554493a0dc}} 
+\index{Ssh@{Ssh}!````~Ssh@{$\sim$Ssh}}
+\index{````~Ssh@{$\sim$Ssh}!Ssh@{Ssh}}
+\doxysubsubsection{$\sim$Ssh()}
+{\footnotesize\ttfamily Ssh\+::$\sim$\+Ssh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur. 
+
+Deconnecte la session du serveur 
+
+Définition à la ligne 22 du fichier Ssh.\+cpp.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\label{class_ssh_aae2f7bfe2d999b5353175009059640a0}} 
+\index{Ssh@{Ssh}!connect@{connect}}
+\index{connect@{connect}!Ssh@{Ssh}}
+\doxysubsubsection{connect()}
+{\footnotesize\ttfamily void Ssh\+::connect (\begin{DoxyParamCaption}\item[{std\+::string}]{user,  }\item[{std\+::string}]{password }\end{DoxyParamCaption})}
+
+
+
+Methode de connexion. 
+
+Va regarder si le nom d\textquotesingle{}utilisateur et le mot de passe sont les bons 
+\begin{DoxyParams}{Paramètres}
+{\em user} & (std\+::string) \+: Nom de l\textquotesingle{}utilisateur \\
+\hline
+{\em password} & (std\+::string) \+: Mot de passe de l\textquotesingle{}utilisateur \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 33 du fichier Ssh.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_ssh_aae2f7bfe2d999b5353175009059640a0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_ssh_a12e9a8f33999fa1cd5b6578d34d69ab3}} 
+\index{Ssh@{Ssh}!executeCommand@{executeCommand}}
+\index{executeCommand@{executeCommand}!Ssh@{Ssh}}
+\doxysubsubsection{executeCommand()}
+{\footnotesize\ttfamily \textbf{ My\+Result}$<$ std\+::string $>$ Ssh\+::execute\+Command (\begin{DoxyParamCaption}\item[{std\+::string}]{command }\end{DoxyParamCaption})}
+
+
+
+Methode d\textquotesingle{}execution des commandes. 
+
+Cree un objet channel qui va servir a envoyer la requete, execute la commande, puis va essayer de recuperer les informations qu\textquotesingle{}elle retourne s\textquotesingle{}il y en a. 
+\begin{DoxyParams}{Paramètres}
+{\em command} & (std\+::string) \+: Commande a executer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\doxyref{My\+Result}{p.}{class_my_result} \+: Resultat de l\textquotesingle{}execution 
+\end{DoxyReturn}
+
+
+Définition à la ligne 67 du fichier Ssh.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_ssh_a12e9a8f33999fa1cd5b6578d34d69ab3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_ssh_ae5262daa3b98d1d19df5f57b2102cce6}} 
+\index{Ssh@{Ssh}!isConnect@{isConnect}}
+\index{isConnect@{isConnect}!Ssh@{Ssh}}
+\doxysubsubsection{isConnect()}
+{\footnotesize\ttfamily bool Ssh\+::is\+Connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Methode pour savoir si la connexion est etablie. 
+
+\begin{DoxyReturn}{Renvoie}
+bool \+: Pour savoir s\textquotesingle{}il y a une connexion
+\end{DoxyReturn}
+Retourne l\textquotesingle{}attribut p\+\_\+connect \begin{DoxyReturn}{Renvoie}
+bool \+: Pour savoir s\textquotesingle{}il y a une connexion 
+\end{DoxyReturn}
+
+
+Définition à la ligne 180 du fichier Ssh.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_ssh_ae5262daa3b98d1d19df5f57b2102cce6_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\label{class_ssh_a4bbc908a273e03aa4bf9341e2bd7ada0}} 
+\index{Ssh@{Ssh}!p\_connect@{p\_connect}}
+\index{p\_connect@{p\_connect}!Ssh@{Ssh}}
+\doxysubsubsection{p\_connect}
+{\footnotesize\ttfamily bool Ssh\+::p\+\_\+connect\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour savoir si on est connecte. 
+
+
+
+Définition à la ligne 28 du fichier Ssh.\+h.
+
+\mbox{\label{class_ssh_a783920de27f52b899fbe6fc9e5c1d3ac}} 
+\index{Ssh@{Ssh}!p\_port@{p\_port}}
+\index{p\_port@{p\_port}!Ssh@{Ssh}}
+\doxysubsubsection{p\_port}
+{\footnotesize\ttfamily int Ssh\+::p\+\_\+port\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour le port de connexion. 
+
+
+
+Définition à la ligne 19 du fichier Ssh.\+h.
+
+\mbox{\label{class_ssh_a26cec4d27fa093ae5f566f96701bf6c0}} 
+\index{Ssh@{Ssh}!p\_session@{p\_session}}
+\index{p\_session@{p\_session}!Ssh@{Ssh}}
+\doxysubsubsection{p\_session}
+{\footnotesize\ttfamily ssh\+::\+Session Ssh\+::p\+\_\+session\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable session pour faire la connexion. 
+
+
+
+Définition à la ligne 25 du fichier Ssh.\+h.
+
+\mbox{\label{class_ssh_a87b574b5b2d81c47b7186777a1cbeef1}} 
+\index{Ssh@{Ssh}!p\_verbosity@{p\_verbosity}}
+\index{p\_verbosity@{p\_verbosity}!Ssh@{Ssh}}
+\doxysubsubsection{p\_verbosity}
+{\footnotesize\ttfamily int Ssh\+::p\+\_\+verbosity\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Option necessaire a la connexion. 
+
+
+
+Définition à la ligne 22 du fichier Ssh.\+h.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Modeles/\textbf{ Ssh.\+h}\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Modeles/\textbf{ Ssh.\+cpp}\end{DoxyCompactItemize}

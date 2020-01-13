@@ -1,0 +1,413 @@
+\doxysection{Référence de la classe Chains\+View}
+\label{class_chains_view}\index{ChainsView@{ChainsView}}
+
+
+Classe pour la vue avec la liste des cha�nes fonctionnelles.  
+
+
+
+
+{\ttfamily \#include $<$Chains\+View.\+h$>$}
+
+
+
+Graphe d\textquotesingle{}héritage de Chains\+View\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{class_chains_view__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de Chains\+View\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{class_chains_view__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Chains\+View} (Q\+Widget $\ast$parent, std\+::string machine, std\+::string user, std\+::string password)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+Chains\+View} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+void \textbf{ set\+Informations} (\textbf{ Manager\+Monitor} $\ast$man\+Mon)
+\begin{DoxyCompactList}\small\item\em Methode pour fixer les informations et les afficher dans la table. \end{DoxyCompactList}\item 
+void \textbf{ show\+Chain} (std\+::string chain)
+\begin{DoxyCompactList}\small\item\em Methode pour montrer une chaine specifique. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ resize\+Event} (Q\+Resize\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em Methode appelee au changement de taille de la fenetre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Connecteurs privés}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ p\+Slot\+\_\+show\+Exec\+Verif} ()
+\begin{DoxyCompactList}\small\item\em Methode pour montrer les informations d\textquotesingle{}une chaine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ close\+Event} (Q\+Close\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em Methode appelee a la fermeture. \end{DoxyCompactList}\item 
+void \textbf{ p\+\_\+init} ()
+\begin{DoxyCompactList}\small\item\em Methode d\textquotesingle{}initialisation des variables des objets. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Table\+View $\ast$ \textbf{ p\+\_\+chains}
+\begin{DoxyCompactList}\small\item\em Variable pour la liste des chaines. \end{DoxyCompactList}\item 
+Q\+Push\+Button $\ast$ \textbf{ p\+\_\+button}
+\begin{DoxyCompactList}\small\item\em Variable pour le bouton pour montrer les informations. \end{DoxyCompactList}\item 
+\textbf{ Onglet\+View} $\ast$ \textbf{ p\+\_\+onglets}
+\begin{DoxyCompactList}\small\item\em Variable pour les onglets. \end{DoxyCompactList}\item 
+Q\+Scroll\+Area $\ast$ \textbf{ p\+\_\+scroll}
+\begin{DoxyCompactList}\small\item\em Variable pour permettre le scroll. \end{DoxyCompactList}\item 
+std\+::string \textbf{ p\+\_\+user}
+\begin{DoxyCompactList}\small\item\em Variable pour l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+std\+::string \textbf{ p\+\_\+password}
+\begin{DoxyCompactList}\small\item\em Variable pour le mot de passe. \end{DoxyCompactList}\item 
+std\+::string \textbf{ p\+\_\+machine}
+\begin{DoxyCompactList}\small\item\em Variable pour la machine. \end{DoxyCompactList}\item 
+\textbf{ Manager\+Monitor} $\ast$ \textbf{ p\+\_\+man\+Mon}
+\begin{DoxyCompactList}\small\item\em Variable du gestionnaire de logiciel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Classe pour la vue avec la liste des cha�nes fonctionnelles. 
+
+Vue ou sont affichees toutes les cha�nes fonctionnelles 
+
+Définition à la ligne 21 du fichier Chains\+View.\+h.
+
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\label{class_chains_view_ac9beaecfac4b87f7bfe4363a14d74eb1}} 
+\index{ChainsView@{ChainsView}!ChainsView@{ChainsView}}
+\index{ChainsView@{ChainsView}!ChainsView@{ChainsView}}
+\doxysubsubsection{ChainsView()}
+{\footnotesize\ttfamily Chains\+View\+::\+Chains\+View (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent,  }\item[{std\+::string}]{machine,  }\item[{std\+::string}]{user,  }\item[{std\+::string}]{password }\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & (Q\+Widget$\ast$) \+: Parent \\
+\hline
+{\em machine} & (std\+::string) \+: Machine \\
+\hline
+{\em user} & (std\+::string) \+: Utilisateur \\
+\hline
+{\em password} & (std\+::string) \+: Mot de passe \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 10 du fichier Chains\+View.\+cpp.
+
+\mbox{\label{class_chains_view_a1d8b4cccc7511d33f13235a06ba2e359}} 
+\index{ChainsView@{ChainsView}!````~ChainsView@{$\sim$ChainsView}}
+\index{````~ChainsView@{$\sim$ChainsView}!ChainsView@{ChainsView}}
+\doxysubsubsection{$\sim$ChainsView()}
+{\footnotesize\ttfamily Chains\+View\+::$\sim$\+Chains\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur. 
+
+
+
+Définition à la ligne 30 du fichier Chains\+View.\+cpp.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\label{class_chains_view_a3e504a61a36e5a6946317ff59c0169b7}} 
+\index{ChainsView@{ChainsView}!closeEvent@{closeEvent}}
+\index{closeEvent@{closeEvent}!ChainsView@{ChainsView}}
+\doxysubsubsection{closeEvent()}
+{\footnotesize\ttfamily void Chains\+View\+::close\+Event (\begin{DoxyParamCaption}\item[{Q\+Close\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Methode appelee a la fermeture. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em event} & (Q\+Close\+Event$\ast$) \+: Evenement \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 40 du fichier Chains\+View.\+cpp.
+
+\mbox{\label{class_chains_view_a3369384e5bea5acf0a959b31f6722e37}} 
+\index{ChainsView@{ChainsView}!p\_init@{p\_init}}
+\index{p\_init@{p\_init}!ChainsView@{ChainsView}}
+\doxysubsubsection{p\_init()}
+{\footnotesize\ttfamily void Chains\+View\+::p\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Methode d\textquotesingle{}initialisation des variables des objets. 
+
+
+
+Définition à la ligne 59 du fichier Chains\+View.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chains_view_a3369384e5bea5acf0a959b31f6722e37_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chains_view_a3369384e5bea5acf0a959b31f6722e37_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_chains_view_afc80de3b2542641f662c67e2a34d824b}} 
+\index{ChainsView@{ChainsView}!pSlot\_showExecVerif@{pSlot\_showExecVerif}}
+\index{pSlot\_showExecVerif@{pSlot\_showExecVerif}!ChainsView@{ChainsView}}
+\doxysubsubsection{pSlot\_showExecVerif}
+{\footnotesize\ttfamily void Chains\+View\+::p\+Slot\+\_\+show\+Exec\+Verif (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Methode pour montrer les informations d\textquotesingle{}une chaine. 
+
+Methode pour afficher les problemes de la commande execverif sur une chaine fonctionnelle preselectionnee.
+
+Parse le resultat de la commande pour savoir les erreurs 
+
+Définition à la ligne 92 du fichier Chains\+View.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chains_view_afc80de3b2542641f662c67e2a34d824b_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chains_view_afc80de3b2542641f662c67e2a34d824b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_chains_view_a1b76e1c8b4878edd56d4e202df553042}} 
+\index{ChainsView@{ChainsView}!resizeEvent@{resizeEvent}}
+\index{resizeEvent@{resizeEvent}!ChainsView@{ChainsView}}
+\doxysubsubsection{resizeEvent()}
+{\footnotesize\ttfamily void Chains\+View\+::resize\+Event (\begin{DoxyParamCaption}\item[{Q\+Resize\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Methode appelee au changement de taille de la fenetre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em event} & (Q\+Resize\+Event$\ast$) \+: Evenement de changement de taille \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 49 du fichier Chains\+View.\+cpp.
+
+\mbox{\label{class_chains_view_a3c159c34c87e661e4c58f516910ee929}} 
+\index{ChainsView@{ChainsView}!setInformations@{setInformations}}
+\index{setInformations@{setInformations}!ChainsView@{ChainsView}}
+\doxysubsubsection{setInformations()}
+{\footnotesize\ttfamily void Chains\+View\+::set\+Informations (\begin{DoxyParamCaption}\item[{\textbf{ Manager\+Monitor} $\ast$}]{man\+Mon }\end{DoxyParamCaption})}
+
+
+
+Methode pour fixer les informations et les afficher dans la table. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em man\+Mon} & (Manager\+Monitor$\ast$) \+: Manageur avec tous les moniteurs \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 120 du fichier Chains\+View.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chains_view_a3c159c34c87e661e4c58f516910ee929_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chains_view_a3c159c34c87e661e4c58f516910ee929_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_chains_view_a43ec14f34a433c7c3a7accec9e3339fa}} 
+\index{ChainsView@{ChainsView}!showChain@{showChain}}
+\index{showChain@{showChain}!ChainsView@{ChainsView}}
+\doxysubsubsection{showChain()}
+{\footnotesize\ttfamily void Chains\+View\+::show\+Chain (\begin{DoxyParamCaption}\item[{std\+::string}]{chain }\end{DoxyParamCaption})}
+
+
+
+Methode pour montrer une chaine specifique. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em chain} & (std\+::string) \+: Chaine fonctionnelle \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 130 du fichier Chains\+View.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chains_view_a43ec14f34a433c7c3a7accec9e3339fa_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chains_view_a43ec14f34a433c7c3a7accec9e3339fa_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\label{class_chains_view_aab353d3b4ec3dfc20bb1363bc0980630}} 
+\index{ChainsView@{ChainsView}!p\_button@{p\_button}}
+\index{p\_button@{p\_button}!ChainsView@{ChainsView}}
+\doxysubsubsection{p\_button}
+{\footnotesize\ttfamily Q\+Push\+Button$\ast$ Chains\+View\+::p\+\_\+button\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour le bouton pour montrer les informations. 
+
+
+
+Définition à la ligne 31 du fichier Chains\+View.\+h.
+
+\mbox{\label{class_chains_view_a12afa7ae1b474bb8d048d86c8bd88faf}} 
+\index{ChainsView@{ChainsView}!p\_chains@{p\_chains}}
+\index{p\_chains@{p\_chains}!ChainsView@{ChainsView}}
+\doxysubsubsection{p\_chains}
+{\footnotesize\ttfamily Q\+Table\+View$\ast$ Chains\+View\+::p\+\_\+chains\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour la liste des chaines. 
+
+
+
+Définition à la ligne 28 du fichier Chains\+View.\+h.
+
+\mbox{\label{class_chains_view_ad8122fe23e595aee1beac4911ea94281}} 
+\index{ChainsView@{ChainsView}!p\_machine@{p\_machine}}
+\index{p\_machine@{p\_machine}!ChainsView@{ChainsView}}
+\doxysubsubsection{p\_machine}
+{\footnotesize\ttfamily std\+::string Chains\+View\+::p\+\_\+machine\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour la machine. 
+
+
+
+Définition à la ligne 46 du fichier Chains\+View.\+h.
+
+\mbox{\label{class_chains_view_a966171f20e622dcde283dc514a0d8567}} 
+\index{ChainsView@{ChainsView}!p\_manMon@{p\_manMon}}
+\index{p\_manMon@{p\_manMon}!ChainsView@{ChainsView}}
+\doxysubsubsection{p\_manMon}
+{\footnotesize\ttfamily \textbf{ Manager\+Monitor}$\ast$ Chains\+View\+::p\+\_\+man\+Mon\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable du gestionnaire de logiciel. 
+
+
+
+Définition à la ligne 49 du fichier Chains\+View.\+h.
+
+\mbox{\label{class_chains_view_a7cae4558237663c3cdc70af9bae1fd30}} 
+\index{ChainsView@{ChainsView}!p\_onglets@{p\_onglets}}
+\index{p\_onglets@{p\_onglets}!ChainsView@{ChainsView}}
+\doxysubsubsection{p\_onglets}
+{\footnotesize\ttfamily \textbf{ Onglet\+View}$\ast$ Chains\+View\+::p\+\_\+onglets\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour les onglets. 
+
+
+
+Définition à la ligne 34 du fichier Chains\+View.\+h.
+
+\mbox{\label{class_chains_view_afabcb8579b4c3855abd481a49a0edbdb}} 
+\index{ChainsView@{ChainsView}!p\_password@{p\_password}}
+\index{p\_password@{p\_password}!ChainsView@{ChainsView}}
+\doxysubsubsection{p\_password}
+{\footnotesize\ttfamily std\+::string Chains\+View\+::p\+\_\+password\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour le mot de passe. 
+
+
+
+Définition à la ligne 43 du fichier Chains\+View.\+h.
+
+\mbox{\label{class_chains_view_a867010071a75d623bd27dae040601d69}} 
+\index{ChainsView@{ChainsView}!p\_scroll@{p\_scroll}}
+\index{p\_scroll@{p\_scroll}!ChainsView@{ChainsView}}
+\doxysubsubsection{p\_scroll}
+{\footnotesize\ttfamily Q\+Scroll\+Area$\ast$ Chains\+View\+::p\+\_\+scroll\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour permettre le scroll. 
+
+
+
+Définition à la ligne 37 du fichier Chains\+View.\+h.
+
+\mbox{\label{class_chains_view_a4f12b992869a67a4de8b5002f4acf041}} 
+\index{ChainsView@{ChainsView}!p\_user@{p\_user}}
+\index{p\_user@{p\_user}!ChainsView@{ChainsView}}
+\doxysubsubsection{p\_user}
+{\footnotesize\ttfamily std\+::string Chains\+View\+::p\+\_\+user\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour l\textquotesingle{}utilisateur. 
+
+
+
+Définition à la ligne 40 du fichier Chains\+View.\+h.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Vues/\textbf{ Chains\+View.\+h}\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Vues/\textbf{ Chains\+View.\+cpp}\end{DoxyCompactItemize}

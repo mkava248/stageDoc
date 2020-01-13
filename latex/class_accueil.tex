@@ -1,0 +1,572 @@
+\doxysection{Référence de la classe Accueil}
+\label{class_accueil}\index{Accueil@{Accueil}}
+
+
+Classe pour la vue \doxyref{Accueil}{p.}{class_accueil}.  
+
+
+
+
+{\ttfamily \#include $<$Accueil.\+h$>$}
+
+
+
+Graphe d\textquotesingle{}héritage de Accueil\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=135pt]{class_accueil__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de Accueil\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_accueil__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Accueil} (Q\+Widget $\ast$parent, std\+::string user, std\+::string password, \textbf{ Onglet\+View} $\ast$onglets)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+Accueil} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ resize\+Event} (Q\+Resize\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em Methode appelee au changement de taille de la fenetre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Connecteurs privés}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ p\+Slot\+\_\+get\+Machines\+List} ()
+\begin{DoxyCompactList}\small\item\em Methode pour avoir toutes les machines. \end{DoxyCompactList}\item 
+void \textbf{ p\+Slot\+\_\+advanced\+View} ()
+\begin{DoxyCompactList}\small\item\em Methode pour afficher la vue avancee. \end{DoxyCompactList}\item 
+void \textbf{ p\+Slot\+\_\+change\+Mode} ()
+\begin{DoxyCompactList}\small\item\em Methode appelee pour changer le mode. \end{DoxyCompactList}\item 
+void \textbf{ p\+Slot\+\_\+show\+Plateforme\+Informations} ()
+\begin{DoxyCompactList}\small\item\em Methode pour afficher la fenetre des informations. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ p\+\_\+init} ()
+\begin{DoxyCompactList}\small\item\em Methode d\textquotesingle{}initialisation des variables des objets. \end{DoxyCompactList}\item 
+void \textbf{ close\+Event} (Q\+Close\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em Methode appelee a la fermeture. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées statiques}
+\begin{DoxyCompactItemize}
+\item 
+static void \textbf{ p\+\_\+thread} (std\+::promise$<$ std\+::string $>$ \&\&promise, std\+::string name\+Monitor, std\+::string name\+Machine, std\+::string user, std\+::string password)
+\begin{DoxyCompactList}\small\item\em Methode appelee pour recuperer les commandes d\textquotesingle{}un moniteur par un thread. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Tree\+Widget $\ast$ \textbf{ p\+\_\+tree\+B\+SH}
+\begin{DoxyCompactList}\small\item\em Variable de l\textquotesingle{}arbre pour B\+SH. \end{DoxyCompactList}\item 
+Q\+Tree\+Widget $\ast$ \textbf{ p\+\_\+tree\+C\+LE}
+\begin{DoxyCompactList}\small\item\em Variable de l\textquotesingle{}arbre pour D\+A\+FF. \end{DoxyCompactList}\item 
+Q\+Tree\+Widget $\ast$ \textbf{ p\+\_\+tree\+Renault}
+\begin{DoxyCompactList}\small\item\em Variable de l\textquotesingle{}arbre pour Renault. \end{DoxyCompactList}\item 
+Q\+Label $\ast$ \textbf{ p\+\_\+label\+Logo\+B\+SH}
+\begin{DoxyCompactList}\small\item\em Variable pour le logo de B\+SH. \end{DoxyCompactList}\item 
+Q\+Label $\ast$ \textbf{ p\+\_\+label\+Logo\+C\+LE}
+\begin{DoxyCompactList}\small\item\em Variable pour le logo de D\+A\+FF. \end{DoxyCompactList}\item 
+Q\+Label $\ast$ \textbf{ p\+\_\+label\+Logo\+Renault}
+\begin{DoxyCompactList}\small\item\em Variable pour le logo de Renault. \end{DoxyCompactList}\item 
+Q\+Push\+Button $\ast$ \textbf{ p\+\_\+\+Machine\+B\+SH}
+\begin{DoxyCompactList}\small\item\em Variable du bouton pour B\+SH. \end{DoxyCompactList}\item 
+Q\+Push\+Button $\ast$ \textbf{ p\+\_\+\+Machine\+C\+LE}
+\begin{DoxyCompactList}\small\item\em Variable du bouton pour C\+LE. \end{DoxyCompactList}\item 
+Q\+Push\+Button $\ast$ \textbf{ p\+\_\+\+Machine\+Renault}
+\begin{DoxyCompactList}\small\item\em Variable du bouton pour Renault. \end{DoxyCompactList}\item 
+Q\+Label $\ast$ \textbf{ p\+\_\+link\+Manual}
+\begin{DoxyCompactList}\small\item\em Variable pour le manuel utilisateur. \end{DoxyCompactList}\item 
+\textbf{ Manager\+Logiciel} $\ast$ \textbf{ p\+\_\+man\+Log}
+\begin{DoxyCompactList}\small\item\em Variable pour la partie ssh. \end{DoxyCompactList}\item 
+\textbf{ Advanced\+View} $\ast$ \textbf{ p\+\_\+advanced\+Informations}
+\begin{DoxyCompactList}\small\item\em Variable de la fenetre de vue avancee. \end{DoxyCompactList}\item 
+std\+::string \textbf{ p\+\_\+user}
+\begin{DoxyCompactList}\small\item\em Variable du nom utilisateur. \end{DoxyCompactList}\item 
+std\+::string \textbf{ p\+\_\+password}
+\begin{DoxyCompactList}\small\item\em Variable du mot de passe. \end{DoxyCompactList}\item 
+\textbf{ Onglet\+View} $\ast$ \textbf{ p\+\_\+onglet}
+\begin{DoxyCompactList}\small\item\em Variable pour les onglets. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Classe pour la vue \doxyref{Accueil}{p.}{class_accueil}. 
+
+Vue ou sont affichees les informations de bases 
+
+Définition à la ligne 29 du fichier Accueil.\+h.
+
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\label{class_accueil_aa97fe5d7b58ee27095b433e515b4d7ae}} 
+\index{Accueil@{Accueil}!Accueil@{Accueil}}
+\index{Accueil@{Accueil}!Accueil@{Accueil}}
+\doxysubsubsection{Accueil()}
+{\footnotesize\ttfamily Accueil\+::\+Accueil (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent,  }\item[{std\+::string}]{user,  }\item[{std\+::string}]{password,  }\item[{\textbf{ Onglet\+View} $\ast$}]{onglets }\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & (Q\+Widget$\ast$) \+: Parent de la fenetre \\
+\hline
+{\em user} & (std\+::string) \+: Utilisateur \\
+\hline
+{\em password} & (std\+::string) \+: Mot de passe \\
+\hline
+{\em onglets} & (Onglet\+View$\ast$) \+: Fenetre des onglets \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 10 du fichier Accueil.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_accueil_aa97fe5d7b58ee27095b433e515b4d7ae_cgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_accueil_a42a925af8942c76a73957ac9abcd45d7}} 
+\index{Accueil@{Accueil}!````~Accueil@{$\sim$Accueil}}
+\index{````~Accueil@{$\sim$Accueil}!Accueil@{Accueil}}
+\doxysubsubsection{$\sim$Accueil()}
+{\footnotesize\ttfamily Accueil\+::$\sim$\+Accueil (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur. 
+
+
+
+Définition à la ligne 60 du fichier Accueil.\+cpp.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\label{class_accueil_a174ec24a119495a2cdd07a2956eac9cf}} 
+\index{Accueil@{Accueil}!closeEvent@{closeEvent}}
+\index{closeEvent@{closeEvent}!Accueil@{Accueil}}
+\doxysubsubsection{closeEvent()}
+{\footnotesize\ttfamily void Accueil\+::close\+Event (\begin{DoxyParamCaption}\item[{Q\+Close\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Methode appelee a la fermeture. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em event} & (Q\+Close\+Event$\ast$) \+: Evenement \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 70 du fichier Accueil.\+cpp.
+
+\mbox{\label{class_accueil_a1d3349440f46c8c51c0e008d3b29f535}} 
+\index{Accueil@{Accueil}!p\_init@{p\_init}}
+\index{p\_init@{p\_init}!Accueil@{Accueil}}
+\doxysubsubsection{p\_init()}
+{\footnotesize\ttfamily void Accueil\+::p\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Methode d\textquotesingle{}initialisation des variables des objets. 
+
+Va lancer la recuperation des alarmes sur les moniteurs 
+
+Définition à la ligne 79 du fichier Accueil.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_accueil_a1d3349440f46c8c51c0e008d3b29f535_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{class_accueil_a1d3349440f46c8c51c0e008d3b29f535_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_accueil_a13cf92b69b2ec7d34f0d162f838cf41f}} 
+\index{Accueil@{Accueil}!p\_thread@{p\_thread}}
+\index{p\_thread@{p\_thread}!Accueil@{Accueil}}
+\doxysubsubsection{p\_thread()}
+{\footnotesize\ttfamily void Accueil\+::p\+\_\+thread (\begin{DoxyParamCaption}\item[{std\+::promise$<$ std\+::string $>$ \&\&}]{promise,  }\item[{std\+::string}]{name\+Monitor,  }\item[{std\+::string}]{name\+Machine,  }\item[{std\+::string}]{user,  }\item[{std\+::string}]{password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Methode appelee pour recuperer les commandes d\textquotesingle{}un moniteur par un thread. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em promise} & (std\+::promise$<$std\+::string$>$\&\&) \+: Variable ou sera enregistre le resultat \\
+\hline
+{\em name\+Monitor} & (std\+::string) \+: Nom du moniteur \\
+\hline
+{\em name\+Machine} & (std\+::string) \+: Nom de la machine \\
+\hline
+{\em user} & (std\+::string) \+: Utilisateur \\
+\hline
+{\em password} & (std\+::string) \+: Mot de passe \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 242 du fichier Accueil.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_accueil_a13cf92b69b2ec7d34f0d162f838cf41f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_accueil_afdbff2a307fc479ad6ef36a22671f304}} 
+\index{Accueil@{Accueil}!pSlot\_advancedView@{pSlot\_advancedView}}
+\index{pSlot\_advancedView@{pSlot\_advancedView}!Accueil@{Accueil}}
+\doxysubsubsection{pSlot\_advancedView}
+{\footnotesize\ttfamily void Accueil\+::p\+Slot\+\_\+advanced\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Methode pour afficher la vue avancee. 
+
+
+
+Définition à la ligne 264 du fichier Accueil.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{class_accueil_afdbff2a307fc479ad6ef36a22671f304_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_accueil_a54f71bac39b46cf713eab474f25e5900}} 
+\index{Accueil@{Accueil}!pSlot\_changeMode@{pSlot\_changeMode}}
+\index{pSlot\_changeMode@{pSlot\_changeMode}!Accueil@{Accueil}}
+\doxysubsubsection{pSlot\_changeMode}
+{\footnotesize\ttfamily void Accueil\+::p\+Slot\+\_\+change\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Methode appelee pour changer le mode. 
+
+
+
+Définition à la ligne 273 du fichier Accueil.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{class_accueil_a54f71bac39b46cf713eab474f25e5900_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_accueil_a06ad04d4ffad6140520a8d51e23970aa}} 
+\index{Accueil@{Accueil}!pSlot\_getMachinesList@{pSlot\_getMachinesList}}
+\index{pSlot\_getMachinesList@{pSlot\_getMachinesList}!Accueil@{Accueil}}
+\doxysubsubsection{pSlot\_getMachinesList}
+{\footnotesize\ttfamily void Accueil\+::p\+Slot\+\_\+get\+Machines\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Methode pour avoir toutes les machines. 
+
+Methode pour avoir tous les moniteurs.
+
+Va lire le fichier monitors\+List.\+txt ou se trouve tous les noms des moniteurs 
+
+Définition à la ligne 196 du fichier Accueil.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_accueil_a06ad04d4ffad6140520a8d51e23970aa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_accueil_a0180b31dfff9f285d92163b4b324ec89}} 
+\index{Accueil@{Accueil}!pSlot\_showPlateformeInformations@{pSlot\_showPlateformeInformations}}
+\index{pSlot\_showPlateformeInformations@{pSlot\_showPlateformeInformations}!Accueil@{Accueil}}
+\doxysubsubsection{pSlot\_showPlateformeInformations}
+{\footnotesize\ttfamily void Accueil\+::p\+Slot\+\_\+show\+Plateforme\+Informations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Methode pour afficher la fenetre des informations. 
+
+Methode pour afficher la fenetre des informations d\textquotesingle{}une machine.
+
+Va voir quel nom est selectionne 
+
+Définition à la ligne 124 du fichier Accueil.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_accueil_a0180b31dfff9f285d92163b4b324ec89_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_accueil_a0180b31dfff9f285d92163b4b324ec89_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_accueil_ae313f8695b0a72c1e72274a5c9ddd1ac}} 
+\index{Accueil@{Accueil}!resizeEvent@{resizeEvent}}
+\index{resizeEvent@{resizeEvent}!Accueil@{Accueil}}
+\doxysubsubsection{resizeEvent()}
+{\footnotesize\ttfamily void Accueil\+::resize\+Event (\begin{DoxyParamCaption}\item[{Q\+Resize\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Methode appelee au changement de taille de la fenetre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em event} & (Q\+Resize\+Event$\ast$) \+: Evenement de changement de taille \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 291 du fichier Accueil.\+cpp.
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\label{class_accueil_a63fef685291e96d0182c88850eddc12e}} 
+\index{Accueil@{Accueil}!p\_advancedInformations@{p\_advancedInformations}}
+\index{p\_advancedInformations@{p\_advancedInformations}!Accueil@{Accueil}}
+\doxysubsubsection{p\_advancedInformations}
+{\footnotesize\ttfamily \textbf{ Advanced\+View}$\ast$ Accueil\+::p\+\_\+advanced\+Informations\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable de la fenetre de vue avancee. 
+
+
+
+Définition à la ligne 72 du fichier Accueil.\+h.
+
+\mbox{\label{class_accueil_addd578110569addf9aa08be44043d01d}} 
+\index{Accueil@{Accueil}!p\_labelLogoBSH@{p\_labelLogoBSH}}
+\index{p\_labelLogoBSH@{p\_labelLogoBSH}!Accueil@{Accueil}}
+\doxysubsubsection{p\_labelLogoBSH}
+{\footnotesize\ttfamily Q\+Label$\ast$ Accueil\+::p\+\_\+label\+Logo\+B\+SH\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour le logo de B\+SH. 
+
+
+
+Définition à la ligne 48 du fichier Accueil.\+h.
+
+\mbox{\label{class_accueil_a2f1db6a28712e1add6f9bc89c2ba83d6}} 
+\index{Accueil@{Accueil}!p\_labelLogoCLE@{p\_labelLogoCLE}}
+\index{p\_labelLogoCLE@{p\_labelLogoCLE}!Accueil@{Accueil}}
+\doxysubsubsection{p\_labelLogoCLE}
+{\footnotesize\ttfamily Q\+Label$\ast$ Accueil\+::p\+\_\+label\+Logo\+C\+LE\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour le logo de D\+A\+FF. 
+
+
+
+Définition à la ligne 51 du fichier Accueil.\+h.
+
+\mbox{\label{class_accueil_a7751fe43f72a5b752562946ea7262e92}} 
+\index{Accueil@{Accueil}!p\_labelLogoRenault@{p\_labelLogoRenault}}
+\index{p\_labelLogoRenault@{p\_labelLogoRenault}!Accueil@{Accueil}}
+\doxysubsubsection{p\_labelLogoRenault}
+{\footnotesize\ttfamily Q\+Label$\ast$ Accueil\+::p\+\_\+label\+Logo\+Renault\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour le logo de Renault. 
+
+
+
+Définition à la ligne 54 du fichier Accueil.\+h.
+
+\mbox{\label{class_accueil_a0f1d19613c44bbf8665b1379fc5603b2}} 
+\index{Accueil@{Accueil}!p\_linkManual@{p\_linkManual}}
+\index{p\_linkManual@{p\_linkManual}!Accueil@{Accueil}}
+\doxysubsubsection{p\_linkManual}
+{\footnotesize\ttfamily Q\+Label$\ast$ Accueil\+::p\+\_\+link\+Manual\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour le manuel utilisateur. 
+
+
+
+Définition à la ligne 66 du fichier Accueil.\+h.
+
+\mbox{\label{class_accueil_a3e28932123ec926264a682155cec0de4}} 
+\index{Accueil@{Accueil}!p\_MachineBSH@{p\_MachineBSH}}
+\index{p\_MachineBSH@{p\_MachineBSH}!Accueil@{Accueil}}
+\doxysubsubsection{p\_MachineBSH}
+{\footnotesize\ttfamily Q\+Push\+Button$\ast$ Accueil\+::p\+\_\+\+Machine\+B\+SH\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable du bouton pour B\+SH. 
+
+
+
+Définition à la ligne 57 du fichier Accueil.\+h.
+
+\mbox{\label{class_accueil_a0f3547787b58b2e113070ab4de0cb430}} 
+\index{Accueil@{Accueil}!p\_MachineCLE@{p\_MachineCLE}}
+\index{p\_MachineCLE@{p\_MachineCLE}!Accueil@{Accueil}}
+\doxysubsubsection{p\_MachineCLE}
+{\footnotesize\ttfamily Q\+Push\+Button$\ast$ Accueil\+::p\+\_\+\+Machine\+C\+LE\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable du bouton pour C\+LE. 
+
+
+
+Définition à la ligne 60 du fichier Accueil.\+h.
+
+\mbox{\label{class_accueil_aeafcc86947cbb12e8aaf995793b7d394}} 
+\index{Accueil@{Accueil}!p\_MachineRenault@{p\_MachineRenault}}
+\index{p\_MachineRenault@{p\_MachineRenault}!Accueil@{Accueil}}
+\doxysubsubsection{p\_MachineRenault}
+{\footnotesize\ttfamily Q\+Push\+Button$\ast$ Accueil\+::p\+\_\+\+Machine\+Renault\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable du bouton pour Renault. 
+
+
+
+Définition à la ligne 63 du fichier Accueil.\+h.
+
+\mbox{\label{class_accueil_a5a4abcc49567baa3435072d33a60e410}} 
+\index{Accueil@{Accueil}!p\_manLog@{p\_manLog}}
+\index{p\_manLog@{p\_manLog}!Accueil@{Accueil}}
+\doxysubsubsection{p\_manLog}
+{\footnotesize\ttfamily \textbf{ Manager\+Logiciel}$\ast$ Accueil\+::p\+\_\+man\+Log\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour la partie ssh. 
+
+
+
+Définition à la ligne 69 du fichier Accueil.\+h.
+
+\mbox{\label{class_accueil_addab07971a4a9e9e1527bac8c644d14d}} 
+\index{Accueil@{Accueil}!p\_onglet@{p\_onglet}}
+\index{p\_onglet@{p\_onglet}!Accueil@{Accueil}}
+\doxysubsubsection{p\_onglet}
+{\footnotesize\ttfamily \textbf{ Onglet\+View}$\ast$ Accueil\+::p\+\_\+onglet\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour les onglets. 
+
+
+
+Définition à la ligne 81 du fichier Accueil.\+h.
+
+\mbox{\label{class_accueil_a24bfeeb0a242147e4f6305fc33a1869b}} 
+\index{Accueil@{Accueil}!p\_password@{p\_password}}
+\index{p\_password@{p\_password}!Accueil@{Accueil}}
+\doxysubsubsection{p\_password}
+{\footnotesize\ttfamily std\+::string Accueil\+::p\+\_\+password\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable du mot de passe. 
+
+
+
+Définition à la ligne 78 du fichier Accueil.\+h.
+
+\mbox{\label{class_accueil_a10d7c609d225a4a302ba075104087757}} 
+\index{Accueil@{Accueil}!p\_treeBSH@{p\_treeBSH}}
+\index{p\_treeBSH@{p\_treeBSH}!Accueil@{Accueil}}
+\doxysubsubsection{p\_treeBSH}
+{\footnotesize\ttfamily Q\+Tree\+Widget$\ast$ Accueil\+::p\+\_\+tree\+B\+SH\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable de l\textquotesingle{}arbre pour B\+SH. 
+
+
+
+Définition à la ligne 39 du fichier Accueil.\+h.
+
+\mbox{\label{class_accueil_a91bee7c98898db6ddd7f3b445629a194}} 
+\index{Accueil@{Accueil}!p\_treeCLE@{p\_treeCLE}}
+\index{p\_treeCLE@{p\_treeCLE}!Accueil@{Accueil}}
+\doxysubsubsection{p\_treeCLE}
+{\footnotesize\ttfamily Q\+Tree\+Widget$\ast$ Accueil\+::p\+\_\+tree\+C\+LE\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable de l\textquotesingle{}arbre pour D\+A\+FF. 
+
+
+
+Définition à la ligne 42 du fichier Accueil.\+h.
+
+\mbox{\label{class_accueil_abc1fe8590a53e05290a1454b5b59f64b}} 
+\index{Accueil@{Accueil}!p\_treeRenault@{p\_treeRenault}}
+\index{p\_treeRenault@{p\_treeRenault}!Accueil@{Accueil}}
+\doxysubsubsection{p\_treeRenault}
+{\footnotesize\ttfamily Q\+Tree\+Widget$\ast$ Accueil\+::p\+\_\+tree\+Renault\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable de l\textquotesingle{}arbre pour Renault. 
+
+
+
+Définition à la ligne 45 du fichier Accueil.\+h.
+
+\mbox{\label{class_accueil_ae0f9bd7e40b6f53c8bf7b9b0ef2de19e}} 
+\index{Accueil@{Accueil}!p\_user@{p\_user}}
+\index{p\_user@{p\_user}!Accueil@{Accueil}}
+\doxysubsubsection{p\_user}
+{\footnotesize\ttfamily std\+::string Accueil\+::p\+\_\+user\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable du nom utilisateur. 
+
+
+
+Définition à la ligne 75 du fichier Accueil.\+h.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Vues/\textbf{ Accueil.\+h}\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Vues/\textbf{ Accueil.\+cpp}\end{DoxyCompactItemize}

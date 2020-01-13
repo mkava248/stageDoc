@@ -1,0 +1,659 @@
+\doxysection{Référence de la classe Plateforme\+View}
+\label{class_plateforme_view}\index{PlateformeView@{PlateformeView}}
+
+
+Classe pour la vue principale de la plateforme.  
+
+
+
+
+{\ttfamily \#include $<$Plateforme\+View.\+h$>$}
+
+
+
+Graphe d\textquotesingle{}héritage de Plateforme\+View\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{class_plateforme_view__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de Plateforme\+View\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_plateforme_view__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ slot\+\_\+get\+Informations} ()
+\begin{DoxyCompactList}\small\item\em Methode pour recuperer toutes les informations et les donner aux vues. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Plateforme\+View} (Q\+Widget $\ast$parent, std\+::string user, std\+::string password, std\+::string name\+Machine, std\+::vector$<$ std\+::string $>$ machines\+Service, std\+::string plateforme)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+Plateforme\+View} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+void \textbf{ add\+Onglet} (Q\+Widget $\ast$tab, std\+::string name)
+\begin{DoxyCompactList}\small\item\em Methode pour ajouter un onglet. \end{DoxyCompactList}\item 
+void \textbf{ launch\+Monitor} (std\+::string monitor)
+\begin{DoxyCompactList}\small\item\em Methode pour charger les informations d\textquotesingle{}un moniteur dans l\textquotesingle{}onglet. \end{DoxyCompactList}\item 
+void \textbf{ launch\+Service} (std\+::string service)
+\begin{DoxyCompactList}\small\item\em Methode pour charger les informations d\textquotesingle{}un service dans l\textquotesingle{}onglet. \end{DoxyCompactList}\item 
+void \textbf{ launch\+Chain\+Functionnal} (std\+::string chain)
+\begin{DoxyCompactList}\small\item\em Methode pour charger les informations d\textquotesingle{}une chaine fonctionnelle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ resize\+Event} (Q\+Resize\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em Methode appelee au changement de taille de la fenetre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ close\+Event} (Q\+Close\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em Methode appelee a la fermeture. \end{DoxyCompactList}\item 
+void \textbf{ p\+\_\+change\+Waiting\+Screen} (std\+::string informations, int value)
+\begin{DoxyCompactList}\small\item\em Methode pour afficher une boit de message d\textquotesingle{}attente. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées statiques}
+\begin{DoxyCompactItemize}
+\item 
+static void \textbf{ p\+\_\+thread} (std\+::promise$<$ std\+::map$<$ std\+::string, std\+::string $>$$>$ \&\&promise, std\+::string name\+Machine, std\+::string name\+Certificat, std\+::string user, std\+::string password)
+\begin{DoxyCompactList}\small\item\em Methode appelee pour recuperer les informations d\textquotesingle{}un certificat. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Onglet\+View} $\ast$ \textbf{ p\+\_\+onglet}
+\begin{DoxyCompactList}\small\item\em Variable pour les onglets. \end{DoxyCompactList}\item 
+Q\+Scroll\+Area $\ast$ \textbf{ p\+\_\+information}
+\begin{DoxyCompactList}\small\item\em Variable pour permettre le scroll. \end{DoxyCompactList}\item 
+\textbf{ Manager\+Certificat} $\ast$ \textbf{ p\+\_\+man\+Cer}
+\begin{DoxyCompactList}\small\item\em Variable pour le gestionnaire de certificats. \end{DoxyCompactList}\item 
+\textbf{ Manager\+Logiciel} $\ast$ \textbf{ p\+\_\+man\+Log}
+\begin{DoxyCompactList}\small\item\em Variable pour la partie ssh. \end{DoxyCompactList}\item 
+\textbf{ Manager\+Monitor} $\ast$ \textbf{ p\+\_\+man\+Mon}
+\begin{DoxyCompactList}\small\item\em Variable pour le gestionnaire de moniteurs. \end{DoxyCompactList}\item 
+\textbf{ Manager\+Service} $\ast$ \textbf{ p\+\_\+man\+Serv}
+\begin{DoxyCompactList}\small\item\em Variable pour le gestionnaire de services. \end{DoxyCompactList}\item 
+std\+::string \textbf{ p\+\_\+machine}
+\begin{DoxyCompactList}\small\item\em Variable de la machine. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \textbf{ p\+\_\+list\+Machines\+Service}
+\begin{DoxyCompactList}\small\item\em Liste des Services. \end{DoxyCompactList}\item 
+std\+::string \textbf{ p\+\_\+user}
+\begin{DoxyCompactList}\small\item\em Variable utilisateur. \end{DoxyCompactList}\item 
+std\+::string \textbf{ p\+\_\+password}
+\begin{DoxyCompactList}\small\item\em Variable mot de passe. \end{DoxyCompactList}\item 
+std\+::string \textbf{ p\+\_\+plateforme}
+\begin{DoxyCompactList}\small\item\em Variable pour la plateforme. \end{DoxyCompactList}\item 
+\textbf{ Plateforme\+Informations} $\ast$ \textbf{ p\+\_\+tab}
+\begin{DoxyCompactList}\small\item\em Varaible pour la vue des informations generales. \end{DoxyCompactList}\item 
+\textbf{ Monitors\+View} $\ast$ \textbf{ p\+\_\+tab\+Monitors}
+\begin{DoxyCompactList}\small\item\em Variable pour la vue des moniteurs. \end{DoxyCompactList}\item 
+\textbf{ Services\+View} $\ast$ \textbf{ p\+\_\+tab\+Services}
+\begin{DoxyCompactList}\small\item\em Variable pour la vue des services. \end{DoxyCompactList}\item 
+\textbf{ Chains\+View} $\ast$ \textbf{ p\+\_\+tab\+Chains}
+\begin{DoxyCompactList}\small\item\em Variable pour la vue des chaines fonctionnelles. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Classe pour la vue principale de la plateforme. 
+
+Vue ou toutes les informations sont recuperees et envoyees aux differents onglets Elle fait la creation de ces onglets 
+
+Définition à la ligne 35 du fichier Plateforme\+View.\+h.
+
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\label{class_plateforme_view_a7f1639dbf74a4aaf662a6e6fe7910b81}} 
+\index{PlateformeView@{PlateformeView}!PlateformeView@{PlateformeView}}
+\index{PlateformeView@{PlateformeView}!PlateformeView@{PlateformeView}}
+\doxysubsubsection{PlateformeView()}
+{\footnotesize\ttfamily Plateforme\+View\+::\+Plateforme\+View (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent,  }\item[{std\+::string}]{user,  }\item[{std\+::string}]{password,  }\item[{std\+::string}]{name\+Machine,  }\item[{std\+::vector$<$ std\+::string $>$}]{machines\+Service,  }\item[{std\+::string}]{plateforme }\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & (Q\+Widget$\ast$) \+:P\+Arent \\
+\hline
+{\em user} & (std\+::string) \+: Utilisateur \\
+\hline
+{\em password} & (std\+::string) \+: Mot de passe \\
+\hline
+{\em name\+Machine} & (std\+::string) \+: Nom de la machine \\
+\hline
+{\em machines\+Service} & (std\+::vector$<$std\+::string$>$) \+: Liste des machines pour les services \\
+\hline
+{\em plateforme} & (std\+::string) \+: Plateforme \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 13 du fichier Plateforme\+View.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_plateforme_view_a7f1639dbf74a4aaf662a6e6fe7910b81_cgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_plateforme_view_a44a922c1664edbbc1a355f34925632fa}} 
+\index{PlateformeView@{PlateformeView}!````~PlateformeView@{$\sim$PlateformeView}}
+\index{````~PlateformeView@{$\sim$PlateformeView}!PlateformeView@{PlateformeView}}
+\doxysubsubsection{$\sim$PlateformeView()}
+{\footnotesize\ttfamily Plateforme\+View\+::$\sim$\+Plateforme\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur. 
+
+
+
+Définition à la ligne 66 du fichier Plateforme\+View.\+cpp.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\label{class_plateforme_view_a7f66a5045499b90c56283f8f38b02776}} 
+\index{PlateformeView@{PlateformeView}!addOnglet@{addOnglet}}
+\index{addOnglet@{addOnglet}!PlateformeView@{PlateformeView}}
+\doxysubsubsection{addOnglet()}
+{\footnotesize\ttfamily void Plateforme\+View\+::add\+Onglet (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{tab,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Methode pour ajouter un onglet. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em tab} & (Q\+Widget$\ast$) \+: Onglet a ajouter \\
+\hline
+{\em name} & (std\+::string) \+: Nom de l\textquotesingle{}onglet \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 103 du fichier Plateforme\+View.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_plateforme_view_a7f66a5045499b90c56283f8f38b02776_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_plateforme_view_a7f66a5045499b90c56283f8f38b02776_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_plateforme_view_acb7152e318e5c92611b999ab89996fa0}} 
+\index{PlateformeView@{PlateformeView}!closeEvent@{closeEvent}}
+\index{closeEvent@{closeEvent}!PlateformeView@{PlateformeView}}
+\doxysubsubsection{closeEvent()}
+{\footnotesize\ttfamily void Plateforme\+View\+::close\+Event (\begin{DoxyParamCaption}\item[{Q\+Close\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Methode appelee a la fermeture. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em event} & (Q\+Close\+Event$\ast$) \+: Evenement \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 82 du fichier Plateforme\+View.\+cpp.
+
+\mbox{\label{class_plateforme_view_a6f6af26629cf2c1d2c9f63b0f9b745cf}} 
+\index{PlateformeView@{PlateformeView}!launchChainFunctionnal@{launchChainFunctionnal}}
+\index{launchChainFunctionnal@{launchChainFunctionnal}!PlateformeView@{PlateformeView}}
+\doxysubsubsection{launchChainFunctionnal()}
+{\footnotesize\ttfamily void Plateforme\+View\+::launch\+Chain\+Functionnal (\begin{DoxyParamCaption}\item[{std\+::string}]{chain }\end{DoxyParamCaption})}
+
+
+
+Methode pour charger les informations d\textquotesingle{}une chaine fonctionnelle. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em chain} & (std\+::string) \+: Chaine fonctionnelle \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 297 du fichier Plateforme\+View.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_plateforme_view_a6f6af26629cf2c1d2c9f63b0f9b745cf_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_plateforme_view_a6f6af26629cf2c1d2c9f63b0f9b745cf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_plateforme_view_a213a3105a0bcd2f20c889a752450522c}} 
+\index{PlateformeView@{PlateformeView}!launchMonitor@{launchMonitor}}
+\index{launchMonitor@{launchMonitor}!PlateformeView@{PlateformeView}}
+\doxysubsubsection{launchMonitor()}
+{\footnotesize\ttfamily void Plateforme\+View\+::launch\+Monitor (\begin{DoxyParamCaption}\item[{std\+::string}]{monitor }\end{DoxyParamCaption})}
+
+
+
+Methode pour charger les informations d\textquotesingle{}un moniteur dans l\textquotesingle{}onglet. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em monitor} & (std\+::string) \+: Moniteur \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 277 du fichier Plateforme\+View.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_plateforme_view_a213a3105a0bcd2f20c889a752450522c_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_plateforme_view_a213a3105a0bcd2f20c889a752450522c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_plateforme_view_a6f3c1485bded192fbc975901b7082a43}} 
+\index{PlateformeView@{PlateformeView}!launchService@{launchService}}
+\index{launchService@{launchService}!PlateformeView@{PlateformeView}}
+\doxysubsubsection{launchService()}
+{\footnotesize\ttfamily void Plateforme\+View\+::launch\+Service (\begin{DoxyParamCaption}\item[{std\+::string}]{service }\end{DoxyParamCaption})}
+
+
+
+Methode pour charger les informations d\textquotesingle{}un service dans l\textquotesingle{}onglet. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em service} & (std\+::string) \+: \doxyref{Service}{p.}{class_service} \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 287 du fichier Plateforme\+View.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_plateforme_view_a6f3c1485bded192fbc975901b7082a43_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_plateforme_view_a6f3c1485bded192fbc975901b7082a43_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_plateforme_view_ac6008158d61406c0bda4d56fe9a945d9}} 
+\index{PlateformeView@{PlateformeView}!p\_changeWaitingScreen@{p\_changeWaitingScreen}}
+\index{p\_changeWaitingScreen@{p\_changeWaitingScreen}!PlateformeView@{PlateformeView}}
+\doxysubsubsection{p\_changeWaitingScreen()}
+{\footnotesize\ttfamily void Plateforme\+View\+::p\+\_\+change\+Waiting\+Screen (\begin{DoxyParamCaption}\item[{std\+::string}]{informations,  }\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Methode pour afficher une boit de message d\textquotesingle{}attente. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em informations} & (std\+::string) \+: Informations a afficher \\
+\hline
+{\em value} & (int) \+: Valeur de la barre de progress \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 232 du fichier Plateforme\+View.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_plateforme_view_ac6008158d61406c0bda4d56fe9a945d9_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_plateforme_view_ac6008158d61406c0bda4d56fe9a945d9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_plateforme_view_ab1f95be3fca08553ad123dd9c73bedc9}} 
+\index{PlateformeView@{PlateformeView}!p\_thread@{p\_thread}}
+\index{p\_thread@{p\_thread}!PlateformeView@{PlateformeView}}
+\doxysubsubsection{p\_thread()}
+{\footnotesize\ttfamily void Plateforme\+View\+::p\+\_\+thread (\begin{DoxyParamCaption}\item[{std\+::promise$<$ std\+::map$<$ std\+::string, std\+::string $>$$>$ \&\&}]{promise,  }\item[{std\+::string}]{name\+Machine,  }\item[{std\+::string}]{name\+Certificat,  }\item[{std\+::string}]{user,  }\item[{std\+::string}]{password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Methode appelee pour recuperer les informations d\textquotesingle{}un certificat. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em promise} & (std\+::promise$<$std\+::string$>$\&\&) \+: Variable ou sera enregistre le resultat \\
+\hline
+{\em name\+Machine} & (std\+::string) \+: Nom de la machine \\
+\hline
+{\em name\+Certificat} & (std\+::string) \+: \doxyref{Certificat}{p.}{class_certificat} \\
+\hline
+{\em user} & (std\+::string) \+: Utilisateur \\
+\hline
+{\em password} & (std\+::string) \+: Mot de passe \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 254 du fichier Plateforme\+View.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_plateforme_view_ab1f95be3fca08553ad123dd9c73bedc9_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_plateforme_view_ab1f95be3fca08553ad123dd9c73bedc9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_plateforme_view_a7fdc8a255e6676b61dd113239dcd099d}} 
+\index{PlateformeView@{PlateformeView}!resizeEvent@{resizeEvent}}
+\index{resizeEvent@{resizeEvent}!PlateformeView@{PlateformeView}}
+\doxysubsubsection{resizeEvent()}
+{\footnotesize\ttfamily void Plateforme\+View\+::resize\+Event (\begin{DoxyParamCaption}\item[{Q\+Resize\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Methode appelee au changement de taille de la fenetre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em event} & (Q\+Resize\+Event$\ast$) \+: Evenement de changement de taille \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 92 du fichier Plateforme\+View.\+cpp.
+
+\mbox{\label{class_plateforme_view_ace0cc5dd9692bde61e444ba7048b5577}} 
+\index{PlateformeView@{PlateformeView}!slot\_getInformations@{slot\_getInformations}}
+\index{slot\_getInformations@{slot\_getInformations}!PlateformeView@{PlateformeView}}
+\doxysubsubsection{slot\_getInformations}
+{\footnotesize\ttfamily void Plateforme\+View\+::slot\+\_\+get\+Informations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Methode pour recuperer toutes les informations et les donner aux vues. 
+
+
+
+Définition à la ligne 111 du fichier Plateforme\+View.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_plateforme_view_ace0cc5dd9692bde61e444ba7048b5577_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_plateforme_view_ace0cc5dd9692bde61e444ba7048b5577_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\label{class_plateforme_view_abd7c9a590515b7a4781baf53df31833d}} 
+\index{PlateformeView@{PlateformeView}!p\_information@{p\_information}}
+\index{p\_information@{p\_information}!PlateformeView@{PlateformeView}}
+\doxysubsubsection{p\_information}
+{\footnotesize\ttfamily Q\+Scroll\+Area$\ast$ Plateforme\+View\+::p\+\_\+information\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour permettre le scroll. 
+
+
+
+Définition à la ligne 45 du fichier Plateforme\+View.\+h.
+
+\mbox{\label{class_plateforme_view_a34ed515165ed1489afc5117a1914d6f8}} 
+\index{PlateformeView@{PlateformeView}!p\_listMachinesService@{p\_listMachinesService}}
+\index{p\_listMachinesService@{p\_listMachinesService}!PlateformeView@{PlateformeView}}
+\doxysubsubsection{p\_listMachinesService}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Plateforme\+View\+::p\+\_\+list\+Machines\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Liste des Services. 
+
+
+
+Définition à la ligne 63 du fichier Plateforme\+View.\+h.
+
+\mbox{\label{class_plateforme_view_ad39f69e8ba083a09d2e2e024517155b4}} 
+\index{PlateformeView@{PlateformeView}!p\_machine@{p\_machine}}
+\index{p\_machine@{p\_machine}!PlateformeView@{PlateformeView}}
+\doxysubsubsection{p\_machine}
+{\footnotesize\ttfamily std\+::string Plateforme\+View\+::p\+\_\+machine\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable de la machine. 
+
+
+
+Définition à la ligne 60 du fichier Plateforme\+View.\+h.
+
+\mbox{\label{class_plateforme_view_a7d3cd84011d52ce831e36ab1481bc45c}} 
+\index{PlateformeView@{PlateformeView}!p\_manCer@{p\_manCer}}
+\index{p\_manCer@{p\_manCer}!PlateformeView@{PlateformeView}}
+\doxysubsubsection{p\_manCer}
+{\footnotesize\ttfamily \textbf{ Manager\+Certificat}$\ast$ Plateforme\+View\+::p\+\_\+man\+Cer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour le gestionnaire de certificats. 
+
+
+
+Définition à la ligne 48 du fichier Plateforme\+View.\+h.
+
+\mbox{\label{class_plateforme_view_a0f1297db040d44d6ff3cc29f58104662}} 
+\index{PlateformeView@{PlateformeView}!p\_manLog@{p\_manLog}}
+\index{p\_manLog@{p\_manLog}!PlateformeView@{PlateformeView}}
+\doxysubsubsection{p\_manLog}
+{\footnotesize\ttfamily \textbf{ Manager\+Logiciel}$\ast$ Plateforme\+View\+::p\+\_\+man\+Log\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour la partie ssh. 
+
+
+
+Définition à la ligne 51 du fichier Plateforme\+View.\+h.
+
+\mbox{\label{class_plateforme_view_a3a8117f889a0cda3c283a96aad89aa95}} 
+\index{PlateformeView@{PlateformeView}!p\_manMon@{p\_manMon}}
+\index{p\_manMon@{p\_manMon}!PlateformeView@{PlateformeView}}
+\doxysubsubsection{p\_manMon}
+{\footnotesize\ttfamily \textbf{ Manager\+Monitor}$\ast$ Plateforme\+View\+::p\+\_\+man\+Mon\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour le gestionnaire de moniteurs. 
+
+
+
+Définition à la ligne 54 du fichier Plateforme\+View.\+h.
+
+\mbox{\label{class_plateforme_view_a26a52123f8e22bd178082dbc2e119975}} 
+\index{PlateformeView@{PlateformeView}!p\_manServ@{p\_manServ}}
+\index{p\_manServ@{p\_manServ}!PlateformeView@{PlateformeView}}
+\doxysubsubsection{p\_manServ}
+{\footnotesize\ttfamily \textbf{ Manager\+Service}$\ast$ Plateforme\+View\+::p\+\_\+man\+Serv\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour le gestionnaire de services. 
+
+
+
+Définition à la ligne 57 du fichier Plateforme\+View.\+h.
+
+\mbox{\label{class_plateforme_view_a322346d4876834df0d7b52ddf372ffbc}} 
+\index{PlateformeView@{PlateformeView}!p\_onglet@{p\_onglet}}
+\index{p\_onglet@{p\_onglet}!PlateformeView@{PlateformeView}}
+\doxysubsubsection{p\_onglet}
+{\footnotesize\ttfamily \textbf{ Onglet\+View}$\ast$ Plateforme\+View\+::p\+\_\+onglet\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour les onglets. 
+
+
+
+Définition à la ligne 42 du fichier Plateforme\+View.\+h.
+
+\mbox{\label{class_plateforme_view_adfc663904015b6f6de24dc71d41fe033}} 
+\index{PlateformeView@{PlateformeView}!p\_password@{p\_password}}
+\index{p\_password@{p\_password}!PlateformeView@{PlateformeView}}
+\doxysubsubsection{p\_password}
+{\footnotesize\ttfamily std\+::string Plateforme\+View\+::p\+\_\+password\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable mot de passe. 
+
+
+
+Définition à la ligne 69 du fichier Plateforme\+View.\+h.
+
+\mbox{\label{class_plateforme_view_a44fa285c8036d8067b54985a02f125da}} 
+\index{PlateformeView@{PlateformeView}!p\_plateforme@{p\_plateforme}}
+\index{p\_plateforme@{p\_plateforme}!PlateformeView@{PlateformeView}}
+\doxysubsubsection{p\_plateforme}
+{\footnotesize\ttfamily std\+::string Plateforme\+View\+::p\+\_\+plateforme\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour la plateforme. 
+
+
+
+Définition à la ligne 72 du fichier Plateforme\+View.\+h.
+
+\mbox{\label{class_plateforme_view_a876ba6aba3528e73830db0e76d4f3af9}} 
+\index{PlateformeView@{PlateformeView}!p\_tab@{p\_tab}}
+\index{p\_tab@{p\_tab}!PlateformeView@{PlateformeView}}
+\doxysubsubsection{p\_tab}
+{\footnotesize\ttfamily \textbf{ Plateforme\+Informations}$\ast$ Plateforme\+View\+::p\+\_\+tab\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Varaible pour la vue des informations generales. 
+
+
+
+Définition à la ligne 75 du fichier Plateforme\+View.\+h.
+
+\mbox{\label{class_plateforme_view_ab037af4bd210c3b0ad569d3797a655fa}} 
+\index{PlateformeView@{PlateformeView}!p\_tabChains@{p\_tabChains}}
+\index{p\_tabChains@{p\_tabChains}!PlateformeView@{PlateformeView}}
+\doxysubsubsection{p\_tabChains}
+{\footnotesize\ttfamily \textbf{ Chains\+View}$\ast$ Plateforme\+View\+::p\+\_\+tab\+Chains\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour la vue des chaines fonctionnelles. 
+
+
+
+Définition à la ligne 84 du fichier Plateforme\+View.\+h.
+
+\mbox{\label{class_plateforme_view_ab070f56542b44838b4885f58adf1691a}} 
+\index{PlateformeView@{PlateformeView}!p\_tabMonitors@{p\_tabMonitors}}
+\index{p\_tabMonitors@{p\_tabMonitors}!PlateformeView@{PlateformeView}}
+\doxysubsubsection{p\_tabMonitors}
+{\footnotesize\ttfamily \textbf{ Monitors\+View}$\ast$ Plateforme\+View\+::p\+\_\+tab\+Monitors\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour la vue des moniteurs. 
+
+
+
+Définition à la ligne 78 du fichier Plateforme\+View.\+h.
+
+\mbox{\label{class_plateforme_view_a68e81f5d62bcd382e4dace1a87271016}} 
+\index{PlateformeView@{PlateformeView}!p\_tabServices@{p\_tabServices}}
+\index{p\_tabServices@{p\_tabServices}!PlateformeView@{PlateformeView}}
+\doxysubsubsection{p\_tabServices}
+{\footnotesize\ttfamily \textbf{ Services\+View}$\ast$ Plateforme\+View\+::p\+\_\+tab\+Services\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour la vue des services. 
+
+
+
+Définition à la ligne 81 du fichier Plateforme\+View.\+h.
+
+\mbox{\label{class_plateforme_view_a0532879e814f453926c663d23832aa1f}} 
+\index{PlateformeView@{PlateformeView}!p\_user@{p\_user}}
+\index{p\_user@{p\_user}!PlateformeView@{PlateformeView}}
+\doxysubsubsection{p\_user}
+{\footnotesize\ttfamily std\+::string Plateforme\+View\+::p\+\_\+user\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable utilisateur. 
+
+
+
+Définition à la ligne 66 du fichier Plateforme\+View.\+h.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Vues/\textbf{ Plateforme\+View.\+h}\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Vues/\textbf{ Plateforme\+View.\+cpp}\end{DoxyCompactItemize}

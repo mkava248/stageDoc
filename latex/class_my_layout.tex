@@ -1,0 +1,273 @@
+\doxysection{Référence de la classe My\+Layout}
+\label{class_my_layout}\index{MyLayout@{MyLayout}}
+
+
+Classe pour un layout personnalise.  
+
+
+
+
+{\ttfamily \#include $<$My\+Layout.\+h$>$}
+
+
+
+Graphe d\textquotesingle{}héritage de My\+Layout\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{class_my_layout__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de My\+Layout\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{class_my_layout__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ My\+Layout} (Q\+Widget $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+My\+Layout} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+void \textbf{ add\+Item} (Q\+Layout\+Item $\ast$item) override
+\begin{DoxyCompactList}\small\item\em Methode pour ajouter un item. \end{DoxyCompactList}\item 
+Q\+Size \textbf{ size\+Hint} () const override
+\begin{DoxyCompactList}\small\item\em Methode pour savoir la taille. \end{DoxyCompactList}\item 
+Q\+Size \textbf{ minimum\+Size} () const override
+\begin{DoxyCompactList}\small\item\em Methode pour avoir la taille minimum. \end{DoxyCompactList}\item 
+int \textbf{ count} () const override
+\begin{DoxyCompactList}\small\item\em Methode pour savoir combien d\textquotesingle{}element sont dans la liste. \end{DoxyCompactList}\item 
+Q\+Layout\+Item $\ast$ \textbf{ item\+At} (int idx) const override
+\begin{DoxyCompactList}\small\item\em Methode pour avoir l\textquotesingle{}element a une position donnee. \end{DoxyCompactList}\item 
+Q\+Layout\+Item $\ast$ \textbf{ take\+At} (int idx) override
+\begin{DoxyCompactList}\small\item\em Methode pour avoir l\textquotesingle{}element a une position donnee. \end{DoxyCompactList}\item 
+void \textbf{ set\+Geometry} (const Q\+Rect \&rect) override
+\begin{DoxyCompactList}\small\item\em Methode pour fixer la taille et la position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+List$<$ Q\+Layout\+Item $\ast$ $>$ \textbf{ list}
+\begin{DoxyCompactList}\small\item\em Variable pour la liste des widgets. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Classe pour un layout personnalise. 
+
+Classe pour faire l\textquotesingle{}affichage des informations comme on l\textquotesingle{}entend 
+
+Définition à la ligne 10 du fichier My\+Layout.\+h.
+
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\label{class_my_layout_a6caf9dd63ea287ce4cd0064f565781b6}} 
+\index{MyLayout@{MyLayout}!MyLayout@{MyLayout}}
+\index{MyLayout@{MyLayout}!MyLayout@{MyLayout}}
+\doxysubsubsection{MyLayout()}
+{\footnotesize\ttfamily My\+Layout\+::\+My\+Layout (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent }\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & (Q\+Widget$\ast$) \+: Parent \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 7 du fichier My\+Layout.\+cpp.
+
+\mbox{\label{class_my_layout_a8b9587c91e61c925916bedb8cfa5ce65}} 
+\index{MyLayout@{MyLayout}!````~MyLayout@{$\sim$MyLayout}}
+\index{````~MyLayout@{$\sim$MyLayout}!MyLayout@{MyLayout}}
+\doxysubsubsection{$\sim$MyLayout()}
+{\footnotesize\ttfamily My\+Layout\+::$\sim$\+My\+Layout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur. 
+
+
+
+Définition à la ligne 16 du fichier My\+Layout.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{class_my_layout_a8b9587c91e61c925916bedb8cfa5ce65_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\label{class_my_layout_aff5cb83055eafcbff800b27d892526f8}} 
+\index{MyLayout@{MyLayout}!addItem@{addItem}}
+\index{addItem@{addItem}!MyLayout@{MyLayout}}
+\doxysubsubsection{addItem()}
+{\footnotesize\ttfamily void My\+Layout\+::add\+Item (\begin{DoxyParamCaption}\item[{Q\+Layout\+Item $\ast$}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Methode pour ajouter un item. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em item} & (Q\+Layout\+Item$\ast$) \+: Element a ajouter \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 56 du fichier My\+Layout.\+cpp.
+
+\mbox{\label{class_my_layout_a0c885dd49919ce2f548e9f143c9c519d}} 
+\index{MyLayout@{MyLayout}!count@{count}}
+\index{count@{count}!MyLayout@{MyLayout}}
+\doxysubsubsection{count()}
+{\footnotesize\ttfamily int My\+Layout\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Methode pour savoir combien d\textquotesingle{}element sont dans la liste. 
+
+\begin{DoxyReturn}{Renvoie}
+(int) \+: Nombre d\textquotesingle{}elements 
+\end{DoxyReturn}
+
+
+Définition à la ligne 27 du fichier My\+Layout.\+cpp.
+
+\mbox{\label{class_my_layout_aca0b89cd0be0b7dd547f58780fe9a048}} 
+\index{MyLayout@{MyLayout}!itemAt@{itemAt}}
+\index{itemAt@{itemAt}!MyLayout@{MyLayout}}
+\doxysubsubsection{itemAt()}
+{\footnotesize\ttfamily Q\+Layout\+Item $\ast$ My\+Layout\+::item\+At (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Methode pour avoir l\textquotesingle{}element a une position donnee. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em idx} & (int) \+: Position dans la liste \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+(Q\+Layout\+Item$\ast$) \+: Element 
+\end{DoxyReturn}
+
+
+Définition à la ligne 37 du fichier My\+Layout.\+cpp.
+
+\mbox{\label{class_my_layout_ae9499d882eb34f016b7a1a8db776e7bc}} 
+\index{MyLayout@{MyLayout}!minimumSize@{minimumSize}}
+\index{minimumSize@{minimumSize}!MyLayout@{MyLayout}}
+\doxysubsubsection{minimumSize()}
+{\footnotesize\ttfamily Q\+Size My\+Layout\+::minimum\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Methode pour avoir la taille minimum. 
+
+\begin{DoxyReturn}{Renvoie}
+(Q\+Size) \+: Taille 
+\end{DoxyReturn}
+
+
+Définition à la ligne 106 du fichier My\+Layout.\+cpp.
+
+\mbox{\label{class_my_layout_a2c9bd3cdbd8ad2cd37fdc5b7a1d91815}} 
+\index{MyLayout@{MyLayout}!setGeometry@{setGeometry}}
+\index{setGeometry@{setGeometry}!MyLayout@{MyLayout}}
+\doxysubsubsection{setGeometry()}
+{\footnotesize\ttfamily void My\+Layout\+::set\+Geometry (\begin{DoxyParamCaption}\item[{const Q\+Rect \&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Methode pour fixer la taille et la position. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em r} & (const Q\+Rect\&) \+: Rectangle \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 65 du fichier My\+Layout.\+cpp.
+
+\mbox{\label{class_my_layout_ad74490f1d7023695a80ddab8db7b41fb}} 
+\index{MyLayout@{MyLayout}!sizeHint@{sizeHint}}
+\index{sizeHint@{sizeHint}!MyLayout@{MyLayout}}
+\doxysubsubsection{sizeHint()}
+{\footnotesize\ttfamily Q\+Size My\+Layout\+::size\+Hint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Methode pour savoir la taille. 
+
+\begin{DoxyReturn}{Renvoie}
+(Q\+Size) \+: Taille 
+\end{DoxyReturn}
+
+
+Définition à la ligne 87 du fichier My\+Layout.\+cpp.
+
+\mbox{\label{class_my_layout_ad9a7ccffca8eceec323140c9bbc9ea54}} 
+\index{MyLayout@{MyLayout}!takeAt@{takeAt}}
+\index{takeAt@{takeAt}!MyLayout@{MyLayout}}
+\doxysubsubsection{takeAt()}
+{\footnotesize\ttfamily Q\+Layout\+Item $\ast$ My\+Layout\+::take\+At (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Methode pour avoir l\textquotesingle{}element a une position donnee. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em idx} & (int) \+: Position dans la liste \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+(Q\+Layout\+Item$\ast$) \+: Element 
+\end{DoxyReturn}
+
+
+Définition à la ligne 47 du fichier My\+Layout.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{class_my_layout_ad9a7ccffca8eceec323140c9bbc9ea54_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\label{class_my_layout_a1de0164e249fc464efacb3c79264ef17}} 
+\index{MyLayout@{MyLayout}!list@{list}}
+\index{list@{list}!MyLayout@{MyLayout}}
+\doxysubsubsection{list}
+{\footnotesize\ttfamily Q\+List$<$Q\+Layout\+Item$\ast$$>$ My\+Layout\+::list\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour la liste des widgets. 
+
+
+
+Définition à la ligne 14 du fichier My\+Layout.\+h.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Outils/\textbf{ My\+Layout.\+h}\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Outils/\textbf{ My\+Layout.\+cpp}\end{DoxyCompactItemize}

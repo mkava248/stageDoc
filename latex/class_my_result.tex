@@ -1,0 +1,172 @@
+\doxysection{Référence du modèle de la classe My\+Result$<$ T $>$}
+\label{class_my_result}\index{MyResult$<$ T $>$@{MyResult$<$ T $>$}}
+
+
+Classe pour avoir des resultats personalises.  
+
+
+
+
+{\ttfamily \#include $<$My\+Result.\+h$>$}
+
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ My\+Result} (int code, T element)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+My\+Result} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+int \textbf{ get\+Code} ()
+\begin{DoxyCompactList}\small\item\em Methode pour obtenir le code. \end{DoxyCompactList}\item 
+T \textbf{ get\+Element} ()
+\begin{DoxyCompactList}\small\item\em Methode pour obtenir l\textquotesingle{}element. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ p\+\_\+code}
+\begin{DoxyCompactList}\small\item\em Variable du code de resultat. \end{DoxyCompactList}\item 
+T \textbf{ p\+\_\+element}
+\begin{DoxyCompactList}\small\item\em Variable pour l\textquotesingle{}element. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\subsubsection*{template$<$class T$>$\newline
+class My\+Result$<$ T $>$}
+
+Classe pour avoir des resultats personalises. 
+
+Classe retournee quand il faut un resultat avecun code en particulier L\textquotesingle{}element peut etre de n\textquotesingle{}importe quelle classe 
+
+Définition à la ligne 16 du fichier My\+Result.\+h.
+
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\label{class_my_result_a659fb23e0d06252295502e25c039a402}} 
+\index{MyResult$<$ T $>$@{MyResult$<$ T $>$}!MyResult@{MyResult}}
+\index{MyResult@{MyResult}!MyResult$<$ T $>$@{MyResult$<$ T $>$}}
+\doxysubsubsection{MyResult()}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\textbf{ My\+Result}$<$ T $>$\+::\textbf{ My\+Result} (\begin{DoxyParamCaption}\item[{int}]{code,  }\item[{T}]{element }\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em code} & (int) \+: Code du resultat \\
+\hline
+{\em element} & (T) \+: Element a conserver \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 58 du fichier My\+Result.\+h.
+
+\mbox{\label{class_my_result_ab271b674cba37c5d09ee20014d48cda5}} 
+\index{MyResult$<$ T $>$@{MyResult$<$ T $>$}!````~MyResult@{$\sim$MyResult}}
+\index{````~MyResult@{$\sim$MyResult}!MyResult$<$ T $>$@{MyResult$<$ T $>$}}
+\doxysubsubsection{$\sim$MyResult()}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\textbf{ My\+Result}$<$ T $>$\+::$\sim$\textbf{ My\+Result} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur. 
+
+
+
+Définition à la ligne 68 du fichier My\+Result.\+h.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\label{class_my_result_a2b81ad21d23341a71ab198889e84bfd8}} 
+\index{MyResult$<$ T $>$@{MyResult$<$ T $>$}!getCode@{getCode}}
+\index{getCode@{getCode}!MyResult$<$ T $>$@{MyResult$<$ T $>$}}
+\doxysubsubsection{getCode()}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \textbf{ My\+Result}$<$ T $>$\+::get\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Methode pour obtenir le code. 
+
+\begin{DoxyReturn}{Renvoie}
+int \+: Code du resultat 
+\end{DoxyReturn}
+
+
+Définition à la ligne 78 du fichier My\+Result.\+h.
+
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_my_result_a2b81ad21d23341a71ab198889e84bfd8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_my_result_a70bbf4bcc983f344e2db3bcc0f1f2a92}} 
+\index{MyResult$<$ T $>$@{MyResult$<$ T $>$}!getElement@{getElement}}
+\index{getElement@{getElement}!MyResult$<$ T $>$@{MyResult$<$ T $>$}}
+\doxysubsubsection{getElement()}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \textbf{ My\+Result}$<$ T $>$\+::get\+Element (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Methode pour obtenir l\textquotesingle{}element. 
+
+\begin{DoxyReturn}{Renvoie}
+T \+: Element du resultat 
+\end{DoxyReturn}
+
+
+Définition à la ligne 88 du fichier My\+Result.\+h.
+
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_my_result_a70bbf4bcc983f344e2db3bcc0f1f2a92_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\label{class_my_result_a8bc5f41e582830e0739c0e3519d6c28a}} 
+\index{MyResult$<$ T $>$@{MyResult$<$ T $>$}!p\_code@{p\_code}}
+\index{p\_code@{p\_code}!MyResult$<$ T $>$@{MyResult$<$ T $>$}}
+\doxysubsubsection{p\_code}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+int \textbf{ My\+Result}$<$ T $>$\+::p\+\_\+code\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable du code de resultat. 
+
+
+
+Définition à la ligne 20 du fichier My\+Result.\+h.
+
+\mbox{\label{class_my_result_a98b1fdf2ed3b948561dd8f1190a78677}} 
+\index{MyResult$<$ T $>$@{MyResult$<$ T $>$}!p\_element@{p\_element}}
+\index{p\_element@{p\_element}!MyResult$<$ T $>$@{MyResult$<$ T $>$}}
+\doxysubsubsection{p\_element}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+T \textbf{ My\+Result}$<$ T $>$\+::p\+\_\+element\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour l\textquotesingle{}element. 
+
+
+
+Définition à la ligne 23 du fichier My\+Result.\+h.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Outils/\textbf{ My\+Result.\+h}\end{DoxyCompactItemize}
