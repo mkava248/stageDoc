@@ -1,0 +1,321 @@
+\doxysection{Référence de la classe Statistique\+View}
+\label{class_statistique_view}\index{StatistiqueView@{StatistiqueView}}
+
+
+Classe pour la vue des statistiques.  
+
+
+
+
+{\ttfamily \#include $<$Statistique\+View.\+h$>$}
+
+
+
+Graphe d\textquotesingle{}héritage de Statistique\+View\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{class_statistique_view__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de Statistique\+View\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{class_statistique_view__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Statistique\+View} (Q\+Widget $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+Statistique\+View} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+void \textbf{ set\+Informations\+Mon\+Serv} (std\+::vector$<$ int $>$ nmb\+Monitors, std\+::vector$<$ int $>$ nmb\+Services)
+\begin{DoxyCompactList}\small\item\em Methode pour fixer les statistiques des moniteurs et services. \end{DoxyCompactList}\item 
+void \textbf{ set\+Informations\+Cert} (std\+::vector$<$ int $>$ nmb\+Certificats)
+\begin{DoxyCompactList}\small\item\em Methode pour fixer les statistiques des certificats. \end{DoxyCompactList}\item 
+void \textbf{ set\+Informations\+Jping} (std\+::vector$<$ int $>$ nbm\+Jping)
+\begin{DoxyCompactList}\small\item\em Methode pour fixer les statistiques de la commande jping. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ resize\+Event} (Q\+Resize\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em Methode appelee au changement de taille de la fenetre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Label $\ast$ \textbf{ p\+\_\+stat\+Monitors}
+\begin{DoxyCompactList}\small\item\em Variable pour le texte des moniteurs. \end{DoxyCompactList}\item 
+Q\+Label $\ast$ \textbf{ p\+\_\+stat\+Services}
+\begin{DoxyCompactList}\small\item\em Variable pour le texte des services. \end{DoxyCompactList}\item 
+Q\+Label $\ast$ \textbf{ p\+\_\+stat\+Certificats}
+\begin{DoxyCompactList}\small\item\em Variable pour le texte des certificats. \end{DoxyCompactList}\item 
+Q\+Label $\ast$ \textbf{ p\+\_\+stat\+Jping}
+\begin{DoxyCompactList}\small\item\em Variable pour le texte des Jping. \end{DoxyCompactList}\item 
+Qt\+Charts\+::\+Q\+Stacked\+Bar\+Series $\ast$ \textbf{ p\+\_\+series}
+\begin{DoxyCompactList}\small\item\em Variable pour le style d\textquotesingle{}affichage. \end{DoxyCompactList}\item 
+Qt\+Charts\+::\+Q\+Chart $\ast$ \textbf{ p\+\_\+chart}
+\begin{DoxyCompactList}\small\item\em Variable pour le graphique. \end{DoxyCompactList}\item 
+Qt\+Charts\+::\+Q\+Chart\+View $\ast$ \textbf{ p\+\_\+chart\+View}
+\begin{DoxyCompactList}\small\item\em Variable pour afficher le graphique. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Classe pour la vue des statistiques. 
+
+Vue ou sont affichees les statistiques de la plateforme \begin{DoxyAuthor}{Auteur}
+Thomas Rebillard 
+\end{DoxyAuthor}
+
+
+Définition à la ligne 19 du fichier Statistique\+View.\+h.
+
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\label{class_statistique_view_ab4e9e008c6a59b4422602766900393b2}} 
+\index{StatistiqueView@{StatistiqueView}!StatistiqueView@{StatistiqueView}}
+\index{StatistiqueView@{StatistiqueView}!StatistiqueView@{StatistiqueView}}
+\doxysubsubsection{StatistiqueView()}
+{\footnotesize\ttfamily Statistique\+View\+::\+Statistique\+View (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent }\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & (Q\+Widget$\ast$) \+: Parent \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 7 du fichier Statistique\+View.\+cpp.
+
+\mbox{\label{class_statistique_view_adad6070423db5c0492442847eca4b462}} 
+\index{StatistiqueView@{StatistiqueView}!````~StatistiqueView@{$\sim$StatistiqueView}}
+\index{````~StatistiqueView@{$\sim$StatistiqueView}!StatistiqueView@{StatistiqueView}}
+\doxysubsubsection{$\sim$StatistiqueView()}
+{\footnotesize\ttfamily Statistique\+View\+::$\sim$\+Statistique\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur. 
+
+
+
+Définition à la ligne 38 du fichier Statistique\+View.\+cpp.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\label{class_statistique_view_af187a9571e988d63bf5a3e9672358532}} 
+\index{StatistiqueView@{StatistiqueView}!resizeEvent@{resizeEvent}}
+\index{resizeEvent@{resizeEvent}!StatistiqueView@{StatistiqueView}}
+\doxysubsubsection{resizeEvent()}
+{\footnotesize\ttfamily void Statistique\+View\+::resize\+Event (\begin{DoxyParamCaption}\item[{Q\+Resize\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Methode appelee au changement de taille de la fenetre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em event} & (Q\+Resize\+Event$\ast$) \+: Evenement de changement de taille \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 46 du fichier Statistique\+View.\+cpp.
+
+\mbox{\label{class_statistique_view_a669a5f31f173561ee8744ac375995678}} 
+\index{StatistiqueView@{StatistiqueView}!setInformationsCert@{setInformationsCert}}
+\index{setInformationsCert@{setInformationsCert}!StatistiqueView@{StatistiqueView}}
+\doxysubsubsection{setInformationsCert()}
+{\footnotesize\ttfamily void Statistique\+View\+::set\+Informations\+Cert (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{nmb\+Certificats }\end{DoxyParamCaption})}
+
+
+
+Methode pour fixer les statistiques des certificats. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nmb\+Certificats} & (std\+::vector$<$int$>$) \+: Vecteur avec toutes les donnees certificats \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 103 du fichier Statistique\+View.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_statistique_view_a669a5f31f173561ee8744ac375995678_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_statistique_view_a2579afc20ed16f0d9293b15fe4854fc8}} 
+\index{StatistiqueView@{StatistiqueView}!setInformationsJping@{setInformationsJping}}
+\index{setInformationsJping@{setInformationsJping}!StatistiqueView@{StatistiqueView}}
+\doxysubsubsection{setInformationsJping()}
+{\footnotesize\ttfamily void Statistique\+View\+::set\+Informations\+Jping (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{nmb\+Jping }\end{DoxyParamCaption})}
+
+
+
+Methode pour fixer les statistiques de la commande jping. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nmb\+Jping} & (std\+::vector$<$int$>$) \+: Vecteur avec toutes les donnees jping \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 128 du fichier Statistique\+View.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_statistique_view_a2579afc20ed16f0d9293b15fe4854fc8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_statistique_view_a62da132e79001547ae6071edb4c90e4b}} 
+\index{StatistiqueView@{StatistiqueView}!setInformationsMonServ@{setInformationsMonServ}}
+\index{setInformationsMonServ@{setInformationsMonServ}!StatistiqueView@{StatistiqueView}}
+\doxysubsubsection{setInformationsMonServ()}
+{\footnotesize\ttfamily void Statistique\+View\+::set\+Informations\+Mon\+Serv (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{nmb\+Monitors,  }\item[{std\+::vector$<$ int $>$}]{nmb\+Services }\end{DoxyParamCaption})}
+
+
+
+Methode pour fixer les statistiques des moniteurs et services. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nmb\+Monitors} & (std\+::vector$<$int$>$) \+: Vecteur avec toutes les donnees moniteurs \\
+\hline
+{\em nmb\+Services} & (std\+::vector$<$int$>$) \+: Vecteur avec toutes les donnees services \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 60 du fichier Statistique\+View.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_statistique_view_a62da132e79001547ae6071edb4c90e4b_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\label{class_statistique_view_adf595f059508d5f25ed81541b7da4c0f}} 
+\index{StatistiqueView@{StatistiqueView}!p\_chart@{p\_chart}}
+\index{p\_chart@{p\_chart}!StatistiqueView@{StatistiqueView}}
+\doxysubsubsection{p\_chart}
+{\footnotesize\ttfamily Qt\+Charts\+::\+Q\+Chart$\ast$ Statistique\+View\+::p\+\_\+chart\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour le graphique. 
+
+
+
+Définition à la ligne 41 du fichier Statistique\+View.\+h.
+
+\mbox{\label{class_statistique_view_a639a702e652c4cb2fc2cce1540af1490}} 
+\index{StatistiqueView@{StatistiqueView}!p\_chartView@{p\_chartView}}
+\index{p\_chartView@{p\_chartView}!StatistiqueView@{StatistiqueView}}
+\doxysubsubsection{p\_chartView}
+{\footnotesize\ttfamily Qt\+Charts\+::\+Q\+Chart\+View$\ast$ Statistique\+View\+::p\+\_\+chart\+View\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour afficher le graphique. 
+
+
+
+Définition à la ligne 44 du fichier Statistique\+View.\+h.
+
+\mbox{\label{class_statistique_view_a654089e35c83748cec289b6751aec176}} 
+\index{StatistiqueView@{StatistiqueView}!p\_series@{p\_series}}
+\index{p\_series@{p\_series}!StatistiqueView@{StatistiqueView}}
+\doxysubsubsection{p\_series}
+{\footnotesize\ttfamily Qt\+Charts\+::\+Q\+Stacked\+Bar\+Series$\ast$ Statistique\+View\+::p\+\_\+series\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour le style d\textquotesingle{}affichage. 
+
+
+
+Définition à la ligne 38 du fichier Statistique\+View.\+h.
+
+\mbox{\label{class_statistique_view_adb63cf98cfad0c5e5ed4be8022764d0c}} 
+\index{StatistiqueView@{StatistiqueView}!p\_statCertificats@{p\_statCertificats}}
+\index{p\_statCertificats@{p\_statCertificats}!StatistiqueView@{StatistiqueView}}
+\doxysubsubsection{p\_statCertificats}
+{\footnotesize\ttfamily Q\+Label$\ast$ Statistique\+View\+::p\+\_\+stat\+Certificats\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour le texte des certificats. 
+
+
+
+Définition à la ligne 32 du fichier Statistique\+View.\+h.
+
+\mbox{\label{class_statistique_view_a99c50c344abc5b19e3d0477ba1542ddf}} 
+\index{StatistiqueView@{StatistiqueView}!p\_statJping@{p\_statJping}}
+\index{p\_statJping@{p\_statJping}!StatistiqueView@{StatistiqueView}}
+\doxysubsubsection{p\_statJping}
+{\footnotesize\ttfamily Q\+Label$\ast$ Statistique\+View\+::p\+\_\+stat\+Jping\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour le texte des Jping. 
+
+
+
+Définition à la ligne 35 du fichier Statistique\+View.\+h.
+
+\mbox{\label{class_statistique_view_ae921eddd1fa34c6c4ba66c855546fd92}} 
+\index{StatistiqueView@{StatistiqueView}!p\_statMonitors@{p\_statMonitors}}
+\index{p\_statMonitors@{p\_statMonitors}!StatistiqueView@{StatistiqueView}}
+\doxysubsubsection{p\_statMonitors}
+{\footnotesize\ttfamily Q\+Label$\ast$ Statistique\+View\+::p\+\_\+stat\+Monitors\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour le texte des moniteurs. 
+
+
+
+Définition à la ligne 26 du fichier Statistique\+View.\+h.
+
+\mbox{\label{class_statistique_view_a00c28ebad335a57ff80ec4d71d32f58d}} 
+\index{StatistiqueView@{StatistiqueView}!p\_statServices@{p\_statServices}}
+\index{p\_statServices@{p\_statServices}!StatistiqueView@{StatistiqueView}}
+\doxysubsubsection{p\_statServices}
+{\footnotesize\ttfamily Q\+Label$\ast$ Statistique\+View\+::p\+\_\+stat\+Services\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour le texte des services. 
+
+
+
+Définition à la ligne 29 du fichier Statistique\+View.\+h.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Vues/\textbf{ Statistique\+View.\+h}\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Vues/\textbf{ Statistique\+View.\+cpp}\end{DoxyCompactItemize}

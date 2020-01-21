@@ -65,11 +65,17 @@ Q\+Table\+View $\ast$ \textbf{ p\+\_\+table}
 Q\+Standard\+Item\+Model $\ast$ \textbf{ p\+\_\+model}
 \begin{DoxyCompactList}\small\item\em Variable pour le model. \end{DoxyCompactList}\item 
 Q\+Push\+Button $\ast$ \textbf{ p\+\_\+button\+Start}
-\begin{DoxyCompactList}\small\item\em Variable du boutton demarrer. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Variable du bouton demarrer. \end{DoxyCompactList}\item 
 Q\+Push\+Button $\ast$ \textbf{ p\+\_\+button\+Stop}
 \begin{DoxyCompactList}\small\item\em Variable du bouton arreter. \end{DoxyCompactList}\item 
 Q\+Push\+Button $\ast$ \textbf{ p\+\_\+button\+Restart}
 \begin{DoxyCompactList}\small\item\em Variable du bouton redemarrer. \end{DoxyCompactList}\item 
+Q\+Label $\ast$ \textbf{ p\+\_\+legend}
+\begin{DoxyCompactList}\small\item\em Variable pour la legende. \end{DoxyCompactList}\item 
+Q\+Label $\ast$ \textbf{ p\+\_\+noir}
+\begin{DoxyCompactList}\small\item\em Variable pour la legende en noir. \end{DoxyCompactList}\item 
+Q\+Label $\ast$ \textbf{ p\+\_\+rouge}
+\begin{DoxyCompactList}\small\item\em Variable pour la legende en rouge. \end{DoxyCompactList}\item 
 \textbf{ Manager\+Logiciel} $\ast$ \textbf{ p\+\_\+man\+Log}
 \begin{DoxyCompactList}\small\item\em Variable pour la partie ssh. \end{DoxyCompactList}\item 
 \textbf{ Service} \textbf{ p\+\_\+service}
@@ -85,9 +91,12 @@ std\+::string \textbf{ p\+\_\+password}
 \doxysubsection{Description détaillée}
 Classe pour la vue \doxyref{Service\+Informations}{p.}{class_service_informations}. 
 
-Vue ou sont affichees les informations d\textquotesingle{}un service 
+Vue ou sont affichees les informations d\textquotesingle{}un service \begin{DoxyAuthor}{Auteur}
+Thomas Rebillard 
+\end{DoxyAuthor}
 
-Définition à la ligne 22 du fichier Service\+Informations.\+h.
+
+Définition à la ligne 24 du fichier Service\+Informations.\+h.
 
 
 
@@ -136,7 +145,7 @@ Destructeur.
 
 
 
-Définition à la ligne 34 du fichier Service\+Informations.\+cpp.
+Définition à la ligne 38 du fichier Service\+Informations.\+cpp.
 
 
 
@@ -160,7 +169,7 @@ Methode pour ajouter une information.
 \end{DoxyParams}
 
 
-Définition à la ligne 130 du fichier Service\+Informations.\+cpp.
+Définition à la ligne 146 du fichier Service\+Informations.\+cpp.
 
 Voici le graphe des appelants de cette fonction \+:\nopagebreak
 \begin{figure}[H]
@@ -181,7 +190,7 @@ Methode d\textquotesingle{}initialisation des variables des objets.
 
 
 
-Définition à la ligne 43 du fichier Service\+Informations.\+cpp.
+Définition à la ligne 47 du fichier Service\+Informations.\+cpp.
 
 Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
 \begin{figure}[H]
@@ -209,7 +218,7 @@ Methode appelee quand on appuie sur un bouton.
 
 
 
-Définition à la ligne 149 du fichier Service\+Informations.\+cpp.
+Définition à la ligne 165 du fichier Service\+Informations.\+cpp.
 
 Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
 \begin{figure}[H]
@@ -237,7 +246,7 @@ Methode pour afficher la vue avancee.
 
 
 
-Définition à la ligne 179 du fichier Service\+Informations.\+cpp.
+Définition à la ligne 195 du fichier Service\+Informations.\+cpp.
 
 Voici le graphe des appelants de cette fonction \+:\nopagebreak
 \begin{figure}[H]
@@ -258,7 +267,7 @@ Methode pour changer le mode.
 
 
 
-Définition à la ligne 188 du fichier Service\+Informations.\+cpp.
+Définition à la ligne 204 du fichier Service\+Informations.\+cpp.
 
 Voici le graphe des appelants de cette fonction \+:\nopagebreak
 \begin{figure}[H]
@@ -279,7 +288,7 @@ Methode pour obtenir les informations.
 
 
 
-Définition à la ligne 84 du fichier Service\+Informations.\+cpp.
+Définition à la ligne 100 du fichier Service\+Informations.\+cpp.
 
 Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
 \begin{figure}[H]
@@ -312,7 +321,7 @@ Methode appelee quand la fentre change de taille.
 \end{DoxyParams}
 
 
-Définition à la ligne 212 du fichier Service\+Informations.\+cpp.
+Définition à la ligne 228 du fichier Service\+Informations.\+cpp.
 
 
 
@@ -329,7 +338,7 @@ Variable pour la vue avancee.
 
 
 
-Définition à la ligne 53 du fichier Service\+Informations.\+h.
+Définition à la ligne 64 du fichier Service\+Informations.\+h.
 
 \mbox{\label{class_service_informations_a39eb5f93eb582fd3731120b262920e56}} 
 \index{ServiceInformations@{ServiceInformations}!p\_buttonRestart@{p\_buttonRestart}}
@@ -343,7 +352,7 @@ Variable du bouton redemarrer.
 
 
 
-Définition à la ligne 38 du fichier Service\+Informations.\+h.
+Définition à la ligne 40 du fichier Service\+Informations.\+h.
 
 \mbox{\label{class_service_informations_a4e3717076a7c926a4eab448421061d88}} 
 \index{ServiceInformations@{ServiceInformations}!p\_buttonStart@{p\_buttonStart}}
@@ -353,11 +362,11 @@ Définition à la ligne 38 du fichier Service\+Informations.\+h.
 
 
 
-Variable du boutton demarrer. 
+Variable du bouton demarrer. 
 
 
 
-Définition à la ligne 32 du fichier Service\+Informations.\+h.
+Définition à la ligne 34 du fichier Service\+Informations.\+h.
 
 \mbox{\label{class_service_informations_a08d2cd42759cbcba57ab5691cc5f3f9b}} 
 \index{ServiceInformations@{ServiceInformations}!p\_buttonStop@{p\_buttonStop}}
@@ -371,7 +380,21 @@ Variable du bouton arreter.
 
 
 
-Définition à la ligne 35 du fichier Service\+Informations.\+h.
+Définition à la ligne 37 du fichier Service\+Informations.\+h.
+
+\mbox{\label{class_service_informations_aeef589ff9ed5189e4b9fa4ccd976bbd0}} 
+\index{ServiceInformations@{ServiceInformations}!p\_legend@{p\_legend}}
+\index{p\_legend@{p\_legend}!ServiceInformations@{ServiceInformations}}
+\doxysubsubsection{p\_legend}
+{\footnotesize\ttfamily Q\+Label$\ast$ Service\+Informations\+::p\+\_\+legend\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour la legende. 
+
+
+
+Définition à la ligne 43 du fichier Service\+Informations.\+h.
 
 \mbox{\label{class_service_informations_a902403c262ceebd44803ffe45d43a5c9}} 
 \index{ServiceInformations@{ServiceInformations}!p\_manLog@{p\_manLog}}
@@ -385,7 +408,7 @@ Variable pour la partie ssh.
 
 
 
-Définition à la ligne 41 du fichier Service\+Informations.\+h.
+Définition à la ligne 52 du fichier Service\+Informations.\+h.
 
 \mbox{\label{class_service_informations_afce43078c98714d43a57fb3a833b1621}} 
 \index{ServiceInformations@{ServiceInformations}!p\_model@{p\_model}}
@@ -399,7 +422,21 @@ Variable pour le model.
 
 
 
-Définition à la ligne 29 du fichier Service\+Informations.\+h.
+Définition à la ligne 31 du fichier Service\+Informations.\+h.
+
+\mbox{\label{class_service_informations_ae610a9f2c8cb6982614350980869de5a}} 
+\index{ServiceInformations@{ServiceInformations}!p\_noir@{p\_noir}}
+\index{p\_noir@{p\_noir}!ServiceInformations@{ServiceInformations}}
+\doxysubsubsection{p\_noir}
+{\footnotesize\ttfamily Q\+Label$\ast$ Service\+Informations\+::p\+\_\+noir\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour la legende en noir. 
+
+
+
+Définition à la ligne 46 du fichier Service\+Informations.\+h.
 
 \mbox{\label{class_service_informations_ac7a3f48c7e96d1ed02d19aea29e10b95}} 
 \index{ServiceInformations@{ServiceInformations}!p\_password@{p\_password}}
@@ -409,7 +446,21 @@ Définition à la ligne 29 du fichier Service\+Informations.\+h.
 
 
 
-Définition à la ligne 50 du fichier Service\+Informations.\+h.
+Définition à la ligne 61 du fichier Service\+Informations.\+h.
+
+\mbox{\label{class_service_informations_a72223e9f6ce89fbf76aab695e3fb4bb9}} 
+\index{ServiceInformations@{ServiceInformations}!p\_rouge@{p\_rouge}}
+\index{p\_rouge@{p\_rouge}!ServiceInformations@{ServiceInformations}}
+\doxysubsubsection{p\_rouge}
+{\footnotesize\ttfamily Q\+Label$\ast$ Service\+Informations\+::p\+\_\+rouge\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour la legende en rouge. 
+
+
+
+Définition à la ligne 49 du fichier Service\+Informations.\+h.
 
 \mbox{\label{class_service_informations_aec74f65b23932906f9d955da1e96fc4a}} 
 \index{ServiceInformations@{ServiceInformations}!p\_service@{p\_service}}
@@ -423,7 +474,7 @@ Variable pour un service.
 
 
 
-Définition à la ligne 44 du fichier Service\+Informations.\+h.
+Définition à la ligne 55 du fichier Service\+Informations.\+h.
 
 \mbox{\label{class_service_informations_ade4ea954bcd79a74e1d7ea15d5646108}} 
 \index{ServiceInformations@{ServiceInformations}!p\_table@{p\_table}}
@@ -437,7 +488,7 @@ Variable Pour la table.
 
 
 
-Définition à la ligne 26 du fichier Service\+Informations.\+h.
+Définition à la ligne 28 du fichier Service\+Informations.\+h.
 
 \mbox{\label{class_service_informations_ac5c5e58035f202094b2a3d0b249f74c5}} 
 \index{ServiceInformations@{ServiceInformations}!p\_user@{p\_user}}
@@ -451,7 +502,7 @@ Variable d\textquotesingle{}utilisateur.
 
 
 
-Définition à la ligne 47 du fichier Service\+Informations.\+h.
+Définition à la ligne 58 du fichier Service\+Informations.\+h.
 
 
 

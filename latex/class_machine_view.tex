@@ -1,0 +1,392 @@
+\doxysection{Référence de la classe Machine\+View}
+\label{class_machine_view}\index{MachineView@{MachineView}}
+
+
+Classe pour la vue avec la liste des machines.  
+
+
+
+
+{\ttfamily \#include $<$Machine\+View.\+h$>$}
+
+
+
+Graphe d\textquotesingle{}héritage de Machine\+View\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{class_machine_view__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de Machine\+View\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_machine_view__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Machine\+View} (Q\+Widget $\ast$parent, std\+::string user, std\+::string password)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+Machine\+View} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+void \textbf{ set\+Informations\+Mon\+Ser} (\textbf{ Manager\+Monitor} $\ast$man\+Mon, \textbf{ Manager\+Service} $\ast$man\+Ser)
+\begin{DoxyCompactList}\small\item\em Methode pour fixer les informations des moniteurs et des services. \end{DoxyCompactList}\item 
+void \textbf{ set\+Informations\+Cer} (\textbf{ Manager\+Certificat} $\ast$man\+Cer)
+\begin{DoxyCompactList}\small\item\em Methode pour fixer les informations des certificats. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ resize\+Event} (Q\+Resize\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em Methode appelee au changement de taille de la fenetre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Connecteurs privés}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ p\+Slot\+\_\+show\+Machine} ()
+\begin{DoxyCompactList}\small\item\em Methode pour afficher la vue d\textquotesingle{}informations d\textquotesingle{}une machine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Table\+View $\ast$ \textbf{ p\+\_\+machines}
+\begin{DoxyCompactList}\small\item\em Variable pour la table des machines. \end{DoxyCompactList}\item 
+Q\+Push\+Button $\ast$ \textbf{ p\+\_\+button}
+\begin{DoxyCompactList}\small\item\em Variable du bouton. \end{DoxyCompactList}\item 
+\textbf{ Onglet\+View} $\ast$ \textbf{ p\+\_\+onglets}
+\begin{DoxyCompactList}\small\item\em Variable pour les onglets. \end{DoxyCompactList}\item 
+Q\+Scroll\+Area $\ast$ \textbf{ p\+\_\+scroll}
+\begin{DoxyCompactList}\small\item\em Varaible pour permettre le scroll. \end{DoxyCompactList}\item 
+\textbf{ Plateforme\+View} $\ast$ \textbf{ p\+\_\+parent}
+\begin{DoxyCompactList}\small\item\em Variable pour le parent. \end{DoxyCompactList}\item 
+\textbf{ Manager\+Certificat} $\ast$ \textbf{ p\+\_\+man\+Cer}
+\begin{DoxyCompactList}\small\item\em Variable pour le gestionnaire de certificats. \end{DoxyCompactList}\item 
+\textbf{ Manager\+Monitor} $\ast$ \textbf{ p\+\_\+man\+Mon}
+\begin{DoxyCompactList}\small\item\em Variable pour le gestionnaire de moniteurs. \end{DoxyCompactList}\item 
+\textbf{ Manager\+Service} $\ast$ \textbf{ p\+\_\+man\+Ser}
+\begin{DoxyCompactList}\small\item\em Variable pour le gestionnaire de services. \end{DoxyCompactList}\item 
+std\+::string \textbf{ p\+\_\+user}
+\begin{DoxyCompactList}\small\item\em Variable pour l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+std\+::string \textbf{ p\+\_\+password}
+\begin{DoxyCompactList}\small\item\em Variable pour le mot de passe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Classe pour la vue avec la liste des machines. 
+
+Vue ou sont affichees toutes les chaines fonctionnelles \begin{DoxyAuthor}{Auteur}
+Thomas Rebillard 
+\end{DoxyAuthor}
+
+
+Définition à la ligne 26 du fichier Machine\+View.\+h.
+
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\label{class_machine_view_a395e752aa7eeee15acec2dbdc6558f78}} 
+\index{MachineView@{MachineView}!MachineView@{MachineView}}
+\index{MachineView@{MachineView}!MachineView@{MachineView}}
+\doxysubsubsection{MachineView()}
+{\footnotesize\ttfamily Machine\+View\+::\+Machine\+View (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent,  }\item[{std\+::string}]{user,  }\item[{std\+::string}]{password }\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & (Q\+Widget$\ast$) \+: Parent \\
+\hline
+{\em user} & (std\+::string) \+: Utilisateur \\
+\hline
+{\em password} & (std\+::string) \+: Mot de passe \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 10 du fichier Machine\+View.\+cpp.
+
+\mbox{\label{class_machine_view_a53b171af0eb69c7a5627727221b70845}} 
+\index{MachineView@{MachineView}!````~MachineView@{$\sim$MachineView}}
+\index{````~MachineView@{$\sim$MachineView}!MachineView@{MachineView}}
+\doxysubsubsection{$\sim$MachineView()}
+{\footnotesize\ttfamily Machine\+View\+::$\sim$\+Machine\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur. 
+
+
+
+Définition à la ligne 31 du fichier Machine\+View.\+cpp.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\label{class_machine_view_a8bb539664c989c6cad3a4760725ee202}} 
+\index{MachineView@{MachineView}!pSlot\_showMachine@{pSlot\_showMachine}}
+\index{pSlot\_showMachine@{pSlot\_showMachine}!MachineView@{MachineView}}
+\doxysubsubsection{pSlot\_showMachine}
+{\footnotesize\ttfamily void Machine\+View\+::p\+Slot\+\_\+show\+Machine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Methode pour afficher la vue d\textquotesingle{}informations d\textquotesingle{}une machine. 
+
+
+
+Définition à la ligne 113 du fichier Machine\+View.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_machine_view_a8bb539664c989c6cad3a4760725ee202_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_machine_view_a8bb539664c989c6cad3a4760725ee202_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_machine_view_aa1eb78dbe8b7e0e8a9dc4997793fcfa8}} 
+\index{MachineView@{MachineView}!resizeEvent@{resizeEvent}}
+\index{resizeEvent@{resizeEvent}!MachineView@{MachineView}}
+\doxysubsubsection{resizeEvent()}
+{\footnotesize\ttfamily void Machine\+View\+::resize\+Event (\begin{DoxyParamCaption}\item[{Q\+Resize\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Methode appelee au changement de taille de la fenetre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em event} & (Q\+Resize\+Event$\ast$) \+: Evenement de changement de taille \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 42 du fichier Machine\+View.\+cpp.
+
+\mbox{\label{class_machine_view_aeb749a12d97babf72b5e4ca36a31bc07}} 
+\index{MachineView@{MachineView}!setInformationsCer@{setInformationsCer}}
+\index{setInformationsCer@{setInformationsCer}!MachineView@{MachineView}}
+\doxysubsubsection{setInformationsCer()}
+{\footnotesize\ttfamily void Machine\+View\+::set\+Informations\+Cer (\begin{DoxyParamCaption}\item[{\textbf{ Manager\+Certificat} $\ast$}]{man\+Cer }\end{DoxyParamCaption})}
+
+
+
+Methode pour fixer les informations des certificats. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em man\+Cer} & (Manager\+Certificat$\ast$) \+: Gestionnaire de certificats \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 105 du fichier Machine\+View.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_machine_view_aeb749a12d97babf72b5e4ca36a31bc07_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_machine_view_aeb749a12d97babf72b5e4ca36a31bc07_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_machine_view_abdca5ee838068082b0961b972c9b413a}} 
+\index{MachineView@{MachineView}!setInformationsMonSer@{setInformationsMonSer}}
+\index{setInformationsMonSer@{setInformationsMonSer}!MachineView@{MachineView}}
+\doxysubsubsection{setInformationsMonSer()}
+{\footnotesize\ttfamily void Machine\+View\+::set\+Informations\+Mon\+Ser (\begin{DoxyParamCaption}\item[{\textbf{ Manager\+Monitor} $\ast$}]{man\+Mon,  }\item[{\textbf{ Manager\+Service} $\ast$}]{man\+Ser }\end{DoxyParamCaption})}
+
+
+
+Methode pour fixer les informations des moniteurs et des services. 
+
+Les affiche par la suite 
+\begin{DoxyParams}{Paramètres}
+{\em man\+Mon} & (Manager\+Monitor$\ast$) \+: Gestionnaire de moniteurs \\
+\hline
+{\em man\+Ser} & (Manager\+Service$\ast$) \+: Gestionnaire de services \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 59 du fichier Machine\+View.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_machine_view_abdca5ee838068082b0961b972c9b413a_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_machine_view_abdca5ee838068082b0961b972c9b413a_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\label{class_machine_view_acd90685ed584282538359ad0aaffad1c}} 
+\index{MachineView@{MachineView}!p\_button@{p\_button}}
+\index{p\_button@{p\_button}!MachineView@{MachineView}}
+\doxysubsubsection{p\_button}
+{\footnotesize\ttfamily Q\+Push\+Button$\ast$ Machine\+View\+::p\+\_\+button\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable du bouton. 
+
+
+
+Définition à la ligne 36 du fichier Machine\+View.\+h.
+
+\mbox{\label{class_machine_view_a7da063fc4beba607274b7c61b8c9ec57}} 
+\index{MachineView@{MachineView}!p\_machines@{p\_machines}}
+\index{p\_machines@{p\_machines}!MachineView@{MachineView}}
+\doxysubsubsection{p\_machines}
+{\footnotesize\ttfamily Q\+Table\+View$\ast$ Machine\+View\+::p\+\_\+machines\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour la table des machines. 
+
+
+
+Définition à la ligne 33 du fichier Machine\+View.\+h.
+
+\mbox{\label{class_machine_view_a64cbb2efeca7065e80d21d6960f9c2ce}} 
+\index{MachineView@{MachineView}!p\_manCer@{p\_manCer}}
+\index{p\_manCer@{p\_manCer}!MachineView@{MachineView}}
+\doxysubsubsection{p\_manCer}
+{\footnotesize\ttfamily \textbf{ Manager\+Certificat}$\ast$ Machine\+View\+::p\+\_\+man\+Cer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour le gestionnaire de certificats. 
+
+
+
+Définition à la ligne 48 du fichier Machine\+View.\+h.
+
+\mbox{\label{class_machine_view_aa1dfc3ecf4b7e045f5df6f58694c65ac}} 
+\index{MachineView@{MachineView}!p\_manMon@{p\_manMon}}
+\index{p\_manMon@{p\_manMon}!MachineView@{MachineView}}
+\doxysubsubsection{p\_manMon}
+{\footnotesize\ttfamily \textbf{ Manager\+Monitor}$\ast$ Machine\+View\+::p\+\_\+man\+Mon\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour le gestionnaire de moniteurs. 
+
+
+
+Définition à la ligne 51 du fichier Machine\+View.\+h.
+
+\mbox{\label{class_machine_view_a552646939605a62d82c70af32a806bb7}} 
+\index{MachineView@{MachineView}!p\_manSer@{p\_manSer}}
+\index{p\_manSer@{p\_manSer}!MachineView@{MachineView}}
+\doxysubsubsection{p\_manSer}
+{\footnotesize\ttfamily \textbf{ Manager\+Service}$\ast$ Machine\+View\+::p\+\_\+man\+Ser\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour le gestionnaire de services. 
+
+
+
+Définition à la ligne 54 du fichier Machine\+View.\+h.
+
+\mbox{\label{class_machine_view_afa773f1182ada3b38948b0a845f80cf8}} 
+\index{MachineView@{MachineView}!p\_onglets@{p\_onglets}}
+\index{p\_onglets@{p\_onglets}!MachineView@{MachineView}}
+\doxysubsubsection{p\_onglets}
+{\footnotesize\ttfamily \textbf{ Onglet\+View}$\ast$ Machine\+View\+::p\+\_\+onglets\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour les onglets. 
+
+
+
+Définition à la ligne 39 du fichier Machine\+View.\+h.
+
+\mbox{\label{class_machine_view_a06f2741bab2108ae63ace2f5d8b272f6}} 
+\index{MachineView@{MachineView}!p\_parent@{p\_parent}}
+\index{p\_parent@{p\_parent}!MachineView@{MachineView}}
+\doxysubsubsection{p\_parent}
+{\footnotesize\ttfamily \textbf{ Plateforme\+View}$\ast$ Machine\+View\+::p\+\_\+parent\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour le parent. 
+
+
+
+Définition à la ligne 45 du fichier Machine\+View.\+h.
+
+\mbox{\label{class_machine_view_ac505df49b0639eb52e605cf0f2618a11}} 
+\index{MachineView@{MachineView}!p\_password@{p\_password}}
+\index{p\_password@{p\_password}!MachineView@{MachineView}}
+\doxysubsubsection{p\_password}
+{\footnotesize\ttfamily std\+::string Machine\+View\+::p\+\_\+password\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour le mot de passe. 
+
+
+
+Définition à la ligne 60 du fichier Machine\+View.\+h.
+
+\mbox{\label{class_machine_view_abb183f5326ca7f4b86188e335c72def2}} 
+\index{MachineView@{MachineView}!p\_scroll@{p\_scroll}}
+\index{p\_scroll@{p\_scroll}!MachineView@{MachineView}}
+\doxysubsubsection{p\_scroll}
+{\footnotesize\ttfamily Q\+Scroll\+Area$\ast$ Machine\+View\+::p\+\_\+scroll\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Varaible pour permettre le scroll. 
+
+
+
+Définition à la ligne 42 du fichier Machine\+View.\+h.
+
+\mbox{\label{class_machine_view_a44933144520ab514a7ee8cf7c855d758}} 
+\index{MachineView@{MachineView}!p\_user@{p\_user}}
+\index{p\_user@{p\_user}!MachineView@{MachineView}}
+\doxysubsubsection{p\_user}
+{\footnotesize\ttfamily std\+::string Machine\+View\+::p\+\_\+user\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour l\textquotesingle{}utilisateur. 
+
+
+
+Définition à la ligne 57 du fichier Machine\+View.\+h.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Vues/\textbf{ Machine\+View.\+h}\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Vues/\textbf{ Machine\+View.\+cpp}\end{DoxyCompactItemize}
