@@ -1,4 +1,4 @@
-\doxysection{Référence de la classe Manager\+Certificat}
+\hypertarget{class_manager_certificat}{}\doxysection{Référence de la classe Manager\+Certificat}
 \label{class_manager_certificat}\index{ManagerCertificat@{ManagerCertificat}}
 
 
@@ -12,42 +12,49 @@ Classe pour faire la gestion des certificats.
 \doxysubsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
-\textbf{ Manager\+Certificat} ()
+\mbox{\hyperlink{class_manager_certificat_a9c0528fe5ea31ba759f00308ab697bf1}{Manager\+Certificat}} ()
 \begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
-\textbf{ Manager\+Certificat} (const \textbf{ Manager\+Certificat} \&manager)
+\mbox{\hyperlink{class_manager_certificat_a22f119c9a7961af30e68d72751c654f7}{Manager\+Certificat}} (const \mbox{\hyperlink{class_manager_certificat}{Manager\+Certificat}} \&manager)
 \begin{DoxyCompactList}\small\item\em Constructeur de recopie. \end{DoxyCompactList}\item 
-\textbf{ Manager\+Certificat} (std\+::vector$<$ \textbf{ Certificat} $>$ certificats)
+\mbox{\hyperlink{class_manager_certificat_a3239024e8da11723c80715d94cb47824}{Manager\+Certificat}} (std\+::vector$<$ \mbox{\hyperlink{class_certificat}{Certificat}} $>$ certificats)
 \begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
-\textbf{ $\sim$\+Manager\+Certificat} ()
+\mbox{\hyperlink{class_manager_certificat_a84fae8134b605d503bbab6c4a3e3c85a}{$\sim$\+Manager\+Certificat}} ()
 \begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
-void \textbf{ add\+Certificat} (\textbf{ Certificat} certificat)
+void \mbox{\hyperlink{class_manager_certificat_a38de112d37992963e48b57dc53444173}{add\+Certificat}} (\mbox{\hyperlink{class_certificat}{Certificat}} certificat)
 \begin{DoxyCompactList}\small\item\em Methode pour ajouter un certificat. \end{DoxyCompactList}\item 
-\textbf{ Certificat} \textbf{ get\+Certificat} (std\+::string name) const
+\mbox{\hyperlink{class_certificat}{Certificat}} \mbox{\hyperlink{class_manager_certificat_a24d4beeda4e5fbb0a58970b0e84e7a2f}{get\+Certificat}} (std\+::string name) const
 \begin{DoxyCompactList}\small\item\em Methode pour obtenir un certificat. \end{DoxyCompactList}\item 
-std\+::vector$<$ \textbf{ Certificat} $>$ \textbf{ get\+Certificats} () const
+std\+::vector$<$ \mbox{\hyperlink{class_certificat}{Certificat}} $>$ \mbox{\hyperlink{class_manager_certificat_a52ecf20752766af014c6724717910b6f}{get\+Certificats}} () const
 \begin{DoxyCompactList}\small\item\em Methode pour obtenir tous les certificats. \end{DoxyCompactList}\item 
-std\+::vector$<$ \textbf{ Certificat} $>$ \textbf{ get\+Certificats\+By\+Machine} (std\+::string machine) const
+std\+::vector$<$ \mbox{\hyperlink{class_certificat}{Certificat}} $>$ \mbox{\hyperlink{class_manager_certificat_a0d847bca79cbf2faea8203b4360e5dc9}{get\+Certificats\+By\+Machine}} (std\+::string machine) const
 \begin{DoxyCompactList}\small\item\em Methode pour obtenir tous les certificats d\textquotesingle{}une machine. \end{DoxyCompactList}\item 
-\textbf{ Manager\+Certificat} \& \textbf{ operator=} (const \textbf{ Manager\+Certificat} \&mancert)
+std\+::vector$<$ int $>$ \mbox{\hyperlink{class_manager_certificat_a5364c5e3c4150e908a9b4914403fc900}{get\+States}} () const
+\begin{DoxyCompactList}\small\item\em Methode pour obtenir le nombre de chaque etat pour les certificats. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{class_manager_certificat_a38659452516a354e360a8b60ff6b14b0}{get\+States\+By\+Machine}} (std\+::string machine) const
+\begin{DoxyCompactList}\small\item\em Methode pour obtenir le nombre de chaque etat des certificats d\textquotesingle{}une machine. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_manager_certificat_a0bd5f244eab2428539ea7f65843f3310}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Methode pour vider le gestionnaire. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_manager_certificat}{Manager\+Certificat}} \& \mbox{\hyperlink{class_manager_certificat_adcf92669e86e2de880ba8e9a613ed814}{operator=}} (const \mbox{\hyperlink{class_manager_certificat}{Manager\+Certificat}} \&mancert)
 \begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}operateur =. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Fonctions membres privées}
 \begin{DoxyCompactItemize}
 \item 
-bool \textbf{ p\+\_\+is\+In} (\textbf{ Certificat} certificat)
+bool \mbox{\hyperlink{class_manager_certificat_aa8fd9366b8c118259eca683eeeba549f}{p\+\_\+is\+In}} (\mbox{\hyperlink{class_certificat}{Certificat}} certificat)
 \begin{DoxyCompactList}\small\item\em Methode pour savoir si un certificat est deja dans le vecteur. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
-std\+::vector$<$ \textbf{ Certificat} $>$ \textbf{ p\+\_\+certificats}
+std\+::vector$<$ \mbox{\hyperlink{class_certificat}{Certificat}} $>$ \mbox{\hyperlink{class_manager_certificat_a799679c48e4567f0b00e56be6440a349}{p\+\_\+certificats}}
 \begin{DoxyCompactList}\small\item\em Variable pour le vecteur des moniteurs. \end{DoxyCompactList}\item 
-std\+::mutex \textbf{ p\+\_\+mutex}
+std\+::mutex \mbox{\hyperlink{class_manager_certificat_ada6b9bd2de344fe2c5d4bee0c54b9748}{p\+\_\+mutex}}
 \begin{DoxyCompactList}\small\item\em Variable pour eviter tout probleme d\textquotesingle{}ecriture. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Description détaillée}
 Classe pour faire la gestion des certificats. 
 
-Classe pour gerer les certificats. Possede un vecteur ou elle les enregistre \begin{DoxyAuthor}{Auteur}
+Classe pour gerer les certificats. ~\newline
+Possede un vecteur ou elle les enregistre. \begin{DoxyAuthor}{Auteur}
 Thomas Rebillard 
 \end{DoxyAuthor}
 
@@ -57,10 +64,10 @@ Définition à la ligne 16 du fichier Manager\+Certificat.\+h.
 
 
 \doxysubsection{Documentation des constructeurs et destructeur}
-\mbox{\label{class_manager_certificat_a9c0528fe5ea31ba759f00308ab697bf1}} 
+\mbox{\Hypertarget{class_manager_certificat_a9c0528fe5ea31ba759f00308ab697bf1}\label{class_manager_certificat_a9c0528fe5ea31ba759f00308ab697bf1}} 
 \index{ManagerCertificat@{ManagerCertificat}!ManagerCertificat@{ManagerCertificat}}
 \index{ManagerCertificat@{ManagerCertificat}!ManagerCertificat@{ManagerCertificat}}
-\doxysubsubsection{ManagerCertificat()\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+\doxysubsubsection{\texorpdfstring{ManagerCertificat()}{ManagerCertificat()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily Manager\+Certificat\+::\+Manager\+Certificat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -71,11 +78,11 @@ Constructeur.
 
 Définition à la ligne 6 du fichier Manager\+Certificat.\+cpp.
 
-\mbox{\label{class_manager_certificat_a22f119c9a7961af30e68d72751c654f7}} 
+\mbox{\Hypertarget{class_manager_certificat_a22f119c9a7961af30e68d72751c654f7}\label{class_manager_certificat_a22f119c9a7961af30e68d72751c654f7}} 
 \index{ManagerCertificat@{ManagerCertificat}!ManagerCertificat@{ManagerCertificat}}
 \index{ManagerCertificat@{ManagerCertificat}!ManagerCertificat@{ManagerCertificat}}
-\doxysubsubsection{ManagerCertificat()\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily Manager\+Certificat\+::\+Manager\+Certificat (\begin{DoxyParamCaption}\item[{const \textbf{ Manager\+Certificat} \&}]{manager }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{ManagerCertificat()}{ManagerCertificat()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Manager\+Certificat\+::\+Manager\+Certificat (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_manager_certificat}{Manager\+Certificat}} \&}]{manager }\end{DoxyParamCaption})}
 
 
 
@@ -83,25 +90,26 @@ Constructeur de recopie.
 
 
 \begin{DoxyParams}{Paramètres}
-{\em manager} & (\doxyref{Manager\+Certificat}{p.}{class_manager_certificat}\&) \+: Gestionnaire de certificats a recopier \\
+{\em manager} & (\mbox{\hyperlink{class_manager_certificat}{Manager\+Certificat}}\&) \+: Gestionnaire de certificats a recopier \\
 \hline
 \end{DoxyParams}
 
 
 Définition à la ligne 15 du fichier Manager\+Certificat.\+cpp.
 
-Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=312pt]{class_manager_certificat_a22f119c9a7961af30e68d72751c654f7_cgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_manager_certificat_a3239024e8da11723c80715d94cb47824}} 
+\mbox{\Hypertarget{class_manager_certificat_a3239024e8da11723c80715d94cb47824}\label{class_manager_certificat_a3239024e8da11723c80715d94cb47824}} 
 \index{ManagerCertificat@{ManagerCertificat}!ManagerCertificat@{ManagerCertificat}}
 \index{ManagerCertificat@{ManagerCertificat}!ManagerCertificat@{ManagerCertificat}}
-\doxysubsubsection{ManagerCertificat()\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily Manager\+Certificat\+::\+Manager\+Certificat (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \textbf{ Certificat} $>$}]{certificats }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{ManagerCertificat()}{ManagerCertificat()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Manager\+Certificat\+::\+Manager\+Certificat (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_certificat}{Certificat}} $>$}]{certificats }\end{DoxyParamCaption})}
 
 
 
@@ -116,10 +124,10 @@ Constructeur.
 
 Définition à la ligne 24 du fichier Manager\+Certificat.\+cpp.
 
-\mbox{\label{class_manager_certificat_a84fae8134b605d503bbab6c4a3e3c85a}} 
+\mbox{\Hypertarget{class_manager_certificat_a84fae8134b605d503bbab6c4a3e3c85a}\label{class_manager_certificat_a84fae8134b605d503bbab6c4a3e3c85a}} 
 \index{ManagerCertificat@{ManagerCertificat}!````~ManagerCertificat@{$\sim$ManagerCertificat}}
 \index{````~ManagerCertificat@{$\sim$ManagerCertificat}!ManagerCertificat@{ManagerCertificat}}
-\doxysubsubsection{$\sim$ManagerCertificat()}
+\doxysubsubsection{\texorpdfstring{$\sim$ManagerCertificat()}{~ManagerCertificat()}}
 {\footnotesize\ttfamily Manager\+Certificat\+::$\sim$\+Manager\+Certificat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -133,11 +141,11 @@ Définition à la ligne 32 du fichier Manager\+Certificat.\+cpp.
 
 
 \doxysubsection{Documentation des fonctions membres}
-\mbox{\label{class_manager_certificat_a38de112d37992963e48b57dc53444173}} 
+\mbox{\Hypertarget{class_manager_certificat_a38de112d37992963e48b57dc53444173}\label{class_manager_certificat_a38de112d37992963e48b57dc53444173}} 
 \index{ManagerCertificat@{ManagerCertificat}!addCertificat@{addCertificat}}
 \index{addCertificat@{addCertificat}!ManagerCertificat@{ManagerCertificat}}
-\doxysubsubsection{addCertificat()}
-{\footnotesize\ttfamily void Manager\+Certificat\+::add\+Certificat (\begin{DoxyParamCaption}\item[{\textbf{ Certificat}}]{certificat }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{addCertificat()}{addCertificat()}}
+{\footnotesize\ttfamily void Manager\+Certificat\+::add\+Certificat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_certificat}{Certificat}}}]{certificat }\end{DoxyParamCaption})}
 
 
 
@@ -145,32 +153,48 @@ Methode pour ajouter un certificat.
 
 
 \begin{DoxyParams}{Paramètres}
-{\em certificat} & (\doxyref{Certificat}{p.}{class_certificat}) \+: \doxyref{Certificat}{p.}{class_certificat} a ajouter \\
+{\em certificat} & (\mbox{\hyperlink{class_certificat}{Certificat}}) \+: \mbox{\hyperlink{class_certificat}{Certificat}} a ajouter \\
 \hline
 \end{DoxyParams}
 
 
 Définition à la ligne 40 du fichier Manager\+Certificat.\+cpp.
 
-Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=312pt]{class_manager_certificat_a38de112d37992963e48b57dc53444173_cgraph}
 \end{center}
 \end{figure}
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_manager_certificat_a38de112d37992963e48b57dc53444173_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_manager_certificat_a24d4beeda4e5fbb0a58970b0e84e7a2f}} 
+\mbox{\Hypertarget{class_manager_certificat_a0bd5f244eab2428539ea7f65843f3310}\label{class_manager_certificat_a0bd5f244eab2428539ea7f65843f3310}} 
+\index{ManagerCertificat@{ManagerCertificat}!clear@{clear}}
+\index{clear@{clear}!ManagerCertificat@{ManagerCertificat}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Manager\+Certificat\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Methode pour vider le gestionnaire. 
+
+
+
+Définition à la ligne 160 du fichier Manager\+Certificat.\+cpp.
+
+\mbox{\Hypertarget{class_manager_certificat_a24d4beeda4e5fbb0a58970b0e84e7a2f}\label{class_manager_certificat_a24d4beeda4e5fbb0a58970b0e84e7a2f}} 
 \index{ManagerCertificat@{ManagerCertificat}!getCertificat@{getCertificat}}
 \index{getCertificat@{getCertificat}!ManagerCertificat@{ManagerCertificat}}
-\doxysubsubsection{getCertificat()}
-{\footnotesize\ttfamily \textbf{ Certificat} Manager\+Certificat\+::get\+Certificat (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption}) const}
+\doxysubsubsection{\texorpdfstring{getCertificat()}{getCertificat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_certificat}{Certificat}} Manager\+Certificat\+::get\+Certificat (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption}) const}
 
 
 
@@ -182,17 +206,17 @@ Methode pour obtenir un certificat.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Renvoie}
-(\doxyref{Certificat}{p.}{class_certificat}) \+: \doxyref{Certificat}{p.}{class_certificat} 
+(\mbox{\hyperlink{class_certificat}{Certificat}}) \+: \mbox{\hyperlink{class_certificat}{Certificat}} 
 \end{DoxyReturn}
 
 
 Définition à la ligne 56 du fichier Manager\+Certificat.\+cpp.
 
-\mbox{\label{class_manager_certificat_a52ecf20752766af014c6724717910b6f}} 
+\mbox{\Hypertarget{class_manager_certificat_a52ecf20752766af014c6724717910b6f}\label{class_manager_certificat_a52ecf20752766af014c6724717910b6f}} 
 \index{ManagerCertificat@{ManagerCertificat}!getCertificats@{getCertificats}}
 \index{getCertificats@{getCertificats}!ManagerCertificat@{ManagerCertificat}}
-\doxysubsubsection{getCertificats()}
-{\footnotesize\ttfamily std\+::vector$<$ \textbf{ Certificat} $>$ Manager\+Certificat\+::get\+Certificats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+\doxysubsubsection{\texorpdfstring{getCertificats()}{getCertificats()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_certificat}{Certificat}} $>$ Manager\+Certificat\+::get\+Certificats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 
@@ -205,18 +229,19 @@ Methode pour obtenir tous les certificats.
 
 Définition à la ligne 72 du fichier Manager\+Certificat.\+cpp.
 
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_manager_certificat_a52ecf20752766af014c6724717910b6f_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_manager_certificat_a0d847bca79cbf2faea8203b4360e5dc9}} 
+\mbox{\Hypertarget{class_manager_certificat_a0d847bca79cbf2faea8203b4360e5dc9}\label{class_manager_certificat_a0d847bca79cbf2faea8203b4360e5dc9}} 
 \index{ManagerCertificat@{ManagerCertificat}!getCertificatsByMachine@{getCertificatsByMachine}}
 \index{getCertificatsByMachine@{getCertificatsByMachine}!ManagerCertificat@{ManagerCertificat}}
-\doxysubsubsection{getCertificatsByMachine()}
-{\footnotesize\ttfamily std\+::vector$<$ \textbf{ Certificat} $>$ Manager\+Certificat\+::get\+Certificats\+By\+Machine (\begin{DoxyParamCaption}\item[{std\+::string}]{machine }\end{DoxyParamCaption}) const}
+\doxysubsubsection{\texorpdfstring{getCertificatsByMachine()}{getCertificatsByMachine()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_certificat}{Certificat}} $>$ Manager\+Certificat\+::get\+Certificats\+By\+Machine (\begin{DoxyParamCaption}\item[{std\+::string}]{machine }\end{DoxyParamCaption}) const}
 
 
 
@@ -234,18 +259,74 @@ Methode pour obtenir tous les certificats d\textquotesingle{}une machine.
 
 Définition à la ligne 82 du fichier Manager\+Certificat.\+cpp.
 
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_manager_certificat_a0d847bca79cbf2faea8203b4360e5dc9_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_manager_certificat_adcf92669e86e2de880ba8e9a613ed814}} 
+\mbox{\Hypertarget{class_manager_certificat_a5364c5e3c4150e908a9b4914403fc900}\label{class_manager_certificat_a5364c5e3c4150e908a9b4914403fc900}} 
+\index{ManagerCertificat@{ManagerCertificat}!getStates@{getStates}}
+\index{getStates@{getStates}!ManagerCertificat@{ManagerCertificat}}
+\doxysubsubsection{\texorpdfstring{getStates()}{getStates()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Manager\+Certificat\+::get\+States (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Methode pour obtenir le nombre de chaque etat pour les certificats. 
+
+\begin{DoxyReturn}{Renvoie}
+(std\+::vector$<$int$>$) \+: Vecteur contenant le nombre de chaque etat 
+\end{DoxyReturn}
+
+
+Définition à la ligne 97 du fichier Manager\+Certificat.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_manager_certificat_a5364c5e3c4150e908a9b4914403fc900_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_manager_certificat_a38659452516a354e360a8b60ff6b14b0}\label{class_manager_certificat_a38659452516a354e360a8b60ff6b14b0}} 
+\index{ManagerCertificat@{ManagerCertificat}!getStatesByMachine@{getStatesByMachine}}
+\index{getStatesByMachine@{getStatesByMachine}!ManagerCertificat@{ManagerCertificat}}
+\doxysubsubsection{\texorpdfstring{getStatesByMachine()}{getStatesByMachine()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Manager\+Certificat\+::get\+States\+By\+Machine (\begin{DoxyParamCaption}\item[{std\+::string}]{machine }\end{DoxyParamCaption}) const}
+
+
+
+Methode pour obtenir le nombre de chaque etat des certificats d\textquotesingle{}une machine. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em machine} & (std\+::string) \+: Machine \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+(std\+::vector$<$int$>$) \+: Vecteur contenant le nombre de chaque etat 
+\end{DoxyReturn}
+
+
+Définition à la ligne 128 du fichier Manager\+Certificat.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_manager_certificat_a38659452516a354e360a8b60ff6b14b0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_manager_certificat_adcf92669e86e2de880ba8e9a613ed814}\label{class_manager_certificat_adcf92669e86e2de880ba8e9a613ed814}} 
 \index{ManagerCertificat@{ManagerCertificat}!operator=@{operator=}}
 \index{operator=@{operator=}!ManagerCertificat@{ManagerCertificat}}
-\doxysubsubsection{operator=()}
-{\footnotesize\ttfamily \textbf{ Manager\+Certificat} \& Manager\+Certificat\+::operator= (\begin{DoxyParamCaption}\item[{const \textbf{ Manager\+Certificat} \&}]{man\+Cert }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_manager_certificat}{Manager\+Certificat}} \& Manager\+Certificat\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_manager_certificat}{Manager\+Certificat}} \&}]{man\+Cert }\end{DoxyParamCaption})}
 
 
 
@@ -253,21 +334,21 @@ Surcharge de l\textquotesingle{}operateur =.
 
 
 \begin{DoxyParams}{Paramètres}
-{\em man\+Cert} & (const \doxyref{Manager\+Certificat}{p.}{class_manager_certificat}\&) \+: \doxyref{Manager\+Certificat}{p.}{class_manager_certificat} a recopier \\
+{\em man\+Cert} & (const \mbox{\hyperlink{class_manager_certificat}{Manager\+Certificat}}\&) \+: \mbox{\hyperlink{class_manager_certificat}{Manager\+Certificat}} a recopier \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Renvoie}
-(\doxyref{Manager\+Certificat}{p.}{class_manager_certificat}\&) = Nouveau \doxyref{Manager\+Certificat}{p.}{class_manager_certificat} 
+(\mbox{\hyperlink{class_manager_certificat}{Manager\+Certificat}}\&) = Nouveau \mbox{\hyperlink{class_manager_certificat}{Manager\+Certificat}} 
 \end{DoxyReturn}
 
 
-Définition à la ligne 98 du fichier Manager\+Certificat.\+cpp.
+Définition à la ligne 170 du fichier Manager\+Certificat.\+cpp.
 
-\mbox{\label{class_manager_certificat_aa8fd9366b8c118259eca683eeeba549f}} 
+\mbox{\Hypertarget{class_manager_certificat_aa8fd9366b8c118259eca683eeeba549f}\label{class_manager_certificat_aa8fd9366b8c118259eca683eeeba549f}} 
 \index{ManagerCertificat@{ManagerCertificat}!p\_isIn@{p\_isIn}}
 \index{p\_isIn@{p\_isIn}!ManagerCertificat@{ManagerCertificat}}
-\doxysubsubsection{p\_isIn()}
-{\footnotesize\ttfamily bool Manager\+Certificat\+::p\+\_\+is\+In (\begin{DoxyParamCaption}\item[{\textbf{ Certificat}}]{certificat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+\doxysubsubsection{\texorpdfstring{p\_isIn()}{p\_isIn()}}
+{\footnotesize\ttfamily bool Manager\+Certificat\+::p\+\_\+is\+In (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_certificat}{Certificat}}}]{certificat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -275,7 +356,7 @@ Methode pour savoir si un certificat est deja dans le vecteur.
 
 
 \begin{DoxyParams}{Paramètres}
-{\em certificat} & (\doxyref{Certificat}{p.}{class_certificat}) \+: \doxyref{Certificat}{p.}{class_certificat} \\
+{\em certificat} & (\mbox{\hyperlink{class_certificat}{Certificat}}) \+: \mbox{\hyperlink{class_certificat}{Certificat}} \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Renvoie}
@@ -283,9 +364,10 @@ Methode pour savoir si un certificat est deja dans le vecteur.
 \end{DoxyReturn}
 
 
-Définition à la ligne 109 du fichier Manager\+Certificat.\+cpp.
+Définition à la ligne 181 du fichier Manager\+Certificat.\+cpp.
 
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -295,11 +377,11 @@ Voici le graphe des appelants de cette fonction \+:\nopagebreak
 
 
 \doxysubsection{Documentation des données membres}
-\mbox{\label{class_manager_certificat_a799679c48e4567f0b00e56be6440a349}} 
+\mbox{\Hypertarget{class_manager_certificat_a799679c48e4567f0b00e56be6440a349}\label{class_manager_certificat_a799679c48e4567f0b00e56be6440a349}} 
 \index{ManagerCertificat@{ManagerCertificat}!p\_certificats@{p\_certificats}}
 \index{p\_certificats@{p\_certificats}!ManagerCertificat@{ManagerCertificat}}
-\doxysubsubsection{p\_certificats}
-{\footnotesize\ttfamily std\+::vector$<$\textbf{ Certificat}$>$ Manager\+Certificat\+::p\+\_\+certificats\hspace{0.3cm}{\ttfamily [private]}}
+\doxysubsubsection{\texorpdfstring{p\_certificats}{p\_certificats}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_certificat}{Certificat}}$>$ Manager\+Certificat\+::p\+\_\+certificats\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -309,10 +391,10 @@ Variable pour le vecteur des moniteurs.
 
 Définition à la ligne 20 du fichier Manager\+Certificat.\+h.
 
-\mbox{\label{class_manager_certificat_ada6b9bd2de344fe2c5d4bee0c54b9748}} 
+\mbox{\Hypertarget{class_manager_certificat_ada6b9bd2de344fe2c5d4bee0c54b9748}\label{class_manager_certificat_ada6b9bd2de344fe2c5d4bee0c54b9748}} 
 \index{ManagerCertificat@{ManagerCertificat}!p\_mutex@{p\_mutex}}
 \index{p\_mutex@{p\_mutex}!ManagerCertificat@{ManagerCertificat}}
-\doxysubsubsection{p\_mutex}
+\doxysubsubsection{\texorpdfstring{p\_mutex}{p\_mutex}}
 {\footnotesize\ttfamily std\+::mutex Manager\+Certificat\+::p\+\_\+mutex\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -327,5 +409,5 @@ Définition à la ligne 23 du fichier Manager\+Certificat.\+h.
 
 La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Controleurs/\textbf{ Manager\+Certificat.\+h}\item 
-C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Controleurs/\textbf{ Manager\+Certificat.\+cpp}\end{DoxyCompactItemize}
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Controleurs/\mbox{\hyperlink{_manager_certificat_8h}{Manager\+Certificat.\+h}}\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Controleurs/\mbox{\hyperlink{_manager_certificat_8cpp}{Manager\+Certificat.\+cpp}}\end{DoxyCompactItemize}

@@ -1,4 +1,4 @@
-\doxysection{Référence de la classe Monitors\+View}
+\hypertarget{class_monitors_view}{}\doxysection{Référence de la classe Monitors\+View}
 \label{class_monitors_view}\index{MonitorsView@{MonitorsView}}
 
 
@@ -11,7 +11,8 @@ Classe pour la vue avec la liste des moniteurs.
 
 
 
-Graphe d\textquotesingle{}héritage de Monitors\+View\+:\nopagebreak
+Graphe d\textquotesingle{}héritage de Monitors\+View\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -20,7 +21,8 @@ Graphe d\textquotesingle{}héritage de Monitors\+View\+:\nopagebreak
 \end{figure}
 
 
-Graphe de collaboration de Monitors\+View\+:\nopagebreak
+Graphe de collaboration de Monitors\+View\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -30,72 +32,72 @@ Graphe de collaboration de Monitors\+View\+:\nopagebreak
 \doxysubsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
-\textbf{ Monitors\+View} (Q\+Widget $\ast$parent, std\+::string user, std\+::string password, std\+::string machine)
+\mbox{\hyperlink{class_monitors_view_ac308d37b9023c5a3d8c49b9ce246b227}{Monitors\+View}} (Q\+Widget $\ast$parent, std\+::string machine, \mbox{\hyperlink{class_program_informations}{Program\+Informations}} program)
 \begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
-\textbf{ $\sim$\+Monitors\+View} ()
+\mbox{\hyperlink{class_monitors_view_a43f9fbbfca04fa940b1c460f1b8bbb99}{$\sim$\+Monitors\+View}} ()
 \begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
-void \textbf{ set\+Informations} (\textbf{ Manager\+Monitor} $\ast$man\+Mon)
+void \mbox{\hyperlink{class_monitors_view_a357c3c51e5b882d6240c5b3aea607d49}{set\+Informations}} (\mbox{\hyperlink{class_manager_monitor}{Manager\+Monitor}} $\ast$man\+Mon)
 \begin{DoxyCompactList}\small\item\em Methode pour fixer les informations et les afficher dans les tables. \end{DoxyCompactList}\item 
-void \textbf{ show\+Monitor} (std\+::string monitor)
+void \mbox{\hyperlink{class_monitors_view_a427db0b633bfb17e23d74e68fd571038}{show\+Monitor}} (std\+::string monitor)
 \begin{DoxyCompactList}\small\item\em Methode pour montrer un moniteur specifique. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Fonctions membres protégées}
 \begin{DoxyCompactItemize}
 \item 
-void \textbf{ resize\+Event} (Q\+Resize\+Event $\ast$event)
+void \mbox{\hyperlink{class_monitors_view_a5162f90a938e76886e47f2f4c31a1f20}{resize\+Event}} (Q\+Resize\+Event $\ast$event)
 \begin{DoxyCompactList}\small\item\em Methode appelee au changement de taille de la fenetre. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Connecteurs privés}
 \begin{DoxyCompactItemize}
 \item 
-void \textbf{ p\+Slot\+\_\+show\+Monitor} ()
-\begin{DoxyCompactList}\small\item\em Methode pour afficher les informations d\textquotesingle{}un moniteur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_monitors_view_a2a5e749fc671982dd13b7d22073815d2}{p\+Slot\+\_\+show\+Monitor}} ()
+\begin{DoxyCompactList}\small\item\em Methode pour afficher les informations d\textquotesingle{}un moniteur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_monitors_view_a67615b7fcac21c91e31641106e23a41c}{p\+Slot\+\_\+header\+Click}} (int index)
+\begin{DoxyCompactList}\small\item\em Methode pour trier la table quand appuie sur l\textquotesingle{}header. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Fonctions membres privées}
 \begin{DoxyCompactItemize}
 \item 
-void \textbf{ close\+Event} (Q\+Close\+Event $\ast$event)
+void \mbox{\hyperlink{class_monitors_view_af7f2b4e7f5d2aa98b15ddf0bd8576efd}{close\+Event}} (Q\+Close\+Event $\ast$event)
 \begin{DoxyCompactList}\small\item\em Methode appelee a la fermeture. \end{DoxyCompactList}\item 
-void \textbf{ p\+\_\+init} ()
+void \mbox{\hyperlink{class_monitors_view_aa2fb6a1a04f76b8c1ee1bf9227077e2d}{p\+\_\+init}} ()
 \begin{DoxyCompactList}\small\item\em Methode d\textquotesingle{}initialisation des variables des objets. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
-Q\+Table\+View $\ast$ \textbf{ p\+\_\+monitors}
+Q\+Table\+View $\ast$ \mbox{\hyperlink{class_monitors_view_a713b74672c60a78b94c9c27f1055cdc2}{p\+\_\+monitors}}
 \begin{DoxyCompactList}\small\item\em Variable pour la liste des moniteurs. \end{DoxyCompactList}\item 
-Q\+Push\+Button $\ast$ \textbf{ p\+\_\+button}
+Q\+Push\+Button $\ast$ \mbox{\hyperlink{class_monitors_view_ab3f7c74b8e1e41126faaad7fdd6232d8}{p\+\_\+button}}
 \begin{DoxyCompactList}\small\item\em Variable pour le bouton d\textquotesingle{}affichage des informations. \end{DoxyCompactList}\item 
-\textbf{ Onglet\+View} $\ast$ \textbf{ p\+\_\+onglets}
+\mbox{\hyperlink{class_onglet_view}{Onglet\+View}} $\ast$ \mbox{\hyperlink{class_monitors_view_af8ed59a767e4ad20de620accae140c54}{p\+\_\+onglets}}
 \begin{DoxyCompactList}\small\item\em Variable pour les onglets. \end{DoxyCompactList}\item 
-Q\+Scroll\+Area $\ast$ \textbf{ p\+\_\+scroll}
+Q\+Scroll\+Area $\ast$ \mbox{\hyperlink{class_monitors_view_aac0e406aac3ecf2e9e1ec50d2e75892d}{p\+\_\+scroll}}
 \begin{DoxyCompactList}\small\item\em Variable pour permettre le scroll. \end{DoxyCompactList}\item 
-std\+::string \textbf{ p\+\_\+user}
-\begin{DoxyCompactList}\small\item\em Variable pour l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
-std\+::string \textbf{ p\+\_\+password}
-\begin{DoxyCompactList}\small\item\em Variable pour le mot de passe. \end{DoxyCompactList}\item 
-std\+::string \textbf{ p\+\_\+machine}
+\mbox{\hyperlink{class_program_informations}{Program\+Informations}} \mbox{\hyperlink{class_monitors_view_aa590581601bc9c5196abb40861320fc8}{p\+\_\+program}}
+\begin{DoxyCompactList}\small\item\em Variable donnees utilisateur. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_monitors_view_af49012dd7ddbea54864606830ea52a47}{p\+\_\+machine}}
 \begin{DoxyCompactList}\small\item\em Variable pour la machine. \end{DoxyCompactList}\item 
-\textbf{ Manager\+Logiciel} $\ast$ \textbf{ p\+\_\+man\+Log}
+\mbox{\hyperlink{class_manager_logiciel}{Manager\+Logiciel}} $\ast$ \mbox{\hyperlink{class_monitors_view_a344b0a122d8c1eb2ef4763df7edde514}{p\+\_\+man\+Log}}
 \begin{DoxyCompactList}\small\item\em Variable pour la partie ssh. \end{DoxyCompactList}\item 
-\textbf{ Manager\+Monitor} $\ast$ \textbf{ p\+\_\+man\+Mon}
+\mbox{\hyperlink{class_manager_monitor}{Manager\+Monitor}} $\ast$ \mbox{\hyperlink{class_monitors_view_aa8566fc7433fb2cd61adff0db1436dc7}{p\+\_\+man\+Mon}}
 \begin{DoxyCompactList}\small\item\em Variable pour le gestionnaire de moniteurs. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Description détaillée}
 Classe pour la vue avec la liste des moniteurs. 
 
-Vue ou sont affichees tous les moniteurs \begin{DoxyAuthor}{Auteur}
+Vue ou sont affiche$<$s tous les moniteurs. \begin{DoxyAuthor}{Auteur}
 Thomas Rebillard 
 \end{DoxyAuthor}
 
 
-Définition à la ligne 24 du fichier Monitors\+View.\+h.
+Définition à la ligne 25 du fichier Monitors\+View.\+h.
 
 
 
 \doxysubsection{Documentation des constructeurs et destructeur}
-\mbox{\label{class_monitors_view_a3ef9ed004f0144b7b5552cc59ad8d052}} 
+\mbox{\Hypertarget{class_monitors_view_ac308d37b9023c5a3d8c49b9ce246b227}\label{class_monitors_view_ac308d37b9023c5a3d8c49b9ce246b227}} 
 \index{MonitorsView@{MonitorsView}!MonitorsView@{MonitorsView}}
 \index{MonitorsView@{MonitorsView}!MonitorsView@{MonitorsView}}
-\doxysubsubsection{MonitorsView()}
-{\footnotesize\ttfamily Monitors\+View\+::\+Monitors\+View (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent,  }\item[{std\+::string}]{user,  }\item[{std\+::string}]{password,  }\item[{std\+::string}]{machine }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{MonitorsView()}{MonitorsView()}}
+{\footnotesize\ttfamily Monitors\+View\+::\+Monitors\+View (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent,  }\item[{std\+::string}]{machine,  }\item[{\mbox{\hyperlink{class_program_informations}{Program\+Informations}}}]{program }\end{DoxyParamCaption})}
 
 
 
@@ -105,28 +107,27 @@ Constructeur.
 \begin{DoxyParams}{Paramètres}
 {\em parent} & (Q\+Widget$\ast$) \+: Parent \\
 \hline
-{\em user} & (std\+::string) \+: Utilisateur \\
-\hline
-{\em password} & (std\+::string) \+: Mot de passe \\
-\hline
 {\em machine} & (std\+::string) \+: Machine \\
+\hline
+{\em program} & (\mbox{\hyperlink{class_program_informations}{Program\+Informations}}) \+: Donnees utilisateur \\
 \hline
 \end{DoxyParams}
 
 
-Définition à la ligne 10 du fichier Monitors\+View.\+cpp.
+Définition à la ligne 9 du fichier Monitors\+View.\+cpp.
 
-Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_monitors_view_a3ef9ed004f0144b7b5552cc59ad8d052_cgraph}
+\includegraphics[width=350pt]{class_monitors_view_ac308d37b9023c5a3d8c49b9ce246b227_cgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_monitors_view_a43f9fbbfca04fa940b1c460f1b8bbb99}} 
+\mbox{\Hypertarget{class_monitors_view_a43f9fbbfca04fa940b1c460f1b8bbb99}\label{class_monitors_view_a43f9fbbfca04fa940b1c460f1b8bbb99}} 
 \index{MonitorsView@{MonitorsView}!````~MonitorsView@{$\sim$MonitorsView}}
 \index{````~MonitorsView@{$\sim$MonitorsView}!MonitorsView@{MonitorsView}}
-\doxysubsubsection{$\sim$MonitorsView()}
+\doxysubsubsection{\texorpdfstring{$\sim$MonitorsView()}{~MonitorsView()}}
 {\footnotesize\ttfamily Monitors\+View\+::$\sim$\+Monitors\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -135,15 +136,15 @@ Destructeur.
 
 
 
-Définition à la ligne 33 du fichier Monitors\+View.\+cpp.
+Définition à la ligne 31 du fichier Monitors\+View.\+cpp.
 
 
 
 \doxysubsection{Documentation des fonctions membres}
-\mbox{\label{class_monitors_view_af7f2b4e7f5d2aa98b15ddf0bd8576efd}} 
+\mbox{\Hypertarget{class_monitors_view_af7f2b4e7f5d2aa98b15ddf0bd8576efd}\label{class_monitors_view_af7f2b4e7f5d2aa98b15ddf0bd8576efd}} 
 \index{MonitorsView@{MonitorsView}!closeEvent@{closeEvent}}
 \index{closeEvent@{closeEvent}!MonitorsView@{MonitorsView}}
-\doxysubsubsection{closeEvent()}
+\doxysubsubsection{\texorpdfstring{closeEvent()}{closeEvent()}}
 {\footnotesize\ttfamily void Monitors\+View\+::close\+Event (\begin{DoxyParamCaption}\item[{Q\+Close\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -157,12 +158,12 @@ Methode appelee a la fermeture.
 \end{DoxyParams}
 
 
-Définition à la ligne 45 du fichier Monitors\+View.\+cpp.
+Définition à la ligne 43 du fichier Monitors\+View.\+cpp.
 
-\mbox{\label{class_monitors_view_aa2fb6a1a04f76b8c1ee1bf9227077e2d}} 
+\mbox{\Hypertarget{class_monitors_view_aa2fb6a1a04f76b8c1ee1bf9227077e2d}\label{class_monitors_view_aa2fb6a1a04f76b8c1ee1bf9227077e2d}} 
 \index{MonitorsView@{MonitorsView}!p\_init@{p\_init}}
 \index{p\_init@{p\_init}!MonitorsView@{MonitorsView}}
-\doxysubsubsection{p\_init()}
+\doxysubsubsection{\texorpdfstring{p\_init()}{p\_init()}}
 {\footnotesize\ttfamily void Monitors\+View\+::p\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -171,26 +172,55 @@ Methode d\textquotesingle{}initialisation des variables des objets.
 
 
 
-Définition à la ligne 65 du fichier Monitors\+View.\+cpp.
+Définition à la ligne 63 du fichier Monitors\+View.\+cpp.
 
-Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_monitors_view_aa2fb6a1a04f76b8c1ee1bf9227077e2d_cgraph}
 \end{center}
 \end{figure}
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_monitors_view_aa2fb6a1a04f76b8c1ee1bf9227077e2d_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_monitors_view_a2a5e749fc671982dd13b7d22073815d2}} 
+\mbox{\Hypertarget{class_monitors_view_a67615b7fcac21c91e31641106e23a41c}\label{class_monitors_view_a67615b7fcac21c91e31641106e23a41c}} 
+\index{MonitorsView@{MonitorsView}!pSlot\_headerClick@{pSlot\_headerClick}}
+\index{pSlot\_headerClick@{pSlot\_headerClick}!MonitorsView@{MonitorsView}}
+\doxysubsubsection{\texorpdfstring{pSlot\_headerClick}{pSlot\_headerClick}}
+{\footnotesize\ttfamily void Monitors\+View\+::p\+Slot\+\_\+header\+Click (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Methode pour trier la table quand appuie sur l\textquotesingle{}header. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em index} & (int) \+: Index \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 255 du fichier Monitors\+View.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_monitors_view_a67615b7fcac21c91e31641106e23a41c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monitors_view_a2a5e749fc671982dd13b7d22073815d2}\label{class_monitors_view_a2a5e749fc671982dd13b7d22073815d2}} 
 \index{MonitorsView@{MonitorsView}!pSlot\_showMonitor@{pSlot\_showMonitor}}
 \index{pSlot\_showMonitor@{pSlot\_showMonitor}!MonitorsView@{MonitorsView}}
-\doxysubsubsection{pSlot\_showMonitor}
+\doxysubsubsection{\texorpdfstring{pSlot\_showMonitor}{pSlot\_showMonitor}}
 {\footnotesize\ttfamily void Monitors\+View\+::p\+Slot\+\_\+show\+Monitor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
 
 
@@ -199,26 +229,28 @@ Methode pour afficher les informations d\textquotesingle{}un moniteur.
 
 
 
-Définition à la ligne 193 du fichier Monitors\+View.\+cpp.
+Définition à la ligne 198 du fichier Monitors\+View.\+cpp.
 
-Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_monitors_view_a2a5e749fc671982dd13b7d22073815d2_cgraph}
 \end{center}
 \end{figure}
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_monitors_view_a2a5e749fc671982dd13b7d22073815d2_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_monitors_view_a5162f90a938e76886e47f2f4c31a1f20}} 
+\mbox{\Hypertarget{class_monitors_view_a5162f90a938e76886e47f2f4c31a1f20}\label{class_monitors_view_a5162f90a938e76886e47f2f4c31a1f20}} 
 \index{MonitorsView@{MonitorsView}!resizeEvent@{resizeEvent}}
 \index{resizeEvent@{resizeEvent}!MonitorsView@{MonitorsView}}
-\doxysubsubsection{resizeEvent()}
+\doxysubsubsection{\texorpdfstring{resizeEvent()}{resizeEvent()}}
 {\footnotesize\ttfamily void Monitors\+View\+::resize\+Event (\begin{DoxyParamCaption}\item[{Q\+Resize\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 
@@ -232,13 +264,13 @@ Methode appelee au changement de taille de la fenetre.
 \end{DoxyParams}
 
 
-Définition à la ligne 54 du fichier Monitors\+View.\+cpp.
+Définition à la ligne 52 du fichier Monitors\+View.\+cpp.
 
-\mbox{\label{class_monitors_view_a357c3c51e5b882d6240c5b3aea607d49}} 
+\mbox{\Hypertarget{class_monitors_view_a357c3c51e5b882d6240c5b3aea607d49}\label{class_monitors_view_a357c3c51e5b882d6240c5b3aea607d49}} 
 \index{MonitorsView@{MonitorsView}!setInformations@{setInformations}}
 \index{setInformations@{setInformations}!MonitorsView@{MonitorsView}}
-\doxysubsubsection{setInformations()}
-{\footnotesize\ttfamily void Monitors\+View\+::set\+Informations (\begin{DoxyParamCaption}\item[{\textbf{ Manager\+Monitor} $\ast$}]{man\+Mon }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{setInformations()}{setInformations()}}
+{\footnotesize\ttfamily void Monitors\+View\+::set\+Informations (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_manager_monitor}{Manager\+Monitor}} $\ast$}]{man\+Mon }\end{DoxyParamCaption})}
 
 
 
@@ -253,24 +285,26 @@ Methode pour fixer les informations et les afficher dans les tables.
 
 Définition à la ligne 221 du fichier Monitors\+View.\+cpp.
 
-Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_monitors_view_a357c3c51e5b882d6240c5b3aea607d49_cgraph}
 \end{center}
 \end{figure}
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_monitors_view_a357c3c51e5b882d6240c5b3aea607d49_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_monitors_view_a427db0b633bfb17e23d74e68fd571038}} 
+\mbox{\Hypertarget{class_monitors_view_a427db0b633bfb17e23d74e68fd571038}\label{class_monitors_view_a427db0b633bfb17e23d74e68fd571038}} 
 \index{MonitorsView@{MonitorsView}!showMonitor@{showMonitor}}
 \index{showMonitor@{showMonitor}!MonitorsView@{MonitorsView}}
-\doxysubsubsection{showMonitor()}
+\doxysubsubsection{\texorpdfstring{showMonitor()}{showMonitor()}}
 {\footnotesize\ttfamily void Monitors\+View\+::show\+Monitor (\begin{DoxyParamCaption}\item[{std\+::string}]{monitor }\end{DoxyParamCaption})}
 
 
@@ -286,14 +320,16 @@ Methode pour montrer un moniteur specifique.
 
 Définition à la ligne 231 du fichier Monitors\+View.\+cpp.
 
-Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_monitors_view_a427db0b633bfb17e23d74e68fd571038_cgraph}
 \end{center}
 \end{figure}
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -303,10 +339,10 @@ Voici le graphe des appelants de cette fonction \+:\nopagebreak
 
 
 \doxysubsection{Documentation des données membres}
-\mbox{\label{class_monitors_view_ab3f7c74b8e1e41126faaad7fdd6232d8}} 
+\mbox{\Hypertarget{class_monitors_view_ab3f7c74b8e1e41126faaad7fdd6232d8}\label{class_monitors_view_ab3f7c74b8e1e41126faaad7fdd6232d8}} 
 \index{MonitorsView@{MonitorsView}!p\_button@{p\_button}}
 \index{p\_button@{p\_button}!MonitorsView@{MonitorsView}}
-\doxysubsubsection{p\_button}
+\doxysubsubsection{\texorpdfstring{p\_button}{p\_button}}
 {\footnotesize\ttfamily Q\+Push\+Button$\ast$ Monitors\+View\+::p\+\_\+button\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -315,12 +351,12 @@ Variable pour le bouton d\textquotesingle{}affichage des informations.
 
 
 
-Définition à la ligne 34 du fichier Monitors\+View.\+h.
+Définition à la ligne 35 du fichier Monitors\+View.\+h.
 
-\mbox{\label{class_monitors_view_af49012dd7ddbea54864606830ea52a47}} 
+\mbox{\Hypertarget{class_monitors_view_af49012dd7ddbea54864606830ea52a47}\label{class_monitors_view_af49012dd7ddbea54864606830ea52a47}} 
 \index{MonitorsView@{MonitorsView}!p\_machine@{p\_machine}}
 \index{p\_machine@{p\_machine}!MonitorsView@{MonitorsView}}
-\doxysubsubsection{p\_machine}
+\doxysubsubsection{\texorpdfstring{p\_machine}{p\_machine}}
 {\footnotesize\ttfamily std\+::string Monitors\+View\+::p\+\_\+machine\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -329,13 +365,13 @@ Variable pour la machine.
 
 
 
-Définition à la ligne 49 du fichier Monitors\+View.\+h.
+Définition à la ligne 47 du fichier Monitors\+View.\+h.
 
-\mbox{\label{class_monitors_view_a344b0a122d8c1eb2ef4763df7edde514}} 
+\mbox{\Hypertarget{class_monitors_view_a344b0a122d8c1eb2ef4763df7edde514}\label{class_monitors_view_a344b0a122d8c1eb2ef4763df7edde514}} 
 \index{MonitorsView@{MonitorsView}!p\_manLog@{p\_manLog}}
 \index{p\_manLog@{p\_manLog}!MonitorsView@{MonitorsView}}
-\doxysubsubsection{p\_manLog}
-{\footnotesize\ttfamily \textbf{ Manager\+Logiciel}$\ast$ Monitors\+View\+::p\+\_\+man\+Log\hspace{0.3cm}{\ttfamily [private]}}
+\doxysubsubsection{\texorpdfstring{p\_manLog}{p\_manLog}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_manager_logiciel}{Manager\+Logiciel}}$\ast$ Monitors\+View\+::p\+\_\+man\+Log\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -343,13 +379,13 @@ Variable pour la partie ssh.
 
 
 
-Définition à la ligne 52 du fichier Monitors\+View.\+h.
+Définition à la ligne 50 du fichier Monitors\+View.\+h.
 
-\mbox{\label{class_monitors_view_aa8566fc7433fb2cd61adff0db1436dc7}} 
+\mbox{\Hypertarget{class_monitors_view_aa8566fc7433fb2cd61adff0db1436dc7}\label{class_monitors_view_aa8566fc7433fb2cd61adff0db1436dc7}} 
 \index{MonitorsView@{MonitorsView}!p\_manMon@{p\_manMon}}
 \index{p\_manMon@{p\_manMon}!MonitorsView@{MonitorsView}}
-\doxysubsubsection{p\_manMon}
-{\footnotesize\ttfamily \textbf{ Manager\+Monitor}$\ast$ Monitors\+View\+::p\+\_\+man\+Mon\hspace{0.3cm}{\ttfamily [private]}}
+\doxysubsubsection{\texorpdfstring{p\_manMon}{p\_manMon}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_manager_monitor}{Manager\+Monitor}}$\ast$ Monitors\+View\+::p\+\_\+man\+Mon\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -357,12 +393,12 @@ Variable pour le gestionnaire de moniteurs.
 
 
 
-Définition à la ligne 55 du fichier Monitors\+View.\+h.
+Définition à la ligne 53 du fichier Monitors\+View.\+h.
 
-\mbox{\label{class_monitors_view_a713b74672c60a78b94c9c27f1055cdc2}} 
+\mbox{\Hypertarget{class_monitors_view_a713b74672c60a78b94c9c27f1055cdc2}\label{class_monitors_view_a713b74672c60a78b94c9c27f1055cdc2}} 
 \index{MonitorsView@{MonitorsView}!p\_monitors@{p\_monitors}}
 \index{p\_monitors@{p\_monitors}!MonitorsView@{MonitorsView}}
-\doxysubsubsection{p\_monitors}
+\doxysubsubsection{\texorpdfstring{p\_monitors}{p\_monitors}}
 {\footnotesize\ttfamily Q\+Table\+View$\ast$ Monitors\+View\+::p\+\_\+monitors\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -371,13 +407,13 @@ Variable pour la liste des moniteurs.
 
 
 
-Définition à la ligne 31 du fichier Monitors\+View.\+h.
+Définition à la ligne 32 du fichier Monitors\+View.\+h.
 
-\mbox{\label{class_monitors_view_af8ed59a767e4ad20de620accae140c54}} 
+\mbox{\Hypertarget{class_monitors_view_af8ed59a767e4ad20de620accae140c54}\label{class_monitors_view_af8ed59a767e4ad20de620accae140c54}} 
 \index{MonitorsView@{MonitorsView}!p\_onglets@{p\_onglets}}
 \index{p\_onglets@{p\_onglets}!MonitorsView@{MonitorsView}}
-\doxysubsubsection{p\_onglets}
-{\footnotesize\ttfamily \textbf{ Onglet\+View}$\ast$ Monitors\+View\+::p\+\_\+onglets\hspace{0.3cm}{\ttfamily [private]}}
+\doxysubsubsection{\texorpdfstring{p\_onglets}{p\_onglets}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_onglet_view}{Onglet\+View}}$\ast$ Monitors\+View\+::p\+\_\+onglets\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -385,26 +421,26 @@ Variable pour les onglets.
 
 
 
-Définition à la ligne 37 du fichier Monitors\+View.\+h.
+Définition à la ligne 38 du fichier Monitors\+View.\+h.
 
-\mbox{\label{class_monitors_view_a1f298a1b0b92174785b3069ff0aeadfb}} 
-\index{MonitorsView@{MonitorsView}!p\_password@{p\_password}}
-\index{p\_password@{p\_password}!MonitorsView@{MonitorsView}}
-\doxysubsubsection{p\_password}
-{\footnotesize\ttfamily std\+::string Monitors\+View\+::p\+\_\+password\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Variable pour le mot de passe. 
+\mbox{\Hypertarget{class_monitors_view_aa590581601bc9c5196abb40861320fc8}\label{class_monitors_view_aa590581601bc9c5196abb40861320fc8}} 
+\index{MonitorsView@{MonitorsView}!p\_program@{p\_program}}
+\index{p\_program@{p\_program}!MonitorsView@{MonitorsView}}
+\doxysubsubsection{\texorpdfstring{p\_program}{p\_program}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_program_informations}{Program\+Informations}} Monitors\+View\+::p\+\_\+program\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Définition à la ligne 46 du fichier Monitors\+View.\+h.
+Variable donnees utilisateur. 
 
-\mbox{\label{class_monitors_view_aac0e406aac3ecf2e9e1ec50d2e75892d}} 
+
+
+Définition à la ligne 44 du fichier Monitors\+View.\+h.
+
+\mbox{\Hypertarget{class_monitors_view_aac0e406aac3ecf2e9e1ec50d2e75892d}\label{class_monitors_view_aac0e406aac3ecf2e9e1ec50d2e75892d}} 
 \index{MonitorsView@{MonitorsView}!p\_scroll@{p\_scroll}}
 \index{p\_scroll@{p\_scroll}!MonitorsView@{MonitorsView}}
-\doxysubsubsection{p\_scroll}
+\doxysubsubsection{\texorpdfstring{p\_scroll}{p\_scroll}}
 {\footnotesize\ttfamily Q\+Scroll\+Area$\ast$ Monitors\+View\+::p\+\_\+scroll\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -413,25 +449,11 @@ Variable pour permettre le scroll.
 
 
 
-Définition à la ligne 40 du fichier Monitors\+View.\+h.
-
-\mbox{\label{class_monitors_view_a7982cf01829f84c1f6cb89d96de531a7}} 
-\index{MonitorsView@{MonitorsView}!p\_user@{p\_user}}
-\index{p\_user@{p\_user}!MonitorsView@{MonitorsView}}
-\doxysubsubsection{p\_user}
-{\footnotesize\ttfamily std\+::string Monitors\+View\+::p\+\_\+user\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Variable pour l\textquotesingle{}utilisateur. 
-
-
-
-Définition à la ligne 43 du fichier Monitors\+View.\+h.
+Définition à la ligne 41 du fichier Monitors\+View.\+h.
 
 
 
 La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Vues/\textbf{ Monitors\+View.\+h}\item 
-C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Vues/\textbf{ Monitors\+View.\+cpp}\end{DoxyCompactItemize}
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Vues/\mbox{\hyperlink{_monitors_view_8h}{Monitors\+View.\+h}}\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Vues/\mbox{\hyperlink{_monitors_view_8cpp}{Monitors\+View.\+cpp}}\end{DoxyCompactItemize}

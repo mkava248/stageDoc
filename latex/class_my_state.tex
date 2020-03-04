@@ -1,0 +1,358 @@
+\hypertarget{class_my_state}{}\doxysection{Référence de la classe My\+State}
+\label{class_my_state}\index{MyState@{MyState}}
+
+
+Classe pour etat personnalise.  
+
+
+
+
+{\ttfamily \#include $<$My\+State.\+h$>$}
+
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_my_state_ab7501ddd5342c660c530d80b0618e792}{My\+State}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_my_state_ab127ba89389357b09e2ece81d69fd79e}{My\+State}} (const \mbox{\hyperlink{class_my_state}{My\+State}} \&my\+State)
+\begin{DoxyCompactList}\small\item\em Constructeur de recopie. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_my_state_a27574ab69518865ef7a4bb33eb83ab14}{$\sim$\+My\+State}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_my_state_a093f589b321d86782e8c04f372030daa}{set\+Bon}} ()
+\begin{DoxyCompactList}\small\item\em Methode pour definir l\textquotesingle{}etat a bon. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_my_state_afa360658dbfa56d32e54c55383ea842b}{set\+Alerte}} ()
+\begin{DoxyCompactList}\small\item\em Methode pour definir l\textquotesingle{}etat a alerte. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_my_state_ae34d3536927470636c3e33cc81d60dde}{set\+Alarme}} ()
+\begin{DoxyCompactList}\small\item\em Methode pour definir l\textquotesingle{}etat a alarme. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_my_state_a2e7c4eb3da434f8935598d8a1dedbd47}{set\+Probleme}} ()
+\begin{DoxyCompactList}\small\item\em Methode pour definir l\textquotesingle{}etat a probleme. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_my_state_adecb18b58238bd0f87c578fabfb9f951}{set\+No\+Information}} ()
+\begin{DoxyCompactList}\small\item\em Methode pour definir l\textquotesingle{}etat a inconnu. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_my_state_ac5b4ba64354c8f768ff96dbb696f16d2}{get\+State}} () const
+\begin{DoxyCompactList}\small\item\em Methode pour savoir l\textquotesingle{}etat. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_my_state}{My\+State}} \& \mbox{\hyperlink{class_my_state_a82c7aa08b665db1eeb40ff5816e80208}{operator=}} (const \mbox{\hyperlink{class_my_state}{My\+State}} \&my\+State)
+\begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}operateur \textquotesingle{}=\textquotesingle{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_my_state_a0be12de8949ce4988368fad4b521f270}{p\+\_\+bon}}
+\begin{DoxyCompactList}\small\item\em Variable pour dire bon. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_my_state_a0b28987ec7519144ff8c6c458727c696}{p\+\_\+alerte}}
+\begin{DoxyCompactList}\small\item\em Variable pour dire alerte. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_my_state_aeeb6b4e622a74b092830d2f34bdb9ebf}{p\+\_\+alarme}}
+\begin{DoxyCompactList}\small\item\em Variable pour dire alarme. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_my_state_abefbe638039b75a4f70578c8a03e3925}{p\+\_\+probleme}}
+\begin{DoxyCompactList}\small\item\em Varialbe pour dire probleme. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_my_state_a0ac32f0de01a37d283db36b8ae18f031}{p\+\_\+no\+Information}}
+\begin{DoxyCompactList}\small\item\em Variable pour dire inconnu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Classe pour etat personnalise. 
+
+Classe pour definir l\textquotesingle{}etat d\textquotesingle{}une objet. ~\newline
+Peut etre soit bon, soit alerte, soit alarme, soit probleme, soit inconnu. ~\newline
+Il ne peut etre qu\textquotesingle{}a un seul etat. \begin{DoxyAuthor}{Auteur}
+Thomas Rebillard 
+\end{DoxyAuthor}
+
+
+Définition à la ligne 12 du fichier My\+State.\+h.
+
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_my_state_ab7501ddd5342c660c530d80b0618e792}\label{class_my_state_ab7501ddd5342c660c530d80b0618e792}} 
+\index{MyState@{MyState}!MyState@{MyState}}
+\index{MyState@{MyState}!MyState@{MyState}}
+\doxysubsubsection{\texorpdfstring{MyState()}{MyState()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily My\+State\+::\+My\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+
+
+Définition à la ligne 6 du fichier My\+State.\+cpp.
+
+\mbox{\Hypertarget{class_my_state_ab127ba89389357b09e2ece81d69fd79e}\label{class_my_state_ab127ba89389357b09e2ece81d69fd79e}} 
+\index{MyState@{MyState}!MyState@{MyState}}
+\index{MyState@{MyState}!MyState@{MyState}}
+\doxysubsubsection{\texorpdfstring{MyState()}{MyState()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily My\+State\+::\+My\+State (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_my_state}{My\+State}} \&}]{my\+State }\end{DoxyParamCaption})}
+
+
+
+Constructeur de recopie. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em my\+State} & (const \mbox{\hyperlink{class_my_state}{My\+State}}\&) \+: Etat a recopier \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 19 du fichier My\+State.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{class_my_state_ab127ba89389357b09e2ece81d69fd79e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_my_state_a27574ab69518865ef7a4bb33eb83ab14}\label{class_my_state_a27574ab69518865ef7a4bb33eb83ab14}} 
+\index{MyState@{MyState}!````~MyState@{$\sim$MyState}}
+\index{````~MyState@{$\sim$MyState}!MyState@{MyState}}
+\doxysubsubsection{\texorpdfstring{$\sim$MyState()}{~MyState()}}
+{\footnotesize\ttfamily My\+State\+::$\sim$\+My\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur. 
+
+
+
+Définition à la ligne 43 du fichier My\+State.\+cpp.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_my_state_ac5b4ba64354c8f768ff96dbb696f16d2}\label{class_my_state_ac5b4ba64354c8f768ff96dbb696f16d2}} 
+\index{MyState@{MyState}!getState@{getState}}
+\index{getState@{getState}!MyState@{MyState}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily std\+::string My\+State\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Methode pour savoir l\textquotesingle{}etat. 
+
+\begin{DoxyReturn}{Renvoie}
+(std\+::string) \+: Etat 
+\end{DoxyReturn}
+
+
+Définition à la ligne 111 du fichier My\+State.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{class_my_state_ac5b4ba64354c8f768ff96dbb696f16d2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_my_state_a82c7aa08b665db1eeb40ff5816e80208}\label{class_my_state_a82c7aa08b665db1eeb40ff5816e80208}} 
+\index{MyState@{MyState}!operator=@{operator=}}
+\index{operator=@{operator=}!MyState@{MyState}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_my_state}{My\+State}} \& My\+State\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_my_state}{My\+State}} \&}]{my\+State }\end{DoxyParamCaption})}
+
+
+
+Surcharge de l\textquotesingle{}operateur \textquotesingle{}=\textquotesingle{}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em my\+State} & (const \mbox{\hyperlink{class_my_state}{My\+State}}\&) \+: \mbox{\hyperlink{class_my_state}{My\+State}} a recopier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+(\mbox{\hyperlink{class_my_state}{My\+State}}\&) \+: Nouvel etat 
+\end{DoxyReturn}
+
+
+Définition à la ligne 130 du fichier My\+State.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{class_my_state_a82c7aa08b665db1eeb40ff5816e80208_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_my_state_ae34d3536927470636c3e33cc81d60dde}\label{class_my_state_ae34d3536927470636c3e33cc81d60dde}} 
+\index{MyState@{MyState}!setAlarme@{setAlarme}}
+\index{setAlarme@{setAlarme}!MyState@{MyState}}
+\doxysubsubsection{\texorpdfstring{setAlarme()}{setAlarme()}}
+{\footnotesize\ttfamily void My\+State\+::set\+Alarme (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Methode pour definir l\textquotesingle{}etat a alarme. 
+
+
+
+Définition à la ligne 50 du fichier My\+State.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_my_state_ae34d3536927470636c3e33cc81d60dde_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_my_state_afa360658dbfa56d32e54c55383ea842b}\label{class_my_state_afa360658dbfa56d32e54c55383ea842b}} 
+\index{MyState@{MyState}!setAlerte@{setAlerte}}
+\index{setAlerte@{setAlerte}!MyState@{MyState}}
+\doxysubsubsection{\texorpdfstring{setAlerte()}{setAlerte()}}
+{\footnotesize\ttfamily void My\+State\+::set\+Alerte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Methode pour definir l\textquotesingle{}etat a alerte. 
+
+
+
+Définition à la ligne 62 du fichier My\+State.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_my_state_afa360658dbfa56d32e54c55383ea842b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_my_state_a093f589b321d86782e8c04f372030daa}\label{class_my_state_a093f589b321d86782e8c04f372030daa}} 
+\index{MyState@{MyState}!setBon@{setBon}}
+\index{setBon@{setBon}!MyState@{MyState}}
+\doxysubsubsection{\texorpdfstring{setBon()}{setBon()}}
+{\footnotesize\ttfamily void My\+State\+::set\+Bon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Methode pour definir l\textquotesingle{}etat a bon. 
+
+
+
+Définition à la ligne 74 du fichier My\+State.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_my_state_a093f589b321d86782e8c04f372030daa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_my_state_adecb18b58238bd0f87c578fabfb9f951}\label{class_my_state_adecb18b58238bd0f87c578fabfb9f951}} 
+\index{MyState@{MyState}!setNoInformation@{setNoInformation}}
+\index{setNoInformation@{setNoInformation}!MyState@{MyState}}
+\doxysubsubsection{\texorpdfstring{setNoInformation()}{setNoInformation()}}
+{\footnotesize\ttfamily void My\+State\+::set\+No\+Information (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Methode pour definir l\textquotesingle{}etat a inconnu. 
+
+
+
+Définition à la ligne 86 du fichier My\+State.\+cpp.
+
+\mbox{\Hypertarget{class_my_state_a2e7c4eb3da434f8935598d8a1dedbd47}\label{class_my_state_a2e7c4eb3da434f8935598d8a1dedbd47}} 
+\index{MyState@{MyState}!setProbleme@{setProbleme}}
+\index{setProbleme@{setProbleme}!MyState@{MyState}}
+\doxysubsubsection{\texorpdfstring{setProbleme()}{setProbleme()}}
+{\footnotesize\ttfamily void My\+State\+::set\+Probleme (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Methode pour definir l\textquotesingle{}etat a probleme. 
+
+
+
+Définition à la ligne 98 du fichier My\+State.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_my_state_a2e7c4eb3da434f8935598d8a1dedbd47_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_my_state_aeeb6b4e622a74b092830d2f34bdb9ebf}\label{class_my_state_aeeb6b4e622a74b092830d2f34bdb9ebf}} 
+\index{MyState@{MyState}!p\_alarme@{p\_alarme}}
+\index{p\_alarme@{p\_alarme}!MyState@{MyState}}
+\doxysubsubsection{\texorpdfstring{p\_alarme}{p\_alarme}}
+{\footnotesize\ttfamily bool My\+State\+::p\+\_\+alarme\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour dire alarme. 
+
+
+
+Définition à la ligne 22 du fichier My\+State.\+h.
+
+\mbox{\Hypertarget{class_my_state_a0b28987ec7519144ff8c6c458727c696}\label{class_my_state_a0b28987ec7519144ff8c6c458727c696}} 
+\index{MyState@{MyState}!p\_alerte@{p\_alerte}}
+\index{p\_alerte@{p\_alerte}!MyState@{MyState}}
+\doxysubsubsection{\texorpdfstring{p\_alerte}{p\_alerte}}
+{\footnotesize\ttfamily bool My\+State\+::p\+\_\+alerte\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour dire alerte. 
+
+
+
+Définition à la ligne 19 du fichier My\+State.\+h.
+
+\mbox{\Hypertarget{class_my_state_a0be12de8949ce4988368fad4b521f270}\label{class_my_state_a0be12de8949ce4988368fad4b521f270}} 
+\index{MyState@{MyState}!p\_bon@{p\_bon}}
+\index{p\_bon@{p\_bon}!MyState@{MyState}}
+\doxysubsubsection{\texorpdfstring{p\_bon}{p\_bon}}
+{\footnotesize\ttfamily bool My\+State\+::p\+\_\+bon\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour dire bon. 
+
+
+
+Définition à la ligne 16 du fichier My\+State.\+h.
+
+\mbox{\Hypertarget{class_my_state_a0ac32f0de01a37d283db36b8ae18f031}\label{class_my_state_a0ac32f0de01a37d283db36b8ae18f031}} 
+\index{MyState@{MyState}!p\_noInformation@{p\_noInformation}}
+\index{p\_noInformation@{p\_noInformation}!MyState@{MyState}}
+\doxysubsubsection{\texorpdfstring{p\_noInformation}{p\_noInformation}}
+{\footnotesize\ttfamily bool My\+State\+::p\+\_\+no\+Information\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour dire inconnu. 
+
+
+
+Définition à la ligne 28 du fichier My\+State.\+h.
+
+\mbox{\Hypertarget{class_my_state_abefbe638039b75a4f70578c8a03e3925}\label{class_my_state_abefbe638039b75a4f70578c8a03e3925}} 
+\index{MyState@{MyState}!p\_probleme@{p\_probleme}}
+\index{p\_probleme@{p\_probleme}!MyState@{MyState}}
+\doxysubsubsection{\texorpdfstring{p\_probleme}{p\_probleme}}
+{\footnotesize\ttfamily bool My\+State\+::p\+\_\+probleme\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Varialbe pour dire probleme. 
+
+
+
+Définition à la ligne 25 du fichier My\+State.\+h.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Outils/\mbox{\hyperlink{_my_state_8h}{My\+State.\+h}}\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Outils/\mbox{\hyperlink{_my_state_8cpp}{My\+State.\+cpp}}\end{DoxyCompactItemize}

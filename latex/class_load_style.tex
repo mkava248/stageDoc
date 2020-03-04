@@ -1,0 +1,187 @@
+\hypertarget{class_load_style}{}\doxysection{Référence de la classe Load\+Style}
+\label{class_load_style}\index{LoadStyle@{LoadStyle}}
+
+
+Classe pour charger le style sheet du logiciel.  
+
+
+
+
+{\ttfamily \#include $<$Load\+Style.\+h$>$}
+
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{class_load_style_aff23a95c111a7dbcef4fd5ee3dbbcd76}{get\+File\+Sheet}} ()
+\begin{DoxyCompactList}\small\item\em Methode pour obtenir le style sheet. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_load_style_aa4821f9bdf62372a46c4572f7e262030}{check\+Style}} ()
+\begin{DoxyCompactList}\small\item\em Methode pour savoir si le theme enregistre est sombre ou pas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées statiques}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::map$<$ std\+::string, std\+::string $>$ \mbox{\hyperlink{class_load_style_a8f59c69784f962afeb698cb3e1270c7c}{p\+\_\+\+Load\+Preset}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Methode pour savoir charger les presets. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{class_load_style_a4445637984a15054763bd22ca7c49a49}{p\+\_\+\+Load\+Style\+Sheet}} (std\+::map$<$ std\+::string, std\+::string $>$ m\+\_\+\+Presets)
+\begin{DoxyCompactList}\small\item\em Methode pour charger les donnees de style sheet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Classe pour charger le style sheet du logiciel. 
+
+Classe de chargement du style sheet ~\newline
+Elle est utilisee pour savoir si le theme sombre doit etre applique et pour le charger. \begin{DoxyAuthor}{Auteur}
+Thomas Rebillard 
+
+Guillaume Thoin 
+\end{DoxyAuthor}
+
+
+Définition à la ligne 17 du fichier Load\+Style.\+h.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_load_style_aa4821f9bdf62372a46c4572f7e262030}\label{class_load_style_aa4821f9bdf62372a46c4572f7e262030}} 
+\index{LoadStyle@{LoadStyle}!checkStyle@{checkStyle}}
+\index{checkStyle@{checkStyle}!LoadStyle@{LoadStyle}}
+\doxysubsubsection{\texorpdfstring{checkStyle()}{checkStyle()}}
+{\footnotesize\ttfamily bool Load\+Style\+::check\+Style (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Methode pour savoir si le theme enregistre est sombre ou pas. 
+
+\begin{DoxyReturn}{Renvoie}
+(bool) \+: Theme sombre 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Auteur}
+Thomas Rebillard 
+\end{DoxyAuthor}
+
+
+Définition à la ligne 91 du fichier Load\+Style.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{class_load_style_aa4821f9bdf62372a46c4572f7e262030_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{class_load_style_aa4821f9bdf62372a46c4572f7e262030_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_load_style_aff23a95c111a7dbcef4fd5ee3dbbcd76}\label{class_load_style_aff23a95c111a7dbcef4fd5ee3dbbcd76}} 
+\index{LoadStyle@{LoadStyle}!getFileSheet@{getFileSheet}}
+\index{getFileSheet@{getFileSheet}!LoadStyle@{LoadStyle}}
+\doxysubsubsection{\texorpdfstring{getFileSheet()}{getFileSheet()}}
+{\footnotesize\ttfamily std\+::string Load\+Style\+::get\+File\+Sheet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Methode pour obtenir le style sheet. 
+
+Va appeler p\+\_\+\+Load\+Preset puis p\+\_\+\+Load\+Style\+Sheet \begin{DoxyReturn}{Renvoie}
+(std\+::string) \+: Style sheet 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Auteur}
+Thomas Rebillard 
+\end{DoxyAuthor}
+
+
+Définition à la ligne 80 du fichier Load\+Style.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_load_style_aff23a95c111a7dbcef4fd5ee3dbbcd76_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_load_style_aff23a95c111a7dbcef4fd5ee3dbbcd76_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_load_style_a8f59c69784f962afeb698cb3e1270c7c}\label{class_load_style_a8f59c69784f962afeb698cb3e1270c7c}} 
+\index{LoadStyle@{LoadStyle}!p\_LoadPreset@{p\_LoadPreset}}
+\index{p\_LoadPreset@{p\_LoadPreset}!LoadStyle@{LoadStyle}}
+\doxysubsubsection{\texorpdfstring{p\_LoadPreset()}{p\_LoadPreset()}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, std\+::string $>$ Load\+Style\+::p\+\_\+\+Load\+Preset (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Methode pour savoir charger les presets. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em name} & (syd\+::string) \+: Nom du fichier a charger \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+(std\+::map$<$std\+::string, std\+::string$>$) \+: Presets 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Auteur}
+Guillaume Thoin 
+\end{DoxyAuthor}
+
+
+Définition à la ligne 9 du fichier Load\+Style.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_load_style_a8f59c69784f962afeb698cb3e1270c7c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_load_style_a4445637984a15054763bd22ca7c49a49}\label{class_load_style_a4445637984a15054763bd22ca7c49a49}} 
+\index{LoadStyle@{LoadStyle}!p\_LoadStyleSheet@{p\_LoadStyleSheet}}
+\index{p\_LoadStyleSheet@{p\_LoadStyleSheet}!LoadStyle@{LoadStyle}}
+\doxysubsubsection{\texorpdfstring{p\_LoadStyleSheet()}{p\_LoadStyleSheet()}}
+{\footnotesize\ttfamily std\+::string Load\+Style\+::p\+\_\+\+Load\+Style\+Sheet (\begin{DoxyParamCaption}\item[{std\+::map$<$ std\+::string, std\+::string $>$}]{m\+\_\+\+Presets }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Methode pour charger les donnees de style sheet. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em m\+\_\+\+Presets} & (std\+::map$<$std\+::string, std\+::string$>$) \+: Presets \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+(std\+::string) \+: Style Sheet 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Auteur}
+Guillaume Thoin 
+\end{DoxyAuthor}
+
+
+Définition à la ligne 40 du fichier Load\+Style.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_load_style_a4445637984a15054763bd22ca7c49a49_icgraph}
+\end{center}
+\end{figure}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Outils/\mbox{\hyperlink{_load_style_8h}{Load\+Style.\+h}}\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Outils/\mbox{\hyperlink{_load_style_8cpp}{Load\+Style.\+cpp}}\end{DoxyCompactItemize}

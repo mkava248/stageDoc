@@ -1,4 +1,4 @@
-\doxysection{Référence de la classe Services\+View}
+\hypertarget{class_services_view}{}\doxysection{Référence de la classe Services\+View}
 \label{class_services_view}\index{ServicesView@{ServicesView}}
 
 
@@ -11,7 +11,8 @@ Classe pour la vue avec la liste des services.
 
 
 
-Graphe d\textquotesingle{}héritage de Services\+View\+:\nopagebreak
+Graphe d\textquotesingle{}héritage de Services\+View\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -20,7 +21,8 @@ Graphe d\textquotesingle{}héritage de Services\+View\+:\nopagebreak
 \end{figure}
 
 
-Graphe de collaboration de Services\+View\+:\nopagebreak
+Graphe de collaboration de Services\+View\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -30,63 +32,56 @@ Graphe de collaboration de Services\+View\+:\nopagebreak
 \doxysubsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
-\textbf{ Services\+View} (Q\+Widget $\ast$parent, std\+::string user, std\+::string password)
+\mbox{\hyperlink{class_services_view_adb06e73089e8d1246a968fa9791f4ff6}{Services\+View}} (Q\+Widget $\ast$parent, \mbox{\hyperlink{class_program_informations}{Program\+Informations}} program)
 \begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
-\textbf{ $\sim$\+Services\+View} ()
+\mbox{\hyperlink{class_services_view_af2bdd46a11eda0b0058dd2224da7a54e}{$\sim$\+Services\+View}} ()
 \begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
-void \textbf{ set\+Informations} (\textbf{ Manager\+Service} $\ast$man\+Ser)
+void \mbox{\hyperlink{class_services_view_a8ef749876fce9cf8f72714d95df323d0}{set\+Informations}} (\mbox{\hyperlink{class_manager_service}{Manager\+Service}} $\ast$man\+Ser)
 \begin{DoxyCompactList}\small\item\em Methode pour fixer les informations et les afficher dans la table. \end{DoxyCompactList}\item 
-void \textbf{ show\+Service} (std\+::string service)
+void \mbox{\hyperlink{class_services_view_ae24667381e99cd3553b212cd3d31c861}{show\+Service}} (std\+::string service)
 \begin{DoxyCompactList}\small\item\em Methode pour montrer un service specifique. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Fonctions membres protégées}
 \begin{DoxyCompactItemize}
 \item 
-void \textbf{ resize\+Event} (Q\+Resize\+Event $\ast$event)
+void \mbox{\hyperlink{class_services_view_a2343e7085b944f67338b1ee4f65b8bf5}{resize\+Event}} (Q\+Resize\+Event $\ast$event)
 \begin{DoxyCompactList}\small\item\em Methode appelee au changement de taille de la fenetre. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Connecteurs privés}
 \begin{DoxyCompactItemize}
 \item 
-void \textbf{ p\+Slot\+\_\+show\+Service} ()
-\begin{DoxyCompactList}\small\item\em Methode pour montrer les informations d\textquotesingle{}un service. \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_services_view_a4213fcb29499ca5f42a377306e148a36}{p\+Slot\+\_\+show\+Service}} ()
+\begin{DoxyCompactList}\small\item\em Methode pour montrer les informations d\textquotesingle{}un service. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_services_view_a2498a2f7bab71593fb4405556f99d48b}{p\+Slot\+\_\+header\+Click}} (int index)
+\begin{DoxyCompactList}\small\item\em Methode pour trier la table quand appuie sur l\textquotesingle{}header. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Fonctions membres privées}
 \begin{DoxyCompactItemize}
 \item 
-void \textbf{ close\+Event} (Q\+Close\+Event $\ast$event)
+void \mbox{\hyperlink{class_services_view_ad1bd8015ebb2c11950eb20ef2b3c5a45}{close\+Event}} (Q\+Close\+Event $\ast$event)
 \begin{DoxyCompactList}\small\item\em Methode appelee a la fermeture. \end{DoxyCompactList}\item 
-void \textbf{ p\+\_\+init} ()
+void \mbox{\hyperlink{class_services_view_a7155b25e204d05d702f657ca719364f6}{p\+\_\+init}} ()
 \begin{DoxyCompactList}\small\item\em Methode d\textquotesingle{}initialisation des variables des objets. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Fonctions membres privées statiques}
-\begin{DoxyCompactItemize}
-\item 
-static void \textbf{ p\+\_\+thread} (std\+::promise$<$ std\+::map$<$ std\+::string, \textbf{ Service} $>$$>$ \&\&promise, \textbf{ Service} service, std\+::string user, std\+::string password)
-\begin{DoxyCompactList}\small\item\em Methode pour recuperer les informations d\textquotesingle{}un service dans un thread. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
-Q\+Table\+View $\ast$ \textbf{ p\+\_\+services}
+Q\+Table\+View $\ast$ \mbox{\hyperlink{class_services_view_adf363223272fdb11ffee1b0a277b76f0}{p\+\_\+services}}
 \begin{DoxyCompactList}\small\item\em Variable pour la tables des services. \end{DoxyCompactList}\item 
-Q\+Push\+Button $\ast$ \textbf{ p\+\_\+button}
+Q\+Push\+Button $\ast$ \mbox{\hyperlink{class_services_view_add50eba9741b7c7e6719eb03ae5f2a97}{p\+\_\+button}}
 \begin{DoxyCompactList}\small\item\em Variable pour le bouton pour montrer les informations. \end{DoxyCompactList}\item 
-\textbf{ Onglet\+View} $\ast$ \textbf{ p\+\_\+onglets}
+\mbox{\hyperlink{class_onglet_view}{Onglet\+View}} $\ast$ \mbox{\hyperlink{class_services_view_af70808a36a91cb4aca60fce96c4ebb17}{p\+\_\+onglets}}
 \begin{DoxyCompactList}\small\item\em Variable pour les onglets. \end{DoxyCompactList}\item 
-Q\+Scroll\+Area $\ast$ \textbf{ p\+\_\+scroll}
+Q\+Scroll\+Area $\ast$ \mbox{\hyperlink{class_services_view_a72954ac6a4ff9fb94615424cd0fb90fb}{p\+\_\+scroll}}
 \begin{DoxyCompactList}\small\item\em Variable pour permettre le scroll. \end{DoxyCompactList}\item 
-std\+::string \textbf{ p\+\_\+user}
-\begin{DoxyCompactList}\small\item\em Variable pour l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
-std\+::string \textbf{ p\+\_\+password}
-\begin{DoxyCompactList}\small\item\em Variable pour le mot de passe. \end{DoxyCompactList}\item 
-std\+::string \textbf{ p\+\_\+machine}
+\mbox{\hyperlink{class_program_informations}{Program\+Informations}} \mbox{\hyperlink{class_services_view_ac2573f914e0870bcd6a10c49d32b03c6}{p\+\_\+program}}
+\begin{DoxyCompactList}\small\item\em Variable donnees utilisateur. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_services_view_a7d842471bad93cc04a980d04f23a1463}{p\+\_\+machine}}
 \begin{DoxyCompactList}\small\item\em Variable pour la machine. \end{DoxyCompactList}\item 
-\textbf{ Manager\+Logiciel} $\ast$ \textbf{ p\+\_\+man\+Log}
-\begin{DoxyCompactList}\small\item\em Variable pour la partie ssh. \end{DoxyCompactList}\item 
-\textbf{ Manager\+Service} $\ast$ \textbf{ p\+\_\+man\+Serv}
+\mbox{\hyperlink{class_manager_service}{Manager\+Service}} $\ast$ \mbox{\hyperlink{class_services_view_af9b83e843dad474091d30d30d4650e78}{p\+\_\+man\+Serv}}
 \begin{DoxyCompactList}\small\item\em Variable pour le gestionnaire de service. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Description détaillée}
 Classe pour la vue avec la liste des services. 
 
-Vue ou sont affichees tous les services \begin{DoxyAuthor}{Auteur}
+Vue ou sont affiches tous les services. \begin{DoxyAuthor}{Auteur}
 Thomas Rebillard 
 \end{DoxyAuthor}
 
@@ -96,11 +91,11 @@ Définition à la ligne 25 du fichier Services\+View.\+h.
 
 
 \doxysubsection{Documentation des constructeurs et destructeur}
-\mbox{\label{class_services_view_ad7e49638ed29cd2b2469f27a509527e3}} 
+\mbox{\Hypertarget{class_services_view_adb06e73089e8d1246a968fa9791f4ff6}\label{class_services_view_adb06e73089e8d1246a968fa9791f4ff6}} 
 \index{ServicesView@{ServicesView}!ServicesView@{ServicesView}}
 \index{ServicesView@{ServicesView}!ServicesView@{ServicesView}}
-\doxysubsubsection{ServicesView()}
-{\footnotesize\ttfamily Services\+View\+::\+Services\+View (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent,  }\item[{std\+::string}]{user,  }\item[{std\+::string}]{password }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{ServicesView()}{ServicesView()}}
+{\footnotesize\ttfamily Services\+View\+::\+Services\+View (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent,  }\item[{\mbox{\hyperlink{class_program_informations}{Program\+Informations}}}]{program }\end{DoxyParamCaption})}
 
 
 
@@ -110,26 +105,17 @@ Constructeur.
 \begin{DoxyParams}{Paramètres}
 {\em parent} & (Q\+Widget$\ast$) \+: Parent \\
 \hline
-{\em user} & (std\+::string) \+: Utilisateur \\
-\hline
-{\em password} & (std\+::string) \+: Mot de passe \\
+{\em program} & (\mbox{\hyperlink{class_program_informations}{Program\+Informations}}) \+: Donnees utilisateur \\
 \hline
 \end{DoxyParams}
 
 
-Définition à la ligne 9 du fichier Services\+View.\+cpp.
+Définition à la ligne 8 du fichier Services\+View.\+cpp.
 
-Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_services_view_ad7e49638ed29cd2b2469f27a509527e3_cgraph}
-\end{center}
-\end{figure}
-\mbox{\label{class_services_view_af2bdd46a11eda0b0058dd2224da7a54e}} 
+\mbox{\Hypertarget{class_services_view_af2bdd46a11eda0b0058dd2224da7a54e}\label{class_services_view_af2bdd46a11eda0b0058dd2224da7a54e}} 
 \index{ServicesView@{ServicesView}!````~ServicesView@{$\sim$ServicesView}}
 \index{````~ServicesView@{$\sim$ServicesView}!ServicesView@{ServicesView}}
-\doxysubsubsection{$\sim$ServicesView()}
+\doxysubsubsection{\texorpdfstring{$\sim$ServicesView()}{~ServicesView()}}
 {\footnotesize\ttfamily Services\+View\+::$\sim$\+Services\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -138,15 +124,15 @@ Destructeur.
 
 
 
-Définition à la ligne 31 du fichier Services\+View.\+cpp.
+Définition à la ligne 26 du fichier Services\+View.\+cpp.
 
 
 
 \doxysubsection{Documentation des fonctions membres}
-\mbox{\label{class_services_view_ad1bd8015ebb2c11950eb20ef2b3c5a45}} 
+\mbox{\Hypertarget{class_services_view_ad1bd8015ebb2c11950eb20ef2b3c5a45}\label{class_services_view_ad1bd8015ebb2c11950eb20ef2b3c5a45}} 
 \index{ServicesView@{ServicesView}!closeEvent@{closeEvent}}
 \index{closeEvent@{closeEvent}!ServicesView@{ServicesView}}
-\doxysubsubsection{closeEvent()}
+\doxysubsubsection{\texorpdfstring{closeEvent()}{closeEvent()}}
 {\footnotesize\ttfamily void Services\+View\+::close\+Event (\begin{DoxyParamCaption}\item[{Q\+Close\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -160,12 +146,12 @@ Methode appelee a la fermeture.
 \end{DoxyParams}
 
 
-Définition à la ligne 41 du fichier Services\+View.\+cpp.
+Définition à la ligne 36 du fichier Services\+View.\+cpp.
 
-\mbox{\label{class_services_view_a7155b25e204d05d702f657ca719364f6}} 
+\mbox{\Hypertarget{class_services_view_a7155b25e204d05d702f657ca719364f6}\label{class_services_view_a7155b25e204d05d702f657ca719364f6}} 
 \index{ServicesView@{ServicesView}!p\_init@{p\_init}}
 \index{p\_init@{p\_init}!ServicesView@{ServicesView}}
-\doxysubsubsection{p\_init()}
+\doxysubsubsection{\texorpdfstring{p\_init()}{p\_init()}}
 {\footnotesize\ttfamily void Services\+View\+::p\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -174,65 +160,55 @@ Methode d\textquotesingle{}initialisation des variables des objets.
 
 
 
-Définition à la ligne 61 du fichier Services\+View.\+cpp.
+Définition à la ligne 56 du fichier Services\+View.\+cpp.
 
-Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_services_view_a7155b25e204d05d702f657ca719364f6_cgraph}
 \end{center}
 \end{figure}
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_services_view_a7155b25e204d05d702f657ca719364f6_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_services_view_a2fb95697196cea04d83f48f7ac997689}} 
-\index{ServicesView@{ServicesView}!p\_thread@{p\_thread}}
-\index{p\_thread@{p\_thread}!ServicesView@{ServicesView}}
-\doxysubsubsection{p\_thread()}
-{\footnotesize\ttfamily void Services\+View\+::p\+\_\+thread (\begin{DoxyParamCaption}\item[{std\+::promise$<$ std\+::map$<$ std\+::string, \textbf{ Service} $>$$>$ \&\&}]{promise,  }\item[{\textbf{ Service}}]{service,  }\item[{std\+::string}]{user,  }\item[{std\+::string}]{password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+\mbox{\Hypertarget{class_services_view_a2498a2f7bab71593fb4405556f99d48b}\label{class_services_view_a2498a2f7bab71593fb4405556f99d48b}} 
+\index{ServicesView@{ServicesView}!pSlot\_headerClick@{pSlot\_headerClick}}
+\index{pSlot\_headerClick@{pSlot\_headerClick}!ServicesView@{ServicesView}}
+\doxysubsubsection{\texorpdfstring{pSlot\_headerClick}{pSlot\_headerClick}}
+{\footnotesize\ttfamily void Services\+View\+::p\+Slot\+\_\+header\+Click (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
 
 
 
-Methode pour recuperer les informations d\textquotesingle{}un service dans un thread. 
+Methode pour trier la table quand appuie sur l\textquotesingle{}header. 
 
 
 \begin{DoxyParams}{Paramètres}
-{\em promise} & (std\+::promise$<$std\+::map$<$std\+::string, Service$>$$>$\&\&) \+: Variable ou sera enregistre le resultat \\
-\hline
-{\em service} & (\doxyref{Service}{p.}{class_service}) \+: \doxyref{Service}{p.}{class_service} � analyser \\
-\hline
-{\em user} & (std\+::string) \+: Utilisateur \\
-\hline
-{\em password} & (std\+::string) \+: Mot de passe \\
+{\em index} & (int) \+: Index \\
 \hline
 \end{DoxyParams}
 
 
-Définition à la ligne 263 du fichier Services\+View.\+cpp.
+Définition à la ligne 222 du fichier Services\+View.\+cpp.
 
-Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_services_view_a2fb95697196cea04d83f48f7ac997689_cgraph}
+\includegraphics[width=350pt]{class_services_view_a2498a2f7bab71593fb4405556f99d48b_icgraph}
 \end{center}
 \end{figure}
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_services_view_a2fb95697196cea04d83f48f7ac997689_icgraph}
-\end{center}
-\end{figure}
-\mbox{\label{class_services_view_a4213fcb29499ca5f42a377306e148a36}} 
+\mbox{\Hypertarget{class_services_view_a4213fcb29499ca5f42a377306e148a36}\label{class_services_view_a4213fcb29499ca5f42a377306e148a36}} 
 \index{ServicesView@{ServicesView}!pSlot\_showService@{pSlot\_showService}}
 \index{pSlot\_showService@{pSlot\_showService}!ServicesView@{ServicesView}}
-\doxysubsubsection{pSlot\_showService}
+\doxysubsubsection{\texorpdfstring{pSlot\_showService}{pSlot\_showService}}
 {\footnotesize\ttfamily void Services\+View\+::p\+Slot\+\_\+show\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
 
 
@@ -241,26 +217,28 @@ Methode pour montrer les informations d\textquotesingle{}un service.
 
 
 
-Définition à la ligne 197 du fichier Services\+View.\+cpp.
+Définition à la ligne 165 du fichier Services\+View.\+cpp.
 
-Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_services_view_a4213fcb29499ca5f42a377306e148a36_cgraph}
 \end{center}
 \end{figure}
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_services_view_a4213fcb29499ca5f42a377306e148a36_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_services_view_a2343e7085b944f67338b1ee4f65b8bf5}} 
+\mbox{\Hypertarget{class_services_view_a2343e7085b944f67338b1ee4f65b8bf5}\label{class_services_view_a2343e7085b944f67338b1ee4f65b8bf5}} 
 \index{ServicesView@{ServicesView}!resizeEvent@{resizeEvent}}
 \index{resizeEvent@{resizeEvent}!ServicesView@{ServicesView}}
-\doxysubsubsection{resizeEvent()}
+\doxysubsubsection{\texorpdfstring{resizeEvent()}{resizeEvent()}}
 {\footnotesize\ttfamily void Services\+View\+::resize\+Event (\begin{DoxyParamCaption}\item[{Q\+Resize\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 
@@ -274,13 +252,13 @@ Methode appelee au changement de taille de la fenetre.
 \end{DoxyParams}
 
 
-Définition à la ligne 50 du fichier Services\+View.\+cpp.
+Définition à la ligne 45 du fichier Services\+View.\+cpp.
 
-\mbox{\label{class_services_view_a8ef749876fce9cf8f72714d95df323d0}} 
+\mbox{\Hypertarget{class_services_view_a8ef749876fce9cf8f72714d95df323d0}\label{class_services_view_a8ef749876fce9cf8f72714d95df323d0}} 
 \index{ServicesView@{ServicesView}!setInformations@{setInformations}}
 \index{setInformations@{setInformations}!ServicesView@{ServicesView}}
-\doxysubsubsection{setInformations()}
-{\footnotesize\ttfamily void Services\+View\+::set\+Informations (\begin{DoxyParamCaption}\item[{\textbf{ Manager\+Service} $\ast$}]{man\+Ser }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{setInformations()}{setInformations()}}
+{\footnotesize\ttfamily void Services\+View\+::set\+Informations (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_manager_service}{Manager\+Service}} $\ast$}]{man\+Ser }\end{DoxyParamCaption})}
 
 
 
@@ -293,26 +271,28 @@ Methode pour fixer les informations et les afficher dans la table.
 \end{DoxyParams}
 
 
-Définition à la ligne 227 du fichier Services\+View.\+cpp.
+Définition à la ligne 194 du fichier Services\+View.\+cpp.
 
-Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_services_view_a8ef749876fce9cf8f72714d95df323d0_cgraph}
 \end{center}
 \end{figure}
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_services_view_a8ef749876fce9cf8f72714d95df323d0_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_services_view_ae24667381e99cd3553b212cd3d31c861}} 
+\mbox{\Hypertarget{class_services_view_ae24667381e99cd3553b212cd3d31c861}\label{class_services_view_ae24667381e99cd3553b212cd3d31c861}} 
 \index{ServicesView@{ServicesView}!showService@{showService}}
 \index{showService@{showService}!ServicesView@{ServicesView}}
-\doxysubsubsection{showService()}
+\doxysubsubsection{\texorpdfstring{showService()}{showService()}}
 {\footnotesize\ttfamily void Services\+View\+::show\+Service (\begin{DoxyParamCaption}\item[{std\+::string}]{service }\end{DoxyParamCaption})}
 
 
@@ -321,21 +301,23 @@ Methode pour montrer un service specifique.
 
 
 \begin{DoxyParams}{Paramètres}
-{\em service} & (std\+::string) \+: \doxyref{Service}{p.}{class_service} \\
+{\em service} & (std\+::string) \+: \mbox{\hyperlink{class_service}{Service}} \\
 \hline
 \end{DoxyParams}
 
 
-Définition à la ligne 237 du fichier Services\+View.\+cpp.
+Définition à la ligne 204 du fichier Services\+View.\+cpp.
 
-Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_services_view_ae24667381e99cd3553b212cd3d31c861_cgraph}
 \end{center}
 \end{figure}
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -345,10 +327,10 @@ Voici le graphe des appelants de cette fonction \+:\nopagebreak
 
 
 \doxysubsection{Documentation des données membres}
-\mbox{\label{class_services_view_add50eba9741b7c7e6719eb03ae5f2a97}} 
+\mbox{\Hypertarget{class_services_view_add50eba9741b7c7e6719eb03ae5f2a97}\label{class_services_view_add50eba9741b7c7e6719eb03ae5f2a97}} 
 \index{ServicesView@{ServicesView}!p\_button@{p\_button}}
 \index{p\_button@{p\_button}!ServicesView@{ServicesView}}
-\doxysubsubsection{p\_button}
+\doxysubsubsection{\texorpdfstring{p\_button}{p\_button}}
 {\footnotesize\ttfamily Q\+Push\+Button$\ast$ Services\+View\+::p\+\_\+button\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -359,10 +341,10 @@ Variable pour le bouton pour montrer les informations.
 
 Définition à la ligne 35 du fichier Services\+View.\+h.
 
-\mbox{\label{class_services_view_a7d842471bad93cc04a980d04f23a1463}} 
+\mbox{\Hypertarget{class_services_view_a7d842471bad93cc04a980d04f23a1463}\label{class_services_view_a7d842471bad93cc04a980d04f23a1463}} 
 \index{ServicesView@{ServicesView}!p\_machine@{p\_machine}}
 \index{p\_machine@{p\_machine}!ServicesView@{ServicesView}}
-\doxysubsubsection{p\_machine}
+\doxysubsubsection{\texorpdfstring{p\_machine}{p\_machine}}
 {\footnotesize\ttfamily std\+::string Services\+View\+::p\+\_\+machine\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -371,27 +353,13 @@ Variable pour la machine.
 
 
 
-Définition à la ligne 50 du fichier Services\+View.\+h.
+Définition à la ligne 47 du fichier Services\+View.\+h.
 
-\mbox{\label{class_services_view_a5ad9bf3bbd4663acd4c67325c570de9a}} 
-\index{ServicesView@{ServicesView}!p\_manLog@{p\_manLog}}
-\index{p\_manLog@{p\_manLog}!ServicesView@{ServicesView}}
-\doxysubsubsection{p\_manLog}
-{\footnotesize\ttfamily \textbf{ Manager\+Logiciel}$\ast$ Services\+View\+::p\+\_\+man\+Log\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Variable pour la partie ssh. 
-
-
-
-Définition à la ligne 53 du fichier Services\+View.\+h.
-
-\mbox{\label{class_services_view_af9b83e843dad474091d30d30d4650e78}} 
+\mbox{\Hypertarget{class_services_view_af9b83e843dad474091d30d30d4650e78}\label{class_services_view_af9b83e843dad474091d30d30d4650e78}} 
 \index{ServicesView@{ServicesView}!p\_manServ@{p\_manServ}}
 \index{p\_manServ@{p\_manServ}!ServicesView@{ServicesView}}
-\doxysubsubsection{p\_manServ}
-{\footnotesize\ttfamily \textbf{ Manager\+Service}$\ast$ Services\+View\+::p\+\_\+man\+Serv\hspace{0.3cm}{\ttfamily [private]}}
+\doxysubsubsection{\texorpdfstring{p\_manServ}{p\_manServ}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_manager_service}{Manager\+Service}}$\ast$ Services\+View\+::p\+\_\+man\+Serv\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -399,13 +367,13 @@ Variable pour le gestionnaire de service.
 
 
 
-Définition à la ligne 56 du fichier Services\+View.\+h.
+Définition à la ligne 50 du fichier Services\+View.\+h.
 
-\mbox{\label{class_services_view_af70808a36a91cb4aca60fce96c4ebb17}} 
+\mbox{\Hypertarget{class_services_view_af70808a36a91cb4aca60fce96c4ebb17}\label{class_services_view_af70808a36a91cb4aca60fce96c4ebb17}} 
 \index{ServicesView@{ServicesView}!p\_onglets@{p\_onglets}}
 \index{p\_onglets@{p\_onglets}!ServicesView@{ServicesView}}
-\doxysubsubsection{p\_onglets}
-{\footnotesize\ttfamily \textbf{ Onglet\+View}$\ast$ Services\+View\+::p\+\_\+onglets\hspace{0.3cm}{\ttfamily [private]}}
+\doxysubsubsection{\texorpdfstring{p\_onglets}{p\_onglets}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_onglet_view}{Onglet\+View}}$\ast$ Services\+View\+::p\+\_\+onglets\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -415,24 +383,24 @@ Variable pour les onglets.
 
 Définition à la ligne 38 du fichier Services\+View.\+h.
 
-\mbox{\label{class_services_view_a0c463cb1035518489a579d4055268808}} 
-\index{ServicesView@{ServicesView}!p\_password@{p\_password}}
-\index{p\_password@{p\_password}!ServicesView@{ServicesView}}
-\doxysubsubsection{p\_password}
-{\footnotesize\ttfamily std\+::string Services\+View\+::p\+\_\+password\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{class_services_view_ac2573f914e0870bcd6a10c49d32b03c6}\label{class_services_view_ac2573f914e0870bcd6a10c49d32b03c6}} 
+\index{ServicesView@{ServicesView}!p\_program@{p\_program}}
+\index{p\_program@{p\_program}!ServicesView@{ServicesView}}
+\doxysubsubsection{\texorpdfstring{p\_program}{p\_program}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_program_informations}{Program\+Informations}} Services\+View\+::p\+\_\+program\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Variable pour le mot de passe. 
+Variable donnees utilisateur. 
 
 
 
-Définition à la ligne 47 du fichier Services\+View.\+h.
+Définition à la ligne 44 du fichier Services\+View.\+h.
 
-\mbox{\label{class_services_view_a72954ac6a4ff9fb94615424cd0fb90fb}} 
+\mbox{\Hypertarget{class_services_view_a72954ac6a4ff9fb94615424cd0fb90fb}\label{class_services_view_a72954ac6a4ff9fb94615424cd0fb90fb}} 
 \index{ServicesView@{ServicesView}!p\_scroll@{p\_scroll}}
 \index{p\_scroll@{p\_scroll}!ServicesView@{ServicesView}}
-\doxysubsubsection{p\_scroll}
+\doxysubsubsection{\texorpdfstring{p\_scroll}{p\_scroll}}
 {\footnotesize\ttfamily Q\+Scroll\+Area$\ast$ Services\+View\+::p\+\_\+scroll\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -443,10 +411,10 @@ Variable pour permettre le scroll.
 
 Définition à la ligne 41 du fichier Services\+View.\+h.
 
-\mbox{\label{class_services_view_adf363223272fdb11ffee1b0a277b76f0}} 
+\mbox{\Hypertarget{class_services_view_adf363223272fdb11ffee1b0a277b76f0}\label{class_services_view_adf363223272fdb11ffee1b0a277b76f0}} 
 \index{ServicesView@{ServicesView}!p\_services@{p\_services}}
 \index{p\_services@{p\_services}!ServicesView@{ServicesView}}
-\doxysubsubsection{p\_services}
+\doxysubsubsection{\texorpdfstring{p\_services}{p\_services}}
 {\footnotesize\ttfamily Q\+Table\+View$\ast$ Services\+View\+::p\+\_\+services\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -457,23 +425,9 @@ Variable pour la tables des services.
 
 Définition à la ligne 32 du fichier Services\+View.\+h.
 
-\mbox{\label{class_services_view_a280f9056024c1c44ba7ba74c1619e5c8}} 
-\index{ServicesView@{ServicesView}!p\_user@{p\_user}}
-\index{p\_user@{p\_user}!ServicesView@{ServicesView}}
-\doxysubsubsection{p\_user}
-{\footnotesize\ttfamily std\+::string Services\+View\+::p\+\_\+user\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Variable pour l\textquotesingle{}utilisateur. 
-
-
-
-Définition à la ligne 44 du fichier Services\+View.\+h.
-
 
 
 La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Vues/\textbf{ Services\+View.\+h}\item 
-C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Vues/\textbf{ Services\+View.\+cpp}\end{DoxyCompactItemize}
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Vues/\mbox{\hyperlink{_services_view_8h}{Services\+View.\+h}}\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Vues/\mbox{\hyperlink{_services_view_8cpp}{Services\+View.\+cpp}}\end{DoxyCompactItemize}

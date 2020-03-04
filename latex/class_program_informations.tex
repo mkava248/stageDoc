@@ -1,0 +1,491 @@
+\hypertarget{class_program_informations}{}\doxysection{Référence de la classe Program\+Informations}
+\label{class_program_informations}\index{ProgramInformations@{ProgramInformations}}
+
+
+Classe pour passer les informations de l\textquotesingle{}utilisateur a travers le logiciel.  
+
+
+
+
+{\ttfamily \#include $<$Program\+Informations.\+h$>$}
+
+
+
+Graphe de collaboration de Program\+Informations\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{class_program_informations__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_program_informations_a1ff3ba954a4d0c2d268a4e0e01332407}{Program\+Informations}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_program_informations_a9b8742821a91fb59caa399d5b2c00c94}{Program\+Informations}} (std\+::string user, std\+::string password, bool connect\+User)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_program_informations_add16e8020a0c2e4ce0af7b4d8c584542}{Program\+Informations}} (const \mbox{\hyperlink{class_program_informations}{Program\+Informations}} \&program)
+\begin{DoxyCompactList}\small\item\em Constructeur de recopie. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_program_informations_a5c72aae75d3507f49da935ed5f876814}{$\sim$\+Program\+Informations}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_program_informations_a2936bad4f25459c069cbf15cb6930087}{set\+Authentification\+Nime}} (bool authentification\+Nime)
+\begin{DoxyCompactList}\small\item\em Methode pour fixer l\textquotesingle{}authentification Nime. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_program_informations_adb8d096fa3c49dfa7b7a3c89dd45b3df}{get\+Password}} () const
+\begin{DoxyCompactList}\small\item\em Methode pour obtenir le mot de passe. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_program_informations_a816424a88c6da9bb85c021b9509b468c}{get\+User}} () const
+\begin{DoxyCompactList}\small\item\em Methode pour obtenir l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_program_informations_a0519bde1c112ee250bea8cd5d1d40dfe}{get\+Authentification\+Nime}} () const
+\begin{DoxyCompactList}\small\item\em Methode pour obtenir l\textquotesingle{}authentification Nime. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_program_informations_a7d3a35f0e5b2f0b11ea8d1b9232f816d}{get\+Connect\+User}} () const
+\begin{DoxyCompactList}\small\item\em Methode pour savoir si connecter avec user. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_program_informations}{Program\+Informations}} \& \mbox{\hyperlink{class_program_informations_a9991b3f26ab66aa7bb1ca13d8b3d931f}{operator=}} (const \mbox{\hyperlink{class_program_informations}{Program\+Informations}} \&program)
+\begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}operateur =. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_program_informations_a219bbc61da4af8bdb21119608058423e}{p\+\_\+set\+User}} (std\+::string user)
+\begin{DoxyCompactList}\small\item\em Methode pour fixer l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_program_informations_a0d22481f7d0dddd32188ae82da670bf9}{p\+\_\+set\+Password}} (std\+::string password)
+\begin{DoxyCompactList}\small\item\em Methode pour fixer le mot de passe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_program_informations_a043d270753a78169d2fd1b42103c5163}{p\+\_\+user}}
+\begin{DoxyCompactList}\small\item\em Variable de l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_program_informations_ad5fd9d3cb01813c4f56aa698b60d5f63}{p\+\_\+password}}
+\begin{DoxyCompactList}\small\item\em Variable du mot de passe. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_program_informations_afb0230a260fb11a86fec499551573a0d}{p\+\_\+authentification\+Nime}}
+\begin{DoxyCompactList}\small\item\em Variable pour savoir si authentification Nime. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_program_informations_a8437d6a92877f1a361c6396483cb8041}{p\+\_\+connect\+User}}
+\begin{DoxyCompactList}\small\item\em Variable pour savoir si connecter avec l\textquotesingle{}utilisateur global. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_security}{Security}} \mbox{\hyperlink{class_program_informations_aaa0aa7407266eb3f8768a4be739edb6f}{s}}
+\begin{DoxyCompactList}\small\item\em Variable pour chiffrer et dechiffrer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Classe pour passer les informations de l\textquotesingle{}utilisateur a travers le logiciel. 
+
+Classe avec les informations de l\textquotesingle{}utilisateur. ~\newline
+Possede le numero d\textquotesingle{}utilisateur, son mot de passe, s\textquotesingle{}il s\textquotesingle{}est connete avec l\textquotesingle{}identifiant user, et s\textquotesingle{}il utilise l\textquotesingle{}authentification Nime. \begin{DoxyAuthor}{Auteur}
+Thomas Rebillard 
+\end{DoxyAuthor}
+
+
+Définition à la ligne 13 du fichier Program\+Informations.\+h.
+
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_program_informations_a1ff3ba954a4d0c2d268a4e0e01332407}\label{class_program_informations_a1ff3ba954a4d0c2d268a4e0e01332407}} 
+\index{ProgramInformations@{ProgramInformations}!ProgramInformations@{ProgramInformations}}
+\index{ProgramInformations@{ProgramInformations}!ProgramInformations@{ProgramInformations}}
+\doxysubsubsection{\texorpdfstring{ProgramInformations()}{ProgramInformations()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Program\+Informations\+::\+Program\+Informations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+
+
+Définition à la ligne 6 du fichier Program\+Informations.\+cpp.
+
+\mbox{\Hypertarget{class_program_informations_a9b8742821a91fb59caa399d5b2c00c94}\label{class_program_informations_a9b8742821a91fb59caa399d5b2c00c94}} 
+\index{ProgramInformations@{ProgramInformations}!ProgramInformations@{ProgramInformations}}
+\index{ProgramInformations@{ProgramInformations}!ProgramInformations@{ProgramInformations}}
+\doxysubsubsection{\texorpdfstring{ProgramInformations()}{ProgramInformations()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Program\+Informations\+::\+Program\+Informations (\begin{DoxyParamCaption}\item[{std\+::string}]{user,  }\item[{std\+::string}]{password,  }\item[{bool}]{connect\+User }\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em user} & (std\+::string) \+: Utilisateur \\
+\hline
+{\em password} & (std\+::string) \+: Mot de passe \\
+\hline
+{\em connect\+User} & (bool) \+: Pour savoir si connecter avec user \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 20 du fichier Program\+Informations.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_program_informations_a9b8742821a91fb59caa399d5b2c00c94_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_program_informations_add16e8020a0c2e4ce0af7b4d8c584542}\label{class_program_informations_add16e8020a0c2e4ce0af7b4d8c584542}} 
+\index{ProgramInformations@{ProgramInformations}!ProgramInformations@{ProgramInformations}}
+\index{ProgramInformations@{ProgramInformations}!ProgramInformations@{ProgramInformations}}
+\doxysubsubsection{\texorpdfstring{ProgramInformations()}{ProgramInformations()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Program\+Informations\+::\+Program\+Informations (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_program_informations}{Program\+Informations}} \&}]{program }\end{DoxyParamCaption})}
+
+
+
+Constructeur de recopie. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em program} & (const \mbox{\hyperlink{class_program_informations}{Program\+Informations}}\&) \+: Objet a recopier \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 32 du fichier Program\+Informations.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_program_informations_add16e8020a0c2e4ce0af7b4d8c584542_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_program_informations_a5c72aae75d3507f49da935ed5f876814}\label{class_program_informations_a5c72aae75d3507f49da935ed5f876814}} 
+\index{ProgramInformations@{ProgramInformations}!````~ProgramInformations@{$\sim$ProgramInformations}}
+\index{````~ProgramInformations@{$\sim$ProgramInformations}!ProgramInformations@{ProgramInformations}}
+\doxysubsubsection{\texorpdfstring{$\sim$ProgramInformations()}{~ProgramInformations()}}
+{\footnotesize\ttfamily Program\+Informations\+::$\sim$\+Program\+Informations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur. 
+
+
+
+Définition à la ligne 43 du fichier Program\+Informations.\+cpp.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_program_informations_a0519bde1c112ee250bea8cd5d1d40dfe}\label{class_program_informations_a0519bde1c112ee250bea8cd5d1d40dfe}} 
+\index{ProgramInformations@{ProgramInformations}!getAuthentificationNime@{getAuthentificationNime}}
+\index{getAuthentificationNime@{getAuthentificationNime}!ProgramInformations@{ProgramInformations}}
+\doxysubsubsection{\texorpdfstring{getAuthentificationNime()}{getAuthentificationNime()}}
+{\footnotesize\ttfamily bool Program\+Informations\+::get\+Authentification\+Nime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Methode pour obtenir l\textquotesingle{}authentification Nime. 
+
+\begin{DoxyReturn}{Renvoie}
+(bool) \+: Authentification Nime 
+\end{DoxyReturn}
+
+
+Définition à la ligne 92 du fichier Program\+Informations.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_program_informations_a0519bde1c112ee250bea8cd5d1d40dfe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_program_informations_a7d3a35f0e5b2f0b11ea8d1b9232f816d}\label{class_program_informations_a7d3a35f0e5b2f0b11ea8d1b9232f816d}} 
+\index{ProgramInformations@{ProgramInformations}!getConnectUser@{getConnectUser}}
+\index{getConnectUser@{getConnectUser}!ProgramInformations@{ProgramInformations}}
+\doxysubsubsection{\texorpdfstring{getConnectUser()}{getConnectUser()}}
+{\footnotesize\ttfamily bool Program\+Informations\+::get\+Connect\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Methode pour savoir si connecter avec user. 
+
+\begin{DoxyReturn}{Renvoie}
+(bool) \+: Connection avec user 
+\end{DoxyReturn}
+
+
+Définition à la ligne 71 du fichier Program\+Informations.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_program_informations_a7d3a35f0e5b2f0b11ea8d1b9232f816d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_program_informations_adb8d096fa3c49dfa7b7a3c89dd45b3df}\label{class_program_informations_adb8d096fa3c49dfa7b7a3c89dd45b3df}} 
+\index{ProgramInformations@{ProgramInformations}!getPassword@{getPassword}}
+\index{getPassword@{getPassword}!ProgramInformations@{ProgramInformations}}
+\doxysubsubsection{\texorpdfstring{getPassword()}{getPassword()}}
+{\footnotesize\ttfamily std\+::string Program\+Informations\+::get\+Password (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Methode pour obtenir le mot de passe. 
+
+\begin{DoxyReturn}{Renvoie}
+(std\+::string) \+: Mot de passe 
+\end{DoxyReturn}
+
+
+Définition à la ligne 61 du fichier Program\+Informations.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{class_program_informations_adb8d096fa3c49dfa7b7a3c89dd45b3df_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_program_informations_adb8d096fa3c49dfa7b7a3c89dd45b3df_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_program_informations_a816424a88c6da9bb85c021b9509b468c}\label{class_program_informations_a816424a88c6da9bb85c021b9509b468c}} 
+\index{ProgramInformations@{ProgramInformations}!getUser@{getUser}}
+\index{getUser@{getUser}!ProgramInformations@{ProgramInformations}}
+\doxysubsubsection{\texorpdfstring{getUser()}{getUser()}}
+{\footnotesize\ttfamily std\+::string Program\+Informations\+::get\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Methode pour obtenir l\textquotesingle{}utilisateur. 
+
+\begin{DoxyReturn}{Renvoie}
+(std\+::string) \+: Utilisateur 
+\end{DoxyReturn}
+
+
+Définition à la ligne 51 du fichier Program\+Informations.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{class_program_informations_a816424a88c6da9bb85c021b9509b468c_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_program_informations_a816424a88c6da9bb85c021b9509b468c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_program_informations_a9991b3f26ab66aa7bb1ca13d8b3d931f}\label{class_program_informations_a9991b3f26ab66aa7bb1ca13d8b3d931f}} 
+\index{ProgramInformations@{ProgramInformations}!operator=@{operator=}}
+\index{operator=@{operator=}!ProgramInformations@{ProgramInformations}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_program_informations}{Program\+Informations}} \& Program\+Informations\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_program_informations}{Program\+Informations}} \&}]{program }\end{DoxyParamCaption})}
+
+
+
+Surcharge de l\textquotesingle{}operateur =. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em program} & (const \mbox{\hyperlink{class_program_informations}{Program\+Informations}}\&) \+: Objet a recopier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+(\mbox{\hyperlink{class_program_informations}{Program\+Informations}}) \+: Program\+Information 
+\end{DoxyReturn}
+
+
+Définition à la ligne 102 du fichier Program\+Informations.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_program_informations_a9991b3f26ab66aa7bb1ca13d8b3d931f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_program_informations_a0d22481f7d0dddd32188ae82da670bf9}\label{class_program_informations_a0d22481f7d0dddd32188ae82da670bf9}} 
+\index{ProgramInformations@{ProgramInformations}!p\_setPassword@{p\_setPassword}}
+\index{p\_setPassword@{p\_setPassword}!ProgramInformations@{ProgramInformations}}
+\doxysubsubsection{\texorpdfstring{p\_setPassword()}{p\_setPassword()}}
+{\footnotesize\ttfamily void Program\+Informations\+::p\+\_\+set\+Password (\begin{DoxyParamCaption}\item[{std\+::string}]{password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Methode pour fixer le mot de passe. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em password} & (std\+::string) \+: Mot de passe \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 124 du fichier Program\+Informations.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{class_program_informations_a0d22481f7d0dddd32188ae82da670bf9_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_program_informations_a0d22481f7d0dddd32188ae82da670bf9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_program_informations_a219bbc61da4af8bdb21119608058423e}\label{class_program_informations_a219bbc61da4af8bdb21119608058423e}} 
+\index{ProgramInformations@{ProgramInformations}!p\_setUser@{p\_setUser}}
+\index{p\_setUser@{p\_setUser}!ProgramInformations@{ProgramInformations}}
+\doxysubsubsection{\texorpdfstring{p\_setUser()}{p\_setUser()}}
+{\footnotesize\ttfamily void Program\+Informations\+::p\+\_\+set\+User (\begin{DoxyParamCaption}\item[{std\+::string}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Methode pour fixer l\textquotesingle{}utilisateur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em user} & (std\+::string) \+: Utilisateur \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 115 du fichier Program\+Informations.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{class_program_informations_a219bbc61da4af8bdb21119608058423e_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_program_informations_a219bbc61da4af8bdb21119608058423e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_program_informations_a2936bad4f25459c069cbf15cb6930087}\label{class_program_informations_a2936bad4f25459c069cbf15cb6930087}} 
+\index{ProgramInformations@{ProgramInformations}!setAuthentificationNime@{setAuthentificationNime}}
+\index{setAuthentificationNime@{setAuthentificationNime}!ProgramInformations@{ProgramInformations}}
+\doxysubsubsection{\texorpdfstring{setAuthentificationNime()}{setAuthentificationNime()}}
+{\footnotesize\ttfamily void Program\+Informations\+::set\+Authentification\+Nime (\begin{DoxyParamCaption}\item[{bool}]{authentification\+Nime }\end{DoxyParamCaption})}
+
+
+
+Methode pour fixer l\textquotesingle{}authentification Nime. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em authentification\+Nime} & (bool) \+: Authentification Nime \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 80 du fichier Program\+Informations.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_program_informations_a2936bad4f25459c069cbf15cb6930087_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_program_informations_afb0230a260fb11a86fec499551573a0d}\label{class_program_informations_afb0230a260fb11a86fec499551573a0d}} 
+\index{ProgramInformations@{ProgramInformations}!p\_authentificationNime@{p\_authentificationNime}}
+\index{p\_authentificationNime@{p\_authentificationNime}!ProgramInformations@{ProgramInformations}}
+\doxysubsubsection{\texorpdfstring{p\_authentificationNime}{p\_authentificationNime}}
+{\footnotesize\ttfamily bool Program\+Informations\+::p\+\_\+authentification\+Nime\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour savoir si authentification Nime. 
+
+
+
+Définition à la ligne 23 du fichier Program\+Informations.\+h.
+
+\mbox{\Hypertarget{class_program_informations_a8437d6a92877f1a361c6396483cb8041}\label{class_program_informations_a8437d6a92877f1a361c6396483cb8041}} 
+\index{ProgramInformations@{ProgramInformations}!p\_connectUser@{p\_connectUser}}
+\index{p\_connectUser@{p\_connectUser}!ProgramInformations@{ProgramInformations}}
+\doxysubsubsection{\texorpdfstring{p\_connectUser}{p\_connectUser}}
+{\footnotesize\ttfamily bool Program\+Informations\+::p\+\_\+connect\+User\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour savoir si connecter avec l\textquotesingle{}utilisateur global. 
+
+
+
+Définition à la ligne 26 du fichier Program\+Informations.\+h.
+
+\mbox{\Hypertarget{class_program_informations_ad5fd9d3cb01813c4f56aa698b60d5f63}\label{class_program_informations_ad5fd9d3cb01813c4f56aa698b60d5f63}} 
+\index{ProgramInformations@{ProgramInformations}!p\_password@{p\_password}}
+\index{p\_password@{p\_password}!ProgramInformations@{ProgramInformations}}
+\doxysubsubsection{\texorpdfstring{p\_password}{p\_password}}
+{\footnotesize\ttfamily std\+::string Program\+Informations\+::p\+\_\+password\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable du mot de passe. 
+
+
+
+Définition à la ligne 20 du fichier Program\+Informations.\+h.
+
+\mbox{\Hypertarget{class_program_informations_a043d270753a78169d2fd1b42103c5163}\label{class_program_informations_a043d270753a78169d2fd1b42103c5163}} 
+\index{ProgramInformations@{ProgramInformations}!p\_user@{p\_user}}
+\index{p\_user@{p\_user}!ProgramInformations@{ProgramInformations}}
+\doxysubsubsection{\texorpdfstring{p\_user}{p\_user}}
+{\footnotesize\ttfamily std\+::string Program\+Informations\+::p\+\_\+user\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable de l\textquotesingle{}utilisateur. 
+
+
+
+Définition à la ligne 17 du fichier Program\+Informations.\+h.
+
+\mbox{\Hypertarget{class_program_informations_aaa0aa7407266eb3f8768a4be739edb6f}\label{class_program_informations_aaa0aa7407266eb3f8768a4be739edb6f}} 
+\index{ProgramInformations@{ProgramInformations}!s@{s}}
+\index{s@{s}!ProgramInformations@{ProgramInformations}}
+\doxysubsubsection{\texorpdfstring{s}{s}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_security}{Security}} Program\+Informations\+::s\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour chiffrer et dechiffrer. 
+
+
+
+Définition à la ligne 29 du fichier Program\+Informations.\+h.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Outils/\mbox{\hyperlink{_program_informations_8h}{Program\+Informations.\+h}}\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Outils/\mbox{\hyperlink{_program_informations_8cpp}{Program\+Informations.\+cpp}}\end{DoxyCompactItemize}

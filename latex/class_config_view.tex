@@ -1,0 +1,203 @@
+\hypertarget{class_config_view}{}\doxysection{Référence de la classe Config\+View}
+\label{class_config_view}\index{ConfigView@{ConfigView}}
+
+
+Classe pour la vue Configuration\+View.  
+
+
+
+
+{\ttfamily \#include $<$Config\+View.\+h$>$}
+
+
+
+Graphe d\textquotesingle{}héritage de Config\+View\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{class_config_view__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de Config\+View\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{class_config_view__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_config_view_a44db0b158587c761e0b50ee7d09bfd4d}{Config\+View}} (Q\+Widget $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_config_view_aceeefbf09d48581110a341eec00a499a}{$\sim$\+Config\+View}} ()
+\begin{DoxyCompactList}\small\item\em Destrcuteur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_config_view_aeaa642c6bea8b24b0d16ac9b65511c72}{resize\+Event}} (Q\+Resize\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em Methode appelee au changement de taille de la fenetre. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_config_view_a42f88e6610a421f9f8538821770e056c}{key\+Press\+Event}} (Q\+Key\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em Surcharge de la methode pour l\textquotesingle{}evevement d\textquotesingle{}une touche pressee. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Scroll\+Area $\ast$ \mbox{\hyperlink{class_config_view_a086d6c4793bbbc7764e4eccfa15f643b}{p\+\_\+scroll}}
+\begin{DoxyCompactList}\small\item\em Variable pour permettre le scroll. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_config_informations}{Config\+Informations}} $\ast$ \mbox{\hyperlink{class_config_view_af2c52c66f5defeb35bbc8df4d9515652}{p\+\_\+window}}
+\begin{DoxyCompactList}\small\item\em Variable pour la fenetre des informations. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{class_config_view_a1572eaf5a8889b2d023a0f7915480b68}{p\+\_\+pressed\+Key}}
+\begin{DoxyCompactList}\small\item\em Variable pour savoir l\textquotesingle{}ordre des touches appuyees. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Classe pour la vue Configuration\+View. 
+
+Vue ou sont affichees les informations des configuration. ~\newline
+Necessaire pour permettre le scroll. \begin{DoxyAuthor}{Auteur}
+Thomas Rebillard 
+\end{DoxyAuthor}
+
+
+Définition à la ligne 24 du fichier Config\+View.\+h.
+
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_config_view_a44db0b158587c761e0b50ee7d09bfd4d}\label{class_config_view_a44db0b158587c761e0b50ee7d09bfd4d}} 
+\index{ConfigView@{ConfigView}!ConfigView@{ConfigView}}
+\index{ConfigView@{ConfigView}!ConfigView@{ConfigView}}
+\doxysubsubsection{\texorpdfstring{ConfigView()}{ConfigView()}}
+{\footnotesize\ttfamily Config\+View\+::\+Config\+View (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent }\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & (Q\+Widget$\ast$) \+: Parent \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 7 du fichier Config\+View.\+cpp.
+
+\mbox{\Hypertarget{class_config_view_aceeefbf09d48581110a341eec00a499a}\label{class_config_view_aceeefbf09d48581110a341eec00a499a}} 
+\index{ConfigView@{ConfigView}!````~ConfigView@{$\sim$ConfigView}}
+\index{````~ConfigView@{$\sim$ConfigView}!ConfigView@{ConfigView}}
+\doxysubsubsection{\texorpdfstring{$\sim$ConfigView()}{~ConfigView()}}
+{\footnotesize\ttfamily Config\+View\+::$\sim$\+Config\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destrcuteur. 
+
+
+
+Définition à la ligne 19 du fichier Config\+View.\+cpp.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_config_view_a42f88e6610a421f9f8538821770e056c}\label{class_config_view_a42f88e6610a421f9f8538821770e056c}} 
+\index{ConfigView@{ConfigView}!keyPressEvent@{keyPressEvent}}
+\index{keyPressEvent@{keyPressEvent}!ConfigView@{ConfigView}}
+\doxysubsubsection{\texorpdfstring{keyPressEvent()}{keyPressEvent()}}
+{\footnotesize\ttfamily void Config\+View\+::key\+Press\+Event (\begin{DoxyParamCaption}\item[{Q\+Key\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Surcharge de la methode pour l\textquotesingle{}evevement d\textquotesingle{}une touche pressee. 
+
+Pour savoir quand la touche \char`\"{}\+Entree\char`\"{} est pressee 
+\begin{DoxyParams}{Paramètres}
+{\em event} & (Q\+Key\+Event$\ast$) \+: Touche appuyee \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 38 du fichier Config\+View.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_config_view_a42f88e6610a421f9f8538821770e056c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_config_view_aeaa642c6bea8b24b0d16ac9b65511c72}\label{class_config_view_aeaa642c6bea8b24b0d16ac9b65511c72}} 
+\index{ConfigView@{ConfigView}!resizeEvent@{resizeEvent}}
+\index{resizeEvent@{resizeEvent}!ConfigView@{ConfigView}}
+\doxysubsubsection{\texorpdfstring{resizeEvent()}{resizeEvent()}}
+{\footnotesize\ttfamily void Config\+View\+::resize\+Event (\begin{DoxyParamCaption}\item[{Q\+Resize\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Methode appelee au changement de taille de la fenetre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em event} & (Q\+Resize\+Event$\ast$) \+: Evenement de changement de taille \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 27 du fichier Config\+View.\+cpp.
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_config_view_a1572eaf5a8889b2d023a0f7915480b68}\label{class_config_view_a1572eaf5a8889b2d023a0f7915480b68}} 
+\index{ConfigView@{ConfigView}!p\_pressedKey@{p\_pressedKey}}
+\index{p\_pressedKey@{p\_pressedKey}!ConfigView@{ConfigView}}
+\doxysubsubsection{\texorpdfstring{p\_pressedKey}{p\_pressedKey}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ Config\+View\+::p\+\_\+pressed\+Key\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour savoir l\textquotesingle{}ordre des touches appuyees. 
+
+
+
+Définition à la ligne 37 du fichier Config\+View.\+h.
+
+\mbox{\Hypertarget{class_config_view_a086d6c4793bbbc7764e4eccfa15f643b}\label{class_config_view_a086d6c4793bbbc7764e4eccfa15f643b}} 
+\index{ConfigView@{ConfigView}!p\_scroll@{p\_scroll}}
+\index{p\_scroll@{p\_scroll}!ConfigView@{ConfigView}}
+\doxysubsubsection{\texorpdfstring{p\_scroll}{p\_scroll}}
+{\footnotesize\ttfamily Q\+Scroll\+Area$\ast$ Config\+View\+::p\+\_\+scroll\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour permettre le scroll. 
+
+
+
+Définition à la ligne 31 du fichier Config\+View.\+h.
+
+\mbox{\Hypertarget{class_config_view_af2c52c66f5defeb35bbc8df4d9515652}\label{class_config_view_af2c52c66f5defeb35bbc8df4d9515652}} 
+\index{ConfigView@{ConfigView}!p\_window@{p\_window}}
+\index{p\_window@{p\_window}!ConfigView@{ConfigView}}
+\doxysubsubsection{\texorpdfstring{p\_window}{p\_window}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_config_informations}{Config\+Informations}}$\ast$ Config\+View\+::p\+\_\+window\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour la fenetre des informations. 
+
+
+
+Définition à la ligne 34 du fichier Config\+View.\+h.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Vues/\mbox{\hyperlink{_config_view_8h}{Config\+View.\+h}}\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Vues/\mbox{\hyperlink{_config_view_8cpp}{Config\+View.\+cpp}}\end{DoxyCompactItemize}

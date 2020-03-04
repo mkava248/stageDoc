@@ -1,4 +1,4 @@
-\doxysection{Référence de la classe Ssh}
+\hypertarget{class_ssh}{}\doxysection{Référence de la classe Ssh}
 \label{class_ssh}\index{Ssh@{Ssh}}
 
 
@@ -12,33 +12,35 @@ Classe pour faire les operations ssh.
 \doxysubsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
-\textbf{ Ssh} (std\+::string host)
+\mbox{\hyperlink{class_ssh_a6a0c9626e3423a47bfe2c8600d71997c}{Ssh}} (const std\+::string \&host)
 \begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
-\textbf{ $\sim$\+Ssh} ()
+\mbox{\hyperlink{class_ssh_a225ee517b0f059d66bb6df554493a0dc}{$\sim$\+Ssh}} ()
 \begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
-void \textbf{ connect} (std\+::string user, std\+::string password)
+void \mbox{\hyperlink{class_ssh_a3074e8a9e6c966e58f20b28a3e60aad6}{connect}} (const std\+::string \&user, const std\+::string \&password)
 \begin{DoxyCompactList}\small\item\em Methode de connexion. \end{DoxyCompactList}\item 
-\textbf{ My\+Result}$<$ std\+::string $>$ \textbf{ execute\+Command} (std\+::string command)
+\mbox{\hyperlink{class_my_result}{My\+Result}}$<$ std\+::string $>$ \mbox{\hyperlink{class_ssh_a12e9a8f33999fa1cd5b6578d34d69ab3}{execute\+Command}} (std\+::string command)
 \begin{DoxyCompactList}\small\item\em Methode d\textquotesingle{}execution des commandes. \end{DoxyCompactList}\item 
-bool \textbf{ is\+Connect} ()
+bool \mbox{\hyperlink{class_ssh_ae5262daa3b98d1d19df5f57b2102cce6}{is\+Connect}} ()
 \begin{DoxyCompactList}\small\item\em Methode pour savoir si la connexion est etablie. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
-int \textbf{ p\+\_\+port}
+int \mbox{\hyperlink{class_ssh_a783920de27f52b899fbe6fc9e5c1d3ac}{p\+\_\+port}}
 \begin{DoxyCompactList}\small\item\em Variable pour le port de connexion. \end{DoxyCompactList}\item 
-int \textbf{ p\+\_\+verbosity}
+int \mbox{\hyperlink{class_ssh_a87b574b5b2d81c47b7186777a1cbeef1}{p\+\_\+verbosity}}
 \begin{DoxyCompactList}\small\item\em Option necessaire a la connexion. \end{DoxyCompactList}\item 
-ssh\+::\+Session \textbf{ p\+\_\+session}
+ssh\+::\+Session \mbox{\hyperlink{class_ssh_a26cec4d27fa093ae5f566f96701bf6c0}{p\+\_\+session}}
 \begin{DoxyCompactList}\small\item\em Variable session pour faire la connexion. \end{DoxyCompactList}\item 
-bool \textbf{ p\+\_\+connect}
+bool \mbox{\hyperlink{class_ssh_a4bbc908a273e03aa4bf9341e2bd7ada0}{p\+\_\+connect}}
 \begin{DoxyCompactList}\small\item\em Variable pour savoir si on est connecte. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Description détaillée}
 Classe pour faire les operations ssh. 
 
-Classe faisant les operations ssh. Elle permet de se connecter et d\textquotesingle{}executer des commandes. Elle utilise la bibliotheque externe libssh. \begin{DoxyAuthor}{Auteur}
+Classe faisant les operations ssh. ~\newline
+Elle permet de se connecter et d\textquotesingle{}executer des commandes. ~\newline
+Elle utilise la bibliotheque externe libssh. \begin{DoxyAuthor}{Auteur}
 Thomas Rebillard 
 \end{DoxyAuthor}
 
@@ -48,11 +50,11 @@ Définition à la ligne 16 du fichier Ssh.\+h.
 
 
 \doxysubsection{Documentation des constructeurs et destructeur}
-\mbox{\label{class_ssh_a75e7de87df63072bee33a43158ff8309}} 
+\mbox{\Hypertarget{class_ssh_a6a0c9626e3423a47bfe2c8600d71997c}\label{class_ssh_a6a0c9626e3423a47bfe2c8600d71997c}} 
 \index{Ssh@{Ssh}!Ssh@{Ssh}}
 \index{Ssh@{Ssh}!Ssh@{Ssh}}
-\doxysubsubsection{Ssh()}
-{\footnotesize\ttfamily Ssh\+::\+Ssh (\begin{DoxyParamCaption}\item[{std\+::string}]{host }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{Ssh()}{Ssh()}}
+{\footnotesize\ttfamily Ssh\+::\+Ssh (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{host }\end{DoxyParamCaption})}
 
 
 
@@ -67,10 +69,10 @@ Initialise les options de la session ssh (V\+E\+R\+B\+O\+S\+I\+TY, P\+O\+RT, H\+
 
 Définition à la ligne 8 du fichier Ssh.\+cpp.
 
-\mbox{\label{class_ssh_a225ee517b0f059d66bb6df554493a0dc}} 
+\mbox{\Hypertarget{class_ssh_a225ee517b0f059d66bb6df554493a0dc}\label{class_ssh_a225ee517b0f059d66bb6df554493a0dc}} 
 \index{Ssh@{Ssh}!````~Ssh@{$\sim$Ssh}}
 \index{````~Ssh@{$\sim$Ssh}!Ssh@{Ssh}}
-\doxysubsubsection{$\sim$Ssh()}
+\doxysubsubsection{\texorpdfstring{$\sim$Ssh()}{~Ssh()}}
 {\footnotesize\ttfamily Ssh\+::$\sim$\+Ssh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -84,11 +86,11 @@ Définition à la ligne 22 du fichier Ssh.\+cpp.
 
 
 \doxysubsection{Documentation des fonctions membres}
-\mbox{\label{class_ssh_aae2f7bfe2d999b5353175009059640a0}} 
+\mbox{\Hypertarget{class_ssh_a3074e8a9e6c966e58f20b28a3e60aad6}\label{class_ssh_a3074e8a9e6c966e58f20b28a3e60aad6}} 
 \index{Ssh@{Ssh}!connect@{connect}}
 \index{connect@{connect}!Ssh@{Ssh}}
-\doxysubsubsection{connect()}
-{\footnotesize\ttfamily void Ssh\+::connect (\begin{DoxyParamCaption}\item[{std\+::string}]{user,  }\item[{std\+::string}]{password }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily void Ssh\+::connect (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{user,  }\item[{const std\+::string \&}]{password }\end{DoxyParamCaption})}
 
 
 
@@ -110,14 +112,14 @@ Voici le graphe des appelants de cette fonction \+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_ssh_aae2f7bfe2d999b5353175009059640a0_icgraph}
+\includegraphics[width=350pt]{class_ssh_a3074e8a9e6c966e58f20b28a3e60aad6_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_ssh_a12e9a8f33999fa1cd5b6578d34d69ab3}} 
+\mbox{\Hypertarget{class_ssh_a12e9a8f33999fa1cd5b6578d34d69ab3}\label{class_ssh_a12e9a8f33999fa1cd5b6578d34d69ab3}} 
 \index{Ssh@{Ssh}!executeCommand@{executeCommand}}
 \index{executeCommand@{executeCommand}!Ssh@{Ssh}}
-\doxysubsubsection{executeCommand()}
-{\footnotesize\ttfamily \textbf{ My\+Result}$<$ std\+::string $>$ Ssh\+::execute\+Command (\begin{DoxyParamCaption}\item[{std\+::string}]{command }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{executeCommand()}{executeCommand()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_my_result}{My\+Result}}$<$ std\+::string $>$ Ssh\+::execute\+Command (\begin{DoxyParamCaption}\item[{std\+::string}]{command }\end{DoxyParamCaption})}
 
 
 
@@ -129,7 +131,7 @@ Cree un objet channel qui va servir a envoyer la requete, execute la commande, p
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Renvoie}
-\doxyref{My\+Result}{p.}{class_my_result} \+: Resultat de l\textquotesingle{}execution 
+\mbox{\hyperlink{class_my_result}{My\+Result}} \+: Resultat de l\textquotesingle{}execution 
 \end{DoxyReturn}
 
 
@@ -143,10 +145,10 @@ Voici le graphe des appelants de cette fonction \+:
 \includegraphics[width=350pt]{class_ssh_a12e9a8f33999fa1cd5b6578d34d69ab3_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_ssh_ae5262daa3b98d1d19df5f57b2102cce6}} 
+\mbox{\Hypertarget{class_ssh_ae5262daa3b98d1d19df5f57b2102cce6}\label{class_ssh_ae5262daa3b98d1d19df5f57b2102cce6}} 
 \index{Ssh@{Ssh}!isConnect@{isConnect}}
 \index{isConnect@{isConnect}!Ssh@{Ssh}}
-\doxysubsubsection{isConnect()}
+\doxysubsubsection{\texorpdfstring{isConnect()}{isConnect()}}
 {\footnotesize\ttfamily bool Ssh\+::is\+Connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -161,7 +163,7 @@ bool \+: Pour savoir s\textquotesingle{}il y a une connexion
 \end{DoxyReturn}
 
 
-Définition à la ligne 180 du fichier Ssh.\+cpp.
+Définition à la ligne 179 du fichier Ssh.\+cpp.
 
 Voici le graphe des appelants de cette fonction \+:
 \nopagebreak
@@ -174,10 +176,10 @@ Voici le graphe des appelants de cette fonction \+:
 
 
 \doxysubsection{Documentation des données membres}
-\mbox{\label{class_ssh_a4bbc908a273e03aa4bf9341e2bd7ada0}} 
+\mbox{\Hypertarget{class_ssh_a4bbc908a273e03aa4bf9341e2bd7ada0}\label{class_ssh_a4bbc908a273e03aa4bf9341e2bd7ada0}} 
 \index{Ssh@{Ssh}!p\_connect@{p\_connect}}
 \index{p\_connect@{p\_connect}!Ssh@{Ssh}}
-\doxysubsubsection{p\_connect}
+\doxysubsubsection{\texorpdfstring{p\_connect}{p\_connect}}
 {\footnotesize\ttfamily bool Ssh\+::p\+\_\+connect\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -188,10 +190,10 @@ Variable pour savoir si on est connecte.
 
 Définition à la ligne 29 du fichier Ssh.\+h.
 
-\mbox{\label{class_ssh_a783920de27f52b899fbe6fc9e5c1d3ac}} 
+\mbox{\Hypertarget{class_ssh_a783920de27f52b899fbe6fc9e5c1d3ac}\label{class_ssh_a783920de27f52b899fbe6fc9e5c1d3ac}} 
 \index{Ssh@{Ssh}!p\_port@{p\_port}}
 \index{p\_port@{p\_port}!Ssh@{Ssh}}
-\doxysubsubsection{p\_port}
+\doxysubsubsection{\texorpdfstring{p\_port}{p\_port}}
 {\footnotesize\ttfamily int Ssh\+::p\+\_\+port\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -202,10 +204,10 @@ Variable pour le port de connexion.
 
 Définition à la ligne 20 du fichier Ssh.\+h.
 
-\mbox{\label{class_ssh_a26cec4d27fa093ae5f566f96701bf6c0}} 
+\mbox{\Hypertarget{class_ssh_a26cec4d27fa093ae5f566f96701bf6c0}\label{class_ssh_a26cec4d27fa093ae5f566f96701bf6c0}} 
 \index{Ssh@{Ssh}!p\_session@{p\_session}}
 \index{p\_session@{p\_session}!Ssh@{Ssh}}
-\doxysubsubsection{p\_session}
+\doxysubsubsection{\texorpdfstring{p\_session}{p\_session}}
 {\footnotesize\ttfamily ssh\+::\+Session Ssh\+::p\+\_\+session\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -216,10 +218,10 @@ Variable session pour faire la connexion.
 
 Définition à la ligne 26 du fichier Ssh.\+h.
 
-\mbox{\label{class_ssh_a87b574b5b2d81c47b7186777a1cbeef1}} 
+\mbox{\Hypertarget{class_ssh_a87b574b5b2d81c47b7186777a1cbeef1}\label{class_ssh_a87b574b5b2d81c47b7186777a1cbeef1}} 
 \index{Ssh@{Ssh}!p\_verbosity@{p\_verbosity}}
 \index{p\_verbosity@{p\_verbosity}!Ssh@{Ssh}}
-\doxysubsubsection{p\_verbosity}
+\doxysubsubsection{\texorpdfstring{p\_verbosity}{p\_verbosity}}
 {\footnotesize\ttfamily int Ssh\+::p\+\_\+verbosity\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -234,5 +236,5 @@ Définition à la ligne 23 du fichier Ssh.\+h.
 
 La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Modeles/\textbf{ Ssh.\+h}\item 
-C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Modeles/\textbf{ Ssh.\+cpp}\end{DoxyCompactItemize}
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Modeles/\mbox{\hyperlink{_ssh_8h}{Ssh.\+h}}\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Modeles/\mbox{\hyperlink{_ssh_8cpp}{Ssh.\+cpp}}\end{DoxyCompactItemize}

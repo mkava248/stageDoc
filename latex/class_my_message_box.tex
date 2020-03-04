@@ -1,4 +1,4 @@
-\doxysection{Référence de la classe My\+Message\+Box}
+\hypertarget{class_my_message_box}{}\doxysection{Référence de la classe My\+Message\+Box}
 \label{class_my_message_box}\index{MyMessageBox@{MyMessageBox}}
 
 
@@ -11,7 +11,8 @@ Classe pour une boite de message personnalisee.
 
 
 
-Graphe d\textquotesingle{}héritage de My\+Message\+Box\+:\nopagebreak
+Graphe d\textquotesingle{}héritage de My\+Message\+Box\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -20,7 +21,8 @@ Graphe d\textquotesingle{}héritage de My\+Message\+Box\+:\nopagebreak
 \end{figure}
 
 
-Graphe de collaboration de My\+Message\+Box\+:\nopagebreak
+Graphe de collaboration de My\+Message\+Box\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -30,42 +32,45 @@ Graphe de collaboration de My\+Message\+Box\+:\nopagebreak
 \doxysubsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
-\textbf{ My\+Message\+Box} ()
+\mbox{\hyperlink{class_my_message_box_a21d96773ad5d79828ef1a7e4f76678e5}{My\+Message\+Box}} ()
 \begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
-\textbf{ $\sim$\+My\+Message\+Box} ()
+\mbox{\hyperlink{class_my_message_box_abcb96474b78e5f4d18bf16b790f739cf}{$\sim$\+My\+Message\+Box}} ()
 \begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
-void \textbf{ set\+Auto\+Close} (bool close)
+void \mbox{\hyperlink{class_my_message_box_a8f4078137f89278ea359ab9e050ec133}{set\+Auto\+Close}} (bool close)
 \begin{DoxyCompactList}\small\item\em Methode pour definir la fermeture automatique. \end{DoxyCompactList}\item 
-void \textbf{ set\+Progress} (int value)
+void \mbox{\hyperlink{class_my_message_box_a5673f32198d26ccd366c7cecd502299e}{set\+Progress}} (int value)
 \begin{DoxyCompactList}\small\item\em Methode pour changer la valeur de la progress bar. \end{DoxyCompactList}\item 
-void \textbf{ set\+Timeout} (int time)
+void \mbox{\hyperlink{class_my_message_box_a53f07dd673413c437b44bb546395c60b}{set\+Timeout}} (int time)
 \begin{DoxyCompactList}\small\item\em Methode pour definir le temps avant fermeture. \end{DoxyCompactList}\item 
-void \textbf{ show\+Event} (Q\+Show\+Event $\ast$event)
+void \mbox{\hyperlink{class_my_message_box_ad9f38f9315bdfa8e12520b8ed9573733}{show\+Event}} (Q\+Show\+Event $\ast$event)
 \begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}evenement d\textquotesingle{}affichage. \end{DoxyCompactList}\item 
-void \textbf{ timer\+Event} (Q\+Timer\+Event $\ast$event)
+void \mbox{\hyperlink{class_my_message_box_aec9c7648636dd0fc7f08e1a4276146ae}{timer\+Event}} (Q\+Timer\+Event $\ast$event)
 \begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}evenement de timer. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Fonctions membres protégées}
 \begin{DoxyCompactItemize}
 \item 
-void \textbf{ resize\+Event} (Q\+Resize\+Event $\ast$event)
+void \mbox{\hyperlink{class_my_message_box_a2d7a04cfe2209386237b0b023e2c77a3}{resize\+Event}} (Q\+Resize\+Event $\ast$event)
 \begin{DoxyCompactList}\small\item\em Methode appelee quand la fenetre change de taille. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
-int \textbf{ timeout}
+int \mbox{\hyperlink{class_my_message_box_a3223f493e0e13139c5dd4d56dd32f1ef}{timeout}}
 \begin{DoxyCompactList}\small\item\em Variable de timer. \end{DoxyCompactList}\item 
-bool \textbf{ auto\+Close}
+bool \mbox{\hyperlink{class_my_message_box_a6e80c4ebab9bbe04c1f3e5da2ad744d3}{auto\+Close}}
 \begin{DoxyCompactList}\small\item\em Variable pour faire la fermeture automatique. \end{DoxyCompactList}\item 
-int \textbf{ current\+Time}
+int \mbox{\hyperlink{class_my_message_box_a567700592c0bed9819546cfeef6c56df}{current\+Time}}
 \begin{DoxyCompactList}\small\item\em Variable pour savoir le temps actuel. \end{DoxyCompactList}\item 
-Q\+Progress\+Bar $\ast$ \textbf{ p\+\_\+progress}
+int \mbox{\hyperlink{class_my_message_box_ad230672e8c27bbc05ce63baf0e54994c}{p\+\_\+timer}}
+\begin{DoxyCompactList}\small\item\em Variable pour connaitre l\textquotesingle{}identifiant du timer. \end{DoxyCompactList}\item 
+Q\+Progress\+Bar $\ast$ \mbox{\hyperlink{class_my_message_box_ab202dc9bcadc0203e1ca89b6d9414e50}{p\+\_\+progress}}
 \begin{DoxyCompactList}\small\item\em Variable de progress bar. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Description détaillée}
 Classe pour une boite de message personnalisee. 
 
-Classe pour afficher une boite de message avec un timer et un auto\+Close. Possede un temps avant fermeture, un booleen pour savoir on ferme automatiquement, et le temps actuel depuis la creation \begin{DoxyAuthor}{Auteur}
+Classe pour afficher une boite de message avec un timer et un auto\+Close. ~\newline
+Possede un temps avant fermeture, un booleen pour savoir on ferme automatiquement, et le temps actuel depuis la creation. \begin{DoxyAuthor}{Auteur}
 Thomas Rebillard 
 \end{DoxyAuthor}
 
@@ -75,10 +80,10 @@ Définition à la ligne 12 du fichier My\+Message\+Box.\+h.
 
 
 \doxysubsection{Documentation des constructeurs et destructeur}
-\mbox{\label{class_my_message_box_a21d96773ad5d79828ef1a7e4f76678e5}} 
+\mbox{\Hypertarget{class_my_message_box_a21d96773ad5d79828ef1a7e4f76678e5}\label{class_my_message_box_a21d96773ad5d79828ef1a7e4f76678e5}} 
 \index{MyMessageBox@{MyMessageBox}!MyMessageBox@{MyMessageBox}}
 \index{MyMessageBox@{MyMessageBox}!MyMessageBox@{MyMessageBox}}
-\doxysubsubsection{MyMessageBox()}
+\doxysubsubsection{\texorpdfstring{MyMessageBox()}{MyMessageBox()}}
 {\footnotesize\ttfamily My\+Message\+Box\+::\+My\+Message\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -89,10 +94,10 @@ Constructeur.
 
 Définition à la ligne 6 du fichier My\+Message\+Box.\+cpp.
 
-\mbox{\label{class_my_message_box_abcb96474b78e5f4d18bf16b790f739cf}} 
+\mbox{\Hypertarget{class_my_message_box_abcb96474b78e5f4d18bf16b790f739cf}\label{class_my_message_box_abcb96474b78e5f4d18bf16b790f739cf}} 
 \index{MyMessageBox@{MyMessageBox}!````~MyMessageBox@{$\sim$MyMessageBox}}
 \index{````~MyMessageBox@{$\sim$MyMessageBox}!MyMessageBox@{MyMessageBox}}
-\doxysubsubsection{$\sim$MyMessageBox()}
+\doxysubsubsection{\texorpdfstring{$\sim$MyMessageBox()}{~MyMessageBox()}}
 {\footnotesize\ttfamily My\+Message\+Box\+::$\sim$\+My\+Message\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -106,10 +111,10 @@ Définition à la ligne 18 du fichier My\+Message\+Box.\+cpp.
 
 
 \doxysubsection{Documentation des fonctions membres}
-\mbox{\label{class_my_message_box_a2d7a04cfe2209386237b0b023e2c77a3}} 
+\mbox{\Hypertarget{class_my_message_box_a2d7a04cfe2209386237b0b023e2c77a3}\label{class_my_message_box_a2d7a04cfe2209386237b0b023e2c77a3}} 
 \index{MyMessageBox@{MyMessageBox}!resizeEvent@{resizeEvent}}
 \index{resizeEvent@{resizeEvent}!MyMessageBox@{MyMessageBox}}
-\doxysubsubsection{resizeEvent()}
+\doxysubsubsection{\texorpdfstring{resizeEvent()}{resizeEvent()}}
 {\footnotesize\ttfamily void My\+Message\+Box\+::resize\+Event (\begin{DoxyParamCaption}\item[{Q\+Resize\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 
@@ -123,12 +128,12 @@ Methode appelee quand la fenetre change de taille.
 \end{DoxyParams}
 
 
-Définition à la ligne 79 du fichier My\+Message\+Box.\+cpp.
+Définition à la ligne 80 du fichier My\+Message\+Box.\+cpp.
 
-\mbox{\label{class_my_message_box_a8f4078137f89278ea359ab9e050ec133}} 
+\mbox{\Hypertarget{class_my_message_box_a8f4078137f89278ea359ab9e050ec133}\label{class_my_message_box_a8f4078137f89278ea359ab9e050ec133}} 
 \index{MyMessageBox@{MyMessageBox}!setAutoClose@{setAutoClose}}
 \index{setAutoClose@{setAutoClose}!MyMessageBox@{MyMessageBox}}
-\doxysubsubsection{setAutoClose()}
+\doxysubsubsection{\texorpdfstring{setAutoClose()}{setAutoClose()}}
 {\footnotesize\ttfamily void My\+Message\+Box\+::set\+Auto\+Close (\begin{DoxyParamCaption}\item[{bool}]{close }\end{DoxyParamCaption})}
 
 
@@ -144,17 +149,18 @@ Methode pour definir la fermeture automatique.
 
 Définition à la ligne 35 du fichier My\+Message\+Box.\+cpp.
 
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_my_message_box_a8f4078137f89278ea359ab9e050ec133_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_my_message_box_a5673f32198d26ccd366c7cecd502299e}} 
+\mbox{\Hypertarget{class_my_message_box_a5673f32198d26ccd366c7cecd502299e}\label{class_my_message_box_a5673f32198d26ccd366c7cecd502299e}} 
 \index{MyMessageBox@{MyMessageBox}!setProgress@{setProgress}}
 \index{setProgress@{setProgress}!MyMessageBox@{MyMessageBox}}
-\doxysubsubsection{setProgress()}
+\doxysubsubsection{\texorpdfstring{setProgress()}{setProgress()}}
 {\footnotesize\ttfamily void My\+Message\+Box\+::set\+Progress (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
 
 
@@ -170,17 +176,18 @@ Methode pour changer la valeur de la progress bar.
 
 Définition à la ligne 26 du fichier My\+Message\+Box.\+cpp.
 
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_my_message_box_a5673f32198d26ccd366c7cecd502299e_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_my_message_box_a53f07dd673413c437b44bb546395c60b}} 
+\mbox{\Hypertarget{class_my_message_box_a53f07dd673413c437b44bb546395c60b}\label{class_my_message_box_a53f07dd673413c437b44bb546395c60b}} 
 \index{MyMessageBox@{MyMessageBox}!setTimeout@{setTimeout}}
 \index{setTimeout@{setTimeout}!MyMessageBox@{MyMessageBox}}
-\doxysubsubsection{setTimeout()}
+\doxysubsubsection{\texorpdfstring{setTimeout()}{setTimeout()}}
 {\footnotesize\ttfamily void My\+Message\+Box\+::set\+Timeout (\begin{DoxyParamCaption}\item[{int}]{time }\end{DoxyParamCaption})}
 
 
@@ -196,17 +203,18 @@ Methode pour definir le temps avant fermeture.
 
 Définition à la ligne 44 du fichier My\+Message\+Box.\+cpp.
 
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_my_message_box_a53f07dd673413c437b44bb546395c60b_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_my_message_box_ad9f38f9315bdfa8e12520b8ed9573733}} 
+\mbox{\Hypertarget{class_my_message_box_ad9f38f9315bdfa8e12520b8ed9573733}\label{class_my_message_box_ad9f38f9315bdfa8e12520b8ed9573733}} 
 \index{MyMessageBox@{MyMessageBox}!showEvent@{showEvent}}
 \index{showEvent@{showEvent}!MyMessageBox@{MyMessageBox}}
-\doxysubsubsection{showEvent()}
+\doxysubsubsection{\texorpdfstring{showEvent()}{showEvent()}}
 {\footnotesize\ttfamily void My\+Message\+Box\+::show\+Event (\begin{DoxyParamCaption}\item[{Q\+Show\+Event $\ast$}]{event }\end{DoxyParamCaption})}
 
 
@@ -222,10 +230,10 @@ Surcharge de l\textquotesingle{}evenement d\textquotesingle{}affichage.
 
 Définition à la ligne 53 du fichier My\+Message\+Box.\+cpp.
 
-\mbox{\label{class_my_message_box_aec9c7648636dd0fc7f08e1a4276146ae}} 
+\mbox{\Hypertarget{class_my_message_box_aec9c7648636dd0fc7f08e1a4276146ae}\label{class_my_message_box_aec9c7648636dd0fc7f08e1a4276146ae}} 
 \index{MyMessageBox@{MyMessageBox}!timerEvent@{timerEvent}}
 \index{timerEvent@{timerEvent}!MyMessageBox@{MyMessageBox}}
-\doxysubsubsection{timerEvent()}
+\doxysubsubsection{\texorpdfstring{timerEvent()}{timerEvent()}}
 {\footnotesize\ttfamily void My\+Message\+Box\+::timer\+Event (\begin{DoxyParamCaption}\item[{Q\+Timer\+Event $\ast$}]{event }\end{DoxyParamCaption})}
 
 
@@ -244,10 +252,10 @@ Définition à la ligne 66 du fichier My\+Message\+Box.\+cpp.
 
 
 \doxysubsection{Documentation des données membres}
-\mbox{\label{class_my_message_box_a6e80c4ebab9bbe04c1f3e5da2ad744d3}} 
+\mbox{\Hypertarget{class_my_message_box_a6e80c4ebab9bbe04c1f3e5da2ad744d3}\label{class_my_message_box_a6e80c4ebab9bbe04c1f3e5da2ad744d3}} 
 \index{MyMessageBox@{MyMessageBox}!autoClose@{autoClose}}
 \index{autoClose@{autoClose}!MyMessageBox@{MyMessageBox}}
-\doxysubsubsection{autoClose}
+\doxysubsubsection{\texorpdfstring{autoClose}{autoClose}}
 {\footnotesize\ttfamily bool My\+Message\+Box\+::auto\+Close\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -258,10 +266,10 @@ Variable pour faire la fermeture automatique.
 
 Définition à la ligne 19 du fichier My\+Message\+Box.\+h.
 
-\mbox{\label{class_my_message_box_a567700592c0bed9819546cfeef6c56df}} 
+\mbox{\Hypertarget{class_my_message_box_a567700592c0bed9819546cfeef6c56df}\label{class_my_message_box_a567700592c0bed9819546cfeef6c56df}} 
 \index{MyMessageBox@{MyMessageBox}!currentTime@{currentTime}}
 \index{currentTime@{currentTime}!MyMessageBox@{MyMessageBox}}
-\doxysubsubsection{currentTime}
+\doxysubsubsection{\texorpdfstring{currentTime}{currentTime}}
 {\footnotesize\ttfamily int My\+Message\+Box\+::current\+Time\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -272,10 +280,10 @@ Variable pour savoir le temps actuel.
 
 Définition à la ligne 22 du fichier My\+Message\+Box.\+h.
 
-\mbox{\label{class_my_message_box_ab202dc9bcadc0203e1ca89b6d9414e50}} 
+\mbox{\Hypertarget{class_my_message_box_ab202dc9bcadc0203e1ca89b6d9414e50}\label{class_my_message_box_ab202dc9bcadc0203e1ca89b6d9414e50}} 
 \index{MyMessageBox@{MyMessageBox}!p\_progress@{p\_progress}}
 \index{p\_progress@{p\_progress}!MyMessageBox@{MyMessageBox}}
-\doxysubsubsection{p\_progress}
+\doxysubsubsection{\texorpdfstring{p\_progress}{p\_progress}}
 {\footnotesize\ttfamily Q\+Progress\+Bar$\ast$ My\+Message\+Box\+::p\+\_\+progress\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -284,12 +292,26 @@ Variable de progress bar.
 
 
 
+Définition à la ligne 28 du fichier My\+Message\+Box.\+h.
+
+\mbox{\Hypertarget{class_my_message_box_ad230672e8c27bbc05ce63baf0e54994c}\label{class_my_message_box_ad230672e8c27bbc05ce63baf0e54994c}} 
+\index{MyMessageBox@{MyMessageBox}!p\_timer@{p\_timer}}
+\index{p\_timer@{p\_timer}!MyMessageBox@{MyMessageBox}}
+\doxysubsubsection{\texorpdfstring{p\_timer}{p\_timer}}
+{\footnotesize\ttfamily int My\+Message\+Box\+::p\+\_\+timer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour connaitre l\textquotesingle{}identifiant du timer. 
+
+
+
 Définition à la ligne 25 du fichier My\+Message\+Box.\+h.
 
-\mbox{\label{class_my_message_box_a3223f493e0e13139c5dd4d56dd32f1ef}} 
+\mbox{\Hypertarget{class_my_message_box_a3223f493e0e13139c5dd4d56dd32f1ef}\label{class_my_message_box_a3223f493e0e13139c5dd4d56dd32f1ef}} 
 \index{MyMessageBox@{MyMessageBox}!timeout@{timeout}}
 \index{timeout@{timeout}!MyMessageBox@{MyMessageBox}}
-\doxysubsubsection{timeout}
+\doxysubsubsection{\texorpdfstring{timeout}{timeout}}
 {\footnotesize\ttfamily int My\+Message\+Box\+::timeout\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -304,5 +326,5 @@ Définition à la ligne 16 du fichier My\+Message\+Box.\+h.
 
 La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Outils/\textbf{ My\+Message\+Box.\+h}\item 
-C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Outils/\textbf{ My\+Message\+Box.\+cpp}\end{DoxyCompactItemize}
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Outils/\mbox{\hyperlink{_my_message_box_8h}{My\+Message\+Box.\+h}}\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Outils/\mbox{\hyperlink{_my_message_box_8cpp}{My\+Message\+Box.\+cpp}}\end{DoxyCompactItemize}

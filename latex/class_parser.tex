@@ -1,4 +1,4 @@
-\doxysection{Référence de la classe Parser}
+\hypertarget{class_parser}{}\doxysection{Référence de la classe Parser}
 \label{class_parser}\index{Parser@{Parser}}
 
 
@@ -12,76 +12,83 @@ Classe pour faire l\textquotesingle{}analyse des fichiers ou de textes.
 \doxysubsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
-std\+::queue$<$ std\+::string $>$ \textbf{ parse\+Ssh} (std\+::string path)
+std\+::queue$<$ std\+::string $>$ \mbox{\hyperlink{class_parser_a08ed2f08916d9fb2e72f26a9cbe5ef8b}{parse\+Ssh}} (std\+::string path)
 \begin{DoxyCompactList}\small\item\em Methode pour recuperer les commandes a executer se trouvant dans un fichier. \end{DoxyCompactList}\item 
-void \textbf{ write\+File} (std\+::string name\+File, const std\+::string \&content)
+void \mbox{\hyperlink{class_parser_a6576607ba65e787f9896d92c56054c5c}{write\+File}} (std\+::string name\+File, const std\+::string \&content)
 \begin{DoxyCompactList}\small\item\em Methode pour ecrire dans un fichier. \end{DoxyCompactList}\item 
-std\+::vector$<$ std\+::string $>$ \textbf{ read\+File} (std\+::string name\+File)
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_parser_af8ff490cee087a67313b5721d50a1983}{read\+File}} (std\+::string name\+File)
 \begin{DoxyCompactList}\small\item\em Methode pour lire le contenu d\textquotesingle{}un fichier. \end{DoxyCompactList}\item 
-void \textbf{ delete\+Content} (std\+::string name\+File)
+void \mbox{\hyperlink{class_parser_a1bb818ba607ccdd80897be372a7d6b23}{delete\+Content}} (std\+::string name\+File)
 \begin{DoxyCompactList}\small\item\em Methode pour effacer le contenu d\textquotesingle{}un fichier. \end{DoxyCompactList}\item 
-std\+::vector$<$ std\+::string $>$ \textbf{ parse\+M\+AP} (std\+::string str)
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_parser_a517ca6a23ef0117d46b18fd37f795a71}{parse\+M\+AP}} (std\+::string str)
 \begin{DoxyCompactList}\small\item\em Methode pour avoir la map d\textquotesingle{}un projet. \end{DoxyCompactList}\item 
-std\+::vector$<$ std\+::string $>$ \textbf{ parse\+Commands\+Monitor} (std\+::string str)
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_parser_acc9b03e692ec71ce0330eb81bece09b1}{parse\+Commands\+Monitor}} (std\+::string str)
 \begin{DoxyCompactList}\small\item\em Methode pour avoir les commandes d\textquotesingle{}un moniteur. \end{DoxyCompactList}\item 
-\textbf{ Monitor} \textbf{ get\+Monitor} (std\+::string)
+\mbox{\hyperlink{class_monitor}{Monitor}} \mbox{\hyperlink{class_parser_af57ddef48806431fd765fb72674cba6a}{get\+Monitor}} (std\+::string)
 \begin{DoxyCompactList}\small\item\em Methode construisant un moniteur a partir d\textquotesingle{}une ligne. \end{DoxyCompactList}\item 
-bool \textbf{ verif\+Monitor} (\textbf{ Monitor} monitor, std\+::string str)
+bool \mbox{\hyperlink{class_parser_a49a28da8b12ea9beb0109d9267d0e965}{verif\+Monitor}} (\mbox{\hyperlink{class_monitor}{Monitor}} monitor, std\+::string str)
 \begin{DoxyCompactList}\small\item\em Methode pour savoir si le moniteur est bien present dans la liste des moniteurs lances. \end{DoxyCompactList}\item 
-std\+::string \textbf{ verif\+Alarms} (\textbf{ Monitor} monitor, std\+::vector$<$ std\+::string $>$ alarms)
+std\+::string \mbox{\hyperlink{class_parser_a623fbf404b897518caaec57c31f3970f}{verif\+Alarms}} (\mbox{\hyperlink{class_monitor}{Monitor}} monitor, std\+::vector$<$ std\+::string $>$ alarms)
 \begin{DoxyCompactList}\small\item\em Methode pour savoir si un moniteur est en alarme ou en alerte. \end{DoxyCompactList}\item 
-std\+::vector$<$ std\+::string $>$ \textbf{ get\+Alarms} (std\+::string str)
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_parser_ac3884f9d172e73a4ab7d0bebef5628e1}{get\+Alarms}} (std\+::string str)
 \begin{DoxyCompactList}\small\item\em Methode pour savoir quelles sont les alarmes et les alertes suite a l\textquotesingle{}execution de la commande. \end{DoxyCompactList}\item 
-std\+::vector$<$ std\+::string $>$ \textbf{ parse\+J\+Ping} (std\+::string str)
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_parser_a24f51b7643d4be0d9dc62520499ffd4d}{parse\+J\+Ping}} (std\+::string str)
 \begin{DoxyCompactList}\small\item\em Methode analysant le texte de retour de J\+Ping. \end{DoxyCompactList}\item 
-std\+::vector$<$ std\+::string $>$ \textbf{ parse\+Exec\+Verif} (std\+::string str)
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_parser_a6ed88e501c553e0fdb214e86751ee46f}{parse\+Exec\+Verif}} (std\+::string str)
 \begin{DoxyCompactList}\small\item\em Methode analysant le texte de retour de execverif. \end{DoxyCompactList}\item 
-std\+::vector$<$ std\+::string $>$ \textbf{ parse\+P\+I\+D\+C\+PU} (std\+::string str)
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_parser_a90e08777b087afdf40c692267ca4353f}{parse\+P\+I\+D\+C\+PU}} (std\+::string str)
 \begin{DoxyCompactList}\small\item\em Methode pour obtenir des informations sur un moniteur. \end{DoxyCompactList}\item 
-std\+::map$<$ std\+::string, double $>$ \textbf{ parse\+Alarm\+Level} (std\+::string str)
+std\+::map$<$ std\+::string, double $>$ \mbox{\hyperlink{class_parser_a6804a64b8f8edfe3f4fd27a41e2484a8}{parse\+Alarm\+Level}} (std\+::string str)
 \begin{DoxyCompactList}\small\item\em Methode pour avoir le niveau d\textquotesingle{}alarme. \end{DoxyCompactList}\item 
-std\+::vector$<$ std\+::string $>$ \textbf{ parse\+Command\+Services} (std\+::string str)
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_parser_acc3ef87a4eab129e638bd4496173880d}{parse\+Command\+Services}} (std\+::string str, bool authentification)
 \begin{DoxyCompactList}\small\item\em Methode pour avoir les informations pour construire les services. \end{DoxyCompactList}\item 
-\textbf{ Service} \textbf{ get\+Service} (std\+::string str)
+\mbox{\hyperlink{class_service}{Service}} \mbox{\hyperlink{class_parser_a30e5e433a63d983206f3d88bbdbaaac8}{get\+Service}} (std\+::string str, bool authentification)
 \begin{DoxyCompactList}\small\item\em Methode pour creer un service a partir du texte. \end{DoxyCompactList}\item 
-std\+::vector$<$ std\+::string $>$ \textbf{ parse\+Service\+Machines} (std\+::string str)
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_parser_ad14151af8c8a6138815f5b7c89f24a25}{parse\+Service\+Machines}} (std\+::string str)
 \begin{DoxyCompactList}\small\item\em Methode pour avoir les machines ou lire les J\+M\+AC. \end{DoxyCompactList}\item 
-std\+::vector$<$ std\+::string $>$ \textbf{ parse\+Service} (std\+::string str)
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_parser_af06a24ca2e72e43bf4a6835fa058e5d3}{parse\+Service}} (std\+::string str)
 \begin{DoxyCompactList}\small\item\em Methode pour avoir les informations concernant les J\+M\+AC. \end{DoxyCompactList}\item 
-std\+::string \textbf{ parse\+Last\+Version} (std\+::string str, std\+::string exec\+Prod)
+std\+::map$<$ std\+::string, std\+::string $>$ \mbox{\hyperlink{class_parser_aab680de1c925a31ccef915f3deb184e5}{parse\+Last\+Version}} (std\+::string str)
 \begin{DoxyCompactList}\small\item\em Methode pour avoir la derniere version d\textquotesingle{}un service. \end{DoxyCompactList}\item 
-std\+::vector$<$ std\+::string $>$ \textbf{ parse\+All\+Certificats} (std\+::string str)
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_parser_a4e273cb32ef3d6f8233457d4d9623c58}{parse\+All\+Certificats}} (std\+::string str)
 \begin{DoxyCompactList}\small\item\em Methode pour obtenir tous les certificats d\textquotesingle{}un texte. \end{DoxyCompactList}\item 
-\textbf{ Certificat} \textbf{ get\+Certificat} (std\+::string content, std\+::string name)
+\mbox{\hyperlink{class_certificat}{Certificat}} \mbox{\hyperlink{class_parser_a00c3fcfdb95523b1d7d75594af424d1c}{get\+Certificat}} (std\+::string content, std\+::string name)
 \begin{DoxyCompactList}\small\item\em Methode pour obtenir un certificat a partir d\textquotesingle{}un texte. \end{DoxyCompactList}\item 
-void \textbf{ replace\+All} (std\+::string \&str, const std\+::string \&from, const std\+::string \&to)
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_parser_a4e0aaad4e33f75d862e4927eabdfbc75}{parse\+Partition}} (std\+::string str)
+\begin{DoxyCompactList}\small\item\em Methode pour obtenir les partitions a partir d\textquotesingle{}un texte. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_parser_a1d3f67bd2a2d0b0cbd83c094589242ba}{get\+Partition}} (std\+::string content)
+\begin{DoxyCompactList}\small\item\em Methode pour obtenir une partition a partir d\textquotesingle{}un texte. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{class_parser_ae0e721a9e8e37b5fdb0466337af4a9a1}{get\+Number\+For\+Partition}} (std\+::string str)
+\begin{DoxyCompactList}\small\item\em Methode pour obtenir les nombres de partitions pour une machine. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_parser_af091fba59121eeeb5fbaa33e32ab9780}{replace\+All}} (std\+::string \&str, const std\+::string \&from, const std\+::string \&to)
 \begin{DoxyCompactList}\small\item\em Methode pour remplacer toutes les occurences d\textquotesingle{}un texte par un autre. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Fonctions membres privées}
 \begin{DoxyCompactItemize}
 \item 
-std\+::vector$<$ std\+::string $>$ \textbf{ p\+\_\+get\+Lines} (std\+::string text)
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_parser_ab4878081ed92c6f7fd44346b8b0f88cc}{p\+\_\+get\+Lines}} (std\+::string text)
 \begin{DoxyCompactList}\small\item\em Methode pour obtenir toutes les lignes d\textquotesingle{}un texte. \end{DoxyCompactList}\item 
-std\+::vector$<$ std\+::string $>$ \textbf{ p\+\_\+get\+Words} (std\+::string line)
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_parser_a9d2d6354be1d6228ecde92c872136509}{p\+\_\+get\+Words}} (std\+::string line)
 \begin{DoxyCompactList}\small\item\em Methode pour obtenir tous les mots d\textquotesingle{}un texte/ligne. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Description détaillée}
 Classe pour faire l\textquotesingle{}analyse des fichiers ou de textes. 
 
-Classe faisant la lecture de fichiers ou de textes Il peut s\textquotesingle{}agir de fichiers normaux ou de fichiers \char`\"{}script\char`\"{} contenant les commandes a executer ou bien de texte venant des commandes executer sur les serveurs \begin{DoxyAuthor}{Auteur}
+Classe faisant la lecture de fichiers ou de textes ou bien des informations qui viennent des serveurs. ~\newline
+Il peut s\textquotesingle{}agir de fichiers normaux ou de fichiers \char`\"{}script\char`\"{} contenant les commandes a executer ou bien de texte venant des commandes executee sur les serveurs. \begin{DoxyAuthor}{Auteur}
 Thomas Rebillard 
 \end{DoxyAuthor}
 
 
-Définition à la ligne 23 du fichier Parser.\+h.
+Définition à la ligne 24 du fichier Parser.\+h.
 
 
 
 \doxysubsection{Documentation des fonctions membres}
-\mbox{\label{class_parser_a1bb818ba607ccdd80897be372a7d6b23}} 
+\mbox{\Hypertarget{class_parser_a1bb818ba607ccdd80897be372a7d6b23}\label{class_parser_a1bb818ba607ccdd80897be372a7d6b23}} 
 \index{Parser@{Parser}!deleteContent@{deleteContent}}
 \index{deleteContent@{deleteContent}!Parser@{Parser}}
-\doxysubsubsection{deleteContent()}
+\doxysubsubsection{\texorpdfstring{deleteContent()}{deleteContent()}}
 {\footnotesize\ttfamily void Parser\+::delete\+Content (\begin{DoxyParamCaption}\item[{std\+::string}]{name\+File }\end{DoxyParamCaption})}
 
 
@@ -97,10 +104,18 @@ Methode pour effacer le contenu d\textquotesingle{}un fichier.
 
 Définition à la ligne 77 du fichier Parser.\+cpp.
 
-\mbox{\label{class_parser_ac3884f9d172e73a4ab7d0bebef5628e1}} 
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_parser_a1bb818ba607ccdd80897be372a7d6b23_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_parser_ac3884f9d172e73a4ab7d0bebef5628e1}\label{class_parser_ac3884f9d172e73a4ab7d0bebef5628e1}} 
 \index{Parser@{Parser}!getAlarms@{getAlarms}}
 \index{getAlarms@{getAlarms}!Parser@{Parser}}
-\doxysubsubsection{getAlarms()}
+\doxysubsubsection{\texorpdfstring{getAlarms()}{getAlarms()}}
 {\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Parser\+::get\+Alarms (\begin{DoxyParamCaption}\item[{std\+::string}]{str }\end{DoxyParamCaption})}
 
 
@@ -117,27 +132,29 @@ Methode pour savoir quelles sont les alarmes et les alertes suite a l\textquotes
 \end{DoxyReturn}
 
 
-Définition à la ligne 212 du fichier Parser.\+cpp.
+Définition à la ligne 213 du fichier Parser.\+cpp.
 
-Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=309pt]{class_parser_ac3884f9d172e73a4ab7d0bebef5628e1_cgraph}
 \end{center}
 \end{figure}
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_parser_ac3884f9d172e73a4ab7d0bebef5628e1_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_parser_a00c3fcfdb95523b1d7d75594af424d1c}} 
+\mbox{\Hypertarget{class_parser_a00c3fcfdb95523b1d7d75594af424d1c}\label{class_parser_a00c3fcfdb95523b1d7d75594af424d1c}} 
 \index{Parser@{Parser}!getCertificat@{getCertificat}}
 \index{getCertificat@{getCertificat}!Parser@{Parser}}
-\doxysubsubsection{getCertificat()}
-{\footnotesize\ttfamily \textbf{ Certificat} Parser\+::get\+Certificat (\begin{DoxyParamCaption}\item[{std\+::string}]{content,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{getCertificat()}{getCertificat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_certificat}{Certificat}} Parser\+::get\+Certificat (\begin{DoxyParamCaption}\item[{std\+::string}]{content,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})}
 
 
 
@@ -151,31 +168,33 @@ Methode pour obtenir un certificat a partir d\textquotesingle{}un texte.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Renvoie}
-(\doxyref{Certificat}{p.}{class_certificat}) \+: \doxyref{Certificat}{p.}{class_certificat} 
+(\mbox{\hyperlink{class_certificat}{Certificat}}) \+: \mbox{\hyperlink{class_certificat}{Certificat}} 
 \end{DoxyReturn}
 
 
-Définition à la ligne 664 du fichier Parser.\+cpp.
+Définition à la ligne 760 du fichier Parser.\+cpp.
 
-Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=335pt]{class_parser_a00c3fcfdb95523b1d7d75594af424d1c_cgraph}
 \end{center}
 \end{figure}
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_parser_a00c3fcfdb95523b1d7d75594af424d1c_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_parser_af57ddef48806431fd765fb72674cba6a}} 
+\mbox{\Hypertarget{class_parser_af57ddef48806431fd765fb72674cba6a}\label{class_parser_af57ddef48806431fd765fb72674cba6a}} 
 \index{Parser@{Parser}!getMonitor@{getMonitor}}
 \index{getMonitor@{getMonitor}!Parser@{Parser}}
-\doxysubsubsection{getMonitor()}
-{\footnotesize\ttfamily \textbf{ Monitor} Parser\+::get\+Monitor (\begin{DoxyParamCaption}\item[{std\+::string}]{str }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{getMonitor()}{getMonitor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_monitor}{Monitor}} Parser\+::get\+Monitor (\begin{DoxyParamCaption}\item[{std\+::string}]{str }\end{DoxyParamCaption})}
 
 
 
@@ -187,31 +206,101 @@ Va retourner tous les moniteurs qui n\textquotesingle{}ont pas un mode de demarr
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Renvoie}
-\doxyref{Monitor}{p.}{class_monitor} \+: Moniteur cree 
+\mbox{\hyperlink{class_monitor}{Monitor}} \+: Moniteur cree 
 \end{DoxyReturn}
 
 
 Définition à la ligne 134 du fichier Parser.\+cpp.
 
-Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=307pt]{class_parser_af57ddef48806431fd765fb72674cba6a_cgraph}
 \end{center}
 \end{figure}
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_parser_af57ddef48806431fd765fb72674cba6a_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_parser_a86a72d2cd9eb4c98be53bc55d91c7461}} 
+\mbox{\Hypertarget{class_parser_ae0e721a9e8e37b5fdb0466337af4a9a1}\label{class_parser_ae0e721a9e8e37b5fdb0466337af4a9a1}} 
+\index{Parser@{Parser}!getNumberForPartition@{getNumberForPartition}}
+\index{getNumberForPartition@{getNumberForPartition}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{getNumberForPartition()}{getNumberForPartition()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Parser\+::get\+Number\+For\+Partition (\begin{DoxyParamCaption}\item[{std\+::string}]{str }\end{DoxyParamCaption})}
+
+
+
+Methode pour obtenir les nombres de partitions pour une machine. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em str} & (std\+::string) \+: Texte avec le nom de la machine et les nombres de partitions a la suite \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+(std\+::vector$<$int$>$) \+: Vecteur des nombres de partitions 
+\end{DoxyReturn}
+
+
+Définition à la ligne 844 du fichier Parser.\+cpp.
+
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_parser_ae0e721a9e8e37b5fdb0466337af4a9a1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_parser_a1d3f67bd2a2d0b0cbd83c094589242ba}\label{class_parser_a1d3f67bd2a2d0b0cbd83c094589242ba}} 
+\index{Parser@{Parser}!getPartition@{getPartition}}
+\index{getPartition@{getPartition}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{getPartition()}{getPartition()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Parser\+::get\+Partition (\begin{DoxyParamCaption}\item[{std\+::string}]{content }\end{DoxyParamCaption})}
+
+
+
+Methode pour obtenir une partition a partir d\textquotesingle{}un texte. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em content} & (std\+::string) \+: Texte a analyser \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+(std\+::vector$<$std\+::string$>$) ; Vecteur des informations d\textquotesingle{}une partition 
+\end{DoxyReturn}
+
+
+Définition à la ligne 816 du fichier Parser.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_parser_a1d3f67bd2a2d0b0cbd83c094589242ba_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{class_parser_a1d3f67bd2a2d0b0cbd83c094589242ba_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_parser_a30e5e433a63d983206f3d88bbdbaaac8}\label{class_parser_a30e5e433a63d983206f3d88bbdbaaac8}} 
 \index{Parser@{Parser}!getService@{getService}}
 \index{getService@{getService}!Parser@{Parser}}
-\doxysubsubsection{getService()}
-{\footnotesize\ttfamily \textbf{ Service} Parser\+::get\+Service (\begin{DoxyParamCaption}\item[{std\+::string}]{str }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{getService()}{getService()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_service}{Service}} Parser\+::get\+Service (\begin{DoxyParamCaption}\item[{std\+::string}]{str,  }\item[{bool}]{authentification }\end{DoxyParamCaption})}
 
 
 
@@ -221,26 +310,28 @@ Methode pour creer un service a partir du texte.
 \begin{DoxyParams}{Paramètres}
 {\em str} & (std\+::string) \+: Texte a analyser \\
 \hline
+{\em authentification} & (bool) \+: Authentification Nime \\
+\hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Renvoie}
-(\doxyref{Service}{p.}{class_service}) \+: service 
+(\mbox{\hyperlink{class_service}{Service}}) \+: service 
 \end{DoxyReturn}
 
 
-Définition à la ligne 484 du fichier Parser.\+cpp.
+Définition à la ligne 504 du fichier Parser.\+cpp.
 
 Voici le graphe des appelants de cette fonction \+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_parser_a86a72d2cd9eb4c98be53bc55d91c7461_icgraph}
+\includegraphics[width=350pt]{class_parser_a30e5e433a63d983206f3d88bbdbaaac8_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_parser_ab4878081ed92c6f7fd44346b8b0f88cc}} 
+\mbox{\Hypertarget{class_parser_ab4878081ed92c6f7fd44346b8b0f88cc}\label{class_parser_ab4878081ed92c6f7fd44346b8b0f88cc}} 
 \index{Parser@{Parser}!p\_getLines@{p\_getLines}}
 \index{p\_getLines@{p\_getLines}!Parser@{Parser}}
-\doxysubsubsection{p\_getLines()}
+\doxysubsubsection{\texorpdfstring{p\_getLines()}{p\_getLines()}}
 {\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Parser\+::p\+\_\+get\+Lines (\begin{DoxyParamCaption}\item[{std\+::string}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -257,7 +348,7 @@ Methode pour obtenir toutes les lignes d\textquotesingle{}un texte.
 \end{DoxyReturn}
 
 
-Définition à la ligne 701 du fichier Parser.\+cpp.
+Définition à la ligne 872 du fichier Parser.\+cpp.
 
 Voici le graphe des appelants de cette fonction \+:
 \nopagebreak
@@ -267,10 +358,10 @@ Voici le graphe des appelants de cette fonction \+:
 \includegraphics[width=350pt]{class_parser_ab4878081ed92c6f7fd44346b8b0f88cc_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_parser_a9d2d6354be1d6228ecde92c872136509}} 
+\mbox{\Hypertarget{class_parser_a9d2d6354be1d6228ecde92c872136509}\label{class_parser_a9d2d6354be1d6228ecde92c872136509}} 
 \index{Parser@{Parser}!p\_getWords@{p\_getWords}}
 \index{p\_getWords@{p\_getWords}!Parser@{Parser}}
-\doxysubsubsection{p\_getWords()}
+\doxysubsubsection{\texorpdfstring{p\_getWords()}{p\_getWords()}}
 {\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Parser\+::p\+\_\+get\+Words (\begin{DoxyParamCaption}\item[{std\+::string}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -287,26 +378,28 @@ Methode pour obtenir tous les mots d\textquotesingle{}un texte/ligne.
 \end{DoxyReturn}
 
 
-Définition à la ligne 724 du fichier Parser.\+cpp.
+Définition à la ligne 895 du fichier Parser.\+cpp.
 
-Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=314pt]{class_parser_a9d2d6354be1d6228ecde92c872136509_cgraph}
 \end{center}
 \end{figure}
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_parser_a9d2d6354be1d6228ecde92c872136509_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_parser_a6804a64b8f8edfe3f4fd27a41e2484a8}} 
+\mbox{\Hypertarget{class_parser_a6804a64b8f8edfe3f4fd27a41e2484a8}\label{class_parser_a6804a64b8f8edfe3f4fd27a41e2484a8}} 
 \index{Parser@{Parser}!parseAlarmLevel@{parseAlarmLevel}}
 \index{parseAlarmLevel@{parseAlarmLevel}!Parser@{Parser}}
-\doxysubsubsection{parseAlarmLevel()}
+\doxysubsubsection{\texorpdfstring{parseAlarmLevel()}{parseAlarmLevel()}}
 {\footnotesize\ttfamily std\+::map$<$ std\+::string, double $>$ Parser\+::parse\+Alarm\+Level (\begin{DoxyParamCaption}\item[{std\+::string}]{str }\end{DoxyParamCaption})}
 
 
@@ -323,26 +416,28 @@ Methode pour avoir le niveau d\textquotesingle{}alarme.
 \end{DoxyReturn}
 
 
-Définition à la ligne 425 du fichier Parser.\+cpp.
+Définition à la ligne 428 du fichier Parser.\+cpp.
 
-Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_parser_a6804a64b8f8edfe3f4fd27a41e2484a8_cgraph}
 \end{center}
 \end{figure}
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_parser_a6804a64b8f8edfe3f4fd27a41e2484a8_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_parser_a4e273cb32ef3d6f8233457d4d9623c58}} 
+\mbox{\Hypertarget{class_parser_a4e273cb32ef3d6f8233457d4d9623c58}\label{class_parser_a4e273cb32ef3d6f8233457d4d9623c58}} 
 \index{Parser@{Parser}!parseAllCertificats@{parseAllCertificats}}
 \index{parseAllCertificats@{parseAllCertificats}!Parser@{Parser}}
-\doxysubsubsection{parseAllCertificats()}
+\doxysubsubsection{\texorpdfstring{parseAllCertificats()}{parseAllCertificats()}}
 {\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Parser\+::parse\+All\+Certificats (\begin{DoxyParamCaption}\item[{std\+::string}]{str }\end{DoxyParamCaption})}
 
 
@@ -359,27 +454,29 @@ Methode pour obtenir tous les certificats d\textquotesingle{}un texte.
 \end{DoxyReturn}
 
 
-Définition à la ligne 646 du fichier Parser.\+cpp.
+Définition à la ligne 742 du fichier Parser.\+cpp.
 
-Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=344pt]{class_parser_a4e273cb32ef3d6f8233457d4d9623c58_cgraph}
 \end{center}
 \end{figure}
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_parser_a4e273cb32ef3d6f8233457d4d9623c58_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_parser_ad47def56543c53e8846904ce497b2c8d}} 
+\mbox{\Hypertarget{class_parser_acc3ef87a4eab129e638bd4496173880d}\label{class_parser_acc3ef87a4eab129e638bd4496173880d}} 
 \index{Parser@{Parser}!parseCommandServices@{parseCommandServices}}
 \index{parseCommandServices@{parseCommandServices}!Parser@{Parser}}
-\doxysubsubsection{parseCommandServices()}
-{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Parser\+::parse\+Command\+Services (\begin{DoxyParamCaption}\item[{std\+::string}]{str }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{parseCommandServices()}{parseCommandServices()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Parser\+::parse\+Command\+Services (\begin{DoxyParamCaption}\item[{std\+::string}]{str,  }\item[{bool}]{authentification }\end{DoxyParamCaption})}
 
 
 
@@ -389,19 +486,22 @@ Methode pour avoir les informations pour construire les services.
 \begin{DoxyParams}{Paramètres}
 {\em str} & (std\+::string) \+: Texte a analyser \\
 \hline
+{\em authentification} & (bool) \+: Authentification Nime \\
+\hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Renvoie}
 (std\+::vector$<$std\+::string$>$) \+: Informations par service 
 \end{DoxyReturn}
 
 
-Définition à la ligne 445 du fichier Parser.\+cpp.
+Définition à la ligne 449 du fichier Parser.\+cpp.
 
-Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_parser_ad47def56543c53e8846904ce497b2c8d_cgraph}
+\includegraphics[width=350pt]{class_parser_acc3ef87a4eab129e638bd4496173880d_cgraph}
 \end{center}
 \end{figure}
 Voici le graphe des appelants de cette fonction \+:
@@ -409,13 +509,13 @@ Voici le graphe des appelants de cette fonction \+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_parser_ad47def56543c53e8846904ce497b2c8d_icgraph}
+\includegraphics[width=350pt]{class_parser_acc3ef87a4eab129e638bd4496173880d_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_parser_acc9b03e692ec71ce0330eb81bece09b1}} 
+\mbox{\Hypertarget{class_parser_acc9b03e692ec71ce0330eb81bece09b1}\label{class_parser_acc9b03e692ec71ce0330eb81bece09b1}} 
 \index{Parser@{Parser}!parseCommandsMonitor@{parseCommandsMonitor}}
 \index{parseCommandsMonitor@{parseCommandsMonitor}!Parser@{Parser}}
-\doxysubsubsection{parseCommandsMonitor()}
+\doxysubsubsection{\texorpdfstring{parseCommandsMonitor()}{parseCommandsMonitor()}}
 {\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Parser\+::parse\+Commands\+Monitor (\begin{DoxyParamCaption}\item[{std\+::string}]{str }\end{DoxyParamCaption})}
 
 
@@ -434,24 +534,26 @@ std\+::vector$<$std\+::string$>$ \+: Vecteur les commandes
 
 Définition à la ligne 113 du fichier Parser.\+cpp.
 
-Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_parser_acc9b03e692ec71ce0330eb81bece09b1_cgraph}
 \end{center}
 \end{figure}
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_parser_acc9b03e692ec71ce0330eb81bece09b1_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_parser_a6ed88e501c553e0fdb214e86751ee46f}} 
+\mbox{\Hypertarget{class_parser_a6ed88e501c553e0fdb214e86751ee46f}\label{class_parser_a6ed88e501c553e0fdb214e86751ee46f}} 
 \index{Parser@{Parser}!parseExecVerif@{parseExecVerif}}
 \index{parseExecVerif@{parseExecVerif}!Parser@{Parser}}
-\doxysubsubsection{parseExecVerif()}
+\doxysubsubsection{\texorpdfstring{parseExecVerif()}{parseExecVerif()}}
 {\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Parser\+::parse\+Exec\+Verif (\begin{DoxyParamCaption}\item[{std\+::string}]{str }\end{DoxyParamCaption})}
 
 
@@ -468,26 +570,28 @@ Va regarder le taux de \+\_\+\+OK sur T\+O\+T\+AL
 \end{DoxyReturn}
 
 
-Définition à la ligne 291 du fichier Parser.\+cpp.
+Définition à la ligne 294 du fichier Parser.\+cpp.
 
-Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=331pt]{class_parser_a6ed88e501c553e0fdb214e86751ee46f_cgraph}
 \end{center}
 \end{figure}
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_parser_a6ed88e501c553e0fdb214e86751ee46f_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_parser_a24f51b7643d4be0d9dc62520499ffd4d}} 
+\mbox{\Hypertarget{class_parser_a24f51b7643d4be0d9dc62520499ffd4d}\label{class_parser_a24f51b7643d4be0d9dc62520499ffd4d}} 
 \index{Parser@{Parser}!parseJPing@{parseJPing}}
 \index{parseJPing@{parseJPing}!Parser@{Parser}}
-\doxysubsubsection{parseJPing()}
+\doxysubsubsection{\texorpdfstring{parseJPing()}{parseJPing()}}
 {\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Parser\+::parse\+J\+Ping (\begin{DoxyParamCaption}\item[{std\+::string}]{str }\end{DoxyParamCaption})}
 
 
@@ -504,27 +608,29 @@ Va conserver seulement les lignes problematiques (\textquotesingle{}()\textquote
 \end{DoxyReturn}
 
 
-Définition à la ligne 267 du fichier Parser.\+cpp.
+Définition à la ligne 270 du fichier Parser.\+cpp.
 
-Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=313pt]{class_parser_a24f51b7643d4be0d9dc62520499ffd4d_cgraph}
 \end{center}
 \end{figure}
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_parser_a24f51b7643d4be0d9dc62520499ffd4d_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_parser_a842c295943d160fb37283fc110f56555}} 
+\mbox{\Hypertarget{class_parser_aab680de1c925a31ccef915f3deb184e5}\label{class_parser_aab680de1c925a31ccef915f3deb184e5}} 
 \index{Parser@{Parser}!parseLastVersion@{parseLastVersion}}
 \index{parseLastVersion@{parseLastVersion}!Parser@{Parser}}
-\doxysubsubsection{parseLastVersion()}
-{\footnotesize\ttfamily std\+::string Parser\+::parse\+Last\+Version (\begin{DoxyParamCaption}\item[{std\+::string}]{str,  }\item[{std\+::string}]{exec\+Prod }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{parseLastVersion()}{parseLastVersion()}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, std\+::string $>$ Parser\+::parse\+Last\+Version (\begin{DoxyParamCaption}\item[{std\+::string}]{str }\end{DoxyParamCaption})}
 
 
 
@@ -534,34 +640,34 @@ Methode pour avoir la derniere version d\textquotesingle{}un service.
 \begin{DoxyParams}{Paramètres}
 {\em str} & (std\+::string) \+: Texte a analyser \\
 \hline
-{\em exec\+Prod} & (std\+::string) \+: Executif a recuperer \\
-\hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Renvoie}
-(std\+::string) \+: Version du service 
+(std\+::map$<$std\+::string, std\+::string$>$) \+: Map des dernieres versions 
 \end{DoxyReturn}
 
 
-Définition à la ligne 597 du fichier Parser.\+cpp.
+Définition à la ligne 683 du fichier Parser.\+cpp.
 
-Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=341pt]{class_parser_a842c295943d160fb37283fc110f56555_cgraph}
+\includegraphics[width=341pt]{class_parser_aab680de1c925a31ccef915f3deb184e5_cgraph}
 \end{center}
 \end{figure}
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_parser_a842c295943d160fb37283fc110f56555_icgraph}
+\includegraphics[width=350pt]{class_parser_aab680de1c925a31ccef915f3deb184e5_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_parser_a517ca6a23ef0117d46b18fd37f795a71}} 
+\mbox{\Hypertarget{class_parser_a517ca6a23ef0117d46b18fd37f795a71}\label{class_parser_a517ca6a23ef0117d46b18fd37f795a71}} 
 \index{Parser@{Parser}!parseMAP@{parseMAP}}
 \index{parseMAP@{parseMAP}!Parser@{Parser}}
-\doxysubsubsection{parseMAP()}
+\doxysubsubsection{\texorpdfstring{parseMAP()}{parseMAP()}}
 {\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Parser\+::parse\+M\+AP (\begin{DoxyParamCaption}\item[{std\+::string}]{str }\end{DoxyParamCaption})}
 
 
@@ -588,10 +694,48 @@ Voici le graphe des appelants de cette fonction \+:
 \includegraphics[width=350pt]{class_parser_a517ca6a23ef0117d46b18fd37f795a71_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_parser_a90e08777b087afdf40c692267ca4353f}} 
+\mbox{\Hypertarget{class_parser_a4e0aaad4e33f75d862e4927eabdfbc75}\label{class_parser_a4e0aaad4e33f75d862e4927eabdfbc75}} 
+\index{Parser@{Parser}!parsePartition@{parsePartition}}
+\index{parsePartition@{parsePartition}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{parsePartition()}{parsePartition()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Parser\+::parse\+Partition (\begin{DoxyParamCaption}\item[{std\+::string}]{str }\end{DoxyParamCaption})}
+
+
+
+Methode pour obtenir les partitions a partir d\textquotesingle{}un texte. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em str} & (std\+::string) \+: Texte a analyser \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+(std\+::vector$<$std\+::string$>$) \+: Vecteur de toutes les partitions 
+\end{DoxyReturn}
+
+
+Définition à la ligne 797 du fichier Parser.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{class_parser_a4e0aaad4e33f75d862e4927eabdfbc75_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_parser_a4e0aaad4e33f75d862e4927eabdfbc75_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_parser_a90e08777b087afdf40c692267ca4353f}\label{class_parser_a90e08777b087afdf40c692267ca4353f}} 
 \index{Parser@{Parser}!parsePIDCPU@{parsePIDCPU}}
 \index{parsePIDCPU@{parsePIDCPU}!Parser@{Parser}}
-\doxysubsubsection{parsePIDCPU()}
+\doxysubsubsection{\texorpdfstring{parsePIDCPU()}{parsePIDCPU()}}
 {\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Parser\+::parse\+P\+I\+D\+C\+PU (\begin{DoxyParamCaption}\item[{std\+::string}]{str }\end{DoxyParamCaption})}
 
 
@@ -608,26 +752,28 @@ Va recuperer les informations du P\+ID, C\+PU, et memoire
 \end{DoxyReturn}
 
 
-Définition à la ligne 407 du fichier Parser.\+cpp.
+Définition à la ligne 410 du fichier Parser.\+cpp.
 
-Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_parser_a90e08777b087afdf40c692267ca4353f_cgraph}
 \end{center}
 \end{figure}
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_parser_a90e08777b087afdf40c692267ca4353f_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_parser_af06a24ca2e72e43bf4a6835fa058e5d3}} 
+\mbox{\Hypertarget{class_parser_af06a24ca2e72e43bf4a6835fa058e5d3}\label{class_parser_af06a24ca2e72e43bf4a6835fa058e5d3}} 
 \index{Parser@{Parser}!parseService@{parseService}}
 \index{parseService@{parseService}!Parser@{Parser}}
-\doxysubsubsection{parseService()}
+\doxysubsubsection{\texorpdfstring{parseService()}{parseService()}}
 {\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Parser\+::parse\+Service (\begin{DoxyParamCaption}\item[{std\+::string}]{str }\end{DoxyParamCaption})}
 
 
@@ -646,26 +792,28 @@ Methode pour les informations concernant les J\+M\+AC.
 \end{DoxyReturn}
 
 
-Définition à la ligne 522 du fichier Parser.\+cpp.
+Définition à la ligne 558 du fichier Parser.\+cpp.
 
-Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=321pt]{class_parser_af06a24ca2e72e43bf4a6835fa058e5d3_cgraph}
 \end{center}
 \end{figure}
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_parser_af06a24ca2e72e43bf4a6835fa058e5d3_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_parser_ad14151af8c8a6138815f5b7c89f24a25}} 
+\mbox{\Hypertarget{class_parser_ad14151af8c8a6138815f5b7c89f24a25}\label{class_parser_ad14151af8c8a6138815f5b7c89f24a25}} 
 \index{Parser@{Parser}!parseServiceMachines@{parseServiceMachines}}
 \index{parseServiceMachines@{parseServiceMachines}!Parser@{Parser}}
-\doxysubsubsection{parseServiceMachines()}
+\doxysubsubsection{\texorpdfstring{parseServiceMachines()}{parseServiceMachines()}}
 {\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Parser\+::parse\+Service\+Machines (\begin{DoxyParamCaption}\item[{std\+::string}]{str }\end{DoxyParamCaption})}
 
 
@@ -682,19 +830,20 @@ Methode pour avoir les machines ou lire les J\+M\+AC.
 \end{DoxyReturn}
 
 
-Définition à la ligne 576 du fichier Parser.\+cpp.
+Définition à la ligne 663 du fichier Parser.\+cpp.
 
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_parser_ad14151af8c8a6138815f5b7c89f24a25_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_parser_a08ed2f08916d9fb2e72f26a9cbe5ef8b}} 
+\mbox{\Hypertarget{class_parser_a08ed2f08916d9fb2e72f26a9cbe5ef8b}\label{class_parser_a08ed2f08916d9fb2e72f26a9cbe5ef8b}} 
 \index{Parser@{Parser}!parseSsh@{parseSsh}}
 \index{parseSsh@{parseSsh}!Parser@{Parser}}
-\doxysubsubsection{parseSsh()}
+\doxysubsubsection{\texorpdfstring{parseSsh()}{parseSsh()}}
 {\footnotesize\ttfamily std\+::queue$<$ std\+::string $>$ Parser\+::parse\+Ssh (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})}
 
 
@@ -715,17 +864,18 @@ std\+::queue$<$std\+::string$>$ \+: File contenant les commandes
 
 Définition à la ligne 10 du fichier Parser.\+cpp.
 
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=336pt]{class_parser_a08ed2f08916d9fb2e72f26a9cbe5ef8b_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_parser_af8ff490cee087a67313b5721d50a1983}} 
+\mbox{\Hypertarget{class_parser_af8ff490cee087a67313b5721d50a1983}\label{class_parser_af8ff490cee087a67313b5721d50a1983}} 
 \index{Parser@{Parser}!readFile@{readFile}}
 \index{readFile@{readFile}!Parser@{Parser}}
-\doxysubsubsection{readFile()}
+\doxysubsubsection{\texorpdfstring{readFile()}{readFile()}}
 {\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Parser\+::read\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{name\+File }\end{DoxyParamCaption})}
 
 
@@ -744,17 +894,18 @@ std\+::vector$<$std\+::string$>$ \+: Vecteur contenant chaque ligne du fichier
 
 Définition à la ligne 53 du fichier Parser.\+cpp.
 
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_parser_af8ff490cee087a67313b5721d50a1983_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_parser_af091fba59121eeeb5fbaa33e32ab9780}} 
+\mbox{\Hypertarget{class_parser_af091fba59121eeeb5fbaa33e32ab9780}\label{class_parser_af091fba59121eeeb5fbaa33e32ab9780}} 
 \index{Parser@{Parser}!replaceAll@{replaceAll}}
 \index{replaceAll@{replaceAll}!Parser@{Parser}}
-\doxysubsubsection{replaceAll()}
+\doxysubsubsection{\texorpdfstring{replaceAll()}{replaceAll()}}
 {\footnotesize\ttfamily void Parser\+::replace\+All (\begin{DoxyParamCaption}\item[{std\+::string \&}]{str,  }\item[{const std\+::string \&}]{from,  }\item[{const std\+::string \&}]{to }\end{DoxyParamCaption})}
 
 
@@ -772,7 +923,7 @@ Methode pour remplacer toutes les occurences d\textquotesingle{}un texte par un 
 \end{DoxyParams}
 
 
-Définition à la ligne 185 du fichier Parser.\+cpp.
+Définition à la ligne 186 du fichier Parser.\+cpp.
 
 Voici le graphe des appelants de cette fonction \+:
 \nopagebreak
@@ -782,11 +933,11 @@ Voici le graphe des appelants de cette fonction \+:
 \includegraphics[width=350pt]{class_parser_af091fba59121eeeb5fbaa33e32ab9780_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_parser_a623fbf404b897518caaec57c31f3970f}} 
+\mbox{\Hypertarget{class_parser_a623fbf404b897518caaec57c31f3970f}\label{class_parser_a623fbf404b897518caaec57c31f3970f}} 
 \index{Parser@{Parser}!verifAlarms@{verifAlarms}}
 \index{verifAlarms@{verifAlarms}!Parser@{Parser}}
-\doxysubsubsection{verifAlarms()}
-{\footnotesize\ttfamily std\+::string Parser\+::verif\+Alarms (\begin{DoxyParamCaption}\item[{\textbf{ Monitor}}]{monitor,  }\item[{std\+::vector$<$ std\+::string $>$}]{alarms }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{verifAlarms()}{verifAlarms()}}
+{\footnotesize\ttfamily std\+::string Parser\+::verif\+Alarms (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_monitor}{Monitor}}}]{monitor,  }\item[{std\+::vector$<$ std\+::string $>$}]{alarms }\end{DoxyParamCaption})}
 
 
 
@@ -794,7 +945,7 @@ Methode pour savoir si un moniteur est en alarme ou en alerte.
 
 
 \begin{DoxyParams}{Paramètres}
-{\em monitor} & (\doxyref{Monitor}{p.}{class_monitor}) \+: Moniteur \\
+{\em monitor} & (\mbox{\hyperlink{class_monitor}{Monitor}}) \+: Moniteur \\
 \hline
 {\em alarms} & (std\+::vector$<$std\+::string$>$) \+: Liste des alarmes \\
 \hline
@@ -804,27 +955,29 @@ Methode pour savoir si un moniteur est en alarme ou en alerte.
 \end{DoxyReturn}
 
 
-Définition à la ligne 248 du fichier Parser.\+cpp.
+Définition à la ligne 251 du fichier Parser.\+cpp.
 
-Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=308pt]{class_parser_a623fbf404b897518caaec57c31f3970f_cgraph}
 \end{center}
 \end{figure}
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_parser_a623fbf404b897518caaec57c31f3970f_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_parser_a49a28da8b12ea9beb0109d9267d0e965}} 
+\mbox{\Hypertarget{class_parser_a49a28da8b12ea9beb0109d9267d0e965}\label{class_parser_a49a28da8b12ea9beb0109d9267d0e965}} 
 \index{Parser@{Parser}!verifMonitor@{verifMonitor}}
 \index{verifMonitor@{verifMonitor}!Parser@{Parser}}
-\doxysubsubsection{verifMonitor()}
-{\footnotesize\ttfamily bool Parser\+::verif\+Monitor (\begin{DoxyParamCaption}\item[{\textbf{ Monitor}}]{monitor,  }\item[{std\+::string}]{str }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{verifMonitor()}{verifMonitor()}}
+{\footnotesize\ttfamily bool Parser\+::verif\+Monitor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_monitor}{Monitor}}}]{monitor,  }\item[{std\+::string}]{str }\end{DoxyParamCaption})}
 
 
 
@@ -832,7 +985,7 @@ Methode pour savoir si le moniteur est bien present dans la liste des moniteurs 
 
 
 \begin{DoxyParams}{Paramètres}
-{\em monitor} & (\doxyref{Monitor}{p.}{class_monitor}) \+: Moniteur \\
+{\em monitor} & (\mbox{\hyperlink{class_monitor}{Monitor}}) \+: Moniteur \\
 \hline
 {\em str} & (std\+::string) \+: Texte a verifier \\
 \hline
@@ -842,26 +995,28 @@ Methode pour savoir si le moniteur est bien present dans la liste des moniteurs 
 \end{DoxyReturn}
 
 
-Définition à la ligne 201 du fichier Parser.\+cpp.
+Définition à la ligne 202 du fichier Parser.\+cpp.
 
-Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=310pt]{class_parser_a49a28da8b12ea9beb0109d9267d0e965_cgraph}
 \end{center}
 \end{figure}
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_parser_a49a28da8b12ea9beb0109d9267d0e965_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_parser_a6576607ba65e787f9896d92c56054c5c}} 
+\mbox{\Hypertarget{class_parser_a6576607ba65e787f9896d92c56054c5c}\label{class_parser_a6576607ba65e787f9896d92c56054c5c}} 
 \index{Parser@{Parser}!writeFile@{writeFile}}
 \index{writeFile@{writeFile}!Parser@{Parser}}
-\doxysubsubsection{writeFile()}
+\doxysubsubsection{\texorpdfstring{writeFile()}{writeFile()}}
 {\footnotesize\ttfamily void Parser\+::write\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{name\+File,  }\item[{const std\+::string \&}]{content }\end{DoxyParamCaption})}
 
 
@@ -879,9 +1034,17 @@ Methode pour ecrire dans un fichier.
 
 Définition à la ligne 41 du fichier Parser.\+cpp.
 
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_parser_a6576607ba65e787f9896d92c56054c5c_icgraph}
+\end{center}
+\end{figure}
 
 
 La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Outils/\textbf{ Parser.\+h}\item 
-C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Outils/\textbf{ Parser.\+cpp}\end{DoxyCompactItemize}
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Outils/\mbox{\hyperlink{_parser_8h}{Parser.\+h}}\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Outils/\mbox{\hyperlink{_parser_8cpp}{Parser.\+cpp}}\end{DoxyCompactItemize}

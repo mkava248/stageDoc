@@ -1,0 +1,307 @@
+\hypertarget{class_statistique_scroll}{}\doxysection{Référence de la classe Statistique\+Scroll}
+\label{class_statistique_scroll}\index{StatistiqueScroll@{StatistiqueScroll}}
+
+
+Classe pour la vue des statistiques scroll.  
+
+
+
+
+{\ttfamily \#include $<$Statistique\+Scroll.\+h$>$}
+
+
+
+Graphe d\textquotesingle{}héritage de Statistique\+Scroll\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{class_statistique_scroll__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de Statistique\+Scroll\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_statistique_scroll__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_statistique_scroll_ab0a74985f9741801aa09bf49e279c4e7}{Statistique\+Scroll}} (Q\+Widget $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_statistique_scroll_a4c459ef7fd40b15a4cd7fcd591f5f115}{$\sim$\+Statistique\+Scroll}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_statistique_scroll_a91fe5f9ce31695803c914496443f2a17}{set\+Informations\+Mon\+Ser}} (\mbox{\hyperlink{class_manager_monitor}{Manager\+Monitor}} $\ast$man\+Mon, \mbox{\hyperlink{class_manager_service}{Manager\+Service}} $\ast$man\+Ser)
+\begin{DoxyCompactList}\small\item\em Methode pour fixer les informations des moniteurs et des services. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_statistique_scroll_ae16a49484254dda4dc77eb3398d4e738}{set\+Informations\+Cert}} (\mbox{\hyperlink{class_manager_certificat}{Manager\+Certificat}} $\ast$man\+Cer)
+\begin{DoxyCompactList}\small\item\em Methode pour fixer les informations des certificats. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_statistique_scroll_a7f9a8042971302f3f98960fe740662a2}{set\+Informations\+J\+Ping}} (std\+::vector$<$ int $>$ nmb\+Jping)
+\begin{DoxyCompactList}\small\item\em Methode pour fixer les informations du jping. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_statistique_scroll_a8b9f1381f2c35771d9bd0b01164db615}{set\+Informations\+Partition}} (std\+::vector$<$ std\+::string $>$ informations\+Partitions)
+\begin{DoxyCompactList}\small\item\em Methode pour fixer les informations des partitions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_statistique_scroll_a4770de9212da356e257c620958ce99cf}{resize\+Event}} (Q\+Resize\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em Methode appelee au changement de taille de la fenetre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Scroll\+Area $\ast$ \mbox{\hyperlink{class_statistique_scroll_ac2eee3b49a2ee377d2a02433e86b1740}{p\+\_\+scroll}}
+\begin{DoxyCompactList}\small\item\em Varaible pour permettre le scroll. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_statistique_view}{Statistique\+View}} $\ast$ \mbox{\hyperlink{class_statistique_scroll_aadc36a8d8501f6ee2d8b726e8d7dec4f}{p\+\_\+stat\+View}}
+\begin{DoxyCompactList}\small\item\em Vue des statistiques. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Classe pour la vue des statistiques scroll. 
+
+Vue utilisee seulement pour permettre d\textquotesingle{}avoir une barre de scrolls dans la vue des statistiques \begin{DoxyAuthor}{Auteur}
+Thomas Rebillard 
+\end{DoxyAuthor}
+
+
+Définition à la ligne 19 du fichier Statistique\+Scroll.\+h.
+
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_statistique_scroll_ab0a74985f9741801aa09bf49e279c4e7}\label{class_statistique_scroll_ab0a74985f9741801aa09bf49e279c4e7}} 
+\index{StatistiqueScroll@{StatistiqueScroll}!StatistiqueScroll@{StatistiqueScroll}}
+\index{StatistiqueScroll@{StatistiqueScroll}!StatistiqueScroll@{StatistiqueScroll}}
+\doxysubsubsection{\texorpdfstring{StatistiqueScroll()}{StatistiqueScroll()}}
+{\footnotesize\ttfamily Statistique\+Scroll\+::\+Statistique\+Scroll (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent }\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & (Q\+Widget$\ast$) \+: Parent \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 7 du fichier Statistique\+Scroll.\+cpp.
+
+\mbox{\Hypertarget{class_statistique_scroll_a4c459ef7fd40b15a4cd7fcd591f5f115}\label{class_statistique_scroll_a4c459ef7fd40b15a4cd7fcd591f5f115}} 
+\index{StatistiqueScroll@{StatistiqueScroll}!````~StatistiqueScroll@{$\sim$StatistiqueScroll}}
+\index{````~StatistiqueScroll@{$\sim$StatistiqueScroll}!StatistiqueScroll@{StatistiqueScroll}}
+\doxysubsubsection{\texorpdfstring{$\sim$StatistiqueScroll()}{~StatistiqueScroll()}}
+{\footnotesize\ttfamily Statistique\+Scroll\+::$\sim$\+Statistique\+Scroll (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur. 
+
+
+
+Définition à la ligne 23 du fichier Statistique\+Scroll.\+cpp.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_statistique_scroll_a4770de9212da356e257c620958ce99cf}\label{class_statistique_scroll_a4770de9212da356e257c620958ce99cf}} 
+\index{StatistiqueScroll@{StatistiqueScroll}!resizeEvent@{resizeEvent}}
+\index{resizeEvent@{resizeEvent}!StatistiqueScroll@{StatistiqueScroll}}
+\doxysubsubsection{\texorpdfstring{resizeEvent()}{resizeEvent()}}
+{\footnotesize\ttfamily void Statistique\+Scroll\+::resize\+Event (\begin{DoxyParamCaption}\item[{Q\+Resize\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Methode appelee au changement de taille de la fenetre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em event} & (Q\+Resize\+Event$\ast$) \+: Evenement de changement de taille \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 31 du fichier Statistique\+Scroll.\+cpp.
+
+\mbox{\Hypertarget{class_statistique_scroll_ae16a49484254dda4dc77eb3398d4e738}\label{class_statistique_scroll_ae16a49484254dda4dc77eb3398d4e738}} 
+\index{StatistiqueScroll@{StatistiqueScroll}!setInformationsCert@{setInformationsCert}}
+\index{setInformationsCert@{setInformationsCert}!StatistiqueScroll@{StatistiqueScroll}}
+\doxysubsubsection{\texorpdfstring{setInformationsCert()}{setInformationsCert()}}
+{\footnotesize\ttfamily void Statistique\+Scroll\+::set\+Informations\+Cert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_manager_certificat}{Manager\+Certificat}} $\ast$}]{man\+Cer }\end{DoxyParamCaption})}
+
+
+
+Methode pour fixer les informations des certificats. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em man\+Cer} & (Manager\+Certificat$\ast$) \+: Gestionnaire de certificats \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 51 du fichier Statistique\+Scroll.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_statistique_scroll_ae16a49484254dda4dc77eb3398d4e738_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_statistique_scroll_ae16a49484254dda4dc77eb3398d4e738_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_statistique_scroll_a7f9a8042971302f3f98960fe740662a2}\label{class_statistique_scroll_a7f9a8042971302f3f98960fe740662a2}} 
+\index{StatistiqueScroll@{StatistiqueScroll}!setInformationsJPing@{setInformationsJPing}}
+\index{setInformationsJPing@{setInformationsJPing}!StatistiqueScroll@{StatistiqueScroll}}
+\doxysubsubsection{\texorpdfstring{setInformationsJPing()}{setInformationsJPing()}}
+{\footnotesize\ttfamily void Statistique\+Scroll\+::set\+Informations\+J\+Ping (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{nmb\+Jping }\end{DoxyParamCaption})}
+
+
+
+Methode pour fixer les informations du jping. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nmb\+Jping} & (std\+::vector$<$int$>$) \+: Vecteur avec les nombres \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 60 du fichier Statistique\+Scroll.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_statistique_scroll_a7f9a8042971302f3f98960fe740662a2_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_statistique_scroll_a7f9a8042971302f3f98960fe740662a2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_statistique_scroll_a91fe5f9ce31695803c914496443f2a17}\label{class_statistique_scroll_a91fe5f9ce31695803c914496443f2a17}} 
+\index{StatistiqueScroll@{StatistiqueScroll}!setInformationsMonSer@{setInformationsMonSer}}
+\index{setInformationsMonSer@{setInformationsMonSer}!StatistiqueScroll@{StatistiqueScroll}}
+\doxysubsubsection{\texorpdfstring{setInformationsMonSer()}{setInformationsMonSer()}}
+{\footnotesize\ttfamily void Statistique\+Scroll\+::set\+Informations\+Mon\+Ser (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_manager_monitor}{Manager\+Monitor}} $\ast$}]{man\+Mon,  }\item[{\mbox{\hyperlink{class_manager_service}{Manager\+Service}} $\ast$}]{man\+Ser }\end{DoxyParamCaption})}
+
+
+
+Methode pour fixer les informations des moniteurs et des services. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em man\+Mon} & (Manager\+Monitor$\ast$) \+: Gestionnaire de moniteurs \\
+\hline
+{\em man\+Ser} & (Manager\+Service$\ast$) \+: Gestionnaire de services \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 42 du fichier Statistique\+Scroll.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_statistique_scroll_a91fe5f9ce31695803c914496443f2a17_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_statistique_scroll_a91fe5f9ce31695803c914496443f2a17_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_statistique_scroll_a8b9f1381f2c35771d9bd0b01164db615}\label{class_statistique_scroll_a8b9f1381f2c35771d9bd0b01164db615}} 
+\index{StatistiqueScroll@{StatistiqueScroll}!setInformationsPartition@{setInformationsPartition}}
+\index{setInformationsPartition@{setInformationsPartition}!StatistiqueScroll@{StatistiqueScroll}}
+\doxysubsubsection{\texorpdfstring{setInformationsPartition()}{setInformationsPartition()}}
+{\footnotesize\ttfamily void Statistique\+Scroll\+::set\+Informations\+Partition (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{informations\+Partitions }\end{DoxyParamCaption})}
+
+
+
+Methode pour fixer les informations des partitions. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em informations\+Partitions} & (std\+::vector$<$std\+::string$>$) \+: Vecteur avec les nombres des partitions par machine \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 69 du fichier Statistique\+Scroll.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_statistique_scroll_a8b9f1381f2c35771d9bd0b01164db615_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_statistique_scroll_a8b9f1381f2c35771d9bd0b01164db615_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_statistique_scroll_ac2eee3b49a2ee377d2a02433e86b1740}\label{class_statistique_scroll_ac2eee3b49a2ee377d2a02433e86b1740}} 
+\index{StatistiqueScroll@{StatistiqueScroll}!p\_scroll@{p\_scroll}}
+\index{p\_scroll@{p\_scroll}!StatistiqueScroll@{StatistiqueScroll}}
+\doxysubsubsection{\texorpdfstring{p\_scroll}{p\_scroll}}
+{\footnotesize\ttfamily Q\+Scroll\+Area$\ast$ Statistique\+Scroll\+::p\+\_\+scroll\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Varaible pour permettre le scroll. 
+
+
+
+Définition à la ligne 23 du fichier Statistique\+Scroll.\+h.
+
+\mbox{\Hypertarget{class_statistique_scroll_aadc36a8d8501f6ee2d8b726e8d7dec4f}\label{class_statistique_scroll_aadc36a8d8501f6ee2d8b726e8d7dec4f}} 
+\index{StatistiqueScroll@{StatistiqueScroll}!p\_statView@{p\_statView}}
+\index{p\_statView@{p\_statView}!StatistiqueScroll@{StatistiqueScroll}}
+\doxysubsubsection{\texorpdfstring{p\_statView}{p\_statView}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_statistique_view}{Statistique\+View}}$\ast$ Statistique\+Scroll\+::p\+\_\+stat\+View\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Vue des statistiques. 
+
+
+
+Définition à la ligne 26 du fichier Statistique\+Scroll.\+h.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Vues/\mbox{\hyperlink{_statistique_scroll_8h}{Statistique\+Scroll.\+h}}\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Vues/\mbox{\hyperlink{_statistique_scroll_8cpp}{Statistique\+Scroll.\+cpp}}\end{DoxyCompactItemize}

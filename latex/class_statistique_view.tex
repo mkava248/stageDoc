@@ -1,4 +1,4 @@
-\doxysection{Référence de la classe Statistique\+View}
+\hypertarget{class_statistique_view}{}\doxysection{Référence de la classe Statistique\+View}
 \label{class_statistique_view}\index{StatistiqueView@{StatistiqueView}}
 
 
@@ -11,7 +11,8 @@ Classe pour la vue des statistiques.
 
 
 
-Graphe d\textquotesingle{}héritage de Statistique\+View\+:\nopagebreak
+Graphe d\textquotesingle{}héritage de Statistique\+View\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -20,67 +21,101 @@ Graphe d\textquotesingle{}héritage de Statistique\+View\+:\nopagebreak
 \end{figure}
 
 
-Graphe de collaboration de Statistique\+View\+:\nopagebreak
+Graphe de collaboration de Statistique\+View\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=164pt]{class_statistique_view__coll__graph}
+\includegraphics[width=350pt]{class_statistique_view__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
-\textbf{ Statistique\+View} (Q\+Widget $\ast$parent)
+\mbox{\hyperlink{class_statistique_view_ab4e9e008c6a59b4422602766900393b2}{Statistique\+View}} (Q\+Widget $\ast$parent)
 \begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
-\textbf{ $\sim$\+Statistique\+View} ()
+\mbox{\hyperlink{class_statistique_view_adad6070423db5c0492442847eca4b462}{$\sim$\+Statistique\+View}} ()
 \begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
-void \textbf{ set\+Informations\+Mon\+Serv} (std\+::vector$<$ int $>$ nmb\+Monitors, std\+::vector$<$ int $>$ nmb\+Services)
+void \mbox{\hyperlink{class_statistique_view_adbaea2aa776be560a5c5ee16fb56792f}{set\+Informations\+Mon\+Serv}} (\mbox{\hyperlink{class_manager_monitor}{Manager\+Monitor}} $\ast$man\+Mon, \mbox{\hyperlink{class_manager_service}{Manager\+Service}} $\ast$man\+Ser)
 \begin{DoxyCompactList}\small\item\em Methode pour fixer les statistiques des moniteurs et services. \end{DoxyCompactList}\item 
-void \textbf{ set\+Informations\+Cert} (std\+::vector$<$ int $>$ nmb\+Certificats)
+void \mbox{\hyperlink{class_statistique_view_a73451757c7d209b10c052aaa0bc1e15f}{set\+Informations\+Cert}} (\mbox{\hyperlink{class_manager_certificat}{Manager\+Certificat}} $\ast$man\+Cer)
 \begin{DoxyCompactList}\small\item\em Methode pour fixer les statistiques des certificats. \end{DoxyCompactList}\item 
-void \textbf{ set\+Informations\+Jping} (std\+::vector$<$ int $>$ nbm\+Jping)
-\begin{DoxyCompactList}\small\item\em Methode pour fixer les statistiques de la commande jping. \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_statistique_view_aeb6bd828bf242c5c7d72f4dee5aa88af}{set\+Informations\+Jping}} (std\+::vector$<$ int $>$ nmb\+Jping)
+\begin{DoxyCompactList}\small\item\em Methode pour fixer les statistiques de la commande jping. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_statistique_view_a5fc7813b390777eec49cbf923d8dfbbc}{set\+Informations\+Partitions}} (std\+::vector$<$ std\+::string $>$ informations\+Partitions)
+\begin{DoxyCompactList}\small\item\em Methode pour fixer les statistiques des partitions. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Fonctions membres protégées}
 \begin{DoxyCompactItemize}
 \item 
-void \textbf{ resize\+Event} (Q\+Resize\+Event $\ast$event)
+void \mbox{\hyperlink{class_statistique_view_af187a9571e988d63bf5a3e9672358532}{resize\+Event}} (Q\+Resize\+Event $\ast$event)
 \begin{DoxyCompactList}\small\item\em Methode appelee au changement de taille de la fenetre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Connecteurs privés}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_statistique_view_a0efec23b28ccf9d4e8d2e7cb59e09f5c}{p\+Slot\+\_\+change\+Data}} (int index)
+\begin{DoxyCompactList}\small\item\em Methode pour changer les donnees affichees en fonction du nom clique dans le tableau des machines. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_statistique_view_ae5b2af57efa52290b4a77b3e3ca413a6}{p\+\_\+show\+Mon\+Ser}} ()
+\begin{DoxyCompactList}\small\item\em Methode pour changer les informations des graphiques pour les moniteurs et les services. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_statistique_view_a1f43c2d4f63a83c7d4b0cf482a7139eb}{p\+\_\+show\+Cer}} ()
+\begin{DoxyCompactList}\small\item\em Methode pour changer le informations des graphiques pour les certificats. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_statistique_view_a74067adc2fade1c4308759e17ccf67a4}{p\+\_\+show\+Partitions}} ()
+\begin{DoxyCompactList}\small\item\em Methode pour afficher les partitions. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
-Q\+Label $\ast$ \textbf{ p\+\_\+stat\+Monitors}
+Q\+Label $\ast$ \mbox{\hyperlink{class_statistique_view_ae921eddd1fa34c6c4ba66c855546fd92}{p\+\_\+stat\+Monitors}}
 \begin{DoxyCompactList}\small\item\em Variable pour le texte des moniteurs. \end{DoxyCompactList}\item 
-Q\+Label $\ast$ \textbf{ p\+\_\+stat\+Services}
+Q\+Label $\ast$ \mbox{\hyperlink{class_statistique_view_a00c28ebad335a57ff80ec4d71d32f58d}{p\+\_\+stat\+Services}}
 \begin{DoxyCompactList}\small\item\em Variable pour le texte des services. \end{DoxyCompactList}\item 
-Q\+Label $\ast$ \textbf{ p\+\_\+stat\+Certificats}
+Q\+Label $\ast$ \mbox{\hyperlink{class_statistique_view_adb63cf98cfad0c5e5ed4be8022764d0c}{p\+\_\+stat\+Certificats}}
 \begin{DoxyCompactList}\small\item\em Variable pour le texte des certificats. \end{DoxyCompactList}\item 
-Q\+Label $\ast$ \textbf{ p\+\_\+stat\+Jping}
+Q\+Label $\ast$ \mbox{\hyperlink{class_statistique_view_a99c50c344abc5b19e3d0477ba1542ddf}{p\+\_\+stat\+Jping}}
 \begin{DoxyCompactList}\small\item\em Variable pour le texte des Jping. \end{DoxyCompactList}\item 
-Qt\+Charts\+::\+Q\+Stacked\+Bar\+Series $\ast$ \textbf{ p\+\_\+series}
-\begin{DoxyCompactList}\small\item\em Variable pour le style d\textquotesingle{}affichage. \end{DoxyCompactList}\item 
-Qt\+Charts\+::\+Q\+Chart $\ast$ \textbf{ p\+\_\+chart}
-\begin{DoxyCompactList}\small\item\em Variable pour le graphique. \end{DoxyCompactList}\item 
-Qt\+Charts\+::\+Q\+Chart\+View $\ast$ \textbf{ p\+\_\+chart\+View}
-\begin{DoxyCompactList}\small\item\em Variable pour afficher le graphique. \end{DoxyCompactList}\end{DoxyCompactItemize}
+Q\+Label $\ast$ \mbox{\hyperlink{class_statistique_view_a792f0f075d7493f9dad159bbb44c1bd4}{p\+\_\+stat\+Partition}}
+\begin{DoxyCompactList}\small\item\em Variable pour le texte les partitions. \end{DoxyCompactList}\item 
+Qt\+Charts\+::\+Q\+Chart\+View $\ast$ \mbox{\hyperlink{class_statistique_view_a8658dd0a982c6c7cc5d51e06980ebc64}{p\+\_\+chart\+View\+Mon}}
+\begin{DoxyCompactList}\small\item\em Variable pour afficher le graphique moniteur. \end{DoxyCompactList}\item 
+Qt\+Charts\+::\+Q\+Chart\+View $\ast$ \mbox{\hyperlink{class_statistique_view_ae923eba2dea68b1ce8750c4d629eda06}{p\+\_\+chart\+View\+Ser}}
+\begin{DoxyCompactList}\small\item\em Variable pour afficher le graphique service. \end{DoxyCompactList}\item 
+Qt\+Charts\+::\+Q\+Chart\+View $\ast$ \mbox{\hyperlink{class_statistique_view_a443f10a5f4007992ac7d0bb135169bc2}{p\+\_\+chart\+View\+Cer}}
+\begin{DoxyCompactList}\small\item\em Variable pour afficher le graphique certificat. \end{DoxyCompactList}\item 
+Qt\+Charts\+::\+Q\+Chart\+View $\ast$ \mbox{\hyperlink{class_statistique_view_a9b561d9d2ac3acb8ad603cc8a75d1f1d}{p\+\_\+chart\+View\+Jping}}
+\begin{DoxyCompactList}\small\item\em Variable pour afficher le graphique jping. \end{DoxyCompactList}\item 
+Qt\+Charts\+::\+Q\+Chart\+View $\ast$ \mbox{\hyperlink{class_statistique_view_a3e174e107f36e5848d1126dd558c35b9}{p\+\_\+chart\+Partition}}
+\begin{DoxyCompactList}\small\item\em Variable pour afficher le graphique patition. \end{DoxyCompactList}\item 
+Q\+Combo\+Box $\ast$ \mbox{\hyperlink{class_statistique_view_aedcdc34ae9095f04779914585656c66a}{p\+\_\+machines}}
+\begin{DoxyCompactList}\small\item\em Variable pour la table des machines. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_manager_monitor}{Manager\+Monitor}} $\ast$ \mbox{\hyperlink{class_statistique_view_ab149ac5be0e75ce367f0dfa2ccaf5985}{p\+\_\+man\+Mon}}
+\begin{DoxyCompactList}\small\item\em Variable pour le gestionnaire de moniteurs. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_manager_service}{Manager\+Service}} $\ast$ \mbox{\hyperlink{class_statistique_view_a6566595f0575053644555dd6c7d8d5a5}{p\+\_\+man\+Ser}}
+\begin{DoxyCompactList}\small\item\em Variable pour le gestionnaire de services. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_manager_certificat}{Manager\+Certificat}} $\ast$ \mbox{\hyperlink{class_statistique_view_a64f9f7467275d1bc23e1131a81cc3a03}{p\+\_\+man\+Cer}}
+\begin{DoxyCompactList}\small\item\em Variable pour le gestionnaire de certificats. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_statistique_view_a99f513e54d0c81c5bdc735245932d0bd}{p\+\_\+informations\+Partitions}}
+\begin{DoxyCompactList}\small\item\em Variable pour les partitions. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Description détaillée}
 Classe pour la vue des statistiques. 
 
-Vue ou sont affichees les statistiques de la plateforme \begin{DoxyAuthor}{Auteur}
+Vue ou sont affichees les statistiques de la plateforme. ~\newline
+Elle detaille les moniteurs, les services, les certificats, et les ouvertures entre services. \begin{DoxyAuthor}{Auteur}
 Thomas Rebillard 
 \end{DoxyAuthor}
 
 
-Définition à la ligne 19 du fichier Statistique\+View.\+h.
+Définition à la ligne 27 du fichier Statistique\+View.\+h.
 
 
 
 \doxysubsection{Documentation des constructeurs et destructeur}
-\mbox{\label{class_statistique_view_ab4e9e008c6a59b4422602766900393b2}} 
+\mbox{\Hypertarget{class_statistique_view_ab4e9e008c6a59b4422602766900393b2}\label{class_statistique_view_ab4e9e008c6a59b4422602766900393b2}} 
 \index{StatistiqueView@{StatistiqueView}!StatistiqueView@{StatistiqueView}}
 \index{StatistiqueView@{StatistiqueView}!StatistiqueView@{StatistiqueView}}
-\doxysubsubsection{StatistiqueView()}
+\doxysubsubsection{\texorpdfstring{StatistiqueView()}{StatistiqueView()}}
 {\footnotesize\ttfamily Statistique\+View\+::\+Statistique\+View (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent }\end{DoxyParamCaption})}
 
 
@@ -96,10 +131,18 @@ Constructeur.
 
 Définition à la ligne 7 du fichier Statistique\+View.\+cpp.
 
-\mbox{\label{class_statistique_view_adad6070423db5c0492442847eca4b462}} 
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_statistique_view_ab4e9e008c6a59b4422602766900393b2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_statistique_view_adad6070423db5c0492442847eca4b462}\label{class_statistique_view_adad6070423db5c0492442847eca4b462}} 
 \index{StatistiqueView@{StatistiqueView}!````~StatistiqueView@{$\sim$StatistiqueView}}
 \index{````~StatistiqueView@{$\sim$StatistiqueView}!StatistiqueView@{StatistiqueView}}
-\doxysubsubsection{$\sim$StatistiqueView()}
+\doxysubsubsection{\texorpdfstring{$\sim$StatistiqueView()}{~StatistiqueView()}}
 {\footnotesize\ttfamily Statistique\+View\+::$\sim$\+Statistique\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -108,15 +151,135 @@ Destructeur.
 
 
 
-Définition à la ligne 38 du fichier Statistique\+View.\+cpp.
+Définition à la ligne 46 du fichier Statistique\+View.\+cpp.
 
 
 
 \doxysubsection{Documentation des fonctions membres}
-\mbox{\label{class_statistique_view_af187a9571e988d63bf5a3e9672358532}} 
+\mbox{\Hypertarget{class_statistique_view_a1f43c2d4f63a83c7d4b0cf482a7139eb}\label{class_statistique_view_a1f43c2d4f63a83c7d4b0cf482a7139eb}} 
+\index{StatistiqueView@{StatistiqueView}!p\_showCer@{p\_showCer}}
+\index{p\_showCer@{p\_showCer}!StatistiqueView@{StatistiqueView}}
+\doxysubsubsection{\texorpdfstring{p\_showCer()}{p\_showCer()}}
+{\footnotesize\ttfamily void Statistique\+View\+::p\+\_\+show\+Cer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Methode pour changer le informations des graphiques pour les certificats. 
+
+
+
+Définition à la ligne 259 du fichier Statistique\+View.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{class_statistique_view_a1f43c2d4f63a83c7d4b0cf482a7139eb_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_statistique_view_a1f43c2d4f63a83c7d4b0cf482a7139eb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_statistique_view_ae5b2af57efa52290b4a77b3e3ca413a6}\label{class_statistique_view_ae5b2af57efa52290b4a77b3e3ca413a6}} 
+\index{StatistiqueView@{StatistiqueView}!p\_showMonSer@{p\_showMonSer}}
+\index{p\_showMonSer@{p\_showMonSer}!StatistiqueView@{StatistiqueView}}
+\doxysubsubsection{\texorpdfstring{p\_showMonSer()}{p\_showMonSer()}}
+{\footnotesize\ttfamily void Statistique\+View\+::p\+\_\+show\+Mon\+Ser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Methode pour changer les informations des graphiques pour les moniteurs et les services. 
+
+
+
+Définition à la ligne 171 du fichier Statistique\+View.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{class_statistique_view_ae5b2af57efa52290b4a77b3e3ca413a6_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_statistique_view_ae5b2af57efa52290b4a77b3e3ca413a6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_statistique_view_a74067adc2fade1c4308759e17ccf67a4}\label{class_statistique_view_a74067adc2fade1c4308759e17ccf67a4}} 
+\index{StatistiqueView@{StatistiqueView}!p\_showPartitions@{p\_showPartitions}}
+\index{p\_showPartitions@{p\_showPartitions}!StatistiqueView@{StatistiqueView}}
+\doxysubsubsection{\texorpdfstring{p\_showPartitions()}{p\_showPartitions()}}
+{\footnotesize\ttfamily void Statistique\+View\+::p\+\_\+show\+Partitions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Methode pour afficher les partitions. 
+
+
+
+Définition à la ligne 314 du fichier Statistique\+View.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_statistique_view_a74067adc2fade1c4308759e17ccf67a4_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_statistique_view_a74067adc2fade1c4308759e17ccf67a4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_statistique_view_a0efec23b28ccf9d4e8d2e7cb59e09f5c}\label{class_statistique_view_a0efec23b28ccf9d4e8d2e7cb59e09f5c}} 
+\index{StatistiqueView@{StatistiqueView}!pSlot\_changeData@{pSlot\_changeData}}
+\index{pSlot\_changeData@{pSlot\_changeData}!StatistiqueView@{StatistiqueView}}
+\doxysubsubsection{\texorpdfstring{pSlot\_changeData}{pSlot\_changeData}}
+{\footnotesize\ttfamily void Statistique\+View\+::p\+Slot\+\_\+change\+Data (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Methode pour changer les donnees affichees en fonction du nom clique dans le tableau des machines. 
+
+
+
+Définition à la ligne 375 du fichier Statistique\+View.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_statistique_view_a0efec23b28ccf9d4e8d2e7cb59e09f5c_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_statistique_view_a0efec23b28ccf9d4e8d2e7cb59e09f5c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_statistique_view_af187a9571e988d63bf5a3e9672358532}\label{class_statistique_view_af187a9571e988d63bf5a3e9672358532}} 
 \index{StatistiqueView@{StatistiqueView}!resizeEvent@{resizeEvent}}
 \index{resizeEvent@{resizeEvent}!StatistiqueView@{StatistiqueView}}
-\doxysubsubsection{resizeEvent()}
+\doxysubsubsection{\texorpdfstring{resizeEvent()}{resizeEvent()}}
 {\footnotesize\ttfamily void Statistique\+View\+::resize\+Event (\begin{DoxyParamCaption}\item[{Q\+Resize\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 
@@ -130,13 +293,13 @@ Methode appelee au changement de taille de la fenetre.
 \end{DoxyParams}
 
 
-Définition à la ligne 46 du fichier Statistique\+View.\+cpp.
+Définition à la ligne 54 du fichier Statistique\+View.\+cpp.
 
-\mbox{\label{class_statistique_view_a669a5f31f173561ee8744ac375995678}} 
+\mbox{\Hypertarget{class_statistique_view_a73451757c7d209b10c052aaa0bc1e15f}\label{class_statistique_view_a73451757c7d209b10c052aaa0bc1e15f}} 
 \index{StatistiqueView@{StatistiqueView}!setInformationsCert@{setInformationsCert}}
 \index{setInformationsCert@{setInformationsCert}!StatistiqueView@{StatistiqueView}}
-\doxysubsubsection{setInformationsCert()}
-{\footnotesize\ttfamily void Statistique\+View\+::set\+Informations\+Cert (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{nmb\+Certificats }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{setInformationsCert()}{setInformationsCert()}}
+{\footnotesize\ttfamily void Statistique\+View\+::set\+Informations\+Cert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_manager_certificat}{Manager\+Certificat}} $\ast$}]{man\+Cer }\end{DoxyParamCaption})}
 
 
 
@@ -144,24 +307,33 @@ Methode pour fixer les statistiques des certificats.
 
 
 \begin{DoxyParams}{Paramètres}
-{\em nmb\+Certificats} & (std\+::vector$<$int$>$) \+: Vecteur avec toutes les donnees certificats \\
+{\em man\+Cer} & (\mbox{\hyperlink{class_manager_certificat}{Manager\+Certificat}}) \+: Gestionnaire des certificats \\
 \hline
 \end{DoxyParams}
 
 
-Définition à la ligne 103 du fichier Statistique\+View.\+cpp.
+Définition à la ligne 114 du fichier Statistique\+View.\+cpp.
 
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_statistique_view_a669a5f31f173561ee8744ac375995678_icgraph}
+\includegraphics[width=350pt]{class_statistique_view_a73451757c7d209b10c052aaa0bc1e15f_cgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_statistique_view_a2579afc20ed16f0d9293b15fe4854fc8}} 
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_statistique_view_a73451757c7d209b10c052aaa0bc1e15f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_statistique_view_aeb6bd828bf242c5c7d72f4dee5aa88af}\label{class_statistique_view_aeb6bd828bf242c5c7d72f4dee5aa88af}} 
 \index{StatistiqueView@{StatistiqueView}!setInformationsJping@{setInformationsJping}}
 \index{setInformationsJping@{setInformationsJping}!StatistiqueView@{StatistiqueView}}
-\doxysubsubsection{setInformationsJping()}
+\doxysubsubsection{\texorpdfstring{setInformationsJping()}{setInformationsJping()}}
 {\footnotesize\ttfamily void Statistique\+View\+::set\+Informations\+Jping (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{nmb\+Jping }\end{DoxyParamCaption})}
 
 
@@ -175,20 +347,21 @@ Methode pour fixer les statistiques de la commande jping.
 \end{DoxyParams}
 
 
-Définition à la ligne 128 du fichier Statistique\+View.\+cpp.
+Définition à la ligne 135 du fichier Statistique\+View.\+cpp.
 
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_statistique_view_a2579afc20ed16f0d9293b15fe4854fc8_icgraph}
+\includegraphics[width=350pt]{class_statistique_view_aeb6bd828bf242c5c7d72f4dee5aa88af_icgraph}
 \end{center}
 \end{figure}
-\mbox{\label{class_statistique_view_a62da132e79001547ae6071edb4c90e4b}} 
+\mbox{\Hypertarget{class_statistique_view_adbaea2aa776be560a5c5ee16fb56792f}\label{class_statistique_view_adbaea2aa776be560a5c5ee16fb56792f}} 
 \index{StatistiqueView@{StatistiqueView}!setInformationsMonServ@{setInformationsMonServ}}
 \index{setInformationsMonServ@{setInformationsMonServ}!StatistiqueView@{StatistiqueView}}
-\doxysubsubsection{setInformationsMonServ()}
-{\footnotesize\ttfamily void Statistique\+View\+::set\+Informations\+Mon\+Serv (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{nmb\+Monitors,  }\item[{std\+::vector$<$ int $>$}]{nmb\+Services }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{setInformationsMonServ()}{setInformationsMonServ()}}
+{\footnotesize\ttfamily void Statistique\+View\+::set\+Informations\+Mon\+Serv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_manager_monitor}{Manager\+Monitor}} $\ast$}]{man\+Mon,  }\item[{\mbox{\hyperlink{class_manager_service}{Manager\+Service}} $\ast$}]{man\+Ser }\end{DoxyParamCaption})}
 
 
 
@@ -196,71 +369,213 @@ Methode pour fixer les statistiques des moniteurs et services.
 
 
 \begin{DoxyParams}{Paramètres}
-{\em nmb\+Monitors} & (std\+::vector$<$int$>$) \+: Vecteur avec toutes les donnees moniteurs \\
+{\em man\+Mon} & (Manager\+Monitor$\ast$) \+: Gestionnaire des moniteurs \\
 \hline
-{\em nmb\+Services} & (std\+::vector$<$int$>$) \+: Vecteur avec toutes les donnees services \\
+{\em man\+Ser} & (Manager\+Service$\ast$) \+: Gestionnaire des services \\
 \hline
 \end{DoxyParams}
 
 
-Définition à la ligne 60 du fichier Statistique\+View.\+cpp.
+Définition à la ligne 74 du fichier Statistique\+View.\+cpp.
 
-Voici le graphe des appelants de cette fonction \+:\nopagebreak
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_statistique_view_a62da132e79001547ae6071edb4c90e4b_icgraph}
+\includegraphics[width=350pt]{class_statistique_view_adbaea2aa776be560a5c5ee16fb56792f_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_statistique_view_adbaea2aa776be560a5c5ee16fb56792f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_statistique_view_a5fc7813b390777eec49cbf923d8dfbbc}\label{class_statistique_view_a5fc7813b390777eec49cbf923d8dfbbc}} 
+\index{StatistiqueView@{StatistiqueView}!setInformationsPartitions@{setInformationsPartitions}}
+\index{setInformationsPartitions@{setInformationsPartitions}!StatistiqueView@{StatistiqueView}}
+\doxysubsubsection{\texorpdfstring{setInformationsPartitions()}{setInformationsPartitions()}}
+{\footnotesize\ttfamily void Statistique\+View\+::set\+Informations\+Partitions (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{informations\+Partitions }\end{DoxyParamCaption})}
+
+
+
+Methode pour fixer les statistiques des partitions. 
+
+Les donnees sont range de la facon suivante \+: Nom de le machine/nmb de partitions bonnes/nmb de partions alertes/nbm de partitions alarmes/nmb de partitions probleme 
+\begin{DoxyParams}{Paramètres}
+{\em informations\+Partitions} & (std\+::vector$<$std\+::string$>$) \+: Informations des partitions \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 125 du fichier Statistique\+View.\+cpp.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_statistique_view_a5fc7813b390777eec49cbf923d8dfbbc_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_statistique_view_a5fc7813b390777eec49cbf923d8dfbbc_icgraph}
 \end{center}
 \end{figure}
 
 
 \doxysubsection{Documentation des données membres}
-\mbox{\label{class_statistique_view_adf595f059508d5f25ed81541b7da4c0f}} 
-\index{StatistiqueView@{StatistiqueView}!p\_chart@{p\_chart}}
-\index{p\_chart@{p\_chart}!StatistiqueView@{StatistiqueView}}
-\doxysubsubsection{p\_chart}
-{\footnotesize\ttfamily Qt\+Charts\+::\+Q\+Chart$\ast$ Statistique\+View\+::p\+\_\+chart\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{class_statistique_view_a3e174e107f36e5848d1126dd558c35b9}\label{class_statistique_view_a3e174e107f36e5848d1126dd558c35b9}} 
+\index{StatistiqueView@{StatistiqueView}!p\_chartPartition@{p\_chartPartition}}
+\index{p\_chartPartition@{p\_chartPartition}!StatistiqueView@{StatistiqueView}}
+\doxysubsubsection{\texorpdfstring{p\_chartPartition}{p\_chartPartition}}
+{\footnotesize\ttfamily Qt\+Charts\+::\+Q\+Chart\+View$\ast$ Statistique\+View\+::p\+\_\+chart\+Partition\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Variable pour le graphique. 
+Variable pour afficher le graphique patition. 
 
 
 
-Définition à la ligne 41 du fichier Statistique\+View.\+h.
+Définition à la ligne 61 du fichier Statistique\+View.\+h.
 
-\mbox{\label{class_statistique_view_a639a702e652c4cb2fc2cce1540af1490}} 
-\index{StatistiqueView@{StatistiqueView}!p\_chartView@{p\_chartView}}
-\index{p\_chartView@{p\_chartView}!StatistiqueView@{StatistiqueView}}
-\doxysubsubsection{p\_chartView}
-{\footnotesize\ttfamily Qt\+Charts\+::\+Q\+Chart\+View$\ast$ Statistique\+View\+::p\+\_\+chart\+View\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Variable pour afficher le graphique. 
+\mbox{\Hypertarget{class_statistique_view_a443f10a5f4007992ac7d0bb135169bc2}\label{class_statistique_view_a443f10a5f4007992ac7d0bb135169bc2}} 
+\index{StatistiqueView@{StatistiqueView}!p\_chartViewCer@{p\_chartViewCer}}
+\index{p\_chartViewCer@{p\_chartViewCer}!StatistiqueView@{StatistiqueView}}
+\doxysubsubsection{\texorpdfstring{p\_chartViewCer}{p\_chartViewCer}}
+{\footnotesize\ttfamily Qt\+Charts\+::\+Q\+Chart\+View$\ast$ Statistique\+View\+::p\+\_\+chart\+View\+Cer\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Définition à la ligne 44 du fichier Statistique\+View.\+h.
-
-\mbox{\label{class_statistique_view_a654089e35c83748cec289b6751aec176}} 
-\index{StatistiqueView@{StatistiqueView}!p\_series@{p\_series}}
-\index{p\_series@{p\_series}!StatistiqueView@{StatistiqueView}}
-\doxysubsubsection{p\_series}
-{\footnotesize\ttfamily Qt\+Charts\+::\+Q\+Stacked\+Bar\+Series$\ast$ Statistique\+View\+::p\+\_\+series\hspace{0.3cm}{\ttfamily [private]}}
+Variable pour afficher le graphique certificat. 
 
 
 
-Variable pour le style d\textquotesingle{}affichage. 
+Définition à la ligne 55 du fichier Statistique\+View.\+h.
+
+\mbox{\Hypertarget{class_statistique_view_a9b561d9d2ac3acb8ad603cc8a75d1f1d}\label{class_statistique_view_a9b561d9d2ac3acb8ad603cc8a75d1f1d}} 
+\index{StatistiqueView@{StatistiqueView}!p\_chartViewJping@{p\_chartViewJping}}
+\index{p\_chartViewJping@{p\_chartViewJping}!StatistiqueView@{StatistiqueView}}
+\doxysubsubsection{\texorpdfstring{p\_chartViewJping}{p\_chartViewJping}}
+{\footnotesize\ttfamily Qt\+Charts\+::\+Q\+Chart\+View$\ast$ Statistique\+View\+::p\+\_\+chart\+View\+Jping\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Définition à la ligne 38 du fichier Statistique\+View.\+h.
+Variable pour afficher le graphique jping. 
 
-\mbox{\label{class_statistique_view_adb63cf98cfad0c5e5ed4be8022764d0c}} 
+
+
+Définition à la ligne 58 du fichier Statistique\+View.\+h.
+
+\mbox{\Hypertarget{class_statistique_view_a8658dd0a982c6c7cc5d51e06980ebc64}\label{class_statistique_view_a8658dd0a982c6c7cc5d51e06980ebc64}} 
+\index{StatistiqueView@{StatistiqueView}!p\_chartViewMon@{p\_chartViewMon}}
+\index{p\_chartViewMon@{p\_chartViewMon}!StatistiqueView@{StatistiqueView}}
+\doxysubsubsection{\texorpdfstring{p\_chartViewMon}{p\_chartViewMon}}
+{\footnotesize\ttfamily Qt\+Charts\+::\+Q\+Chart\+View$\ast$ Statistique\+View\+::p\+\_\+chart\+View\+Mon\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour afficher le graphique moniteur. 
+
+
+
+Définition à la ligne 49 du fichier Statistique\+View.\+h.
+
+\mbox{\Hypertarget{class_statistique_view_ae923eba2dea68b1ce8750c4d629eda06}\label{class_statistique_view_ae923eba2dea68b1ce8750c4d629eda06}} 
+\index{StatistiqueView@{StatistiqueView}!p\_chartViewSer@{p\_chartViewSer}}
+\index{p\_chartViewSer@{p\_chartViewSer}!StatistiqueView@{StatistiqueView}}
+\doxysubsubsection{\texorpdfstring{p\_chartViewSer}{p\_chartViewSer}}
+{\footnotesize\ttfamily Qt\+Charts\+::\+Q\+Chart\+View$\ast$ Statistique\+View\+::p\+\_\+chart\+View\+Ser\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour afficher le graphique service. 
+
+
+
+Définition à la ligne 52 du fichier Statistique\+View.\+h.
+
+\mbox{\Hypertarget{class_statistique_view_a99f513e54d0c81c5bdc735245932d0bd}\label{class_statistique_view_a99f513e54d0c81c5bdc735245932d0bd}} 
+\index{StatistiqueView@{StatistiqueView}!p\_informationsPartitions@{p\_informationsPartitions}}
+\index{p\_informationsPartitions@{p\_informationsPartitions}!StatistiqueView@{StatistiqueView}}
+\doxysubsubsection{\texorpdfstring{p\_informationsPartitions}{p\_informationsPartitions}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Statistique\+View\+::p\+\_\+informations\+Partitions\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour les partitions. 
+
+
+
+Définition à la ligne 76 du fichier Statistique\+View.\+h.
+
+\mbox{\Hypertarget{class_statistique_view_aedcdc34ae9095f04779914585656c66a}\label{class_statistique_view_aedcdc34ae9095f04779914585656c66a}} 
+\index{StatistiqueView@{StatistiqueView}!p\_machines@{p\_machines}}
+\index{p\_machines@{p\_machines}!StatistiqueView@{StatistiqueView}}
+\doxysubsubsection{\texorpdfstring{p\_machines}{p\_machines}}
+{\footnotesize\ttfamily Q\+Combo\+Box$\ast$ Statistique\+View\+::p\+\_\+machines\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour la table des machines. 
+
+
+
+Définition à la ligne 64 du fichier Statistique\+View.\+h.
+
+\mbox{\Hypertarget{class_statistique_view_a64f9f7467275d1bc23e1131a81cc3a03}\label{class_statistique_view_a64f9f7467275d1bc23e1131a81cc3a03}} 
+\index{StatistiqueView@{StatistiqueView}!p\_manCer@{p\_manCer}}
+\index{p\_manCer@{p\_manCer}!StatistiqueView@{StatistiqueView}}
+\doxysubsubsection{\texorpdfstring{p\_manCer}{p\_manCer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_manager_certificat}{Manager\+Certificat}}$\ast$ Statistique\+View\+::p\+\_\+man\+Cer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour le gestionnaire de certificats. 
+
+
+
+Définition à la ligne 73 du fichier Statistique\+View.\+h.
+
+\mbox{\Hypertarget{class_statistique_view_ab149ac5be0e75ce367f0dfa2ccaf5985}\label{class_statistique_view_ab149ac5be0e75ce367f0dfa2ccaf5985}} 
+\index{StatistiqueView@{StatistiqueView}!p\_manMon@{p\_manMon}}
+\index{p\_manMon@{p\_manMon}!StatistiqueView@{StatistiqueView}}
+\doxysubsubsection{\texorpdfstring{p\_manMon}{p\_manMon}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_manager_monitor}{Manager\+Monitor}}$\ast$ Statistique\+View\+::p\+\_\+man\+Mon\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour le gestionnaire de moniteurs. 
+
+
+
+Définition à la ligne 67 du fichier Statistique\+View.\+h.
+
+\mbox{\Hypertarget{class_statistique_view_a6566595f0575053644555dd6c7d8d5a5}\label{class_statistique_view_a6566595f0575053644555dd6c7d8d5a5}} 
+\index{StatistiqueView@{StatistiqueView}!p\_manSer@{p\_manSer}}
+\index{p\_manSer@{p\_manSer}!StatistiqueView@{StatistiqueView}}
+\doxysubsubsection{\texorpdfstring{p\_manSer}{p\_manSer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_manager_service}{Manager\+Service}}$\ast$ Statistique\+View\+::p\+\_\+man\+Ser\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour le gestionnaire de services. 
+
+
+
+Définition à la ligne 70 du fichier Statistique\+View.\+h.
+
+\mbox{\Hypertarget{class_statistique_view_adb63cf98cfad0c5e5ed4be8022764d0c}\label{class_statistique_view_adb63cf98cfad0c5e5ed4be8022764d0c}} 
 \index{StatistiqueView@{StatistiqueView}!p\_statCertificats@{p\_statCertificats}}
 \index{p\_statCertificats@{p\_statCertificats}!StatistiqueView@{StatistiqueView}}
-\doxysubsubsection{p\_statCertificats}
+\doxysubsubsection{\texorpdfstring{p\_statCertificats}{p\_statCertificats}}
 {\footnotesize\ttfamily Q\+Label$\ast$ Statistique\+View\+::p\+\_\+stat\+Certificats\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -269,12 +584,12 @@ Variable pour le texte des certificats.
 
 
 
-Définition à la ligne 32 du fichier Statistique\+View.\+h.
+Définition à la ligne 40 du fichier Statistique\+View.\+h.
 
-\mbox{\label{class_statistique_view_a99c50c344abc5b19e3d0477ba1542ddf}} 
+\mbox{\Hypertarget{class_statistique_view_a99c50c344abc5b19e3d0477ba1542ddf}\label{class_statistique_view_a99c50c344abc5b19e3d0477ba1542ddf}} 
 \index{StatistiqueView@{StatistiqueView}!p\_statJping@{p\_statJping}}
 \index{p\_statJping@{p\_statJping}!StatistiqueView@{StatistiqueView}}
-\doxysubsubsection{p\_statJping}
+\doxysubsubsection{\texorpdfstring{p\_statJping}{p\_statJping}}
 {\footnotesize\ttfamily Q\+Label$\ast$ Statistique\+View\+::p\+\_\+stat\+Jping\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -283,12 +598,12 @@ Variable pour le texte des Jping.
 
 
 
-Définition à la ligne 35 du fichier Statistique\+View.\+h.
+Définition à la ligne 43 du fichier Statistique\+View.\+h.
 
-\mbox{\label{class_statistique_view_ae921eddd1fa34c6c4ba66c855546fd92}} 
+\mbox{\Hypertarget{class_statistique_view_ae921eddd1fa34c6c4ba66c855546fd92}\label{class_statistique_view_ae921eddd1fa34c6c4ba66c855546fd92}} 
 \index{StatistiqueView@{StatistiqueView}!p\_statMonitors@{p\_statMonitors}}
 \index{p\_statMonitors@{p\_statMonitors}!StatistiqueView@{StatistiqueView}}
-\doxysubsubsection{p\_statMonitors}
+\doxysubsubsection{\texorpdfstring{p\_statMonitors}{p\_statMonitors}}
 {\footnotesize\ttfamily Q\+Label$\ast$ Statistique\+View\+::p\+\_\+stat\+Monitors\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -297,12 +612,26 @@ Variable pour le texte des moniteurs.
 
 
 
-Définition à la ligne 26 du fichier Statistique\+View.\+h.
+Définition à la ligne 34 du fichier Statistique\+View.\+h.
 
-\mbox{\label{class_statistique_view_a00c28ebad335a57ff80ec4d71d32f58d}} 
+\mbox{\Hypertarget{class_statistique_view_a792f0f075d7493f9dad159bbb44c1bd4}\label{class_statistique_view_a792f0f075d7493f9dad159bbb44c1bd4}} 
+\index{StatistiqueView@{StatistiqueView}!p\_statPartition@{p\_statPartition}}
+\index{p\_statPartition@{p\_statPartition}!StatistiqueView@{StatistiqueView}}
+\doxysubsubsection{\texorpdfstring{p\_statPartition}{p\_statPartition}}
+{\footnotesize\ttfamily Q\+Label$\ast$ Statistique\+View\+::p\+\_\+stat\+Partition\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable pour le texte les partitions. 
+
+
+
+Définition à la ligne 46 du fichier Statistique\+View.\+h.
+
+\mbox{\Hypertarget{class_statistique_view_a00c28ebad335a57ff80ec4d71d32f58d}\label{class_statistique_view_a00c28ebad335a57ff80ec4d71d32f58d}} 
 \index{StatistiqueView@{StatistiqueView}!p\_statServices@{p\_statServices}}
 \index{p\_statServices@{p\_statServices}!StatistiqueView@{StatistiqueView}}
-\doxysubsubsection{p\_statServices}
+\doxysubsubsection{\texorpdfstring{p\_statServices}{p\_statServices}}
 {\footnotesize\ttfamily Q\+Label$\ast$ Statistique\+View\+::p\+\_\+stat\+Services\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -311,11 +640,11 @@ Variable pour le texte des services.
 
 
 
-Définition à la ligne 29 du fichier Statistique\+View.\+h.
+Définition à la ligne 37 du fichier Statistique\+View.\+h.
 
 
 
 La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Vues/\textbf{ Statistique\+View.\+h}\item 
-C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Vues/\textbf{ Statistique\+View.\+cpp}\end{DoxyCompactItemize}
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Vues/\mbox{\hyperlink{_statistique_view_8h}{Statistique\+View.\+h}}\item 
+C\+:/\+Utilisateurs/a767111/\+Documents/\+Stage/\+Projets/\+Auto\+R\+U\+N/autorun/src/\+Vues/\mbox{\hyperlink{_statistique_view_8cpp}{Statistique\+View.\+cpp}}\end{DoxyCompactItemize}
